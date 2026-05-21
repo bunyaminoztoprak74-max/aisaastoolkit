@@ -12,9 +12,9 @@ const ALTERNATIVES_MAP: Record<string, string[]> = {
   "claude": ["chatgpt", "writesonic", "jasper"],
   "make-com": ["zapier"],
   "zapier": ["make-com"],
-  "pictory": ["elevenlabs"],
+  "pictory": ["elevenlabs", "jasper", "writesonic"],
   "writesonic": ["jasper", "claude", "chatgpt"],
-  "elevenlabs": ["pictory"],
+  "elevenlabs": ["pictory", "jasper", "writesonic"],
   "perplexity": ["chatgpt", "claude"],
 };
 

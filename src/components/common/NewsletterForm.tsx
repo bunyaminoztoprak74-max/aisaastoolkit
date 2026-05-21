@@ -30,7 +30,7 @@ export function NewsletterForm({ variant = "inline", leadMagnet }: Props) {
   if (status === "success") {
     return (
       <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6 text-center">
-        <div className="text-3xl mb-2">✨Z</div>
+        <div className="text-3xl mb-2">✨</div>
         <p className="font-semibold text-green-800 dark:text-green-200">You&apos;re in!</p>
         <p className="text-sm text-green-700 dark:text-green-300 mt-1">
           Check your inbox for a welcome email.{leadMagnet ? ` Your ${leadMagnet} is on its way.` : ""}

@@ -37,7 +37,7 @@ export default function DealsPage() {
                   <div className="flex-1">
                     <div className="flex items-start gap-2 mb-1">
                       <h2 className="text-lg font-bold text-foreground">{deal.headline}</h2>
-                      {deal.isVerified && <span className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-2 py-0.5 rounded-full font-medium mt-0.5">"" Verified</span>}
+                      {deal.isVerified && <span className="text-xs bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-2 py-0.5 rounded-full font-medium mt-0.5">✅ Verified</span>}
                     </div>
                     <p className="text-muted-foreground text-sm mb-3">{deal.description}</p>
                     <div className="flex items-center gap-3">
