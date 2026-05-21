@@ -58,7 +58,7 @@ export const bestLists: BestList[] = [
     headline: "The 5 Best AI Voice Generator Tools of 2026 (Ranked by Audio Quality)",
     metaDescription: "Our expert picks for the best AI voice generators in 2026 — tested for realism, voice cloning accuracy, language support, and value. ElevenLabs, Murf, and more.",
     intro: "AI voice generation has reached a level of realism that was unimaginable just two years ago. Whether you're a podcaster needing a narrator, a developer building a voice-enabled app, or a marketer creating multilingual audio content, the right AI voice tool can transform your workflow. We tested the top platforms head-to-head — here are the five best.",
-    toolSlugs: ["elevenlabs", "jasper", "claude", "chatgpt", "perplexity"],
+    toolSlugs: ["elevenlabs", "murf-ai", "pictory"],
     category: "ai-voice",
     lastUpdated: "2026-05-01",
   },

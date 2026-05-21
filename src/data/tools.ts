@@ -750,7 +750,7 @@ export const tools: Tool[] = [
       "Developers building voice-enabled applications",
       "Marketers creating audio ads and brand voices",
     ],
-    alternatives: ["murf-ai", "descript", "play-ht"],
+    alternatives: ["murf-ai", "pictory"],
     faqs: [
       {
         question: "How realistic is ElevenLabs voice cloning?",
@@ -1101,6 +1101,78 @@ export const tools: Tool[] = [
       {
         question: "Can Canva AI replace a graphic designer?",
         answer: "For standard marketing materials, social media graphics, presentations, and simple brand assets, Canva AI can significantly reduce reliance on a designer. For complex brand work, packaging, or highly custom design, a professional designer is still essential.",
+      },
+    ],
+    lastUpdated: "2026-05-01",
+  },
+  {
+    name: "Murf AI",
+    slug: "murf-ai",
+    tagline: "Studio-quality AI voice generator for presentations and e-learning",
+    description: "Murf AI is a professional AI voice generator designed for teams creating e-learning content, corporate training videos, and marketing presentations.",
+    longDescription: "Murf AI focuses on delivering a polished studio experience for non-technical teams. With 120+ voices across 20 languages, a built-in audio editor, background music mixer, and collaboration tools, Murf is the go-to choice for corporate content teams.",
+    logo: "/images/logos/murf-ai.svg",
+    website: "https://murf.ai",
+    affiliateUrl: "https://murf.ai",
+    category: "ai-voice",
+    categories: ["ai-voice"],
+    rating: 4.3,
+    reviewCount: 876,
+    badge: "new",
+    pricing: {
+      starting: "$19/month",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Free",
+          price: "$0",
+          period: "/month",
+          features: ["10 minutes of voice generation", "Access to 10 voices", "720p video export"],
+        },
+        {
+          name: "Basic",
+          price: "$19",
+          period: "/month",
+          features: ["2 hours/month", "60+ voices", "Commercial license", "HD video export"],
+          highlighted: true,
+          badge: "Most Popular",
+        },
+        {
+          name: "Pro",
+          price: "$26",
+          period: "/month",
+          features: ["4 hours/month", "All voices", "Team collaboration", "Background music"],
+        },
+      ],
+    },
+    features: [
+      { title: "120+ AI Voices", description: "Professional voices across 20 languages with natural intonation." },
+      { title: "Studio Interface", description: "Built-in audio editor with background music and pronunciation controls." },
+      { title: "Team Collaboration", description: "Share projects, leave comments, and collaborate in real time." },
+      { title: "Pronunciation Editor", description: "Fine-tune how words are pronounced for technical or branded terms." },
+    ],
+    pros: [
+      "Excellent studio interface for non-technical users",
+      "Team collaboration built-in",
+      "Background music and sound design tools",
+      "Good for e-learning and corporate content",
+    ],
+    cons: [
+      "Voice quality doesn't match ElevenLabs",
+      "Expensive at $19/month entry price",
+      "Limited voice cloning capability",
+      "API access on Business plan only",
+    ],
+    bestFor: [
+      "Corporate e-learning teams",
+      "Marketers producing presentation voiceovers",
+      "Non-technical users wanting a simple studio UI",
+    ],
+    alternatives: ["elevenlabs", "pictory"],
+    faqs: [
+      {
+        question: "How does Murf compare to ElevenLabs?",
+        answer: "Murf has a better studio interface and collaboration features, but ElevenLabs produces more realistic voices and has superior voice cloning. For teams, Murf is easier to use. For raw quality, ElevenLabs wins.",
       },
     ],
     lastUpdated: "2026-05-01",

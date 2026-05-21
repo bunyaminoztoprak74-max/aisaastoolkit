@@ -31,7 +31,7 @@ const PER_PAGE = 12;
 
 export const metadata: Metadata = buildMetadata({
   title: "All AI Tools — Reviews, Ratings & Comparisons 2026",
-  description: "Browse our complete database of 50+ AI tool reviews. Filter by category, price, rating, and features to find the perfect AI tool for your needs.",
+  description: "Browse our complete database of 14+ AI tool reviews. Filter by category, price, rating, and features to find the perfect AI tool for your needs.",
   path: "/tools",
   keywords: ["all AI tools", "AI software database", "AI tool reviews 2026"],
 });
