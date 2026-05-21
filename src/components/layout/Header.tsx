@@ -39,6 +39,7 @@ const navLinks = [
       { label: "Claude vs ChatGPT",    href: "/compare/claude-vs-chatgpt" },
       { label: "Make.com vs Zapier",   href: "/compare/make-vs-zapier" },
       { label: "Jasper vs Writesonic", href: "/compare/jasper-vs-writesonic" },
+      { label: "ElevenLabs vs Murf",    href: "/compare/elevenlabs-vs-murf" },
     ],
   },
   {
@@ -49,6 +50,7 @@ const navLinks = [
       { label: "Best AI Video Tools",      href: "/best/ai-video-tools" },
       { label: "Best AI SEO Tools",        href: "/best/ai-seo-tools" },
       { label: "Best AI Writing Tools",    href: "/best/ai-writing-tools" },
+      { label: "Best AI Voice Tools",        href: "/best/ai-voice-tools" },
     ],
   },
   {

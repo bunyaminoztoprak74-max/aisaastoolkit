@@ -235,6 +235,72 @@ export const comparisons: Comparison[] = [
     ],
     lastUpdated: "2026-05-01",
   },
+  {
+    slug: "elevenlabs-vs-murf",
+    tool1Slug: "elevenlabs",
+    tool2Slug: "murf-ai",
+    title: "ElevenLabs vs Murf AI (2026): Which AI Voice Generator Is Better?",
+    metaDescription: "ElevenLabs vs Murf AI — detailed 2026 comparison of voice quality, pricing, cloning, language support, and use cases to find the best AI voice generator.",
+    headline: "ElevenLabs vs Murf AI: The Ultimate 2026 Voice AI Comparison",
+    intro: "ElevenLabs and Murf AI are two of the most popular AI voice generators on the market — but they target quite different users. ElevenLabs leads in raw voice quality and cloning realism, while Murf focuses on studio-quality voiceovers for presentations, explainer videos, and e-learning. We tested both extensively to give you a clear verdict.",
+    verdict: "ElevenLabs wins for voice quality, cloning accuracy, and developer use cases. Murf AI wins for business presentations, e-learning content, and users who need a polished, all-in-one studio interface without coding. For the most realistic AI voices, ElevenLabs is unmatched — but Murf's collaboration features and simpler UX make it the better choice for non-technical teams.",
+    tool1Winner: true,
+    winnerReason: "Superior voice realism, best-in-class voice cloning, and broader API ecosystem",
+    features: [
+      { feature: "Voice Quality", tool1: "Ultra-realistic", tool2: "Studio-quality", winner: 1 },
+      { feature: "Voice Cloning", tool1: "Instant (1 min sample)", tool2: "Basic cloning", winner: 1 },
+      { feature: "Languages", tool1: "29 languages", tool2: "20 languages", winner: 1 },
+      { feature: "API Access", tool1: true, tool2: "Business plan only", winner: 1 },
+      { feature: "Free Plan", tool1: "10K chars/mo", tool2: "10 mins/mo", winner: "tie" },
+      { feature: "Studio Interface", tool1: "Basic editor", tool2: "Full studio", winner: 2 },
+      { feature: "Team Collaboration", tool1: "Limited", tool2: "Built-in", winner: 2 },
+      { feature: "Background Music", tool1: false, tool2: true, winner: 2 },
+      { feature: "Pronunciation Editor", tool1: "Basic", tool2: "Advanced", winner: 2 },
+      { feature: "Dubbing / Video Sync", tool1: "Dubbing Studio", tool2: "Limited", winner: 1 },
+      { feature: "Starting Price", tool1: "$5/month", tool2: "$19/month", winner: 1 },
+      { feature: "Voice Library", tool1: "3,000+ voices", tool2: "120+ voices", winner: 1 },
+    ],
+    pricingComparison: {
+      tool1Free: true,
+      tool2Free: true,
+      tool1Starting: "$5/month (Starter)",
+      tool2Starting: "$19/month (Basic)",
+      tool1BestPlan: "Creator ($22/mo) — best for creators and developers",
+      tool2BestPlan: "Pro ($26/mo) — best for teams and businesses",
+      winner: 1,
+    },
+    bestFor: {
+      tool1: [
+        "Developers building voice-enabled applications",
+        "Podcasters and YouTubers needing realistic voiceovers",
+        "Content creators dubbing videos into multiple languages",
+        "Authors producing audiobooks",
+        "Marketers creating branded audio content",
+      ],
+      tool2: [
+        "Corporate teams creating e-learning content",
+        "Marketers producing presentation voiceovers",
+        "HR teams making training videos",
+        "Agencies needing collaboration workflows",
+        "Non-technical users wanting a simple studio UI",
+      ],
+    },
+    faqs: [
+      {
+        question: "Is ElevenLabs better than Murf for voice cloning?",
+        answer: "Yes, significantly. ElevenLabs Instant Voice Cloning can replicate a voice from just 1 minute of audio with remarkable accuracy. Murf offers basic cloning but requires more source material and produces less realistic results. For voice cloning specifically, ElevenLabs is the clear winner.",
+      },
+      {
+        question: "Which is better for corporate e-learning — ElevenLabs or Murf?",
+        answer: "Murf AI is generally better for corporate e-learning. Its built-in studio interface, collaboration features, background music mixer, and pronunciation editor make it easier for non-technical teams to produce polished training videos without any coding.",
+      },
+      {
+        question: "How does ElevenLabs pricing compare to Murf?",
+        answer: "ElevenLabs is significantly cheaper at entry level — $5/month vs Murf's $19/month. ElevenLabs also has a more generous free tier (10,000 characters vs Murf's 10 minutes). For most users, ElevenLabs offers better value.",
+      },
+    ],
+    lastUpdated: "2026-05-01",
+  },
 ];
 
 export function getComparisonBySlug(slug: string): Comparison | undefined {
