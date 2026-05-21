@@ -65,6 +65,7 @@ export const tools: Tool[] = [
   {
     name: "Claude",
     slug: "claude",
+    featured: true,
     tagline: "The most capable AI assistant for deep reasoning and long-context tasks",
     description: "Claude is Anthropic's flagship AI assistant, renowned for safety, nuanced reasoning, and handling very long documents.",
     longDescription: "Claude by Anthropic is one of the most powerful AI assistants available in 2026. Built with a Constitutional AI approach, Claude excels at complex reasoning, coding, analysis, and long-context tasks — handling documents up to 200K tokens. Its writing quality is widely considered the best among leading LLMs, and it consistently scores top marks for honesty and safety.",
@@ -155,6 +156,8 @@ export const tools: Tool[] = [
   {
     name: "ChatGPT",
     slug: "chatgpt",
+    featured: true,
+    trending: true,
     tagline: "The world's most popular AI chatbot with the largest plugin ecosystem",
     description: "OpenAI's ChatGPT remains the most widely-used AI assistant, with GPT-4o powering fast, multimodal conversations.",
     longDescription: "ChatGPT by OpenAI is the AI tool that started the generative AI revolution. With GPT-4o at its core, it handles text, images, voice, and even video inputs. Its massive plugin marketplace and integrations with thousands of apps make it the most versatile AI assistant available.",
@@ -241,6 +244,8 @@ export const tools: Tool[] = [
   {
     name: "Make.com",
     slug: "make-com",
+    featured: true,
+    trending: true,
     tagline: "The most powerful visual automation platform for non-coders",
     description: "Make.com (formerly Integromat) is a visual workflow automation platform that connects 1,500+ apps with AI-powered logic.",
     longDescription: "Make.com is the leading no-code automation platform for teams who need more power than Zapier without writing custom code. Its visual drag-and-drop scenario builder handles complex branching logic, data transformation, API calls, and AI integrations. With 1,500+ pre-built app connectors and a generous free tier, it's the go-to automation tool for affiliate marketers, agencies, and SaaS businesses.",
@@ -423,6 +428,7 @@ export const tools: Tool[] = [
   {
     name: "Jasper",
     slug: "jasper",
+    featured: true,
     tagline: "Enterprise AI writing platform for marketing teams",
     description: "Jasper is a powerful AI content platform built for marketing teams — with brand voice training, templates, and campaign workflows.",
     longDescription: "Jasper (formerly Jarvis) is one of the most established AI writing tools, purpose-built for marketing teams and content agencies. Its Brand Voice feature ensures every piece of AI-generated content sounds like your brand, while 50+ templates cover everything from Facebook ads to SEO blog posts. Jasper integrates directly with Surfer SEO for real-time optimization.",
@@ -505,6 +511,7 @@ export const tools: Tool[] = [
   {
     name: "Writesonic",
     slug: "writesonic",
+    trending: true,
     tagline: "Affordable AI writing & SEO tool with built-in Chatsonic",
     description: "Writesonic combines AI writing, image generation, and real-time web search in one affordable platform with a generous free tier.",
     longDescription: "Writesonic is one of the best value AI writing tools available, offering a powerful combination of AI article writing, Chatsonic (ChatGPT with web access), AI image generation, and dedicated SEO writing tools — all at a significantly lower price than competitors like Jasper. Its Botsonic feature lets you build custom AI chatbots for your website.",
@@ -767,6 +774,7 @@ export const tools: Tool[] = [
   {
     name: "Perplexity AI",
     slug: "perplexity",
+    featured: true,
     tagline: "The AI-powered answer engine with real-time web search",
     description: "Perplexity is a conversational AI search engine that provides cited, up-to-date answers from the web in real time.",
     longDescription: "Perplexity AI is redefining search by combining the power of large language models with real-time web search and citation. Unlike traditional search engines, Perplexity gives you direct, synthesized answers with sources you can verify — making it indispensable for research, fact-checking, and staying current.",
@@ -852,7 +860,14 @@ export function getToolsByCategory(categorySlug: string): Tool[] {
 }
 
 export function getFeaturedTools(limit = 6): Tool[] {
-  return tools.filter((t) => t.featured).slice(0, limit);
+  const featured = tools.filter((t) => t.featured);
+  if (featured.length >= limit) return featured.slice(0, limit);
+  // Fill remaining slots with highest-rated tools not already in featured
+  const featuredSlugs = new Set(featured.map((t) => t.slug));
+  const extras = [...tools]
+    .filter((t) => !featuredSlugs.has(t.slug))
+    .sort((a, b) => b.rating - a.rating);
+  return [...featured, ...extras].slice(0, limit);
 }
 
 export function getTrendingTools(limit = 6): Tool[] {

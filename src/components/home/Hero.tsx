@@ -17,7 +17,7 @@ export function Hero() {
       <div className="relative container mx-auto px-4 py-20 md:py-28 text-center">
         <Badge variant="outline" className="mb-6 gap-1.5 py-1.5 px-4 text-sm font-medium">
           <TrendingUp className="w-3.5 h-3.5 text-primary" />
-          Updated for 2026 — 50+ Tools Reviewed
+          Updated May 2026 — 9 AI Tools Reviewed & Ranked
         </Badge>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
@@ -32,8 +32,8 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
           <Button variant="gradient" size="xl" asChild>
-            <Link href="/best/ai-automation-tools">
-              Explore Top AI Tools <ArrowRight className="ml-2 h-5 w-5" />
+            <Link href="/tools">
+              Explore All AI Tools <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
           <Button variant="outline" size="xl" asChild>
@@ -49,7 +49,7 @@ export function Hero() {
           </div>
           <div className="flex items-center gap-2">
             <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span>50+ Tools Tested & Rated</span>
+            <span>9 AI Tools Tested & Rated</span>
           </div>
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-primary" />

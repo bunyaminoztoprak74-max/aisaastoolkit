@@ -19,12 +19,12 @@ export function NewsletterSignup() {
           Get weekly roundups of the best new AI tools, exclusive deals, and expert tips — straight to your inbox.
         </p>
         <p className="text-sm font-medium text-primary mb-8">
-          Get our free &quot;Top 50 AI Tools&quot; comparison guide when you subscribe.
+          Get our free &quot;AI Tools Starter Guide&quot; when you subscribe.
         </p>
         <div className="max-w-md mx-auto">
-          <NewsletterForm variant="hero" leadMagnet="Top 50 AI Tools comparison guide" />
+          <NewsletterForm variant="hero" leadMagnet="AI Tools Starter Guide" />
         </div>
-        <p className="text-xs text-muted-foreground mt-4">Join 12,000+ readers. Unsubscribe anytime. No spam, ever.</p>
+        <p className="text-xs text-muted-foreground mt-4">Join our growing community of AI enthusiasts. Unsubscribe anytime. No spam, ever.</p>
       </div>
     </section>
   );

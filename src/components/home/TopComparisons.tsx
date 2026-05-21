@@ -12,7 +12,7 @@ export function TopComparisons() {
           <p className="text-muted-foreground text-lg">Head-to-head breakdowns to help you pick the right tool</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {comparisons.map((comp) => (
+          {comparisons.slice(0, 3).map((comp) => (
             <Link
               key={comp.slug}
               href={`/compare/${comp.slug}`}

@@ -24,7 +24,7 @@ export const categories: Category[] = [
     description: "Supercharge your search rankings with AI-driven keyword research, content optimization, and technical SEO tools.",
     icon: "📊",
     color: "from-green-500 to-emerald-500",
-    toolCount: 0,
+    toolCount: 3,
     featured: true,
   },
   {
@@ -33,7 +33,7 @@ export const categories: Category[] = [
     description: "Create, edit, and enhance videos with artificial intelligence — no camera or editing skills required.",
     icon: "🎬",
     color: "from-red-500 to-pink-500",
-    toolCount: 1,
+    toolCount: 2,
     featured: true,
   },
   {
@@ -51,7 +51,7 @@ export const categories: Category[] = [
     description: "Scale your marketing campaigns with AI tools for ads, email, social media, and lead generation.",
     icon: "📣",
     color: "from-orange-500 to-yellow-500",
-    toolCount: 0,
+    toolCount: 4,
     featured: true,
   },
   {
@@ -69,7 +69,7 @@ export const categories: Category[] = [
     description: "Work smarter with AI assistants that handle scheduling, summarization, research, and task management.",
     icon: "🚀",
     color: "from-indigo-500 to-blue-500",
-    toolCount: 1,
+    toolCount: 4,
     featured: false,
   },
   {
@@ -78,7 +78,7 @@ export const categories: Category[] = [
     description: "Deploy autonomous AI agents that can browse the web, write code, manage files, and complete multi-step tasks.",
     icon: "🤖",
     color: "from-slate-500 to-gray-600",
-    toolCount: 1,
+    toolCount: 2,
     featured: false,
   },
 ];
