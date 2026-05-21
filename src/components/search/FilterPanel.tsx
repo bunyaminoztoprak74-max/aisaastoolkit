@@ -55,7 +55,7 @@ export function FilterPanel({ className, compact = false }: FilterPanelProps) {
 
   const ratingOptions = [{ label: "4.5+", val: "4.5" }, { label: "4.0+", val: "4.0" }, { label: "3.5+", val: "3.5" }];
   const typeOptions   = [{ label: "Tool Reviews", val: "tool" }, { label: "Comparisons", val: "comparison" }, { label: "Best Lists", val: "best-list" }];
-  const badgeOptions  = [{ label: "⭐ Editor's Choice", val: "editor-choice" }, { label: "🏆 Recommended", val: "recommended" }, { label: "💰 Best Value", val: "best-value" }, { label: "🔥 Trending", val: "trending" }];
+  const badgeOptions  = [{ label: "★ Editor's Choice", val: "editor-choice" }, { label: "👍 Recommended", val: "recommended" }, { label: "📝 Best Value", val: "best-value" }, { label: "📊 Trending", val: "trending" }];
   const featureTags   = getTagsByGroup("feature").slice(0, 8);
   const usecaseTags   = getTagsByGroup("usecase").slice(0, 6);
   const pricingTags   = getTagsByGroup("pricing");
@@ -125,7 +125,7 @@ export function FilterPanel({ className, compact = false }: FilterPanelProps) {
 
       {/* Pricing */}
       <FilterSection title="Pricing">
-        <FilterChip label="✅ Free Plan Available" active={searchParams.has("free")} onClick={() => toggleBool("free")} />
+        <FilterChip label="✓ Free Plan Available" active={searchParams.has("free")} onClick={() => toggleBool("free")} />
         {pricingTags.map((t) => (
           <FilterChip key={t.slug} label={t.label} active={active("tag", t.slug)} onClick={() => toggle("tag", t.slug)} />
         ))}

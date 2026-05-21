@@ -1,12 +1,15 @@
 import type { Tool } from "@/data/tools";
 import type { Comparison } from "@/data/comparisons";
 import type { BestList } from "@/data/bestLists";
+import type { BlogPost } from "@/data/blog";
+import type { Author } from "@/data/authors";
 
 const SITE_URL = "https://aisaastoolkit.com";
 const SITE_NAME = "AISaaSToolkit";
 
 /** Software application with AggregateRating + Offer */
 export function buildSoftwareSchema(tool: Tool) {
+  const tiers = tool.pricing?.tiers ?? tool.pricingTiers ?? [];
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -14,7 +17,7 @@ export function buildSoftwareSchema(tool: Tool) {
     url: tool.website,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    offers: tool.pricing.tiers.map((tier) => ({
+    offers: tiers.map((tier) => ({
       "@type": "Offer",
       name: tier.name,
       price: tier.price.replace(/[^0-9.]/g, "") || "0",
@@ -32,7 +35,7 @@ export function buildSoftwareSchema(tool: Tool) {
       worstRating: "1",
     },
     description: tool.description,
-    featureList: tool.features.map((f) => f.title).join(", "),
+    featureList: (tool.features ?? []).map((f) => f.title).join(", "),
   };
 }
 
@@ -42,7 +45,7 @@ export function buildReviewSchema(tool: Tool) {
     "@context": "https://schema.org",
     "@type": "Review",
     name: `${tool.name} Review`,
-    reviewBody: tool.longDescription,
+    reviewBody: tool.longDescription ?? tool.description,
     reviewRating: {
       "@type": "Rating",
       ratingValue: tool.rating.toFixed(1),
@@ -152,6 +155,29 @@ export function buildWebsiteSchema() {
   };
 }
 
+/** Article schema for blog posts */
+export function buildArticleSchema(post: BlogPost) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    author: {
+      "@type": "Person",
+      name: post.authorName,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
+    image: `${SITE_URL}/og-image.svg`,
+    url: `${SITE_URL}/blog/${post.slug}`,
+  };
+}
+
 /** Organization schema */
 export function buildOrganizationSchema() {
   return {
@@ -159,10 +185,7 @@ export function buildOrganizationSchema() {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
-    sameAs: [
-      "https://twitter.com/aisaastoolkit",
-      "https://linkedin.com/company/aisaastoolkit",
-    ],
+    logo: `${SITE_URL}/og-image.svg`,
+    sameAs: ["https://twitter.com/aisaastoolkit"],
   };
 }

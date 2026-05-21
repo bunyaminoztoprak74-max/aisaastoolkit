@@ -32,13 +32,13 @@ export function ComparisonTable({ features, tool1Name, tool2Name }: ComparisonTa
               <td className={cn("px-4 py-3 text-center", row.winner === 1 && "bg-green-50 dark:bg-green-950/20")}>
                 <div className="flex items-center justify-center gap-1">
                   {renderValue(row.tool1)}
-                  {row.winner === 1 && <span className="text-xs text-green-600 font-bold ml-1">✓</span>}
+                  {row.winner === 1 && <span className="text-xs text-green-600 font-bold ml-1">""</span>}
                 </div>
               </td>
               <td className={cn("px-4 py-3 text-center", row.winner === 2 && "bg-green-50 dark:bg-green-950/20")}>
                 <div className="flex items-center justify-center gap-1">
                   {renderValue(row.tool2)}
-                  {row.winner === 2 && <span className="text-xs text-green-600 font-bold ml-1">✓</span>}
+                  {row.winner === 2 && <span className="text-xs text-green-600 font-bold ml-1">""</span>}
                 </div>
               </td>
             </tr>

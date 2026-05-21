@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { Tool } from "@/data/tools";
 
-// ─── Types ──────────────────────────────────────────────────────────────────
+// ——— Types ——————————————————————————————————————————————————————————————————
 export interface EngineFeatureRow {
   feature:  string;
   tool1:    string | boolean;
@@ -43,14 +43,14 @@ export interface ComparisonEngineProps {
   winnerNote: string;
 }
 
-// ─── Feature cell renderer ───────────────────────────────────────────────────
+// ——— Feature cell renderer ———————————————————————————————————————————————————
 function FeatureCell({ value }: { value: string | boolean }) {
   if (value === true)  return <Check className="w-5 h-5 text-green-500 mx-auto" />;
   if (value === false) return <X className="w-5 h-5 text-red-400 mx-auto" />;
   return <span className="text-sm">{value}</span>;
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────
+// ——— Main Component ——————————————————————————————————————————————————————————
 export function ComparisonEngine({
   tool1, tool2, features, pricing, bestFor1, bestFor2, verdict, winner, winnerNote,
 }: ComparisonEngineProps) {
@@ -89,8 +89,8 @@ export function ComparisonEngine({
               <p className="text-sm text-muted-foreground mb-3">{tool.tagline}</p>
               <TagList toolSlug={tool.slug} limit={4} className="mb-4" />
               <div className="flex items-center justify-between text-xs mb-4">
-                <span className="font-semibold">From: {tool.pricing.starting}</span>
-                {tool.pricing.hasFree && <Badge variant="recommended" className="text-[10px]">Free plan</Badge>}
+                <span className="font-semibold">From: {tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</span>
+                {tool.pricing?.hasFree && <Badge variant="recommended" className="text-[10px]">Free plan</Badge>}
               </div>
               <Button variant={isWinner ? "gradient" : "outline"} className="w-full" asChild>
                 <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
@@ -143,13 +143,13 @@ export function ComparisonEngine({
                   <td className={cn("px-4 py-3 text-center", row.winner === 1 && "bg-green-50 dark:bg-green-950/20")}>
                     <div className="flex items-center justify-center gap-1">
                       <FeatureCell value={row.tool1} />
-                      {row.winner === 1 && <span className="text-[10px] text-green-600 font-bold">✓</span>}
+                      {row.winner === 1 && <span className="text-[10px] text-green-600 font-bold">""</span>}
                     </div>
                   </td>
                   <td className={cn("px-4 py-3 text-center", row.winner === 2 && "bg-green-50 dark:bg-green-950/20")}>
                     <div className="flex items-center justify-center gap-1">
                       <FeatureCell value={row.tool2} />
-                      {row.winner === 2 && <span className="text-[10px] text-green-600 font-bold">✓</span>}
+                      {row.winner === 2 && <span className="text-[10px] text-green-600 font-bold">""</span>}
                     </div>
                   </td>
                 </tr>
@@ -176,7 +176,7 @@ export function ComparisonEngine({
                 {isWinner && <Badge variant="recommended">Better Value</Badge>}
               </div>
               <p className="text-2xl font-black mb-1">{starting}</p>
-              <p className="text-xs text-muted-foreground mb-2">{free ? "✅ Free plan available" : "❌ No free plan"}</p>
+              <p className="text-xs text-muted-foreground mb-2">{free ? "✓ Free plan available" : "✗ No free plan"}</p>
               <p className="text-xs italic text-muted-foreground">Best plan: {plan}</p>
             </div>
           ))}

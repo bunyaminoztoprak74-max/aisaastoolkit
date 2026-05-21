@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, LayoutGrid } from "lucide-react";
-import { tools } from "@/data/tools";
+import { allTools as tools } from "@/data/tools";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { StarRating } from "@/components/common/StarRating";
 import { TagList } from "@/components/common/TagList";
@@ -24,7 +24,7 @@ const badgeVariantMap: Record<string, "recommended" | "best-value" | "trending" 
 const SORT_OPTIONS = [
   { label: "Top Rated",    value: "rating" },
   { label: "Most Reviews", value: "reviews" },
-  { label: "Name A–Z",     value: "name" },
+  { label: "Name A-Z",     value: "name" },
 ];
 
 const PER_PAGE = 12;
@@ -50,8 +50,8 @@ export default async function AllToolsPage({
   const wsSchema = buildWebsiteSchema();
 
   let filtered = [...tools];
-  if (free)     filtered = filtered.filter((t) => t.pricing.hasFree);
-  if (category) filtered = filtered.filter((t) => t.categories.includes(category));
+  if (free)     filtered = filtered.filter((t) => t.pricing?.hasFree ?? false);
+  if (category) filtered = filtered.filter((t) => (t.categories ?? [t.category]).includes(category));
 
   if (sort === "rating")  filtered.sort((a, b) => b.rating - a.rating);
   if (sort === "reviews") filtered.sort((a, b) => b.reviewCount - a.reviewCount);
@@ -79,13 +79,12 @@ export default async function AllToolsPage({
                 <p className="text-muted-foreground text-sm mt-1">{meta.totalItems} tools reviewed</p>
               </div>
               <Suspense>
-                <SearchBar size="sm" navigateOnSearch placeholder="Search tools…" className="sm:w-64" />
+                <SearchBar size="sm" navigateOnSearch placeholder="Search tools..." className="sm:w-64" />
               </Suspense>
             </div>
 
             <AffiliateDisclosure compact className="mb-5" />
 
-            {/* Sort + filter bar */}
             <div className="flex flex-wrap items-center gap-2 mb-6 p-3 rounded-xl border border-border bg-card">
               {SORT_OPTIONS.map((opt) => (
                 <Link
@@ -100,7 +99,7 @@ export default async function AllToolsPage({
                 href={`/tools?sort=${sort}&free=${free ? "" : "1"}${category ? `&category=${category}` : ""}`}
                 className={`text-xs px-3 py-1.5 rounded-full border ml-auto transition-all ${free ? "bg-green-500 text-white border-green-500" : "border-border bg-background hover:border-green-400"}`}
               >
-                ✅ Free Plan
+                Free Plan
               </Link>
             </div>
 
@@ -124,8 +123,8 @@ export default async function AllToolsPage({
                     <TagList toolSlug={tool.slug} limit={3} className="mb-3" />
                     <div className="text-xs mb-4">
                       <span className="font-semibold">From: </span>
-                      <span className="text-muted-foreground">{tool.pricing.starting}</span>
-                      {tool.pricing.hasFree && <span className="ml-2 text-green-600">• Free</span>}
+                      <span className="text-muted-foreground">{tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</span>
+                      {tool.pricing?.hasFree && <span className="ml-2 text-green-600">Free</span>}
                     </div>
                     <div className="mt-auto flex gap-2">
                       <Button variant="outline" size="sm" className="flex-1 text-xs" asChild>

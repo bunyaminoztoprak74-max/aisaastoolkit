@@ -4,6 +4,7 @@ import { FeaturedCategories } from "@/components/home/FeaturedCategories";
 import { TrendingTools } from "@/components/home/TrendingTools";
 import { TopComparisons } from "@/components/home/TopComparisons";
 import { FeaturedReviews } from "@/components/home/FeaturedReviews";
+import { WhyTrustUs } from "@/components/home/WhyTrustUs";
 import { NewsletterSignup } from "@/components/home/NewsletterSignup";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function HomePage() {
       <TrendingTools />
       <FeaturedReviews />
       <TopComparisons />
+      <WhyTrustUs />
       <NewsletterSignup />
     </>
   );

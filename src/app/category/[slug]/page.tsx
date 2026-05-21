@@ -25,7 +25,7 @@ const badgeVariantMap: Record<string, "recommended" | "best-value" | "trending" 
 const SORT_OPTIONS = [
   { label: "Top Rated",    value: "rating" },
   { label: "Most Reviews", value: "reviews" },
-  { label: "Name A–Z",     value: "name" },
+  { label: "Name A—Z",     value: "name" },
   { label: "Free First",   value: "free" },
 ];
 
@@ -67,13 +67,13 @@ export default async function CategoryPage({
   // Get + filter tools
   let tools = getToolsByCategory(slug);
   if (badge) tools = tools.filter((t) => t.badge === badge);
-  if (free)  tools = tools.filter((t) => t.pricing.hasFree);
+  if (free)  tools = tools.filter((t) => t.pricing?.hasFree ?? false);
 
   // Sort
   if (sort === "rating")  tools = [...tools].sort((a, b) => b.rating - a.rating);
   if (sort === "reviews") tools = [...tools].sort((a, b) => b.reviewCount - a.reviewCount);
   if (sort === "name")    tools = [...tools].sort((a, b) => a.name.localeCompare(b.name));
-  if (sort === "free")    tools = [...tools].sort((a, b) => Number(b.pricing.hasFree) - Number(a.pricing.hasFree));
+  if (sort === "free")    tools = [...tools].sort((a, b) => Number(b.pricing?.hasFree ?? false) - Number(a.pricing?.hasFree ?? false));
 
   const { items: pagedTools, meta } = paginate(tools, page, PER_PAGE);
 
@@ -126,7 +126,7 @@ export default async function CategoryPage({
                   href={`/category/${slug}?sort=${sort}&free=${free ? "" : "1"}${badge ? `&badge=${badge}` : ""}`}
                   className={`text-xs px-3 py-1.5 rounded-full border transition-all ${free ? "bg-green-500 text-white border-green-500" : "border-border bg-background hover:border-green-400"}`}
                 >
-                  ✅ Free Plan Only
+                  ✓ Free Plan Only
                 </Link>
                 <span className="text-xs text-muted-foreground">{meta.totalItems} tool{meta.totalItems !== 1 ? "s" : ""}</span>
               </div>
@@ -161,8 +161,8 @@ export default async function CategoryPage({
                       <TagList toolSlug={tool.slug} limit={3} className="mb-3" />
                       <div className="text-xs mb-4">
                         <span className="font-semibold">From: </span>
-                        <span className="text-muted-foreground">{tool.pricing.starting}</span>
-                        {tool.pricing.hasFree && <span className="ml-2 text-green-600">• Free</span>}
+                        <span className="text-muted-foreground">{tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</span>
+                        {tool.pricing?.hasFree && <span className="ml-2 text-green-600">• Free</span>}
                       </div>
                       <div className="mt-auto flex gap-2">
                         <Button variant="outline" size="sm" className="flex-1 text-xs" asChild>

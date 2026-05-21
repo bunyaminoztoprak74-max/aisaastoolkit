@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, Calendar, CheckCircle } from "lucide-react";
-import { getToolBySlug, tools } from "@/data/tools";
+import { getToolBySlug, allTools } from "@/data/tools";
+import { getAuthorBySlug } from "@/data/authors";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { StarRating } from "@/components/common/StarRating";
 import { AffiliateDisclosure } from "@/components/common/AffiliateDisclosure";
@@ -14,6 +15,9 @@ import { ProsConsSection } from "@/components/reviews/ProsConsSection";
 import { PricingSection } from "@/components/reviews/PricingSection";
 import { FAQSection } from "@/components/reviews/FAQSection";
 import { StickyAffiliateCTA } from "@/components/reviews/StickyAffiliateCTA";
+import { QuickVerdictBox } from "@/components/reviews/QuickVerdictBox";
+import { AuthorBox } from "@/components/reviews/AuthorBox";
+import { WhoIsItFor } from "@/components/reviews/WhoIsItFor";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { buildMetadata, buildToolKeywords } from "@/lib/seo";
@@ -36,7 +40,7 @@ const tocItems = [
 ];
 
 export async function generateStaticParams() {
-  return tools.map((t) => ({ slug: t.slug }));
+  return allTools.map((t) => ({ slug: t.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -61,10 +65,11 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
   const relatedTools   = getRelatedToolsScored(slug, 4);
   const suggestions    = getContentSuggestions(slug, 6);
+  const author         = tool.authorSlug ? getAuthorBySlug(tool.authorSlug) : undefined;
 
   // Build all schemas
   const reviewSchema     = buildReviewSchema(tool);
-  const faqSchema        = buildFAQSchema(tool.faqs);
+  const faqSchema        = buildFAQSchema(tool.faqs ?? []);
   const breadcrumbSchema = buildBreadcrumbSchema([
     { label: "Reviews", href: "/reviews/claude" },
     { label: `${tool.name} Review` },
@@ -79,7 +84,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
       <StickyAffiliateCTA
         toolName={tool.name}
         affiliateUrl={tool.affiliateUrl}
-        pricing={tool.pricing.starting}
+        pricing={tool.pricing?.starting ?? tool.startingPrice ?? "Free"}
         badge={tool.badge?.replace("-", " ")}
       />
 
@@ -110,8 +115,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5" /> Updated {tool.lastUpdated}</span>
                 <span>•</span>
-                <span>Starting from <strong className="text-foreground">{tool.pricing.starting}</strong></span>
-                {tool.pricing.hasFree && (
+                <span>Starting from <strong className="text-foreground">{tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</strong></span>
+                {(tool.pricing?.hasFree ?? false) && (
                   <Badge variant="outline" className="text-green-600 border-green-300">Free plan available</Badge>
                 )}
               </div>
@@ -131,6 +136,19 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
         <AffiliateDisclosure className="mb-8" />
 
+        {/* Quick Verdict Box */}
+        {tool.quickVerdict && (
+          <QuickVerdictBox
+            verdict={tool.quickVerdict}
+            rating={tool.rating}
+            toolName={tool.name}
+            affiliateUrl={tool.affiliateUrl}
+            trialUrl={tool.trialUrl}
+            pros={tool.pros}
+            cons={tool.cons}
+          />
+        )}
+
         {/* 2-column layout */}
         <div className="grid lg:grid-cols-[1fr_280px] gap-8">
           {/* Main content */}
@@ -138,7 +156,14 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             {/* Overview */}
             <section id="overview">
               <h2 className="text-2xl font-bold mb-4">What is {tool.name}?</h2>
-              <p className="text-muted-foreground leading-relaxed">{tool.longDescription}</p>
+              <p className="text-muted-foreground leading-relaxed">{tool.longDescription ?? tool.description}</p>
+              {author && (
+                <AuthorBox
+                  author={author}
+                  toolName={tool.name}
+                  lastTestedDate={tool.lastTestedDate ?? tool.lastUpdated}
+                />
+              )}
             </section>
 
             {/* Rating */}
@@ -148,11 +173,20 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
             <ProsConsSection pros={tool.pros} cons={tool.cons} />
 
+            {/* Who Is It For */}
+            {tool.whoIsItFor && tool.whoShouldAvoid && (
+              <WhoIsItFor
+                toolName={tool.name}
+                whoIsItFor={tool.whoIsItFor}
+                whoShouldAvoid={tool.whoShouldAvoid}
+              />
+            )}
+
             {/* Features */}
             <section id="features">
               <h2 className="text-2xl font-bold mb-6">Key Features</h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                {tool.features.map((f) => (
+                {(tool.features ?? []).map((f) => (
                   <div key={f.title} className="rounded-xl border border-border bg-card p-4">
                     <h3 className="font-bold text-sm mb-1.5 flex items-center gap-2">
                       <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
@@ -165,7 +199,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             </section>
 
             <PricingSection
-              tiers={tool.pricing.tiers}
+              tiers={tool.pricing?.tiers ?? tool.pricingTiers ?? []}
               toolName={tool.name}
               affiliateUrl={tool.affiliateUrl}
             />
@@ -174,7 +208,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <section id="best-for">
               <h2 className="text-2xl font-bold mb-5">Who is {tool.name} Best For?</h2>
               <div className="grid sm:grid-cols-2 gap-3">
-                {tool.bestFor.map((item, i) => (
+                {(tool.bestFor ?? []).map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5 rounded-lg border border-border bg-card p-3">
                     <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-sm">{item}</span>
@@ -190,7 +224,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                 Not sure {tool.name} is right for you? Here are some worthy alternatives:
               </p>
               <div className="flex flex-wrap gap-2">
-                {tool.alternatives.map((alt) => (
+                {(tool.alternatives ?? []).map((alt) => (
                   <Link
                     key={alt}
                     href={`/reviews/${alt}`}
@@ -202,7 +236,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
             </section>
 
-            <FAQSection faqs={tool.faqs} toolName={tool.name} />
+            {tool.faqs && tool.faqs.length > 0 && (
+              <FAQSection faqs={tool.faqs} toolName={tool.name} />
+            )}
 
             {/* Related tools (scored) */}
             {relatedTools.length > 0 && (
@@ -251,7 +287,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               <div className="rounded-xl border border-primary/20 bg-gradient-to-b from-primary/5 to-purple-500/5 p-5">
                 <p className="text-sm font-bold mb-1">Ready to try {tool.name}?</p>
                 <p className="text-xs text-muted-foreground mb-4">
-                  {tool.pricing.hasFree ? "Start free — no card needed." : `Plans from ${tool.pricing.starting}.`}
+                  {tool.pricing?.hasFree ? "Start free — no card needed." : `Plans from ${tool.pricing?.starting ?? tool.startingPrice ?? "varies"}.`}
                 </p>
                 <Button variant="gradient" size="sm" className="w-full" asChild>
                   <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
@@ -261,26 +297,23 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
               </div>
 
               {/* Tag cloud */}
-              <div className="rounded-xl border border-border bg-card p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-3">Tags</p>
-                <TagList toolSlug={slug} limit={8} />
+             
+              <div>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Tags</p>
+                <TagList toolSlug={slug} className="flex-wrap" />
               </div>
 
               {/* Content suggestions */}
               {suggestions.length > 0 && (
-                <div className="rounded-xl border border-border bg-card p-4 space-y-2">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">Also Compare</p>
-                  {suggestions.filter((s) => s.type === "comparison").map((s) => (
-                    <Link key={s.url} href={s.url} className="block text-xs text-muted-foreground hover:text-primary transition-colors py-0.5">
-                      → {s.title}
-                    </Link>
-                  ))}
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mt-3 mb-1">Featured In</p>
-                  {suggestions.filter((s) => s.type === "best-list").map((s) => (
-                    <Link key={s.url} href={s.url} className="block text-xs text-muted-foreground hover:text-primary transition-colors py-0.5">
-                      → {s.title.replace("The ", "").replace(" of 2026", "")}
-                    </Link>
-                  ))}
+                <div>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Related Content</p>
+                  <div className="space-y-2">
+                    {suggestions.map((s) => (
+                      <Link key={s.url} href={s.url} className="block text-sm text-muted-foreground hover:text-primary transition-colors hover:underline">
+                        {s.title}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

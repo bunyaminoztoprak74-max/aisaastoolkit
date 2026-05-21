@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMetadata({
 const groups: { key: Tag["group"]; label: string; emoji: string }[] = [
   { key: "pricing",     label: "Pricing",      emoji: "💰" },
   { key: "feature",     label: "Features",     emoji: "⚡" },
-  { key: "usecase",     label: "Use Cases",    emoji: "🎯" },
+  { key: "usecase",     label: "Use Cases",    emoji: "✨" },
   { key: "audience",    label: "Audience",     emoji: "👥" },
   { key: "integration", label: "Integrations", emoji: "🔗" },
 ];

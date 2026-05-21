@@ -115,8 +115,8 @@ export default async function TagPage({ params }: { params: Promise<{ slug: stri
                     <TagList toolSlug={tool.slug} limit={3} className="mb-3" />
                     <div className="text-xs mb-4">
                       <span className="font-semibold">From: </span>
-                      <span className="text-muted-foreground">{tool.pricing.starting}</span>
-                      {tool.pricing.hasFree && <span className="ml-2 text-green-600">• Free plan</span>}
+                      <span className="text-muted-foreground">{tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</span>
+                      {tool.pricing?.hasFree && <span className="ml-2 text-green-600">• Free plan</span>}
                     </div>
                     <div className="mt-auto flex gap-2">
                       <Button variant="outline" size="sm" className="flex-1 text-xs" asChild>

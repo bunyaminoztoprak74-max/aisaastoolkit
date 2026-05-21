@@ -54,7 +54,7 @@ export const comparisons: Comparison[] = [
       { feature: "Web Browsing", tool1: "Pro only", tool2: "Plus & above", winner: "tie" },
       { feature: "Voice Mode", tool1: false, tool2: true, winner: 2 },
       { feature: "Code Interpreter", tool1: "Basic", tool2: "Advanced (Python)", winner: 2 },
-      { feature: "Writing Quality", tool1: "⭐⭐⭐⭐⭐", tool2: "⭐⭐⭐⭐", winner: 1 },
+      { feature: "Writing Quality", tool1: "★★★★★", tool2: "★★★★", winner: 1 },
       { feature: "Safety & Refusals", tool1: "Best-in-class", tool2: "Good", winner: 1 },
       { feature: "Plugin Ecosystem", tool1: "Limited", tool2: "1,000+ GPTs", winner: 2 },
       { feature: "API Availability", tool1: true, tool2: true, winner: "tie" },
@@ -125,7 +125,7 @@ export const comparisons: Comparison[] = [
     features: [
       { feature: "App Integrations", tool1: "1,500+", tool2: "6,000+", winner: 2 },
       { feature: "Free Plan Ops", tool1: "1,000/month", tool2: "100 tasks/month", winner: 1 },
-      { feature: "Visual Flow Builder", tool1: "⭐⭐⭐⭐⭐", tool2: "⭐⭐⭐", winner: 1 },
+      { feature: "Visual Flow Builder", tool1: "★★★★★", tool2: "★★★", winner: 1 },
       { feature: "Complex Logic", tool1: "Advanced branching", tool2: "Basic paths", winner: 1 },
       { feature: "Data Transformation", tool1: "Built-in modules", tool2: "Limited formatter", winner: 1 },
       { feature: "Ease of Use", tool1: "Moderate", tool2: "Very Easy", winner: 2 },
@@ -162,11 +162,11 @@ export const comparisons: Comparison[] = [
     faqs: [
       {
         question: "Should I switch from Zapier to Make.com?",
-        answer: "If you're on a paid Zapier plan and building complex automations, switching to Make.com can save you 60–80% on monthly costs while giving you more power. Migration takes effort but is worth it for most users.",
+        answer: "If you're on a paid Zapier plan and building complex automations, switching to Make.com can save you 60—80% on monthly costs while giving you more power. Migration takes effort but is worth it for most users.",
       },
       {
         question: "Is Make.com harder than Zapier?",
-        answer: "Yes, Make.com has a steeper learning curve. But its visual interface is actually quite intuitive once you invest 2–3 hours learning it.",
+        answer: "Yes, Make.com has a steeper learning curve. But its visual interface is actually quite intuitive once you invest 2—3 hours learning it.",
       },
       {
         question: "Does Make.com have more integrations than Zapier?",
@@ -195,8 +195,8 @@ export const comparisons: Comparison[] = [
       { feature: "SEO Integration", tool1: "Surfer SEO", tool2: "Built-in checker", winner: "tie" },
       { feature: "Image Generation", tool1: "Jasper Art", tool2: "Chatsonic Art", winner: "tie" },
       { feature: "Chatbot Builder", tool1: false, tool2: "Botsonic", winner: 2 },
-      { feature: "Enterprise Features", tool1: "⭐⭐⭐⭐⭐", tool2: "⭐⭐⭐", winner: 1 },
-      { feature: "Writing Quality", tool1: "⭐⭐⭐⭐", tool2: "⭐⭐⭐½", winner: 1 },
+      { feature: "Enterprise Features", tool1: "★★★★★", tool2: "★★★", winner: 1 },
+      { feature: "Writing Quality", tool1: "★★★★", tool2: "★★★½", winner: 1 },
     ],
     pricingComparison: {
       tool1Free: false,

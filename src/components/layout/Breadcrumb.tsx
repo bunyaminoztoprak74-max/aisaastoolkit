@@ -4,9 +4,7 @@ import { cn } from "@/lib/utils";
 import { generateBreadcrumbs, type BreadcrumbItem } from "@/lib/breadcrumbs";
 
 interface BreadcrumbProps {
-  /** Manual breadcrumb trail. If omitted, `pathname` must be provided. */
   items?: BreadcrumbItem[];
-  /** Auto-generate the trail from this pathname using generateBreadcrumbs(). */
   pathname?: string;
   className?: string;
 }
@@ -39,9 +37,7 @@ export function Breadcrumb({ items, pathname, className }: BreadcrumbProps) {
                 {item.label}
               </Link>
             ) : (
-              <span className={cn("truncate max-w-[200px]", index === allItems.length - 1 && "text-foreground font-medium")}>
-                {item.label}
-              </span>
+              <span className="text-foreground font-medium truncate max-w-[200px]">{item.label}</span>
             )}
           </span>
         ))}

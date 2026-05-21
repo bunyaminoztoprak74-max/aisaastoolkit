@@ -5,6 +5,7 @@ export interface PricingTier {
   features: string[];
   highlighted?: boolean;
   badge?: string;
+  recommended?: boolean;
 }
 
 export interface FAQ {
@@ -17,27 +18,47 @@ export interface Tool {
   slug: string;
   tagline: string;
   description: string;
-  longDescription: string;
+  longDescription?: string;
   logo: string;
+  logoColor?: string;
   website: string;
   affiliateUrl: string;
   category: string;
-  categories: string[];
+  categories?: string[];
   rating: number;
   reviewCount: number;
-  badge?: "recommended" | "best-value" | "trending" | "new" | "editor-choice";
-  pricing: {
+  badge?: "recommended" | "best-value" | "trending" | "new" | "editor-choice" | "editor choice";
+  pricing?: {
     starting: string;
     hasFree: boolean;
     tiers: PricingTier[];
   };
-  features: { title: string; description: string }[];
+  // New flat pricing fields for ElevenLabs-style tools
+  startingPrice?: string;
+  pricingTiers?: PricingTier[];
+  featured?: boolean;
+  trending?: boolean;
+  // EEAT fields
+  authorSlug?: string;
+  lastTestedDate?: string;
+  quickVerdict?: string;
+  whoIsItFor?: string[];
+  whoShouldAvoid?: string[];
+  trialUrl?: string;
+  discountCode?: string;
+  discountAmount?: string;
+  alternatives?: string[];
+  videoUrl?: string;
+  features?: { title: string; description: string }[];
   pros: string[];
   cons: string[];
-  bestFor: string[];
-  alternatives: string[];
-  faqs: FAQ[];
-  lastUpdated: string;
+  bestFor?: string[];
+  faqs?: FAQ[];
+  lastUpdated?: string;
+  tags?: string[];
+  relatedTools?: string[];
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const tools: Tool[] = [
@@ -49,7 +70,7 @@ export const tools: Tool[] = [
     longDescription: "Claude by Anthropic is one of the most powerful AI assistants available in 2026. Built with a Constitutional AI approach, Claude excels at complex reasoning, coding, analysis, and long-context tasks — handling documents up to 200K tokens. Its writing quality is widely considered the best among leading LLMs, and it consistently scores top marks for honesty and safety.",
     logo: "/images/logos/claude.svg",
     website: "https://claude.ai",
-    affiliateUrl: "https://claude.ai",
+    affiliateUrl: "https://claude.ai", // No affiliate program — direct link
     category: "ai-writing",
     categories: ["ai-writing", "ai-productivity", "ai-agents"],
     rating: 4.8,
@@ -139,7 +160,7 @@ export const tools: Tool[] = [
     longDescription: "ChatGPT by OpenAI is the AI tool that started the generative AI revolution. With GPT-4o at its core, it handles text, images, voice, and even video inputs. Its massive plugin marketplace and integrations with thousands of apps make it the most versatile AI assistant available.",
     logo: "/images/logos/chatgpt.svg",
     website: "https://chat.openai.com",
-    affiliateUrl: "https://chat.openai.com",
+    affiliateUrl: "https://chat.openai.com", // No affiliate program — direct link
     category: "ai-writing",
     categories: ["ai-writing", "ai-productivity", "ai-agents"],
     rating: 4.7,
@@ -225,7 +246,7 @@ export const tools: Tool[] = [
     longDescription: "Make.com is the leading no-code automation platform for teams who need more power than Zapier without writing custom code. Its visual drag-and-drop scenario builder handles complex branching logic, data transformation, API calls, and AI integrations. With 1,500+ pre-built app connectors and a generous free tier, it's the go-to automation tool for affiliate marketers, agencies, and SaaS businesses.",
     logo: "/images/logos/make.svg",
     website: "https://make.com",
-    affiliateUrl: "https://make.com",
+    affiliateUrl: "https://make.com", // TODO: Replace with your affiliate link after signup → make.com/en/affiliate (%35 recurring, 12 months)
     category: "ai-automation",
     categories: ["ai-automation", "ai-marketing"],
     rating: 4.7,
@@ -321,7 +342,7 @@ export const tools: Tool[] = [
     longDescription: "Pictory is the leading AI video creation tool for content marketers and affiliate bloggers who want to repurpose their content into video without any video editing skills. Simply paste a URL, upload a script, or drop in a long video — Pictory's AI selects relevant stock footage, adds captions, and produces a polished branded video in minutes.",
     logo: "/images/logos/pictory.svg",
     website: "https://pictory.ai",
-    affiliateUrl: "https://pictory.ai",
+    affiliateUrl: "https://pictory.ai", // TODO: Replace with your affiliate link after signup → partners.pictory.ai (%20-50 recurring, lifetime)
     category: "ai-video",
     categories: ["ai-video", "ai-marketing"],
     rating: 4.5,
@@ -407,7 +428,7 @@ export const tools: Tool[] = [
     longDescription: "Jasper (formerly Jarvis) is one of the most established AI writing tools, purpose-built for marketing teams and content agencies. Its Brand Voice feature ensures every piece of AI-generated content sounds like your brand, while 50+ templates cover everything from Facebook ads to SEO blog posts. Jasper integrates directly with Surfer SEO for real-time optimization.",
     logo: "/images/logos/jasper.svg",
     website: "https://jasper.ai",
-    affiliateUrl: "https://jasper.ai",
+    affiliateUrl: "https://jasper.ai", // TODO: Replace with your affiliate link after signup → jasper.ai/affiliates (%25-30 recurring, 12 months)
     category: "ai-writing",
     categories: ["ai-writing", "ai-marketing", "ai-seo"],
     rating: 4.4,
@@ -489,7 +510,7 @@ export const tools: Tool[] = [
     longDescription: "Writesonic is one of the best value AI writing tools available, offering a powerful combination of AI article writing, Chatsonic (ChatGPT with web access), AI image generation, and dedicated SEO writing tools — all at a significantly lower price than competitors like Jasper. Its Botsonic feature lets you build custom AI chatbots for your website.",
     logo: "/images/logos/writesonic.svg",
     website: "https://writesonic.com",
-    affiliateUrl: "https://writesonic.com",
+    affiliateUrl: "https://writesonic.com", // TODO: Replace with your affiliate link after signup → affiliates.writesonic.com (%30 recurring, lifetime)
     category: "ai-writing",
     categories: ["ai-writing", "ai-seo", "ai-marketing"],
     rating: 4.3,
@@ -558,7 +579,7 @@ export const tools: Tool[] = [
       },
       {
         question: "Can Writesonic write full blog posts?",
-        answer: "Yes — the Article Writer 6.0 can produce 1,500–3,000 word SEO-optimized articles with one click, including proper headings, citations, and internal linking suggestions.",
+        answer: "Yes — the Article Writer 6.0 can produce 1,500—3,000 word SEO-optimized articles with one click, including proper headings, citations, and internal linking suggestions.",
       },
     ],
     lastUpdated: "2026-05-01",
@@ -571,7 +592,7 @@ export const tools: Tool[] = [
     longDescription: "Zapier has been the de-facto automation tool for small businesses and entrepreneurs since 2011. With 6,000+ app integrations — more than any competitor — Zapier makes it easy to automate repetitive tasks between your favourite tools without any coding. Its AI features help you build Zaps with plain English descriptions.",
     logo: "/images/logos/zapier.svg",
     website: "https://zapier.com",
-    affiliateUrl: "https://zapier.com",
+    affiliateUrl: "https://zapier.com", // TODO: Replace with your affiliate link after signup → zapier.com/l/partners (%15 recurring)
     category: "ai-automation",
     categories: ["ai-automation", "ai-productivity"],
     rating: 4.5,
@@ -653,7 +674,7 @@ export const tools: Tool[] = [
     longDescription: "Perplexity AI is redefining search by combining the power of large language models with real-time web search and citation. Unlike traditional search engines, Perplexity gives you direct, synthesized answers with sources you can verify — making it indispensable for research, fact-checking, and staying current.",
     logo: "/images/logos/perplexity.svg",
     website: "https://perplexity.ai",
-    affiliateUrl: "https://perplexity.ai",
+    affiliateUrl: "https://perplexity.ai", // TODO: Replace with your affiliate link after signup → partners.dub.co/perplexity ($10 flat + %10 recurring)
     category: "ai-productivity",
     categories: ["ai-productivity", "ai-seo"],
     rating: 4.6,
@@ -711,38 +732,33 @@ export const tools: Tool[] = [
     faqs: [
       {
         question: "Is Perplexity better than Google?",
-        answer: "For synthesized, direct answers to specific questions, Perplexity is often faster and more useful than Google. For broad discovery and shopping, Google is still stronger.",
+        answer: "Perplexity is better for research and fact-checking because it provides cited, real-time answers. Google is better for local search, shopping, and navigating to specific websites. For research tasks, Perplexity wins hands down.",
       },
       {
         question: "Is Perplexity AI free?",
-        answer: "Yes, Perplexity has a generous free plan with unlimited standard searches. Pro searches (using advanced models) are limited to 5/day on the free plan.",
+        answer: "Yes, Perplexity has a generous free tier with unlimited searches and 5 Pro searches per day. The Pro plan at $20/month unlocks 600 Pro searches daily and access to GPT-4o and Claude.",
       },
     ],
     lastUpdated: "2026-05-01",
   },
 ];
 
-export function getToolBySlug(slug: string): Tool | undefined {
+export function getToolBySlug(slug: string) {
   return tools.find((t) => t.slug === slug);
 }
 
-export function getToolsByCategory(categorySlug: string): Tool[] {
-  return tools.filter((t) => t.categories.includes(categorySlug));
-}
+export const allTools = tools;
 
-export function getRelatedTools(slug: string, limit = 4): Tool[] {
-  const tool = getToolBySlug(slug);
-  if (!tool) return [];
-  return tools
-    .filter((t) => t.slug !== slug && t.alternatives?.includes(slug) ||
-      (t.slug !== slug && t.categories.some((c) => tool.categories.includes(c))))
-    .slice(0, limit);
+export function getToolsByCategory(categorySlug: string): Tool[] {
+  return tools.filter((t) => (t.categories ?? [t.category]).includes(categorySlug));
 }
 
 export function getFeaturedTools(limit = 6): Tool[] {
-  return tools.filter((t) => t.badge).slice(0, limit);
+  return tools.filter((t) => t.featured).slice(0, limit);
 }
 
-export function getTrendingTools(limit = 4): Tool[] {
-  return tools.filter((t) => t.badge === "trending" || t.reviewCount > 1000).slice(0, limit);
+export function getTrendingTools(limit = 6): Tool[] {
+  return tools.filter((t) => t.trending || t.badge === "trending")
+    .concat(tools.filter((t) => !t.trending && t.badge !== "trending"))
+    .slice(0, limit);
 }

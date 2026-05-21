@@ -3,7 +3,7 @@
  * Scans a block of text and returns suggested anchor insertions
  * based on a pre-built index of all linkable content.
  */
-import { tools } from "@/data/tools";
+import { allTools as tools } from "@/data/tools";
 import { categories } from "@/data/categories";
 import { comparisons } from "@/data/comparisons";
 import { bestLists } from "@/data/bestLists";

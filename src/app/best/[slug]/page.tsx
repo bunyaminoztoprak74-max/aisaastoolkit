@@ -100,7 +100,7 @@ export default async function BestToolsPage({ params }: { params: Promise<{ slug
                   <div className="hidden sm:block flex-shrink-0">
                     <StarRating rating={tool.rating} size="sm" showNumber />
                   </div>
-                  <span className="hidden md:block text-xs font-semibold flex-shrink-0">{tool.pricing.starting}</span>
+                  <span className="hidden md:block text-xs font-semibold flex-shrink-0">{tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</span>
                   <div className="flex gap-2 flex-shrink-0">
                     <Button variant="outline" size="sm" asChild className="text-xs">
                       <Link href={`/reviews/${tool.slug}`}>Review</Link>
@@ -149,8 +149,8 @@ export default async function BestToolsPage({ params }: { params: Promise<{ slug
                       </div>
                       <div>
                         <p className="text-xs font-semibold text-muted-foreground mb-1.5 uppercase tracking-wider">Pricing</p>
-                        <p className="text-sm font-bold">{tool.pricing.starting}</p>
-                        {tool.pricing.hasFree && <p className="text-xs text-green-600">Free plan available</p>}
+                        <p className="text-sm font-bold">{tool.pricing?.starting ?? tool.startingPrice ?? "varies"}</p>
+                        {tool.pricing?.hasFree && <p className="text-xs text-green-600">Free plan available</p>}
                       </div>
                     </div>
                   </div>

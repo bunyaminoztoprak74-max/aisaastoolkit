@@ -1,4 +1,4 @@
-import { tools } from "./tools";
+import { allTools as tools } from "./tools";
 import { categories } from "./categories";
 import { comparisons } from "./comparisons";
 import { bestLists } from "./bestLists";
@@ -34,13 +34,13 @@ export const searchIndex: SearchEntry[] = [
     tags: getTagsForTool(t.slug),
     category: t.category,
     rating: t.rating,
-    hasFree: t.pricing.hasFree,
-    startingPrice: t.pricing.starting,
+    hasFree: t.pricing?.hasFree ?? false,
+    startingPrice: t.pricing?.starting ?? t.startingPrice ?? "varies",
     badge: t.badge,
     keywords: buildKeywords(
       t.name, t.tagline, t.description, t.category,
-      t.features.map((f) => f.title).join(" "),
-      t.pros.join(" "), t.bestFor.join(" "),
+      (t.features ?? []).map((f) => f.title).join(" "),
+      t.pros.join(" "), (t.bestFor ?? []).join(" "),
       getTagsForTool(t.slug).join(" ")
     ),
   })),

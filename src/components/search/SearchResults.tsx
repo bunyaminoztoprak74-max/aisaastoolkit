@@ -51,7 +51,7 @@ export function SearchResults({ results, query, totalCount, className }: SearchR
   if (results.length === 0) {
     return (
       <div className={cn("text-center py-16", className)}>
-        <div className="text-4xl mb-3">🔍</div>
+        <div className="text-4xl mb-3">📊"</div>
         <h3 className="text-lg font-bold mb-2">No results found</h3>
         <p className="text-muted-foreground text-sm max-w-sm mx-auto">
           {query ? `We couldn't find anything for "${query}". Try different keywords or remove some filters.` : "Try adjusting your filters."}

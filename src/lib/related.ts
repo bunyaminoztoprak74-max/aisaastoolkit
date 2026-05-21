@@ -1,9 +1,9 @@
-import { tools, type Tool } from "@/data/tools";
+import { allTools as tools, type Tool } from "@/data/tools";
 import { getTagsForTool } from "@/data/tags";
 import { comparisons } from "@/data/comparisons";
 import { bestLists } from "@/data/bestLists";
 
-// ─── Scoring weights ────────────────────────────────────────────────────────
+// ——— Scoring weights ————————————————————————————————————————————————————————
 const W = {
   SAME_CATEGORY:      4,
   SHARED_CATEGORY:    2,
@@ -14,8 +14,8 @@ const W = {
 } as const;
 
 function priceBand(tool: Tool): "free" | "budget" | "mid" | "premium" {
-  if (tool.pricing.hasFree) return "free";
-  const s = tool.pricing.starting.replace(/[^0-9]/g, "");
+  if (tool.pricing?.hasFree) return "free";
+  const s = (tool.pricing?.starting ?? tool.startingPrice ?? "").replace(/[^0-9]/g, "");
   const n = parseInt(s, 10);
   if (isNaN(n) || n < 25) return "budget";
   if (n < 60) return "mid";
@@ -36,7 +36,9 @@ export function scoreTool(source: Tool, candidate: Tool): ScoredTool {
     reasons.push("Same primary category");
   }
 
-  const sharedCats = candidate.categories.filter((c) => source.categories.includes(c));
+  const sourceCats = source.categories ?? [source.category];
+  const candidateCats = candidate.categories ?? [candidate.category];
+  const sharedCats = candidateCats.filter((c) => sourceCats.includes(c));
   score += sharedCats.length * W.SHARED_CATEGORY;
   if (sharedCats.length) reasons.push(`Shared categories: ${sharedCats.join(", ")}`);
 
@@ -44,7 +46,7 @@ export function scoreTool(source: Tool, candidate: Tool): ScoredTool {
   score += sharedTags.length * W.SHARED_TAG;
   if (sharedTags.length) reasons.push(`Shared tags: ${sharedTags.join(", ")}`);
 
-  if (source.alternatives.includes(candidate.slug) || candidate.alternatives.includes(source.slug)) {
+  if ((source.alternatives ?? []).includes(candidate.slug) || (candidate.alternatives ?? []).includes(source.slug)) {
     score += W.IN_ALTERNATIVES;
     reasons.push("Listed as alternative");
   }
@@ -72,7 +74,7 @@ export function getRelatedToolsScored(slug: string, limit = 4): Tool[] {
     .map(({ tool }) => tool);
 }
 
-// ─── Contextual content suggestions ────────────────────────────────────────
+// ——— Contextual content suggestions ————————————————————————————————————————
 export interface ContentSuggestion {
   type: "comparison" | "best-list" | "tool";
   title: string;
@@ -115,12 +117,12 @@ export function getContentSuggestions(toolSlug: string, limit = 6): ContentSugge
   // Related tools
   getRelatedToolsScored(toolSlug, 3).forEach((t) => {
     suggestions.push({
-      type: "tool",
-      title: `${t.name} Review`,
       url: `/reviews/${t.slug}`,
-      reason: `Alternative to ${tool.name}`,
+      title: `${t.name} Review`,
+      type: "tool" as const,
+      reason: `Related tool: ${t.name}`,
     });
   });
 
-  return suggestions.slice(0, limit);
+  return suggestions;
 }

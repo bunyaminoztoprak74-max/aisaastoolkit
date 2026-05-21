@@ -3,7 +3,7 @@
  *
  * Converts a URL pathname into a labelled breadcrumb trail,
  * using data from the content layer to resolve pretty names
- * (e.g. "/reviews/make-com" → Home › Reviews › Make.com Review).
+ * (e.g. "/reviews/make-com" → Home → Reviews → Make.com Review).
  */
 import { getToolBySlug }       from "@/data/tools";
 import { getCategoryBySlug }   from "@/data/categories";

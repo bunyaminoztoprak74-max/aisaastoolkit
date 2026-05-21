@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { categories } from "@/data/categories";
-import { tools } from "@/data/tools";
+import { allTools as tools } from "@/data/tools";
 import { cn } from "@/lib/utils";
 
 interface CategorySidebarProps {
@@ -14,7 +14,7 @@ export function CategorySidebar({ activeCategorySlug, className }: CategorySideb
   const countMap = Object.fromEntries(
     categories.map((cat) => [
       cat.slug,
-      tools.filter((t) => t.categories.includes(cat.slug)).length,
+      tools.filter((t) => (t.categories ?? [t.category]).includes(cat.slug)).length,
     ])
   );
 
@@ -59,15 +59,16 @@ export function CategorySidebar({ activeCategorySlug, className }: CategorySideb
           href="/tags"
           className="flex items-center gap-2 px-3 py-2 text-xs text-muted-foreground hover:text-primary transition-colors rounded-lg hover:bg-accent"
         >
-          🏷️ Browse all tags
+          Browse all tags
         </Link>
         <Link
           href="/search"
           className="flex items-center gap-2 px-3 py-2 text-xs text-muted-foreground hover:text-primary transition-colors rounded-lg hover:bg-accent"
         >
-          🔍 Advanced search
+          Advanced search
         </Link>
       </div>
+    
     </nav>
   );
 }
