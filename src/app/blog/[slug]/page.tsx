@@ -69,14 +69,16 @@ export default async function BlogPostPage({ params }: Props) {
           </header>
 
           <div className="prose prose-lg dark:prose-invert max-w-none">
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-8">
-              <p className="text-blue-800 dark:text-blue-200 font-medium">Full article coming soon</p>
-              <p className="text-blue-700 dark:text-blue-300 text-sm mt-1">This article is being written by {post.authorName}. Check back soon, or browse our tool reviews below.</p>
-            </div>
-            <h2>What We&apos;ll Cover in This Article</h2>
-            <ul>
-              {post.tags.map(tag => <li key={tag}>{tag.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase())}</li>)}
-            </ul>
+            {post.content ? (
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            ) : (
+              <>
+                <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-8">
+                  <p className="text-blue-800 dark:text-blue-200 font-medium">Full article coming soon</p>
+                  <p className="text-blue-700 dark:text-blue-300 text-sm mt-1">This article is being written by {post.authorName}. Check back soon.</p>
+                </div>
+              </>
+            )}
           </div>
 
           {author && (
