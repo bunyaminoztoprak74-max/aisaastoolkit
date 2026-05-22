@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   alternates: { canonical: "https://aisaastoolkit.com" },
-  verification: { google: "5ohBL0LIn4yreUDqDR2pyyQFTNzWnETvfoL28IMuB2s" },
+  verification: { google: "5ohBL0LIn4yreUDqDR2pyyQFTNzWnETvfoL28IMuB2s", other: { "impact-site-verification": "9a632d0c-9256-4ce7-a867-85b4082fd0b7" } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

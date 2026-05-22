@@ -251,7 +251,7 @@ export const tools: Tool[] = [
     longDescription: "Make.com is the leading no-code automation platform for teams who need more power than Zapier without writing custom code. Its visual drag-and-drop scenario builder handles complex branching logic, data transformation, API calls, and AI integrations. With 1,500+ pre-built app connectors and a generous free tier, it's the go-to automation tool for affiliate marketers, agencies, and SaaS businesses.",
     logo: "/images/logos/make.svg",
     website: "https://make.com",
-    affiliateUrl: "https://make.com", // TODO: Replace with your affiliate link after signup → make.com/en/affiliate (%35 recurring, 12 months)
+    affiliateUrl: "https://www.make.com/en/register?pc=aisaastoolkit",
     category: "ai-automation",
     categories: ["ai-automation", "ai-marketing"],
     rating: 4.7,
