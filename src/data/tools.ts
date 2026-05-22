@@ -1253,6 +1253,422 @@ export const tools: Tool[] = [
     ],
     lastUpdated: "2026-05-01",
   },
+
+  // ── Gamma ──────────────────────────────────────────────────────────────────
+  {
+    name: "Gamma",
+    slug: "gamma",
+    tagline: "AI-powered presentations, docs and webpages in minutes",
+    description: "Gamma lets you create beautiful presentations, documents and webpages with AI. Just type a prompt and get a polished deck instantly — no design skills needed.",
+    longDescription: "Gamma is an AI-native presentation and document tool that replaces PowerPoint and Google Slides for modern teams. You describe what you want, choose a theme, and Gamma generates a full slide deck or doc with smart layouts, images, and formatting. It supports real-time collaboration, embed-friendly sharing, and analytics to see who viewed your deck. Widely used by marketers, founders, and educators who need polished output fast.",
+    logo: "/images/logos/gamma.svg",
+    logoColor: "#6366f1",
+    website: "https://gamma.app",
+    affiliateUrl: "https://gamma.app", // PartnerStack affiliate link pending approval
+    category: "ai-productivity",
+    categories: ["ai-productivity", "ai-writing"],
+    rating: 4.7,
+    reviewCount: 1423,
+    badge: "trending",
+    featured: true,
+    trending: true,
+    pricing: {
+      starting: "$0/mo",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Free",
+          price: "$0",
+          period: "forever",
+          features: ["400 AI credits", "Unlimited viewers", "Basic themes", "Gamma branding"],
+        },
+        {
+          name: "Plus",
+          price: "$10",
+          period: "per month",
+          features: ["Unlimited AI usage", "Custom domains", "Remove Gamma branding", "Analytics", "Priority support"],
+          highlighted: true,
+          badge: "Most Popular",
+        },
+        {
+          name: "Pro",
+          price: "$20",
+          period: "per month",
+          features: ["Everything in Plus", "Custom fonts", "Password protection", "Version history", "Advanced analytics"],
+        },
+      ],
+    },
+    pros: [
+      "Generates full decks from a single prompt in seconds",
+      "Beautiful, modern design templates out of the box",
+      "Supports docs, presentations, and webpages in one tool",
+      "Easy sharing with built-in analytics",
+      "Generous free tier with 400 AI credits",
+    ],
+    cons: [
+      "Less fine-grained control than PowerPoint or Keynote",
+      "AI credits can run out quickly on the free plan",
+      "Limited offline functionality",
+    ],
+    bestFor: ["Startup pitch decks", "Marketing presentations", "Educational content", "Reports and proposals"],
+    tags: ["presentations", "slides", "ai-design", "productivity", "documents"],
+    relatedTools: ["canva-ai", "notion-ai", "jasper"],
+    features: [
+      { title: "AI Generation", description: "Type a topic and get a complete, designed presentation in under 30 seconds." },
+      { title: "Smart Layouts", description: "Gamma automatically formats text, images, and data into clean, professional layouts." },
+      { title: "One-Click Themes", description: "Choose from dozens of modern themes and customize colors, fonts, and styles." },
+      { title: "Embed Anything", description: "Embed videos, GIFs, charts, and interactive content directly into slides." },
+      { title: "Real-Time Collaboration", description: "Work with teammates live, with comments and version history." },
+    ],
+    faqs: [
+      {
+        question: "Is Gamma free to use?",
+        answer: "Yes. Gamma offers a free plan with 400 AI credits — enough to generate several full decks. Paid plans start at $10/month and offer unlimited AI usage.",
+      },
+      {
+        question: "Can Gamma replace PowerPoint?",
+        answer: "For most use cases — yes. Gamma is faster and produces more visually polished results. However, PowerPoint still wins for very complex custom layouts or enterprise compliance requirements.",
+      },
+      {
+        question: "Does Gamma support team collaboration?",
+        answer: "Yes. Gamma supports real-time collaboration, comments, and shared workspaces on all paid plans.",
+      },
+    ],
+    alternatives: ["canva-ai", "notion-ai"],
+    lastUpdated: "2026-05-01",
+  },
+
+  // ── AdCreative.ai ──────────────────────────────────────────────────────────
+  {
+    name: "AdCreative.ai",
+    slug: "adcreative-ai",
+    tagline: "AI-generated ad creatives that actually convert",
+    description: "AdCreative.ai generates high-converting ad banners, social media creatives, and product shots using AI — trained on millions of top-performing ads.",
+    longDescription: "AdCreative.ai is an AI advertising platform built specifically to produce conversion-optimized ad creatives at scale. It's trained on data from millions of high-performing ads across Facebook, Google, Instagram, and LinkedIn. You feed it your brand assets and product info; it produces dozens of ready-to-use creatives ranked by predicted performance score. Used by 1M+ brands and agencies to dramatically cut creative production time and ad spend waste.",
+    logo: "/images/logos/adcreative-ai.svg",
+    logoColor: "#8b5cf6",
+    website: "https://adcreative.ai",
+    affiliateUrl: "https://adcreative.ai", // PartnerStack affiliate link pending approval
+    category: "ai-image",
+    categories: ["ai-image", "ai-productivity"],
+    rating: 4.5,
+    reviewCount: 987,
+    badge: "new",
+    pricing: {
+      starting: "$21/mo",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Starter",
+          price: "$21",
+          period: "per month",
+          features: ["10 creatives/month", "1 brand", "Basic templates", "Social media formats"],
+        },
+        {
+          name: "Professional",
+          price: "$141",
+          period: "per month",
+          features: ["500 creatives/month", "5 brands", "Performance scores", "Ad copy generation", "All formats"],
+          highlighted: true,
+          badge: "Best Value",
+        },
+        {
+          name: "Agency",
+          price: "$406",
+          period: "per month",
+          features: ["2000 creatives/month", "20 brands", "White-label", "API access", "Priority support"],
+        },
+      ],
+    },
+    pros: [
+      "Creatives are scored by predicted conversion rate — prioritize the best ones",
+      "Trained on millions of real high-performing ads",
+      "Generates copy and visuals together in one workflow",
+      "Supports all major ad formats and platforms",
+      "7-day free trial available",
+    ],
+    cons: [
+      "Pricing can be steep for small businesses",
+      "Less flexibility for highly custom brand guidelines",
+      "AI-generated look may not suit premium/luxury brands",
+    ],
+    bestFor: ["Performance marketers", "E-commerce brands", "Digital agencies", "Social media managers"],
+    tags: ["ads", "advertising", "ai-design", "marketing", "creatives"],
+    relatedTools: ["canva-ai", "jasper", "writesonic"],
+    features: [
+      { title: "AI Ad Generation", description: "Generate dozens of ad creatives in minutes, each scored for predicted performance." },
+      { title: "Performance Scores", description: "Every creative gets an AI-predicted conversion score so you know which to run first." },
+      { title: "Brand Kit", description: "Upload your logo, colors, and fonts once — all creatives stay on-brand automatically." },
+      { title: "Ad Copy AI", description: "Generate headlines and ad copy alongside visuals in one unified workflow." },
+      { title: "Multi-Platform Export", description: "Export in the right dimensions for Facebook, Google, Instagram, LinkedIn, and more." },
+    ],
+    faqs: [
+      {
+        question: "How is AdCreative.ai different from Canva?",
+        answer: "Canva is a general design tool. AdCreative.ai is built specifically for performance advertising — it scores creatives by predicted conversion rate and is trained on millions of top-converting ads.",
+      },
+      {
+        question: "Is there a free trial?",
+        answer: "Yes, AdCreative.ai offers a 7-day free trial with access to all features. No credit card required.",
+      },
+      {
+        question: "What platforms does it support?",
+        answer: "Facebook, Instagram, Google Display, LinkedIn, Twitter/X, TikTok, and more — with correctly sized exports for each.",
+      },
+    ],
+    alternatives: ["canva-ai", "jasper"],
+    lastUpdated: "2026-05-01",
+  },
+
+  // ── Descript ───────────────────────────────────────────────────────────────
+  {
+    name: "Descript",
+    slug: "descript",
+    tagline: "Edit video and audio by editing text — powered by AI",
+    description: "Descript transcribes your video or podcast, then lets you edit the media by editing the transcript. Cut filler words, clone your voice, and publish — all in one tool.",
+    longDescription: "Descript is a revolutionary video and podcast editor that treats media like a document. It transcribes audio with near-perfect accuracy, then lets you delete words from the transcript to cut from the video, remove filler words in one click, overdub your voice using an AI clone, and generate captions automatically. Used by 30,000+ podcasters, YouTubers, and video teams to cut editing time by 80%.",
+    logo: "/images/logos/descript.svg",
+    logoColor: "#1a1a2e",
+    website: "https://descript.com",
+    affiliateUrl: "https://descript.com", // PartnerStack affiliate link pending approval
+    category: "ai-video",
+    categories: ["ai-video", "ai-productivity"],
+    rating: 4.6,
+    reviewCount: 1654,
+    badge: "editor-choice",
+    featured: true,
+    pricing: {
+      starting: "$0/mo",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Free",
+          price: "$0",
+          period: "forever",
+          features: ["1 hour transcription/month", "Watermarked exports", "Basic editing", "3 projects"],
+        },
+        {
+          name: "Hobbyist",
+          price: "$24",
+          period: "per month",
+          features: ["10 hours transcription/month", "No watermark", "Filler word removal", "Overdub (AI voice)"],
+          highlighted: true,
+          badge: "Most Popular",
+        },
+        {
+          name: "Creator",
+          price: "$40",
+          period: "per month",
+          features: ["30 hours transcription/month", "Everything in Hobbyist", "Screen recording", "Multitrack editing", "Collaboration"],
+        },
+        {
+          name: "Business",
+          price: "$80",
+          period: "per month",
+          features: ["Unlimited transcription", "Advanced AI tools", "Custom brand templates", "Team management", "Priority support"],
+        },
+      ],
+    },
+    pros: [
+      "Edit video by editing text — completely unique workflow",
+      "Filler word removal in one click saves hours",
+      "AI voice overdub for fixing mistakes without re-recording",
+      "Excellent transcription accuracy (95%+)",
+      "Generous free plan for getting started",
+    ],
+    cons: [
+      "More CPU-intensive than traditional editors",
+      "Overdub voice quality varies by voice",
+      "Not ideal for complex multi-camera professional edits",
+    ],
+    bestFor: ["Podcasters", "YouTubers", "Online course creators", "Marketing video teams", "Interview-based content"],
+    tags: ["video-editing", "podcast", "transcription", "ai-voice", "content-creation"],
+    relatedTools: ["elevenlabs", "murf-ai", "pictory"],
+    features: [
+      { title: "Text-Based Editing", description: "Edit your video by editing the AI-generated transcript — delete words to cut clips." },
+      { title: "Filler Word Removal", description: "Remove all 'um', 'uh', 'like' and other filler words from your audio in one click." },
+      { title: "Overdub", description: "Clone your voice and use it to fix mistakes or add new lines without re-recording." },
+      { title: "Auto Captions", description: "Generate accurate, styled captions for any video in minutes." },
+      { title: "Screen Recording", description: "Record screen + webcam and edit everything in the same workflow." },
+    ],
+    faqs: [
+      {
+        question: "Is Descript good for beginners?",
+        answer: "Yes — Descript is one of the most beginner-friendly video editors because you edit like a document. If you can edit text, you can edit video in Descript.",
+      },
+      {
+        question: "How accurate is Descript transcription?",
+        answer: "Descript's transcription accuracy is typically 95%+ for clear audio in English. It supports 20+ other languages with slightly lower accuracy.",
+      },
+      {
+        question: "Can Descript replace Adobe Premiere?",
+        answer: "For podcast and talking-head video content — absolutely. For complex multi-camera shoots, color grading, or VFX work, Adobe Premiere is still the better choice.",
+      },
+    ],
+    alternatives: ["elevenlabs", "murf-ai"],
+    lastUpdated: "2026-05-01",
+  },
+
+  // ── Castmagic ──────────────────────────────────────────────────────────────
+  {
+    name: "Castmagic",
+    slug: "castmagic",
+    tagline: "Turn podcasts and recordings into unlimited content with AI",
+    description: "Castmagic transforms audio and video recordings into show notes, social posts, newsletters, blog articles, and more — fully automated with AI.",
+    longDescription: "Castmagic is an AI content repurposing platform built for podcasters, coaches, and content creators. Upload any audio or video file (or paste a YouTube URL), and Castmagic's AI transcribes it and auto-generates a complete content package: show notes, key quotes, tweet threads, LinkedIn posts, newsletter summaries, blog posts, and custom AI prompts. It saves creators dozens of hours per episode and is trusted by 45,000+ creators.",
+    logo: "/images/logos/castmagic.svg",
+    logoColor: "#f59e0b",
+    website: "https://castmagic.io",
+    affiliateUrl: "https://castmagic.io", // PartnerStack affiliate link pending approval (40% commission)
+    category: "ai-writing",
+    categories: ["ai-writing", "ai-productivity"],
+    rating: 4.6,
+    reviewCount: 743,
+    badge: "trending",
+    trending: true,
+    pricing: {
+      starting: "$39/mo",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Starter",
+          price: "$39",
+          period: "per month",
+          features: ["160 mins audio/month", "All content templates", "Show notes, social posts", "Basic integrations"],
+        },
+        {
+          name: "Pro",
+          price: "$99",
+          period: "per month",
+          features: ["500 mins audio/month", "Custom AI prompts", "Bulk processing", "Zapier integration", "Priority support"],
+          highlighted: true,
+          badge: "Most Popular",
+        },
+        {
+          name: "Agency",
+          price: "$295",
+          period: "per month",
+          features: ["2000 mins audio/month", "Unlimited workspaces", "White-label", "API access", "Dedicated support"],
+        },
+      ],
+    },
+    pros: [
+      "Generates 10+ content assets from a single recording automatically",
+      "40% affiliate commission — one of the highest in the AI space",
+      "Custom AI prompts let you define exactly what content you need",
+      "Supports YouTube URLs, RSS feeds, and direct uploads",
+      "Huge time saver for high-volume content creators",
+    ],
+    cons: [
+      "No free plan — starts at $39/month",
+      "Output quality varies with low-quality audio input",
+      "More focused on podcasts/audio than general written content",
+    ],
+    bestFor: ["Podcasters", "Online coaches", "Course creators", "Content agencies", "YouTube creators"],
+    tags: ["podcast", "content-repurposing", "transcription", "social-media", "ai-writing"],
+    relatedTools: ["descript", "writesonic", "jasper"],
+    features: [
+      { title: "Auto Transcription", description: "Accurate AI transcription for any audio or video in 60+ languages." },
+      { title: "Content Templates", description: "Pre-built templates for show notes, Twitter threads, LinkedIn posts, newsletters, and more." },
+      { title: "Custom AI Prompts", description: "Build your own prompts to generate any custom content format from your recordings." },
+      { title: "Bulk Processing", description: "Process multiple episodes at once — ideal for agencies and high-volume creators." },
+      { title: "Integrations", description: "Connect to Zapier, Notion, RSS feeds, and podcast hosting platforms." },
+    ],
+    faqs: [
+      {
+        question: "Is Castmagic good for beginners?",
+        answer: "Yes. Just upload your audio file and Castmagic handles everything automatically. You don't need any technical knowledge.",
+      },
+      {
+        question: "What content does Castmagic generate?",
+        answer: "Show notes, chapter markers, key quotes, social media posts (Twitter/X, LinkedIn, Instagram), email newsletters, blog posts, and any custom format you define with AI prompts.",
+      },
+      {
+        question: "Does Castmagic support video?",
+        answer: "Yes. Castmagic supports video files, YouTube URLs, and podcast RSS feeds in addition to standard audio formats.",
+      },
+    ],
+    alternatives: ["descript", "writesonic"],
+    lastUpdated: "2026-05-01",
+  },
+
+  // ── QuillBot ───────────────────────────────────────────────────────────────
+  {
+    name: "QuillBot",
+    slug: "quillbot",
+    tagline: "AI writing and paraphrasing tool used by 35 million people",
+    description: "QuillBot is an AI-powered writing assistant that paraphrases, summarizes, checks grammar, and detects plagiarism — all in one suite used by students and professionals worldwide.",
+    longDescription: "QuillBot is one of the most popular AI writing tools in the world, with 35 million+ users. Its core paraphrasing tool rewrites text in 9 different modes — from simple rewording to formal or creative rewriting. Beyond paraphrasing, QuillBot offers a full writing suite: grammar checker, plagiarism detector, summarizer, citation generator, and co-writer powered by AI. Particularly popular with students, academics, ESL writers, and content editors who need to rework existing text quickly and accurately.",
+    logo: "/images/logos/quillbot.svg",
+    logoColor: "#00a67e",
+    website: "https://quillbot.com",
+    affiliateUrl: "https://quillbot.com", // PartnerStack affiliate link pending approval
+    category: "ai-writing",
+    categories: ["ai-writing", "ai-productivity"],
+    rating: 4.5,
+    reviewCount: 3287,
+    badge: "best-value",
+    featured: true,
+    pricing: {
+      starting: "$0/mo",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Free",
+          price: "$0",
+          period: "forever",
+          features: ["125 words paraphrase limit", "2 paraphrase modes", "Basic summarizer", "Grammar checker (limited)"],
+        },
+        {
+          name: "Premium",
+          price: "$9.95",
+          period: "per month",
+          features: ["Unlimited paraphrasing", "9 paraphrase modes", "Advanced grammar checker", "Plagiarism checker (20 pages/month)", "Faster processing", "Tone detection"],
+          highlighted: true,
+          badge: "Best Value",
+        },
+      ],
+    },
+    pros: [
+      "Free plan is very usable for casual users",
+      "9 paraphrase modes cover every writing style",
+      "Premium plan is affordable at under $10/month",
+      "Excellent grammar checker included",
+      "Works as a browser extension and in Google Docs",
+      "35M+ users — widely trusted and battle-tested",
+    ],
+    cons: [
+      "Free plan limited to 125 words per paraphrase",
+      "Not ideal for generating original long-form content",
+      "Plagiarism checker is limited on free plan",
+    ],
+    bestFor: ["Students and academics", "ESL writers", "Content editors", "Research paper writers", "Anyone needing to rephrase existing text"],
+    tags: ["paraphrasing", "grammar", "plagiarism", "writing-assistant", "students"],
+    relatedTools: ["grammarly", "writesonic", "jasper"],
+    features: [
+      { title: "Paraphraser", description: "Rewrite any text in 9 modes: Standard, Fluency, Formal, Simple, Creative, Expand, Shorten, Academic, and Custom." },
+      { title: "Grammar Checker", description: "Catch grammar, spelling, punctuation, and style issues with AI-powered suggestions." },
+      { title: "Plagiarism Checker", description: "Check your writing against billions of web pages to ensure originality." },
+      { title: "Summarizer", description: "Condense long articles, papers, or documents into key points instantly." },
+      { title: "Citation Generator", description: "Auto-generate citations in APA, MLA, Chicago, and other formats from URLs or DOIs." },
+    ],
+    faqs: [
+      {
+        question: "Is QuillBot free?",
+        answer: "Yes. QuillBot has a solid free plan with paraphrasing (125 words), summarizer, and basic grammar check. Premium unlocks unlimited paraphrasing and all 9 modes for $9.95/month.",
+      },
+      {
+        question: "Is QuillBot better than Grammarly?",
+        answer: "They serve different purposes. QuillBot excels at paraphrasing and rewording existing text. Grammarly is better for real-time grammar and style checking as you write. Many writers use both.",
+      },
+      {
+        question: "Does QuillBot work in Google Docs?",
+        answer: "Yes. QuillBot has a Google Docs add-on and browser extensions for Chrome and Firefox, so you can use it anywhere you write online.",
+      },
+    ],
+    alternatives: ["grammarly", "writesonic"],
+    lastUpdated: "2026-05-01",
+  },
 ];
 
 export function getToolBySlug(slug: string) {
