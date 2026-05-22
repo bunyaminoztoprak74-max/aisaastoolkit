@@ -1349,8 +1349,8 @@ export const tools: Tool[] = [
     logoColor: "#8b5cf6",
     website: "https://adcreative.ai",
     affiliateUrl: "https://adcreative.ai", // PartnerStack affiliate link pending approval
-    category: "ai-image",
-    categories: ["ai-image", "ai-productivity"],
+    category: "ai-marketing",
+    categories: ["ai-marketing", "ai-productivity"],
     rating: 4.5,
     reviewCount: 987,
     badge: "new",
