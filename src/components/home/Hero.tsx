@@ -2,8 +2,10 @@ import Link from "next/link";
 import { ArrowRight, Star, TrendingUp, Shield, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { allTools } from "@/data/tools";
 
 export function Hero() {
+  const toolCount = allTools.length;
   return (
     <section className="relative overflow-hidden">
       {/* Background gradient */}
@@ -17,7 +19,7 @@ export function Hero() {
       <div className="relative container mx-auto px-4 py-20 md:py-28 text-center">
         <Badge variant="outline" className="mb-6 gap-1.5 py-1.5 px-4 text-sm font-medium">
           <TrendingUp className="w-3.5 h-3.5 text-primary" />
-          Updated May 2026 — 14 AI Tools Reviewed & Ranked
+          Updated May 2026 — {toolCount} AI Tools Reviewed & Ranked
         </Badge>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
@@ -49,7 +51,7 @@ export function Hero() {
           </div>
           <div className="flex items-center gap-2">
             <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span>14 AI Tools Tested & Rated</span>
+            <span>{toolCount} AI Tools Tested & Rated</span>
           </div>
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-primary" />
