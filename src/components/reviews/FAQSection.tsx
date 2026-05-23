@@ -1,18 +1,8 @@
 import type { FAQ } from "@/data/tools";
 
 export function FAQSection({ faqs, toolName }: { faqs: FAQ[]; toolName: string }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  };
   return (
     <div id="faq">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions about {toolName}</h2>
       <div className="space-y-4">
         {faqs.map((faq, i) => (
