@@ -88,11 +88,11 @@ export function buildBreadcrumbSchema(items: { label: string; href?: string }[])
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: allItems.map((item, index) => ({
+    itemListElement: allItems.map((crumb, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.label,
-      item: item.href ? `${SITE_URL}${item.href}` : undefined,
+      name: crumb.label,
+      item: `${SITE_URL}${crumb.href ?? ""}`,
     })),
   };
 }
@@ -110,7 +110,12 @@ export function buildItemListSchema(list: BestList, toolNames: { name: string; s
       "@type": "ListItem",
       position: i + 1,
       name: t.name,
-      url: `${SITE_URL}/reviews/${t.slug}`,
+      item: {
+        "@type": "SoftwareApplication",
+        "@id": `${SITE_URL}/reviews/${t.slug}`,
+        url: `${SITE_URL}/reviews/${t.slug}`,
+        name: t.name,
+      },
     })),
   };
 }
