@@ -35,15 +35,40 @@ export async function generateStaticParams() {
   return categories.map((c) => ({ slug: c.slug }));
 }
 
+// Per-category SEO overrides
+const categoryMeta: Record<string, { title: string; description: string; keywords: string[] }> = {
+  "ai-marketing": {
+    title: "Best AI Marketing Tools 2026 — Reviews, Ratings & Comparisons",
+    description: "Independent reviews of the best AI marketing tools in 2026. Compare features, pricing, and ratings for AI ad generators, email tools, social media tools, and more.",
+    keywords: ["ai marketing tools review", "best ai marketing tools 2026", "ai marketing software", "ai ad generator", "ai email marketing"],
+  },
+  "ai-writing": {
+    title: "Best AI Writing Tools 2026 — Reviews & Comparisons",
+    description: "Find the best AI writing tools of 2026. In-depth reviews of Jasper, Writesonic, Claude, ChatGPT and more. Compare pricing and features.",
+    keywords: ["best ai writing tools", "ai writing software 2026", "ai content generator review"],
+  },
+  "ai-automation": {
+    title: "Best AI Automation Tools 2026 — Reviews & Comparisons",
+    description: "Reviews of the top AI automation and workflow tools in 2026. Compare Make.com, Zapier, and more to find the right automation platform for your business.",
+    keywords: ["best ai automation tools", "ai workflow automation 2026", "make.com vs zapier"],
+  },
+  "ai-video": {
+    title: "Best AI Video Tools 2026 — Reviews & Comparisons",
+    description: "Reviews of the best AI video creation and editing tools in 2026. Compare Pictory, Descript, Midjourney and more.",
+    keywords: ["best ai video tools", "ai video generator 2026", "ai video editor review"],
+  },
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const cat = getCategoryBySlug(slug);
   if (!cat) return {};
+  const override = categoryMeta[slug];
   return buildMetadata({
-    title: `Best ${cat.name} Tools 2026 — Reviews & Comparisons`,
-    description: cat.description,
+    title: override?.title ?? `Best ${cat.name} Tools 2026 — Reviews & Comparisons`,
+    description: override?.description ?? cat.description,
     path: `/category/${slug}`,
-    keywords: [`best ${cat.name.toLowerCase()} tools`, `${cat.name.toLowerCase()} software`, `AI ${cat.name.toLowerCase()}`],
+    keywords: override?.keywords ?? [`best ${cat.name.toLowerCase()} tools`, `${cat.name.toLowerCase()} software`, `AI ${cat.name.toLowerCase()}`],
   });
 }
 
@@ -187,6 +212,42 @@ export default async function CategoryPage({
                   basePath={`/category/${slug}`}
                   searchParams={sp}
                 />
+              </div>
+            )}
+
+            {/* Editorial section for SEO */}
+            {slug === "ai-marketing" && (
+              <div className="mt-12 prose prose-sm max-w-none dark:prose-invert">
+                <h2 className="text-xl font-bold mb-3">Our AI Marketing Tools Reviews — How We Test</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  We independently test every AI marketing tool listed on this page. Our review process covers ease of use, output quality, pricing fairness, integrations, and real-world ROI for businesses of different sizes. We do not accept payment for rankings — tools are ordered by our editorial rating.
+                </p>
+                <h2 className="text-xl font-bold mb-3">What Are AI Marketing Tools?</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  AI marketing tools are software platforms that use artificial intelligence to help businesses create, distribute, and optimise marketing content at scale. They cover a wide range — from AI ad copy generators and email subject line optimisers to social media schedulers with AI writing built in, and full campaign automation platforms that connect your CRM, email, and ads in one workflow.
+                </p>
+                <h2 className="text-xl font-bold mb-3">Best AI Marketing Tools in 2026</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  The top-rated AI marketing tools we&apos;ve reviewed include <strong>Jasper</strong> (best for long-form ad and blog content), <strong>Writesonic</strong> (best value for teams), <strong>Canva AI</strong> (best for visual marketing), and <strong>Make.com</strong> (best for automating entire marketing workflows). Use the filters above to sort by rating, price, or free plan availability.
+                </p>
+              </div>
+            )}
+
+            {slug === "ai-automation" && (
+              <div className="mt-12 prose prose-sm max-w-none dark:prose-invert">
+                <h2 className="text-xl font-bold mb-3">Best AI Automation Tools in 2026</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  AI automation tools let businesses connect apps, automate repetitive tasks, and build intelligent workflows without writing code. The top platforms we&apos;ve reviewed are <strong>Make.com</strong> (most powerful visual automation), <strong>Zapier</strong> (easiest for beginners), and emerging tools like n8n for self-hosted automation. Compare pricing and features above to find the right fit.
+                </p>
+              </div>
+            )}
+
+            {slug === "ai-writing" && (
+              <div className="mt-12 prose prose-sm max-w-none dark:prose-invert">
+                <h2 className="text-xl font-bold mb-3">Best AI Writing Tools in 2026</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  AI writing tools have transformed content creation — from blog posts and ad copy to emails and social media. The top picks from our testing: <strong>Claude</strong> (best overall writing quality), <strong>ChatGPT</strong> (most versatile), <strong>Jasper</strong> (best for marketing teams), and <strong>Writesonic</strong> (best value). All tools are independently rated and regularly re-tested.
+                </p>
               </div>
             )}
           </div>
