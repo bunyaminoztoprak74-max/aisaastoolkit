@@ -3,6 +3,14 @@
   "buildCommand": "rm -rf .next && npm run build",
   "installCommand": "npm install",
   "outputDirectory": ".next",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.aisaastoolkit.com" }],
+      "destination": "https://aisaastoolkit.com/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
