@@ -20,7 +20,7 @@ export function buildMetadata(opts: MetaOptions): Metadata {
   const ogType = opts.type ?? "website";
 
   return {
-    title:       `${opts.title} | ${SITE_NAME}`,
+    title:       { absolute: `${opts.title} | ${SITE_NAME}` },
     description: opts.description,
     keywords:    opts.keywords,
     alternates:  { canonical: url },

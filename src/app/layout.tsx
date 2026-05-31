@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     siteName:    "AISaaSToolkit",
     title:       "AISaaSToolkit — Best AI Tools Reviews & Comparisons 2026",
     description: "Independent reviews of the best AI SaaS tools in 2026.",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "AISaaSToolkit" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AISaaSToolkit" }],
   },
   twitter: {
     card:    "summary_large_image",
     title:   "AISaaSToolkit — Best AI Tools Reviews 2026",
     description: "Independent reviews of the best AI SaaS tools.",
-    images:  ["/og-image.svg"],
+    images:  ["/og-image.png"],
     creator: "@aisaastoolkit",
   },
   robots: {

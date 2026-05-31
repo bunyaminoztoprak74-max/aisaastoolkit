@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tool = getToolBySlug(slug);
   if (!tool) return {};
   return buildMetadata({
-    title: `${tool.name} Review (2026): Pricing, Features & Verdict`,
-    description: `Honest ${tool.name} review covering pricing, features, pros & cons. Is it worth it in 2026? We tested it so you don't have to.`,
+    title: tool.metaTitle ?? `${tool.name} Review (2026): Pricing, Features & Verdict`,
+    description: tool.metaDescription ?? `Honest ${tool.name} review covering pricing, features, pros & cons. Is it worth it in 2026? We tested it so you don't have to.`,
     path: `/reviews/${slug}`,
     type: "article",
     publishedTime: tool.lastUpdated,
@@ -124,7 +124,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             <div className="flex flex-col gap-2 flex-shrink-0 min-w-[160px]">
               <Button variant="gradient" size="lg" className="w-full" asChild>
                 <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
-                  Try {tool.name} Free <ExternalLink className="ml-2 w-4 h-4" />
+                  {tool.pricing?.hasFree ? `Try ${tool.name} Free` : `Visit ${tool.name}`} <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button variant="outline" size="sm" className="w-full text-xs" asChild>
