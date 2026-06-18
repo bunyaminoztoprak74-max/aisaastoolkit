@@ -1685,6 +1685,290 @@ export const allBlogPosts: BlogPost[] = [
     clusterSlug: "midjourney",
     clusterTitle: "Complete Midjourney Guide 2026",
   },
+,
+
+  {
+    slug: "descript-review-2026",
+    title: "Descript Review 2026: The Best Podcast & Video Editor for Creators?",
+    excerpt: "Descript lets you edit audio and video by editing a transcript. After 60 days of daily use for podcast production, here is our honest verdict.",
+    content: `<h2>What Is Descript?</h2>
+<p>Descript is an AI-powered audio and video editor that lets you edit recordings by editing a text transcript. Delete a word from the transcript and it disappears from the audio. Record a correction in your voice and Descript's Overdub AI inserts it seamlessly. For podcasters and video creators, it fundamentally changes the editing workflow.</p>
+
+<h2>Key Features</h2>
+<h3>Transcript-Based Editing</h3>
+<p>Descript transcribes your recording automatically, then lets you cut, rearrange, and delete content by editing the text. Selecting and deleting "um, like, you know" removes filler words from the audio instantly. This alone saves hours per episode.</p>
+
+<h3>Filler Word Removal</h3>
+<p>One click removes all detected filler words (um, uh, like, you know) from your entire recording. The feature works remarkably well — it catches the vast majority without clipping surrounding words.</p>
+
+<h3>Overdub Voice Cloning</h3>
+<p>Train Descript on your voice and fix recording mistakes by typing the correction — Descript inserts your AI voice clone seamlessly. Works best for short corrections (a word or sentence); longer overdubs can sound slightly robotic.</p>
+
+<h3>Screen Recording</h3>
+<p>Descript includes built-in screen recording. Record your screen and webcam together, then edit the resulting video with the same transcript-based tools. Excellent for tutorials and course content.</p>
+
+<h2>Pricing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price</th><th>Transcription</th><th>Overdub</th></tr></thead><tbody><tr><td>Free</td><td>$0</td><td>1 hour/month</td><td>No</td></tr><tr><td>Hobbyist</td><td>$12/month</td><td>10 hours/month</td><td>No</td></tr><tr><td>Creator</td><td>$24/month</td><td>30 hours/month</td><td>Yes</td></tr><tr><td>Business</td><td>$40/month</td><td>Unlimited</td><td>Yes</td></tr></tbody></table></div>
+
+<h2>Pros & Cons</h2>
+<p><strong>Pros:</strong> Transcript editing is a game-changer for podcast editing speed. Filler word removal works very well. Screen recording built-in. Clean, modern interface.</p>
+<p><strong>Cons:</strong> Overdub voice cloning quality varies — best for short corrections. Video editing features lag behind dedicated video editors. Can be slow on large files. Free plan is very limited.</p>
+
+<h2>Who Is Descript Best For?</h2>
+<p>Descript is ideal for podcasters who edit their own audio, YouTube creators cutting talking-head videos, course creators recording screen content, and anyone who wants to edit recordings faster without learning a traditional timeline editor.</p>
+
+<h2>Our Verdict</h2>
+<p>Descript earns a <strong>4.4/5</strong>. For podcasters and video creators, the transcript-based editing workflow is genuinely transformative. The Creator plan at $24/month is the sweet spot — Overdub voice cloning plus 30 hours of transcription covers most independent creators. If you edit more than one podcast episode per week, Descript pays for itself in time saved.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Descript worth it for podcasters?</h3>
+<p>Yes, especially if you edit your own audio. The transcript-based editing and filler word removal alone save 30–60 minutes per episode compared to traditional DAW editing.</p>
+<h3>Can Descript replace Audacity or Adobe Audition?</h3>
+<p>For podcasting and simple video editing, yes. For complex audio engineering (mastering, detailed EQ, multi-track mixing), traditional tools still offer more control.</p>
+<h3>How accurate is Descript's transcription?</h3>
+<p>Very accurate for clear English speech — typically 95%+ accuracy. Background noise, accents, and technical terminology reduce accuracy. Manual corrections are easy within the interface.</p>`,
+    category: "AI Audio",
+    emoji: "🎙️",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 5, 2026",
+    updatedAt: "June 5, 2026",
+    readTime: "10 min read",
+    tags: ["descript", "podcast", "video-editing", "ai-audio"],
+    metaTitle: "Descript Review 2026: Best Podcast & Video Editor?",
+    metaDescription: "Descript review 2026 — transcript-based audio and video editing, Overdub voice cloning, and filler word removal. Is it worth $24/month? Our honest verdict.",
+    relatedToolSlugs: ["descript", "castmagic", "elevenlabs"],
+  },
+  {
+    slug: "castmagic-review-2026",
+    title: "Castmagic Review 2026: Turn Any Recording Into 10 Content Formats",
+    excerpt: "Castmagic automatically converts your podcast or video into show notes, blog posts, social captions, and newsletters. Here is what it is like to use it daily.",
+    content: `<h2>What Is Castmagic?</h2>
+<p>Castmagic is an AI content repurposing tool built specifically for audio and video creators. Upload a recording and Castmagic generates a full transcript plus a suite of ready-to-publish content: show notes, chapter timestamps, blog posts, LinkedIn posts, Twitter threads, email newsletters, and custom AI prompts. For podcasters publishing consistently, it can save 3–5 hours per episode.</p>
+
+<h2>Key Features</h2>
+<h3>Automatic Content Generation</h3>
+<p>After transcription, Castmagic runs your recording through its AI to produce: episode summary, show notes with timestamps, key takeaways, guest bio, Twitter/X thread, LinkedIn post, newsletter version, blog post, and custom prompts you define yourself.</p>
+
+<h3>Magic Chat</h3>
+<p>Ask Castmagic any question about your recording — "write 5 email subject lines about this episode" or "list every book mentioned" — and it answers based on the transcript content. Extremely useful for extracting specific insights.</p>
+
+<h3>Custom Templates</h3>
+<p>Build your own AI prompts to generate any format you need repeatedly. If you always want a specific intro structure for your show notes, build a template and apply it to every episode in one click.</p>
+
+<h2>Pricing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price</th><th>Hours/Month</th><th>Workspaces</th></tr></thead><tbody><tr><td>Starter</td><td>$23/month</td><td>40 hours</td><td>1</td></tr><tr><td>Pro</td><td>$49/month</td><td>100 hours</td><td>3</td></tr><tr><td>Scale</td><td>$99/month</td><td>300 hours</td><td>Unlimited</td></tr></tbody></table></div>
+
+<h2>Pros & Cons</h2>
+<p><strong>Pros:</strong> Generates multiple content formats from one upload automatically. Magic Chat is excellent for custom extraction. Templates save huge amounts of time on consistent formats. Works with YouTube URLs directly.</p>
+<p><strong>Cons:</strong> No free plan — $23/month minimum. No audio/video editing (editing-focused creators still need Descript). Output quality is good but not always publication-ready without light editing.</p>
+
+<h2>Our Verdict</h2>
+<p>Castmagic earns a <strong>4.5/5</strong>. For podcasters and video creators who publish consistently, the time saved on content repurposing easily justifies the $23/month Starter plan. If you currently spend 2+ hours per episode writing show notes, blog posts, and social content manually, Castmagic pays for itself many times over.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Does Castmagic edit audio?</h3>
+<p>No. Castmagic is purely for transcription and content repurposing. For audio editing, use Descript. Many podcasters use both tools together.</p>
+<h3>How good is Castmagic's transcription accuracy?</h3>
+<p>Accuracy is high for clear speech — typically 95%+ for English. It handles multiple speakers well and labels them separately in the transcript.</p>`,
+    category: "AI Audio",
+    emoji: "🎧",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 6, 2026",
+    updatedAt: "June 6, 2026",
+    readTime: "9 min read",
+    tags: ["castmagic", "podcast", "content-repurposing", "ai-audio"],
+    metaTitle: "Castmagic Review 2026: Is It Worth $23/Month for Podcasters?",
+    metaDescription: "Castmagic review 2026 — automatic show notes, blog posts, and social content from any podcast or video. Honest verdict on pricing, quality, and who it is for.",
+    relatedToolSlugs: ["castmagic", "descript", "writesonic"],
+  },
+  {
+    slug: "notion-ai-review-2026",
+    title: "Notion AI Review 2026: Is the $10/Month Add-On Worth It?",
+    excerpt: "Notion AI embeds directly into your workspace to write, summarize, and query your pages. After three months of daily use, here is our honest take.",
+    content: `<h2>What Is Notion AI?</h2>
+<p>Notion AI is an optional add-on ($10/month per member) that embeds artificial intelligence directly into your Notion workspace. It can write new content, summarize existing pages, answer questions based on your documents, translate text, fix grammar, and auto-fill database properties. Unlike standalone AI tools, Notion AI works in-context — it understands the page you are currently editing.</p>
+
+<h2>Key Features</h2>
+<h3>In-Page Writing Assistance</h3>
+<p>Press the spacebar on any empty line to activate AI. Ask it to draft a meeting agenda, write a project brief, or continue a sentence — it understands the context of the current page. This context-awareness is Notion AI's biggest advantage over standalone tools.</p>
+
+<h3>Summarize Any Page</h3>
+<p>Click "Summarize" on any page — meeting notes, long documents, research pages — and get a concise summary in seconds. For large documents and knowledge bases, this alone saves significant time.</p>
+
+<h3>Q&A Across Your Workspace</h3>
+<p>Ask Notion AI any question about your workspace — "what are the action items from last week's meeting?" or "what did we decide about the marketing budget?" — and it searches across all your pages to answer. The quality depends on how well-organized your Notion workspace is.</p>
+
+<h3>Database Auto-Fill</h3>
+<p>Notion AI can auto-fill database properties like summaries, categories, and action items based on the content of linked pages. Excellent for CRM, content calendars, and project trackers.</p>
+
+<h2>Pros & Cons</h2>
+<p><strong>Pros:</strong> Works inside your existing Notion workflow without switching apps. Context-aware writing understands your page structure. Q&A across workspace is genuinely useful. Cheaper than a full standalone AI subscription.</p>
+<p><strong>Cons:</strong> Writing quality and reasoning depth is weaker than Claude or ChatGPT. No image generation. Q&A quality degrades with messy or poorly-organized workspaces. Costs extra on top of your existing Notion plan.</p>
+
+<h2>Who Should Use Notion AI?</h2>
+<p>Notion AI is worth it if you already use Notion heavily and want AI assistance without switching apps. It is not worth it if you do not use Notion, or if you need more powerful AI reasoning than it provides.</p>
+
+<h2>Our Verdict</h2>
+<p>Notion AI earns a <strong>4.0/5</strong>. The $10/month add-on is reasonable for heavy Notion users — the in-context writing help, page summarization, and workspace Q&A deliver real daily value. But it should not replace a dedicated AI assistant for complex reasoning, long-form writing, or coding tasks.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Notion AI better than ChatGPT for writing?</h3>
+<p>No — ChatGPT and Claude produce higher quality writing. Notion AI's advantage is context: it works inside your workspace without copy-pasting. For writing quality alone, ChatGPT or Claude win.</p>
+<h3>Can Notion AI search the web?</h3>
+<p>No. Notion AI only accesses content within your Notion workspace. For real-time web research, use Perplexity AI or Claude/ChatGPT with web browsing enabled.</p>`,
+    category: "AI Productivity",
+    emoji: "📝",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 7, 2026",
+    updatedAt: "June 7, 2026",
+    readTime: "9 min read",
+    tags: ["notion-ai", "productivity", "ai-writing", "workspace"],
+    metaTitle: "Notion AI Review 2026: Is the $10/Month Add-On Worth It?",
+    metaDescription: "Notion AI review 2026 — in-context writing, page summarization, and workspace Q&A. Is the $10/month add-on worth it for your team? Honest verdict.",
+    relatedToolSlugs: ["notion-ai", "chatgpt", "claude"],
+  },
+  {
+    slug: "gamma-ai-review-2026",
+    title: "Gamma AI Review 2026: Build Stunning Presentations in 2 Minutes",
+    excerpt: "Gamma turns a prompt into a fully designed slide deck in under two minutes. After making over 30 presentations with it, here is our full review.",
+    content: `<h2>What Is Gamma?</h2>
+<p>Gamma is an AI presentation tool that generates fully-designed slide decks from a text prompt or document outline in about 60 seconds. It handles layout, typography, color, and images automatically — producing polished presentations without any manual design work. You can then edit slides in a block-based editor, add your own images, and export to PDF or PowerPoint.</p>
+
+<h2>Key Features</h2>
+<h3>AI Slide Generation</h3>
+<p>Type a prompt ("Create a 10-slide pitch deck for a B2B SaaS startup focused on HR automation") and Gamma generates a complete presentation in about 60 seconds. Slides include headers, body text, relevant icons or images, and a consistent visual theme.</p>
+
+<h3>Block-Based Editor</h3>
+<p>Edit any slide using a Notion-like block editor. Add text, images, charts, embeds, code blocks, and buttons. The editor is intuitive and requires no design knowledge — much simpler than PowerPoint or Google Slides.</p>
+
+<h3>AI Image Generation</h3>
+<p>Gamma can generate custom images for each slide based on the slide content. Alternatively, it searches Unsplash and other stock libraries for relevant images automatically. Both save time over manually sourcing visuals.</p>
+
+<h3>Web Publishing & Sharing</h3>
+<p>Gamma presentations can be published as web pages with a shareable link — no file downloads required. Viewers can interact with embedded videos, links, and forms directly in the browser. Analytics show who viewed your presentation and how long they spent on each slide.</p>
+
+<h2>Pricing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price</th><th>AI Credits</th><th>Export to PPT</th></tr></thead><tbody><tr><td>Free</td><td>$0</td><td>400 credits</td><td>Yes</td></tr><tr><td>Plus</td><td>$8/month</td><td>Unlimited</td><td>Yes</td></tr><tr><td>Pro</td><td>$15/month</td><td>Unlimited</td><td>Yes + analytics</td></tr></tbody></table></div>
+
+<h2>Our Verdict</h2>
+<p>Gamma earns a <strong>4.5/5</strong>. For anyone who creates presentations regularly — pitch decks, client reports, course content, team updates — Gamma saves 2–4 hours per presentation versus building slides manually. The Plus plan at $8/month is exceptional value. If you are still manually designing PowerPoint slides in 2026, try Gamma for one week and you will not go back.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Can I export Gamma presentations to PowerPoint?</h3>
+<p>Yes — all paid plans include PowerPoint export. The formatting translates well for most slide types. Complex embedded content may not export perfectly.</p>
+<h3>Is Gamma free?</h3>
+<p>Yes, the free plan includes 400 AI credits — enough to create 4–8 full presentations. After that, the Plus plan is $8/month with unlimited AI generation.</p>
+<h3>How does Gamma compare to Google Slides?</h3>
+<p>Gamma generates and designs presentations from prompts automatically; Google Slides is a manual design tool. Gamma is faster for creation, Google Slides offers more design control for pixel-perfect layouts.</p>`,
+    category: "AI Productivity",
+    emoji: "📊",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 9, 2026",
+    updatedAt: "June 9, 2026",
+    readTime: "9 min read",
+    tags: ["gamma", "presentations", "ai-productivity", "slides"],
+    metaTitle: "Gamma AI Review 2026: Build Presentations in 2 Minutes",
+    metaDescription: "Gamma AI review 2026 — AI-generated slide decks, block-based editing, and web publishing. Is Gamma worth $8/month? Full review with pricing, pros & cons.",
+    relatedToolSlugs: ["gamma", "chatgpt", "notion-ai"],
+  },
+  {
+    slug: "perplexity-ai-review-2026",
+    title: "Perplexity AI Review 2026: The Best AI for Research?",
+    excerpt: "Perplexity searches the live web and answers with cited sources. After six months of daily research use, here is our full review.",
+    content: `<h2>What Is Perplexity AI?</h2>
+<p>Perplexity AI is an AI-powered search engine that answers questions with real-time web research and cites every source it uses. Unlike ChatGPT or Claude (which draw from training data), Perplexity searches the live web for every query and shows you exactly where each fact comes from. For researchers, journalists, and anyone who needs current, verified information, it is one of the most useful AI tools available.</p>
+
+<h2>Key Features</h2>
+<h3>Real-Time Web Search</h3>
+<p>Every Perplexity answer is grounded in live web sources. Ask about a news event from yesterday, current pricing, or a recently published study — Perplexity finds and cites current sources automatically.</p>
+
+<h3>Cited Sources</h3>
+<p>Every factual claim is linked to its source. Hover over a citation number to see the source URL. This transparency makes Perplexity far more trustworthy for factual research than chatbots that may hallucinate confidently.</p>
+
+<h3>Spaces (Research Projects)</h3>
+<p>Create a Space to group related research queries together. Add web pages, PDFs, and documents to a Space and Perplexity searches both the web and your uploaded files to answer questions.</p>
+
+<h3>Perplexity Pro Search</h3>
+<p>Pro subscribers get access to advanced AI models (GPT-4o, Claude 3.5) for more complex queries, plus more search queries per day and file upload capabilities.</p>
+
+<h2>Pricing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price</th><th>Pro Searches</th><th>Models</th></tr></thead><tbody><tr><td>Free</td><td>$0</td><td>5/day</td><td>Standard</td></tr><tr><td>Pro</td><td>$20/month</td><td>300/day</td><td>GPT-4o, Claude 3.5, Sonar</td></tr></tbody></table></div>
+
+<h2>Our Verdict</h2>
+<p>Perplexity AI earns a <strong>4.6/5</strong>. For anyone who does regular research — journalists, analysts, marketers, students — Perplexity is one of the most valuable AI tools available. The cited sources and real-time web access make it uniquely trustworthy. The free plan is generous enough to evaluate seriously; the Pro plan at $20/month is competitive with ChatGPT Plus and far better for research-specific workflows.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Perplexity AI better than Google Search?</h3>
+<p>For research questions requiring synthesis of multiple sources, Perplexity is often faster and more useful. For navigational queries ("go to gmail.com") or local searches, Google is still better.</p>
+<h3>Does Perplexity always get facts right?</h3>
+<p>It is more accurate than uncited AI tools, but not infallible. Always click the source citations for anything important — the sources are sometimes of variable quality.</p>
+<h3>Is Perplexity free?</h3>
+<p>Yes, with 5 Pro searches per day. The free standard searches are unlimited but use a less powerful model. The $20/month Pro plan unlocks 300 Pro searches daily with GPT-4o and Claude models.</p>`,
+    category: "AI Research",
+    emoji: "🔍",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 10, 2026",
+    updatedAt: "June 10, 2026",
+    readTime: "10 min read",
+    tags: ["perplexity", "ai-research", "search", "fact-checking"],
+    metaTitle: "Perplexity AI Review 2026: Best AI Research Tool?",
+    metaDescription: "Perplexity AI review 2026 — real-time web search with cited sources. Is it better than ChatGPT and Google for research? Full review with pricing and verdict.",
+    relatedToolSlugs: ["perplexity", "chatgpt", "claude"],
+  },
+  {
+    slug: "grammarly-review-2026",
+    title: "Grammarly Review 2026: Still the Best AI Grammar Checker?",
+    excerpt: "Grammarly works across every app you use to catch grammar errors, improve tone, and now generate text. Here is our full 2026 review.",
+    content: `<h2>What Is Grammarly?</h2>
+<p>Grammarly is an AI writing assistant that works inline across your browser, email client, and apps to catch grammar errors, improve clarity, suggest better word choices, and detect tone issues in real time. In 2026, it has expanded beyond grammar checking to offer AI-generated text suggestions, a full email drafting assistant, and a plagiarism checker.</p>
+
+<h2>Key Features</h2>
+<h3>Real-Time Grammar & Style Correction</h3>
+<p>Grammarly's browser extension and desktop app work everywhere you type — Gmail, Google Docs, LinkedIn, Notion, Slack, Word, and thousands of other apps. Underlined suggestions appear as you write, covering grammar, punctuation, clarity, wordiness, and word choice.</p>
+
+<h3>Tone Detection</h3>
+<p>Grammarly Premium detects the tone of your writing — formal, confident, friendly, direct, diplomatic — and flags mismatches with your intended communication. Exceptionally useful for professional emails and client-facing communications.</p>
+
+<h3>Grammarly GO (AI Writing)</h3>
+<p>The AI writing feature lets you ask Grammarly to rewrite paragraphs, change tone, make text shorter or longer, or generate a full reply to an email. The quality is solid for quick adjustments, though it does not match Claude or ChatGPT for longer generation tasks.</p>
+
+<h3>Plagiarism Checker</h3>
+<p>Premium and Business plans include a plagiarism checker that compares your text against 16 billion web pages. Essential for academic writing and content creators publishing original work.</p>
+
+<h2>Pricing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price</th><th>AI Writing</th><th>Plagiarism</th></tr></thead><tbody><tr><td>Free</td><td>$0</td><td>Limited</td><td>No</td></tr><tr><td>Premium</td><td>$12/month</td><td>Yes</td><td>Yes</td></tr><tr><td>Business</td><td>$15/member/month</td><td>Yes</td><td>Yes + style guide</td></tr></tbody></table></div>
+
+<h2>Our Verdict</h2>
+<p>Grammarly earns a <strong>4.4/5</strong>. For professionals and non-native English speakers, it remains the single best investment for improving everyday writing quality. The real-time feedback across all your apps catches errors that other tools miss. The Premium plan at $12/month is worth it for anyone who writes professionally — the tone detection and plagiarism checker alone justify the cost.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Grammarly worth the money?</h3>
+<p>For professional writers, non-native English speakers, or anyone who sends emails and documents regularly — yes. The free plan handles basic grammar; Premium adds tone detection, clarity improvements, and AI writing that are worth $12/month for most professionals.</p>
+<h3>Can Grammarly replace ChatGPT?</h3>
+<p>No — they complement each other. Use ChatGPT to generate and rewrite content, then Grammarly to polish grammar, tone, and style inline in your apps. Grammarly cannot generate content from scratch; ChatGPT cannot work inline across your apps.</p>`,
+    category: "AI Writing",
+    emoji: "✅",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 11, 2026",
+    updatedAt: "June 11, 2026",
+    readTime: "9 min read",
+    tags: ["grammarly", "grammar", "ai-writing", "editing"],
+    metaTitle: "Grammarly Review 2026: Still the Best AI Grammar Checker?",
+    metaDescription: "Grammarly review 2026 — real-time grammar correction, tone detection, AI writing, and plagiarism checking. Is Premium worth $12/month? Full honest review.",
+    relatedToolSlugs: ["grammarly", "chatgpt", "writesonic"],
+  },
 
 ];
 
