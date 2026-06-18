@@ -70,7 +70,6 @@ export const allDeals: Deal[] = [
     discountAmount: "Free tier (10,000 words/mo)",
     category: "AI Writing",
   },
-,
   {
     id: "claude-free",
     toolSlug: "claude",

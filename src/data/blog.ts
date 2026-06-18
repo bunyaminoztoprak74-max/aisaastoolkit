@@ -1685,7 +1685,6 @@ export const allBlogPosts: BlogPost[] = [
     clusterSlug: "midjourney",
     clusterTitle: "Complete Midjourney Guide 2026",
   },
-,
 
   {
     slug: "descript-review-2026",
