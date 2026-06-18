@@ -7,15 +7,31 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 interface Props { params: Promise<{ slug: string }> }
 
 const ALTERNATIVES_MAP: Record<string, string[]> = {
-  "jasper": ["writesonic", "claude", "chatgpt"],
-  "chatgpt": ["claude", "writesonic", "perplexity"],
-  "claude": ["chatgpt", "writesonic", "jasper"],
+  // AI Assistants
+  "claude": ["chatgpt", "perplexity", "writesonic", "jasper"],
+  "chatgpt": ["claude", "perplexity", "writesonic", "notion-ai"],
+  "perplexity": ["chatgpt", "claude", "notion-ai"],
+  // Writing & Content
+  "jasper": ["writesonic", "claude", "chatgpt", "grammarly"],
+  "writesonic": ["jasper", "claude", "chatgpt", "grammarly"],
+  "grammarly": ["writesonic", "chatgpt", "jasper"],
+  // Automation
   "make-com": ["zapier"],
   "zapier": ["make-com"],
-  "pictory": ["elevenlabs", "jasper", "writesonic"],
-  "writesonic": ["jasper", "claude", "chatgpt"],
-  "elevenlabs": ["pictory", "jasper", "writesonic"],
-  "perplexity": ["chatgpt", "claude"],
+  // Image & Design
+  "midjourney": ["canva-ai", "adcreative-ai"],
+  "canva-ai": ["midjourney", "adcreative-ai"],
+  "adcreative-ai": ["canva-ai", "midjourney", "jasper"],
+  // Voice & Audio
+  "elevenlabs": ["murf-ai", "descript"],
+  "murf-ai": ["elevenlabs", "descript"],
+  // Video & Podcast
+  "pictory": ["descript", "castmagic", "elevenlabs"],
+  "descript": ["castmagic", "elevenlabs", "pictory"],
+  "castmagic": ["descript", "writesonic", "pictory"],
+  // Productivity & Presentations
+  "notion-ai": ["chatgpt", "claude", "gamma"],
+  "gamma": ["notion-ai", "chatgpt"],
 };
 
 export async function generateStaticParams() {
@@ -104,13 +120,4 @@ export default async function AlternativesPage({ params }: Props) {
 
         <div className="mt-12 bg-gradient-to-r from-primary/10 to-blue-600/10 border border-primary/20 rounded-xl p-8 text-center">
           <h3 className="text-xl font-bold text-foreground mb-2">Still not sure which to choose?</h3>
-          <p className="text-muted-foreground mb-4">Read our full review of {tool.name} and compare it directly with the top alternative.</p>
-          <div className="flex gap-3 justify-center">
-            <Link href={`/reviews/${tool.slug}`} className="font-medium text-white bg-primary hover:bg-primary/90 px-5 py-2.5 rounded-lg transition-colors">Read {tool.name} Review</Link>
-            {alternatives[0] && <Link href={`/compare/${tool.slug}-vs-${alternatives[0].slug}`} className="font-medium text-primary border border-primary hover:bg-primary/5 px-5 py-2.5 rounded-lg transition-colors">Compare {tool.name} vs {alternatives[0].name}</Link>}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+          <p className="text-muted-foreground mb-4">Read our full review
