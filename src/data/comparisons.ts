@@ -301,7 +301,6 @@ export const comparisons: Comparison[] = [
     ],
     lastUpdated: "2026-06-18",
   },
-,
   {
     slug: "claude-vs-perplexity",
     tool1Slug: "claude",
