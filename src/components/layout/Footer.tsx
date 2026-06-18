@@ -19,15 +19,18 @@ const footerLinks = {
     { label: "Make.com Review",    href: "/reviews/make-com" },
   ],
   "Comparisons": [
-    { label: "Claude vs ChatGPT",      href: "/compare/claude-vs-chatgpt" },
-    { label: "Make.com vs Zapier",     href: "/compare/make-vs-zapier" },
-    { label: "ElevenLabs vs Murf",     href: "/compare/elevenlabs-vs-murf" },
+    { label: "Claude vs ChatGPT",       href: "/compare/claude-vs-chatgpt" },
+    { label: "Make.com vs Zapier",      href: "/compare/make-vs-zapier" },
+    { label: "Claude vs Perplexity",    href: "/compare/claude-vs-perplexity" },
+    { label: "Midjourney vs Canva AI",  href: "/compare/midjourney-vs-canva-ai" },
+    { label: "Grammarly vs ChatGPT",    href: "/compare/grammarly-vs-chatgpt" },
   ],
   "Best Lists": [
-    { label: "Best Automation Tools", href: "/best/ai-automation-tools" },
-    { label: "Best Voice Tools",      href: "/best/ai-voice-tools" },
-    { label: "Best SEO Tools",        href: "/best/ai-seo-tools" },
-    { label: "Best Writing Tools",    href: "/best/ai-writing-tools" },
+    { label: "Best Writing Tools",      href: "/best/ai-writing-tools" },
+    { label: "Best Automation Tools",   href: "/best/ai-automation-tools" },
+    { label: "Best Image Generators",   href: "/best/ai-image-generators" },
+    { label: "Best Productivity Tools", href: "/best/ai-productivity-tools" },
+    { label: "Best Marketing Tools",    href: "/best/ai-marketing-tools" },
   ],
   "Company": [
     { label: "About",                href: "/about" },
@@ -90,12 +93,4 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
           <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} AISaaSToolkit. All rights reserved.</p>
-          <p className="text-xs text-muted-foreground text-center">
-            Some links are affiliate links.{" "}
-            <Link href="/affiliate-disclosure" className="underline hover:text-primary">Disclosure</Link>
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+          <p classNa
