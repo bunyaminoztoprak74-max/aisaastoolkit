@@ -161,6 +161,7 @@ export const tools: Tool[] = [
     ],
     metaTitle: "Claude AI Review 2026: Is Anthropic's AI Assistant Worth It?",
     metaDescription: "Honest Claude AI review: pricing (free to $20/mo), how it compares to ChatGPT, pros & cons, and whether it's the best AI writing assistant in 2026. Hands-on tested.",
+    tags: ["ai-writing", "ai-assistant", "long-context", "api-access", "code-generation"],
     quickVerdict: "Claude is the best AI assistant for writing quality, long-document analysis, and nuanced reasoning in 2026. At $20/month for Pro, it's excellent value for content creators, researchers, and developers. Its 200K context window and refusal to hallucinate put it ahead of ChatGPT for serious work.",
     whoIsItFor: [
       "Content creators and bloggers who need high-quality long-form writing",
@@ -276,6 +277,7 @@ export const tools: Tool[] = [
     ],
     metaTitle: "ChatGPT Review 2026: Pricing, GPT-4o & Is Plus Worth It?",
     metaDescription: "Honest ChatGPT review covering GPT-4o, pricing ($0–$30/mo), the Plus upgrade, and how it compares to Claude. Everything you need to decide if ChatGPT is right for you in 2026.",
+    tags: ["ai-writing", "ai-assistant", "image-generation", "code-generation", "voice-mode"],
     quickVerdict: "ChatGPT is the most versatile AI assistant in 2026, combining GPT-4o's speed with DALL-E 3 image generation and a vast plugin ecosystem. The free tier is surprisingly capable; Plus at $20/month is worth it for power users who need image generation, real-time web access, and custom GPTs.",
     whoIsItFor: [
       "Users who want AI image generation built directly into their chat workflow",
@@ -448,6 +450,7 @@ export const tools: Tool[] = [
     badge: "best-value",
     metaTitle: "Pictory AI Review 2026: Turn Blog Posts Into Videos Automatically",
     metaDescription: "Pictory review 2026: $19–$99/mo plans, blog-to-video AI, auto captions. Is it the best tool for repurposing content into video? Honest pros & cons.",
+    tags: ["ai-video", "video-editing", "content-repurposing", "auto-captions", "templates"],
     pricing: {
       starting: "$19",
       hasFree: false,
@@ -615,6 +618,7 @@ export const tools: Tool[] = [
     ],
     metaTitle: "Jasper AI Review 2026: Is It Worth $49/Month for Marketing Teams?",
     metaDescription: "Honest Jasper AI review: pricing ($49–$69/mo), brand voice training, Surfer SEO integration, and how it compares to Writesonic and Claude. Is Jasper worth it in 2026?",
+    tags: ["ai-writing", "content-marketing", "brand-voice", "seo-writing", "bulk-generation"],
     quickVerdict: "Jasper is the best AI writing tool for marketing teams who need brand consistency and high-volume campaign content. At $49+/month it's expensive for individuals, but the Brand Voice training and Surfer SEO integration make it the top choice for agencies and content-heavy SaaS companies.",
     whoIsItFor: [
       "Marketing agencies managing multiple clients with different brand voices",
@@ -721,6 +725,7 @@ export const tools: Tool[] = [
     ],
     metaTitle: "Writesonic Review 2026: Best Value AI Writing Tool?",
     metaDescription: "Honest Writesonic review: pricing (free to $20/mo), Article Writer, Chatsonic, and how it compares to Jasper. Is Writesonic the best value AI writing tool in 2026?",
+    tags: ["ai-writing", "seo-writing", "content-marketing", "bulk-generation", "templates"],
     quickVerdict: "Writesonic is the best-value AI writing tool in 2026 — it packs AI article writing, web-connected chat, image generation, and SEO tools into a single affordable platform. The free tier is genuinely useful, and the $20/month Individual plan beats Jasper on price by miles.",
     whoIsItFor: [
       "Budget-conscious bloggers and solopreneurs who need AI writing without a big subscription",
@@ -752,6 +757,7 @@ export const tools: Tool[] = [
     badge: "recommended",
     metaTitle: "Zapier Review 2026: Pricing, Alternatives & Is It Worth It?",
     metaDescription: "Zapier review 2026: free plan to $73.50/mo, 6,000+ integrations. Honest pros, cons & comparison with Make.com. Find out if Zapier is right for you.",
+    tags: ["automation", "no-code", "workflow", "integrations", "make-alternative"],
     relatedTools: ["make-com"],
     pricing: {
       starting: "Free",
@@ -931,6 +937,7 @@ export const tools: Tool[] = [
     ],
     metaTitle: "ElevenLabs Review 2026: Best AI Voice Generator? Pricing & Features",
     metaDescription: "Honest ElevenLabs review: pricing (free to $99/mo), voice cloning quality, 29 languages, and whether it's the best AI text-to-speech tool in 2026. Hands-on tested.",
+    tags: ["ai-voice", "voice-cloning", "text-to-speech", "api-access", "multilingual"],
     quickVerdict: "ElevenLabs is the clear leader in AI voice generation in 2026. Its voice cloning is the most realistic available — indistinguishable from a real human on the Pro plan. The free tier is genuinely useful for testing, and the $22/month Creator plan is excellent value for podcasters, YouTubers, and developers.",
     whoIsItFor: [
       "Podcasters and YouTubers who need professional AI voiceovers without a recording studio",
@@ -1099,6 +1106,7 @@ export const tools: Tool[] = [
     featured: true,
     metaTitle: "Notion AI Review 2026: Is the $10/Month AI Add-On Worth It?",
     metaDescription: "Notion AI review 2026: pricing ($10/mo add-on), AI writing, summarisation & Q&A features. Is it worth upgrading? Honest comparison with alternatives.",
+    tags: ["ai-writing", "productivity", "team-collab", "documents", "knowledge-base"],
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -1260,6 +1268,7 @@ export const tools: Tool[] = [
     ],
     metaTitle: "Grammarly Review 2026: Is Premium Worth $12/Month?",
     metaDescription: "Honest Grammarly review: pricing (free to $12/mo), Premium features, GrammarlyGO AI writing, and whether it's better than Microsoft Editor. Is Grammarly Premium worth it in 2026?",
+    tags: ["ai-writing", "grammar", "editing", "productivity", "brand-voice"],
     quickVerdict: "Grammarly is the best AI grammar checker and writing polish tool in 2026. The free tier is genuinely useful for everyday writing; Premium at $12/month is worth it for professionals who write frequently. It's not a replacement for a generative AI like Claude, but nothing beats it for catching errors and improving clarity.",
     whoIsItFor: [
       "Non-native English speakers who want error-free, confident professional writing",
@@ -1293,6 +1302,7 @@ export const tools: Tool[] = [
     trending: true,
     metaTitle: "Canva AI Review 2026: Magic Design, AI Images & Is Pro Worth It?",
     metaDescription: "Canva AI review 2026: free vs Pro ($14.99/mo), Magic Design, AI image generator & background remover. Best AI design tool for non-designers?",
+    tags: ["ai-image", "design", "templates", "social-media", "team-collab"],
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -1376,6 +1386,7 @@ export const tools: Tool[] = [
     badge: "new",
     metaTitle: "Murf AI Review 2026: Best AI Voice Generator for Teams?",
     metaDescription: "Murf AI review 2026: 120+ voices, 20 languages, $19–$75/mo plans. Is it better than ElevenLabs for corporate and e-learning content? Honest test.",
+    tags: ["ai-voice", "text-to-speech", "voice-cloning", "multilingual", "podcast"],
     pricing: {
       starting: "$19/month",
       hasFree: true,
@@ -1451,6 +1462,7 @@ export const tools: Tool[] = [
     badge: "new",
     metaTitle: "Perplexity AI Review 2026: Is It Better Than Google for Research?",
     metaDescription: "Perplexity AI review 2026: free vs Pro ($20/mo), real-time web search, cited answers. Is it the best AI search engine? Honest comparison with ChatGPT.",
+    tags: ["ai-assistant", "web-search", "research", "real-time-data", "citations"],
     pricing: {
       starting: "Free",
       hasFree: true,
