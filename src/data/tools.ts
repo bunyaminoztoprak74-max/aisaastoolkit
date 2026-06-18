@@ -173,8 +173,8 @@ export const tools: Tool[] = [
       "Teams deeply invested in the OpenAI/GPT plugin ecosystem",
       "Casual users who only need occasional simple queries (free ChatGPT works fine)",
     ],
-    lastTestedDate: "2026-05-01",
-    lastUpdated: "2026-05-01",
+    lastTestedDate: "2026-06-18",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "ChatGPT",
@@ -288,8 +288,8 @@ export const tools: Tool[] = [
       "Privacy-focused users uncomfortable with OpenAI's training data usage policies",
       "People needing to analyze very long documents — Claude's 200K context beats GPT-4o's 128K",
     ],
-    lastTestedDate: "2026-05-01",
-    lastUpdated: "2026-05-01",
+    lastTestedDate: "2026-06-18",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Make.com",
@@ -307,8 +307,8 @@ export const tools: Tool[] = [
     rating: 4.7,
     reviewCount: 1876,
     badge: "recommended",
-    metaTitle: "Make.com Review 2026: Pricing, Features & Is It Worth It?",
-    metaDescription: "Honest Make.com review covering pricing (free to $34/mo), features, pros & cons, and how it compares to Zapier. Find out if Make.com is right for your business.",
+    metaTitle: "Make.com Review 2026: Pricing, Features & Zapier Comparison",
+    metaDescription: "Make.com review 2026: free plan, $10.59/mo Core, 1,500+ integrations. Better than Zapier for complex workflows. Honest pros, cons & pricing breakdown.",
     tags: ["automation", "no-code", "workflow", "integrations", "zapier-alternative", "make-com"],
     relatedTools: ["zapier"],
     quickVerdict: "Make.com is the best no-code automation platform for power users who need complex multi-step workflows at an affordable price. It outperforms Zapier on flexibility and cost, though the learning curve is steeper for beginners.",
@@ -324,7 +324,7 @@ export const tools: Tool[] = [
       "Teams needing a dedicated customer success manager on a budget",
       "Users with very simple one-step automations (overkill for basic tasks)",
     ],
-    lastTestedDate: "2026-05-01",
+    lastTestedDate: "2026-06-18",
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -413,8 +413,24 @@ export const tools: Tool[] = [
         question: "Can Make.com integrate with AI tools like ChatGPT?",
         answer: "Yes. Make.com has native modules for OpenAI (including GPT-4 and image generation), Google AI, Anthropic Claude, and many other AI services. You can also connect any AI tool that exposes a REST API using Make's HTTP module.",
       },
+      {
+        question: "Is Make.com better than Zapier?",
+        answer: "Make.com is better than Zapier for complex, multi-step automations. It offers more powerful data transformation, branching logic, and is significantly cheaper at scale. Zapier is better for beginners who want the simplest setup and access to the largest app library (6,000+ vs 1,500+). If you've outgrown Zapier or need real data manipulation, Make.com is the clear upgrade.",
+      },
+      {
+        question: "What is Make.com used for by businesses?",
+        answer: "Common Make.com business use cases include: automating lead capture from Facebook/Google Ads into a CRM, syncing Shopify orders to Google Sheets, sending Slack alerts when deals close in HubSpot, scheduling social media posts across platforms, building AI-powered content workflows with ChatGPT, and automating client reporting. Essentially any repetitive task involving two or more apps.",
+      },
+      {
+        question: "Does Make.com have a free plan?",
+        answer: "Yes — Make.com's free plan includes 1,000 operations per month, 2 active scenarios, and access to all 1,500+ app integrations. There's no trial period or credit card required. It's generous enough for small personal automations or to test before committing to a paid plan.",
+      },
+      {
+        question: "How do I migrate from Zapier to Make.com?",
+        answer: "To migrate from Zapier to Make.com: (1) List your active Zaps and recreate them as Scenarios in Make. (2) Start with your most critical automations. (3) Make's visual builder is more complex than Zapier's, but the Make Academy (free) covers everything you need. Most users find the migration worthwhile — you get more power for less money.",
+      },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Pictory",
@@ -430,6 +446,8 @@ export const tools: Tool[] = [
     rating: 4.5,
     reviewCount: 943,
     badge: "best-value",
+    metaTitle: "Pictory AI Review 2026: Turn Blog Posts Into Videos Automatically",
+    metaDescription: "Pictory review 2026: $19–$99/mo plans, blog-to-video AI, auto captions. Is it the best tool for repurposing content into video? Honest pros & cons.",
     pricing: {
       starting: "$19",
       hasFree: false,
@@ -500,7 +518,7 @@ export const tools: Tool[] = [
         answer: "Pictory exports MP4 videos in 16:9 (YouTube), 9:16 (Reels/TikTok), and 1:1 (Instagram) formats up to 1080p HD.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Jasper",
@@ -609,8 +627,8 @@ export const tools: Tool[] = [
       "Users who need creative or long-form fiction writing — Claude produces more nuanced output",
       "Small businesses on a tight budget — no free plan, 7-day trial only",
     ],
-    lastTestedDate: "2026-05-01",
-    lastUpdated: "2026-05-01",
+    lastTestedDate: "2026-06-18",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Writesonic",
@@ -715,8 +733,8 @@ export const tools: Tool[] = [
       "Users who prioritize output quality above all else — Claude and Jasper produce more polished writing",
       "Enterprise teams needing advanced collaboration and SSO features",
     ],
-    lastTestedDate: "2026-05-01",
-    lastUpdated: "2026-05-01",
+    lastTestedDate: "2026-06-18",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Zapier",
@@ -732,6 +750,9 @@ export const tools: Tool[] = [
     rating: 4.5,
     reviewCount: 3211,
     badge: "recommended",
+    metaTitle: "Zapier Review 2026: Pricing, Alternatives & Is It Worth It?",
+    metaDescription: "Zapier review 2026: free plan to $73.50/mo, 6,000+ integrations. Honest pros, cons & comparison with Make.com. Find out if Zapier is right for you.",
+    relatedTools: ["make-com"],
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -795,10 +816,22 @@ export const tools: Tool[] = [
       },
       {
         question: "What's the difference between Zapier and Make.com?",
-        answer: "Zapier is simpler and has more integrations. Make.com is more powerful for complex logic and more affordable at scale. Beginners should start with Zapier; power users should consider Make.com.",
+        answer: "Zapier is simpler and has more integrations (6,000+ vs 1,500+). Make.com is more powerful for complex logic and significantly more affordable at scale. Beginners should start with Zapier; power users who need multi-path branching, data transformation, or lower costs should consider Make.com.",
+      },
+      {
+        question: "How much does Zapier cost?",
+        answer: "Zapier pricing: Free ($0, 100 tasks/month, 5 Zaps), Starter ($29.99/month, 750 tasks), Professional ($73.50/month, 2,000 tasks). Annual billing saves ~33%. Tasks are counted per operation, so multi-step Zaps consume tasks faster.",
+      },
+      {
+        question: "What is Zapier used for?",
+        answer: "Zapier automates repetitive tasks between apps. Common uses: sending Gmail attachments to Google Drive, adding Typeform responses to a spreadsheet, posting new blog entries to social media, syncing leads from Facebook Ads to HubSpot, sending Slack messages when a Stripe payment succeeds, and automating onboarding emails. If two apps support Zapier, you can connect them without code.",
+      },
+      {
+        question: "Is Zapier worth it?",
+        answer: "Zapier is worth it if you regularly move data between apps manually. Even the free plan (100 tasks/month) saves hours per month for simple workflows. For heavier use, compare costs against Make.com — Make often provides the same capability for 50–70% less. For simple, reliable automations with minimal setup, Zapier is the easiest choice.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "ElevenLabs",
@@ -911,8 +944,8 @@ export const tools: Tool[] = [
       "High-volume production teams on a tight budget — character limits scale up in cost quickly",
       "Those expecting perfect video dubbing sync — Dubbing Studio is powerful but still improving",
     ],
-    lastTestedDate: "2026-05-01",
-    lastUpdated: "2026-05-01",
+    lastTestedDate: "2026-06-18",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Midjourney",
@@ -930,8 +963,8 @@ export const tools: Tool[] = [
     badge: "recommended",
     featured: true,
     trending: true,
-    metaTitle: "Midjourney Review 2026: Is It Still the Best AI Image Generator?",
-    metaDescription: "Honest Midjourney review covering pricing ($10–$60/mo), image quality, pros & cons, and how it compares to DALL-E 3 and Adobe Firefly. Updated May 2026.",
+    metaTitle: "Midjourney Review 2026: Best AI Image Generator? Pricing & Guide",
+    metaDescription: "Midjourney review 2026: $10–$60/mo plans, V6 image quality, pros & cons vs DALL-E 3 & Firefly. Is it worth it? Real test results inside.",
     tags: ["ai-image", "image-generation", "ai-art", "text-to-image", "dalle-alternative"],
     relatedTools: ["canva-ai", "chatgpt"],
     quickVerdict: "Midjourney remains the gold standard for AI image generation in 2026. No other tool matches its artistic quality and aesthetic consistency — worth every penny at $10/month for anyone who needs beautiful visuals regularly.",
@@ -948,7 +981,7 @@ export const tools: Tool[] = [
       "Users who want a simple browser interface without Discord",
       "Those who need deep image editing and masking (use Adobe Firefly instead)",
     ],
-    lastTestedDate: "2026-05-01",
+    lastTestedDate: "2026-06-18",
     pricing: {
       starting: "$10/month",
       hasFree: false,
@@ -1030,8 +1063,24 @@ export const tools: Tool[] = [
         question: "How do I use Midjourney?",
         answer: "Midjourney primarily works through Discord. Join the Midjourney Discord server, go to any 'newbies' channel, and type /imagine followed by your prompt. The new Midjourney web interface at midjourney.com is now also available for subscribers and offers a browser-based alternative to Discord.",
       },
+      {
+        question: "What is the best Midjourney plan for beginners?",
+        answer: "The Basic plan at $10/month is the best starting point. It gives you approximately 200 image generations per month using fast GPU time — more than enough to learn the tool and produce real work. Upgrade to the Standard plan ($30/month) once you need unlimited relaxed-mode generations for high-volume work.",
+      },
+      {
+        question: "Midjourney vs Adobe Firefly: which should I choose?",
+        answer: "Midjourney produces more visually stunning, artistic images. Adobe Firefly is better if you need legally safe content for commercial use (trained only on licensed images), text inside images, or deep integration with Photoshop/Illustrator. For pure image quality and creative work, Midjourney wins. For enterprise commercial safety, Firefly is the safer choice.",
+      },
+      {
+        question: "Midjourney vs Stable Diffusion: what's the difference?",
+        answer: "Midjourney is a hosted service that prioritises ease of use and consistent quality — no setup required. Stable Diffusion is open-source software you run locally (or via services like Automatic1111 or ComfyUI) that gives you full control, custom model fine-tuning, and unlimited free generations. Midjourney is better for most users. Stable Diffusion is better for technical users who need maximum customisation or volume without monthly costs.",
+      },
+      {
+        question: "Can I use Midjourney for commercial projects?",
+        answer: "Yes. All paid Midjourney plans include commercial use rights for generated images. You can use them in websites, ads, social media, print products, and client work. The only restriction is for organisations earning over $1M/year in revenue — they must use the Pro ($60/month) or Mega ($120/month) plan.",
+      },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Notion AI",
@@ -1048,6 +1097,8 @@ export const tools: Tool[] = [
     reviewCount: 1876,
     badge: "best-value",
     featured: true,
+    metaTitle: "Notion AI Review 2026: Is the $10/Month AI Add-On Worth It?",
+    metaDescription: "Notion AI review 2026: pricing ($10/mo add-on), AI writing, summarisation & Q&A features. Is it worth upgrading? Honest comparison with alternatives.",
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -1113,7 +1164,7 @@ export const tools: Tool[] = [
         answer: "Notion AI excels at working with content already in your workspace — summarising pages, answering questions from your docs, and filling in databases. ChatGPT is better for general-purpose writing and tasks outside your existing documents.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Grammarly",
@@ -1221,8 +1272,8 @@ export const tools: Tool[] = [
       "Technical writers who find AI suggestions too aggressive for their style",
       "Highly budget-conscious users — the free tier covers most basic grammar needs",
     ],
-    lastTestedDate: "2026-05-01",
-    lastUpdated: "2026-05-01",
+    lastTestedDate: "2026-06-18",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Canva AI",
@@ -1240,6 +1291,8 @@ export const tools: Tool[] = [
     badge: "recommended",
     featured: true,
     trending: true,
+    metaTitle: "Canva AI Review 2026: Magic Design, AI Images & Is Pro Worth It?",
+    metaDescription: "Canva AI review 2026: free vs Pro ($14.99/mo), Magic Design, AI image generator & background remover. Best AI design tool for non-designers?",
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -1305,7 +1358,7 @@ export const tools: Tool[] = [
         answer: "For standard marketing materials, social media graphics, presentations, and simple brand assets, Canva AI can significantly reduce reliance on a designer. For complex brand work, packaging, or highly custom design, a professional designer is still essential.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Murf AI",
@@ -1321,6 +1374,8 @@ export const tools: Tool[] = [
     rating: 4.3,
     reviewCount: 876,
     badge: "new",
+    metaTitle: "Murf AI Review 2026: Best AI Voice Generator for Teams?",
+    metaDescription: "Murf AI review 2026: 120+ voices, 20 languages, $19–$75/mo plans. Is it better than ElevenLabs for corporate and e-learning content? Honest test.",
     pricing: {
       starting: "$19/month",
       hasFree: true,
@@ -1377,7 +1432,7 @@ export const tools: Tool[] = [
         answer: "Murf has a better studio interface and collaboration features, but ElevenLabs produces more realistic voices and has superior voice cloning. For teams, Murf is easier to use. For raw quality, ElevenLabs wins.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     name: "Perplexity AI",
@@ -1394,6 +1449,8 @@ export const tools: Tool[] = [
     rating: 4.6,
     reviewCount: 876,
     badge: "new",
+    metaTitle: "Perplexity AI Review 2026: Is It Better Than Google for Research?",
+    metaDescription: "Perplexity AI review 2026: free vs Pro ($20/mo), real-time web search, cited answers. Is it the best AI search engine? Honest comparison with ChatGPT.",
     pricing: {
       starting: "Free",
       hasFree: true,
@@ -1453,7 +1510,7 @@ export const tools: Tool[] = [
         answer: "Yes, Perplexity has a generous free tier with unlimited searches and 5 Pro searches per day. The Pro plan at $20/month unlocks 600 Pro searches daily and access to GPT-4o and Claude.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 
   // ── Gamma ──────────────────────────────────────────────────────────────────
@@ -1474,6 +1531,8 @@ export const tools: Tool[] = [
     badge: "trending",
     featured: true,
     trending: true,
+    metaTitle: "Gamma AI Review 2026: Create Presentations in Minutes With AI",
+    metaDescription: "Gamma review 2026: free plan, $10/mo Plus, AI slide deck generator. Honest pros & cons vs PowerPoint and Google Slides. Does it actually save time?",
     pricing: {
       starting: "$0/mo",
       hasFree: true,
@@ -1537,7 +1596,7 @@ export const tools: Tool[] = [
       },
     ],
     alternatives: ["canva-ai", "notion-ai"],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 
   // ── AdCreative.ai ──────────────────────────────────────────────────────────
@@ -1619,7 +1678,7 @@ export const tools: Tool[] = [
       },
     ],
     alternatives: ["canva-ai", "jasper"],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 
   // ── Descript ───────────────────────────────────────────────────────────────
@@ -1639,6 +1698,8 @@ export const tools: Tool[] = [
     reviewCount: 1654,
     badge: "editor-choice",
     featured: true,
+    metaTitle: "Descript Review 2026: Edit Video by Editing Text — Worth It?",
+    metaDescription: "Descript review 2026: free plan to $24/mo, text-based video editing, AI voice clone, filler word removal. Best video editor for podcasters and YouTubers?",
     pricing: {
       starting: "$0/mo",
       hasFree: true,
@@ -1708,7 +1769,7 @@ export const tools: Tool[] = [
       },
     ],
     alternatives: ["elevenlabs", "murf-ai"],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 
   // ── Castmagic ──────────────────────────────────────────────────────────────
@@ -1791,7 +1852,7 @@ export const tools: Tool[] = [
       },
     ],
     alternatives: ["descript", "writesonic"],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 
   // ── QuillBot ───────────────────────────────────────────────────────────────
@@ -1804,13 +1865,15 @@ export const tools: Tool[] = [
     logo: "/images/logos/quillbot.svg",
     logoColor: "#00a67e",
     website: "https://quillbot.com",
-    affiliateUrl: "https://quillbot.com", // PartnerStack affiliate link pending approval
+    affiliateUrl: "https://quillbot.com",
     category: "ai-writing",
     categories: ["ai-writing", "ai-productivity"],
     rating: 4.5,
     reviewCount: 3287,
     badge: "best-value",
     featured: true,
+    metaTitle: "QuillBot Review 2026: Best AI Paraphrasing Tool? Free vs Premium",
+    metaDescription: "QuillBot review 2026: free plan vs $9.95/mo Premium, 9 paraphrase modes, grammar checker & plagiarism detector. Is QuillBot worth it in 2026?",
     pricing: {
       starting: "$0/mo",
       hasFree: true,
@@ -1869,7 +1932,7 @@ export const tools: Tool[] = [
       },
     ],
     alternatives: ["grammarly", "writesonic"],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 ];
 
@@ -1886,7 +1949,6 @@ export function getToolsByCategory(categorySlug: string): Tool[] {
 export function getFeaturedTools(limit = 6): Tool[] {
   const featured = tools.filter((t) => t.featured);
   if (featured.length >= limit) return featured.slice(0, limit);
-  // Fill remaining slots with highest-rated tools not already in featured
   const featuredSlugs = new Set(featured.map((t) => t.slug));
   const extras = [...tools]
     .filter((t) => !featuredSlugs.has(t.slug))

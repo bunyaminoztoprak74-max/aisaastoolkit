@@ -109,14 +109,14 @@ export const comparisons: Comparison[] = [
         answer: "Claude is built on Constitutional AI principles and is generally considered more resistant to jailbreaks and harmful outputs. Both are safe for business use.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     slug: "make-vs-zapier",
     tool1Slug: "make-com",
     tool2Slug: "zapier",
     title: "Make.com vs Zapier (2026): Which Automation Tool Wins?",
-    metaDescription: "Make.com vs Zapier — detailed 2026 comparison of pricing, features, ease of use, and power to find the best automation tool for your needs.",
+    metaDescription: "Make.com vs Zapier 2026: Make starts at $10.59/mo vs Zapier's $29.99/mo. Which is better for complex workflows? Full feature, pricing & ease-of-use breakdown.",
     headline: "Make.com vs Zapier: Power vs Simplicity",
     intro: "Make.com and Zapier dominate the no-code automation market, but they serve different users. Zapier is the world's most popular automation tool with 6,000+ integrations and a beginner-friendly interface. Make.com offers far more power, flexibility, and value for money for users who need complex multi-step workflows.",
     verdict: "Make.com wins on price, power, and complex workflow capabilities. Zapier wins on simplicity, app integrations, and beginner-friendliness. For most businesses and agencies building serious automations, Make.com delivers far better value. For non-technical users connecting common apps, Zapier is the easier starting point.",
@@ -173,7 +173,7 @@ export const comparisons: Comparison[] = [
         answer: "No — Zapier has 6,000+ integrations vs Make's 1,500+. However, Make's HTTP module lets you connect to any REST API, filling most gaps.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     slug: "jasper-vs-writesonic",
@@ -233,7 +233,7 @@ export const comparisons: Comparison[] = [
         answer: "Jasper offers a 7-day free trial. Writesonic offers a permanent free plan with 10,000 words/month.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
   {
     slug: "elevenlabs-vs-murf",
@@ -299,10 +299,9 @@ export const comparisons: Comparison[] = [
         answer: "ElevenLabs is significantly cheaper at entry level — $5/month vs Murf's $19/month. ElevenLabs also has a more generous free tier (10,000 characters vs Murf's 10 minutes). For most users, ElevenLabs offers better value.",
       },
     ],
-    lastUpdated: "2026-05-01",
+    lastUpdated: "2026-06-18",
   },
 ];
 
 export function getComparisonBySlug(slug: string): Comparison | undefined {
-  return comparisons.find((c) => c.slug === slug);
-}
+  return comparisons.find((c) => c.s
