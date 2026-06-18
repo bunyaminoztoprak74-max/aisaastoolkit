@@ -488,7 +488,7 @@ export const comparisons: Comparison[] = [
   {
     slug: "midjourney-vs-canva-ai",
     tool1Slug: "midjourney",
-    tool2Slug: "canva",
+    tool2Slug: "canva-ai",
     title: "Midjourney vs Canva AI (2026): Best AI Image Generator?",
     metaDescription: "Midjourney vs Canva AI 2026 — compare image quality, ease of use, pricing, and which AI image tool is better for designers vs everyday creators.",
     headline: "Midjourney vs Canva AI: Artistic Power vs Everyday Convenience",
