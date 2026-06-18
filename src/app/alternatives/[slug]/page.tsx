@@ -120,4 +120,13 @@ export default async function AlternativesPage({ params }: Props) {
 
         <div className="mt-12 bg-gradient-to-r from-primary/10 to-blue-600/10 border border-primary/20 rounded-xl p-8 text-center">
           <h3 className="text-xl font-bold text-foreground mb-2">Still not sure which to choose?</h3>
-          <p className="text-muted-foreground mb-4">Read our full review
+          <p className="text-muted-foreground mb-4">Read our full review of {tool.name} and compare it directly with the top alternative.</p>
+          <div className="flex gap-3 justify-center">
+            <Link href={`/reviews/${tool.slug}`} className="font-medium text-white bg-primary hover:bg-primary/90 px-5 py-2.5 rounded-lg transition-colors">Read {tool.name} Review</Link>
+            {alternatives[0] && <Link href={`/compare/${tool.slug}-vs-${alternatives[0].slug}`} className="font-medium text-primary border border-primary hover:bg-primary/5 px-5 py-2.5 rounded-lg transition-colors">Compare {tool.name} vs {alternatives[0].name}</Link>}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

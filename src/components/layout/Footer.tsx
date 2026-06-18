@@ -93,4 +93,12 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
           <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} AISaaSToolkit. All rights reserved.</p>
-          <p classNa
+          <p className="text-xs text-muted-foreground text-center">
+            Some links are affiliate links.{" "}
+            <Link href="/affiliate-disclosure" className="underline hover:text-primary">Disclosure</Link>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
