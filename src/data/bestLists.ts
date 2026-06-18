@@ -62,8 +62,7 @@ export const bestLists: BestList[] = [
     category: "ai-voice",
     lastUpdated: "2026-06-18",
   },
-];
-
-export function getBestListBySlug(slug: string): BestList | undefined {
-  return bestLists.find((l) => l.slug === slug);
-}
+  {
+    slug: "ai-image-generators",
+    title: "Best AI Image Generators of 2026",
+    headline: "The 5 Best AI Image Generators of 2026 (Tested for Quality & 
