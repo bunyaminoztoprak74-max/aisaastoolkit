@@ -304,4 +304,5 @@ export const comparisons: Comparison[] = [
 ];
 
 export function getComparisonBySlug(slug: string): Comparison | undefined {
-  return comparisons.find((c) => c.s
+  return comparisons.find((c) => c.slug === slug);
+}
