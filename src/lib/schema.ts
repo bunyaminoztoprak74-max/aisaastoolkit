@@ -3,6 +3,7 @@ import type { Comparison } from "@/data/comparisons";
 import type { BestList } from "@/data/bestLists";
 import type { BlogPost } from "@/data/blog";
 import type { Author } from "@/data/authors";
+import { getAuthorBySlug } from "@/data/authors";
 
 const SITE_URL = "https://aisaastoolkit.com";
 const SITE_NAME = "AISaaSToolkit";
@@ -40,7 +41,9 @@ export function buildSoftwareSchema(tool: Tool) {
 }
 
 /** Review schema for review pages */
-export function buildReviewSchema(tool: Tool) {
+export function buildReviewSchema(tool: Tool, authorSlugOverride?: string) {
+  const authorSlug = authorSlugOverride ?? tool.authorSlug;
+  const author = authorSlug ? getAuthorBySlug(authorSlug) : null;
   return {
     "@context": "https://schema.org",
     "@type": "Review",
@@ -52,7 +55,12 @@ export function buildReviewSchema(tool: Tool) {
       bestRating: "5",
       worstRating: "1",
     },
-    author: {
+    author: author ? {
+      "@type": "Person",
+      name: author.name,
+      url: `${SITE_URL}/author/${author.slug}`,
+      sameAs: [author.twitter, author.linkedin].filter(Boolean),
+    } : {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
@@ -176,21 +184,4 @@ export function buildArticleSchema(post: BlogPost) {
       name: SITE_NAME,
       url: SITE_URL,
     },
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt ?? post.publishedAt,
-    image: `${SITE_URL}/og-image.svg`,
-    url: `${SITE_URL}/blog/${post.slug}`,
-  };
-}
-
-/** Organization schema */
-export function buildOrganizationSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: `${SITE_URL}/og-image.svg`,
-    sameAs: ["https://twitter.com/aisaastoolkit"],
-  };
-}
+    datePublished: (() => { try { return new Date(post.publishedAt).toISOStrin
