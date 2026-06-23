@@ -81,6 +81,24 @@ export const categories: Category[] = [
     toolCount: 2,
     featured: false,
   },
+  {
+    name: "SaaS Security",
+    slug: "saas-security",
+    description: "Protect your business with enterprise-grade password managers, business VPNs, zero-trust access, and identity security tools.",
+    icon: "🔒",
+    color: "from-slate-600 to-blue-700",
+    toolCount: 2,
+    featured: false,
+  },
+  {
+    name: "AI Image",
+    slug: "ai-image",
+    description: "Generate stunning images, artwork, and marketing visuals with AI — from photorealistic renders to artistic illustrations.",
+    icon: "🎨",
+    color: "from-pink-500 to-rose-500",
+    toolCount: 3,
+    featured: true,
+  },
 ];
 
 export function getCategoryBySlug(slug: string) {

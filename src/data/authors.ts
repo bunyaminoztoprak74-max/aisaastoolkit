@@ -40,6 +40,19 @@ export const allAuthors: Author[] = [
     reviewCount: 28,
     joinedDate: "2022-06-01",
   },
+  {
+    slug: "james-wright",
+    name: "James Wright",
+    title: "AI Automation & Workflow Specialist",
+    bio: "James Wright is an AI automation specialist with 6+ years of experience building production workflows with n8n, Make.com, Zapier, and custom API integrations. With a background in backend engineering and business process automation, James bridges the gap between technical implementation and real-world business outcomes. He has built automation systems for e-commerce brands, SaaS companies, and digital agencies — and writes at AISaaSToolkit to share practical, hands-on guidance on AI automation tools. Every review reflects real deployment experience, not just surface-level testing.",
+    shortBio: "6+ years building automation workflows with n8n, Make.com & Zapier. Backend engineer turned AI automation specialist.",
+    avatar: "https://ui-avatars.com/api/?name=James+Wright&background=F97316&color=fff&size=128",
+    linkedin: "https://linkedin.com/in/jameswright-automation",
+    twitter: "https://twitter.com/jameswright_ai",
+    expertise: ["AI Automation", "Workflow Automation", "n8n", "Make.com", "Business Process Automation", "API Integrations"],
+    reviewCount: 8,
+    joinedDate: "2024-01-01",
+  },
 ];
 
 export function getAuthorBySlug(slug: string): Author | undefined {

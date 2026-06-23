@@ -71,7 +71,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const reviewSchema     = buildReviewSchema(tool);
   const faqSchema        = buildFAQSchema(tool.faqs ?? []);
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { label: "Reviews", href: "/reviews/claude" },
+    { label: "All Reviews", href: "/tools" },
     { label: `${tool.name} Review` },
   ]);
 
@@ -90,7 +90,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         <Breadcrumb
-          items={[{ label: "Reviews", href: "/reviews/claude" }, { label: `${tool.name} Review` }]}
+          items={[{ label: "All Reviews", href: "/tools" }, { label: `${tool.name} Review` }]}
           className="mb-6"
         />
 

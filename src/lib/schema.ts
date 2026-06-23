@@ -184,4 +184,27 @@ export function buildArticleSchema(post: BlogPost) {
       name: SITE_NAME,
       url: SITE_URL,
     },
-    datePublished: (() => { try { return new Date(post.publishedAt).toISOStrin
+    datePublished: (() => { try { return new Date(post.publishedAt).toISOString(); } catch { return post.publishedAt; } })(),
+    dateModified: (() => { try { return new Date(post.updatedAt ?? post.publishedAt).toISOString(); } catch { return post.updatedAt ?? post.publishedAt; } })(),
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${post.slug}` },
+  };
+}
+
+/** Organization schema for site-wide use */
+export function buildOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+    sameAs: [
+      "https://twitter.com/aisaastoolkit",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: "hello@aisaastoolkit.com",
+    },
+  };
+}

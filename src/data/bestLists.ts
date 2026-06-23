@@ -122,6 +122,26 @@ export const bestLists: BestList[] = [
     category: "ai-marketing",
     lastUpdated: "2026-06-18",
   },
+  {
+    slug: "ai-tools-small-business",
+    title: "Best AI Tools for Small Business in 2026",
+    headline: "The 8 Best AI Tools for Small Business in 2026 (Tested & Ranked)",
+    metaDescription: "Best AI tools for small business in 2026: Claude, ChatGPT, Make.com, Mailchimp & more — ranked by impact, ease of use, and ROI. Expert picks with pricing.",
+    intro: "Small businesses today have access to AI tools that would have cost enterprise budgets just five years ago. The right AI stack can handle customer communication, content creation, automation, email marketing, and competitive research — freeing you to focus on growth. We tested the AI tools that consistently deliver the best ROI for small business owners with limited time and budget. Here are the eight that belong in every small business toolkit.",
+    toolSlugs: ["claude", "chatgpt", "make-com", "mailchimp", "canva-ai", "grammarly", "n8n", "jasper"],
+    category: "ai-productivity",
+    lastUpdated: "2026-06-22",
+  },
+  {
+    slug: "best-free-ai-tools",
+    title: "Best Free AI Tools of 2026",
+    headline: "The 7 Best Free AI Tools of 2026 (No Credit Card Required)",
+    metaDescription: "7 best free AI tools in 2026 — Claude, ChatGPT, Canva AI, Grammarly, n8n & Gemini — ranked by what you actually get for free. Expert-tested picks.",
+    intro: "The good news: some of the most powerful AI tools in the world have genuinely useful free tiers. The bad news: it's hard to know which free plans are actually worth using versus which are heavily limited demos. We tested every major AI tool's free tier for 30 days and ranked the ones that deliver real value — no credit card required, no bait-and-switch. These seven tools will meaningfully improve your workflow at zero cost.",
+    toolSlugs: ["claude", "chatgpt", "canva-ai", "grammarly", "n8n", "gemini", "ubersuggest"],
+    category: "ai-productivity",
+    lastUpdated: "2026-06-22",
+  },
 ];
 
 export function getBestListBySlug(slug: string): BestList | undefined {

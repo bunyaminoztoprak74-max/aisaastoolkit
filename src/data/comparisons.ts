@@ -925,6 +925,61 @@ export const comparisons: Comparison[] = [
     ],
     lastUpdated: "2026-06-18",
   },
+
+  {
+    slug: "n8n-vs-make",
+    tool1Slug: "n8n",
+    tool2Slug: "make-com",
+    title: "n8n vs Make.com (2026): Which Automation Tool Is Right for You?",
+    metaDescription: "n8n vs Make.com compared in 2026: pricing, features, ease of use, and real-world performance. Which automation platform should you choose?",
+    headline: "n8n vs Make.com: The Definitive 2026 Automation Showdown",
+    intro: "n8n and Make.com are two of the most popular automation tools in 2026, but they target very different users. n8n is the open-source powerhouse for technical teams who want full control and self-hosting. Make.com is the visual automation platform that non-technical users actually enjoy. We tested both extensively — here is our honest comparison.",
+    verdict: "n8n wins for technical teams, developers, and anyone who wants self-hosted automation without vendor lock-in. Make.com wins for non-technical users who need a polished, easy-to-use interface with fast setup. For pure value, n8n is unbeatable if you can self-host.",
+    tool1Winner: true,
+    winnerReason: "Free self-hosting, superior developer flexibility, and first-class AI agent support",
+    features: [
+      { feature: "Ease of Use", tool1: "Technical — requires setup", tool2: "Beginner-friendly", winner: 2 },
+      { feature: "Self-Hosting", tool1: "Yes — free Community edition", tool2: "No — cloud only", winner: 1 },
+      { feature: "Integration Count", tool1: "400+ native + HTTP", tool2: "1,000+ modules", winner: 2 },
+      { feature: "AI Agent Support", tool1: "First-class (LangChain nodes)", tool2: "Growing but limited", winner: 1 },
+      { feature: "Free Plan", tool1: "Unlimited (self-hosted)", tool2: "1,000 ops/month", winner: 1 },
+      { feature: "Starting Cloud Price", tool1: "$20/month", tool2: "$9/month", winner: 2 },
+      { feature: "Code Nodes", tool1: "JavaScript + Python", tool2: "Limited JS only", winner: 1 },
+      { feature: "Templates Library", tool1: "Growing community", tool2: "Large official library", winner: 2 },
+      { feature: "Error Handling", tool1: "Manual configuration", tool2: "Visual error flows", winner: 2 },
+      { feature: "Team Collaboration", tool1: "Shared workflows", tool2: "Shared scenarios", winner: "tie" },
+    ],
+    pricingComparison: {
+      tool1Free: true,
+      tool2Free: true,
+      tool1Starting: "$0 (self-hosted) / $20/month (Cloud)",
+      tool2Starting: "$0 (1,000 ops/month) / $9/month (Core)",
+      tool1BestPlan: "Self-hosted Community — unlimited free",
+      tool2BestPlan: "Core ($9/month) — best entry-level value",
+      winner: 1,
+    },
+    bestFor: {
+      tool1: [
+        "Developers and technical teams",
+        "Businesses that want data sovereignty",
+        "Teams building AI agent workflows",
+        "Budget-conscious builders willing to self-host",
+      ],
+      tool2: [
+        "Non-technical users and marketers",
+        "Teams that need fast no-code setup",
+        "Businesses wanting a managed cloud solution",
+        "Users who need 1,000+ pre-built integrations",
+      ],
+    },
+    faqs: [
+      { question: "Is n8n better than Make.com?", answer: "n8n is better for technical teams who need maximum flexibility, AI agent support, and data sovereignty through self-hosting. Make.com is better for non-technical users who want a polished, easy-to-use interface with less setup." },
+      { question: "Can I migrate from Make.com to n8n?", answer: "Yes, but it requires rebuilding workflows. n8n has some import tooling, but complex Make.com scenarios will need manual reconstruction in the n8n visual editor." },
+      { question: "Which is cheaper: n8n or Make.com?", answer: "n8n wins on long-term cost if you self-host — the Community edition is completely free with no limits. Make.com's cheapest paid plan is $9/month. For managed cloud hosting, prices are comparable." },
+      { question: "Does n8n support AI agents?", answer: "Yes — n8n has first-class support for AI agent workflows including LangChain nodes, OpenAI integration, and vector database connectors. It is one of the best tools for building production AI automation in 2026." },
+    ],
+    lastUpdated: "2026-06-22",
+  },
 ];
 
 export function getComparisonBySlug(slug: string): Comparison | undefined {
