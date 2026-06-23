@@ -2568,7 +2568,70 @@ export const tools: Tool[] = [
     metaTitle: "Ubersuggest Review 2026: Is the Lifetime Deal Worth It? (Full Test)",
     metaDescription: "Ubersuggest review 2026: keyword research, site audits, and pricing — including the lifetime deal. Is it worth it vs Ahrefs and SEMrush? Honest verdict.",
   },
-];
+  {
+    slug: "dall-e-3",
+    name: "DALL-E 3",
+    tagline: "OpenAI\'s AI image generator built into ChatGPT — the easiest way to create AI images",
+    description: "DALL-E 3 is OpenAI\'s flagship image generation model, integrated directly into ChatGPT Plus and available via API. Unlike Midjourney, it requires no Discord account — generate images from within ChatGPT using natural language prompts. DALL-E 3 excels at following detailed instructions literally, rendering text within images, and creating conceptual illustrations.",
+    logo: "D",
+    logoColor: "bg-gradient-to-br from-gray-800 to-gray-600",
+    category: "ai-image",
+    categories: ["ai-image", "ai-design"],
+    rating: 4.4,
+    badge: "recommended",
+    website: "https://openai.com/dall-e-3",
+    affiliateUrl: "https://chat.openai.com",
+    pricingTiers: [
+      { name: "Free (via ChatGPT)", price: "Free", period: "/month", features: ["Limited image generations", "DALL-E 3 via ChatGPT free tier", "Standard quality", "JPG/PNG export"], highlighted: false },
+      { name: "ChatGPT Plus", price: "$20", period: "/month", features: ["Unlimited DALL-E 3 images", "Highest quality output", "Faster generation", "API access available"], highlighted: true, badge: "Best Value" },
+      { name: "API", price: "$0.04", period: "/image", features: ["Pay per image", "1024x1024 standard", "HD available at $0.08", "Full API access"], highlighted: false },
+    ],
+    pricing: {
+      starting: "Free",
+      hasFree: true,
+      tiers: [
+        { name: "Free", price: "$0", period: "/month", features: ["Limited generations via ChatGPT"] },
+        { name: "ChatGPT Plus", price: "$20", period: "/month", features: ["Unlimited DALL-E 3", "HD quality"] },
+      ],
+    },
+    pros: [
+      "Free access via ChatGPT — no extra subscription needed",
+      "Best instruction-following of any image generator",
+      "Renders text within images accurately",
+      "No Discord required — works entirely in ChatGPT",
+      "Seamlessly integrated with ChatGPT workflows",
+    ],
+    cons: [
+      "Lower artistic ceiling than Midjourney V6",
+      "Less control over style parameters",
+      "ChatGPT Plus required for unlimited generations",
+      "No community gallery for prompt inspiration",
+    ],
+    bestFor: [
+      "ChatGPT Plus subscribers wanting image generation",
+      "Creators who need text rendered accurately in images",
+      "Users who want conceptual illustrations from detailed prompts",
+      "Developers building image generation into apps via API",
+    ],
+    features: [
+      { title: "Instruction Following", description: "Follows complex, detailed prompts more literally than any other image generator." },
+      { title: "Text in Images", description: "Renders readable text within images — a weakness of most AI image tools." },
+      { title: "ChatGPT Integration", description: "Generates images inline in ChatGPT conversations with no context switching." },
+      { title: "API Access", description: "Clean REST API with per-image pricing — ideal for app integration." },
+      { title: "Image Quality", description: "Excellent quality for illustrations and concepts, though Midjourney leads on artistic visuals." },
+      { title: "Style Control", description: "Less granular style control compared to Midjourney parameters." },
+    ],
+    faqs: [
+      { question: "Is DALL-E 3 free?", answer: "DALL-E 3 is available on ChatGPT\'s free tier with limited daily generations. ChatGPT Plus ($20/month) gives unlimited DALL-E 3 generations. The API charges $0.04 per standard image." },
+      { question: "DALL-E 3 vs Midjourney: which is better?", answer: "Midjourney produces more artistically impressive images with better aesthetics. DALL-E 3 is better at following exact instructions and rendering text within images. If you already use ChatGPT Plus, DALL-E 3 is essentially free to use." },
+      { question: "Can I use DALL-E 3 images commercially?", answer: "Yes — OpenAI\'s terms allow commercial use of images generated with DALL-E 3. You own the images you generate, subject to their usage policies." },
+      { question: "Does DALL-E 3 require ChatGPT Plus?", answer: "No — DALL-E 3 is available on the free ChatGPT tier with a daily limit. ChatGPT Plus removes the limit and gives access to higher quality (HD) generation." },
+    ],
+    tags: ["ai-image", "image-generation", "openai", "chatgpt", "dalle"],
+    reviewCount: 1876,
+    lastUpdated: "June 2026",
+    lastTestedDate: "2026-06-15",
+  },];
 
 export function getToolBySlug(slug: string) {
   return tools.find((t) => t.slug === slug);
