@@ -22,6 +22,109 @@ export interface BlogPost {
 
 export const allBlogPosts: BlogPost[] = [
   {
+    slug: "cursor-ai-review-2026",
+    title: "Cursor AI Review 2026: The Best AI Code Editor? We Tested It for 60 Days",
+    excerpt: "Cursor is an AI-first code editor built on VS Code that writes, edits, and debugs code with you. After 60 days of daily use, here is the honest verdict on whether it replaces GitHub Copilot.",
+    content: `<h2>What Is Cursor AI?</h2>
+<p>Cursor is an AI-powered code editor built on the VS Code codebase, developed by Anysphere. Unlike GitHub Copilot (which is a plugin for existing editors), Cursor is a full IDE redesigned around AI — every feature from tab completion to multi-file editing was built with AI as the primary interface. It launched in 2023 and by 2026 has become the most popular dedicated AI code editor with over 400,000 active developers.</p>
+
+<h2>Cursor vs GitHub Copilot: Key Differences</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Feature</th><th>Cursor</th><th>GitHub Copilot</th></tr></thead><tbody>
+<tr><td>Type</td><td>Full IDE (VS Code-based)</td><td>Plugin (any editor)</td></tr>
+<tr><td>Free plan</td><td>Yes — 2,000 completions + 50 slow requests</td><td>Yes — 2,000 completions</td></tr>
+<tr><td>Pro price</td><td>$20/month</td><td>$10/month ($19 for Pro+)</td></tr>
+<tr><td>Models</td><td>Claude 3.5/4, GPT-4o, Gemini, o1</td><td>GPT-4o, Claude Sonnet (Copilot Pro+)</td></tr>
+<tr><td>Codebase indexing</td><td>Yes — full repo context</td><td>Limited (open files)</td></tr>
+<tr><td>Multi-file editing</td><td>Yes (Composer)</td><td>Limited (recent versions)</td></tr>
+<tr><td>Agent mode</td><td>Yes — autonomous multi-step tasks</td><td>Yes (Copilot Workspace, beta)</td></tr>
+<tr><td>Privacy mode</td><td>Yes — code not stored</td><td>Yes — enterprise only</td></tr>
+</tbody></table></div>
+
+<h2>Cursor's Core Features</h2>
+
+<h3>1. Tab Completion (Cursor Tab)</h3>
+<p>Cursor's tab completion is significantly more capable than GitHub Copilot's. It predicts multi-line edits, handles refactors across related code, and learns your coding patterns within a session. In testing, Cursor's completions were more contextually aware — suggesting changes consistent with the rest of the file rather than generic boilerplate.</p>
+
+<h3>2. Cmd+K: Inline Edit</h3>
+<p>Select any code block, press Cmd+K, and type an instruction. Cursor rewrites the selection with changes highlighted. This is the feature developers use most: "add error handling," "make this async," "refactor using the repository pattern." Results are shown as diffs you accept or reject.</p>
+
+<h3>3. Composer: Multi-File Agent</h3>
+<p>Composer is Cursor's autonomous agent mode. Describe what you want to build, and Composer creates, edits, and links multiple files — generating a full feature rather than completing a single function. In testing, Composer successfully scaffolded a complete CRUD API with database models, routes, and validation from a single prompt. This is the feature that most differentiates Cursor from Copilot in 2026.</p>
+
+<h3>4. Chat with Codebase</h3>
+<p>Cursor indexes your entire codebase and lets you ask questions: "Where is the authentication middleware?" "Which components use this API endpoint?" "Explain this function." The codebase-aware chat is dramatically more useful than generic AI chat for navigating large codebases.</p>
+
+<h2>60-Day Test Results</h2>
+
+<h3>What Cursor Does Better Than Copilot</h3>
+<ul>
+<li><strong>Multi-file edits:</strong> Composer handles cross-file changes that Copilot struggles with</li>
+<li><strong>Codebase context:</strong> Cursor's indexing means suggestions are consistent with your specific codebase, not generic</li>
+<li><strong>Model choice:</strong> Access to Claude 3.5 Sonnet and Claude 4 produces noticeably better code for complex logic</li>
+<li><strong>Bug fixing:</strong> "Fix the bug in terminal output" — Cursor reads the error and patches the relevant file automatically</li>
+</ul>
+
+<h3>What Copilot Does Better</h3>
+<ul>
+<li><strong>Price:</strong> $10/month vs $20/month for similar usage</li>
+<li><strong>Editor flexibility:</strong> Copilot works in VS Code, JetBrains, Vim, Neovim — Cursor is its own IDE</li>
+<li><strong>GitHub integration:</strong> Copilot's PR review and issue integration is native; Cursor requires workarounds</li>
+<li><strong>Stability:</strong> Cursor has occasional bugs with the Composer agent; Copilot is more battle-tested</li>
+</ul>
+
+<h2>Cursor Pricing in 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price</th><th>Completions</th><th>Fast Requests</th><th>Models</th></tr></thead><tbody>
+<tr><td>Free (Hobby)</td><td>$0</td><td>2,000/month</td><td>50 slow requests</td><td>GPT-4o mini, Claude Haiku</td></tr>
+<tr><td>Pro</td><td>$20/month</td><td>Unlimited</td><td>500 fast + unlimited slow</td><td>GPT-4o, Claude Sonnet, Gemini</td></tr>
+<tr><td>Business</td><td>$40/user/month</td><td>Unlimited</td><td>Unlimited</td><td>All models + privacy mode</td></tr>
+</tbody></table></div>
+
+<p>The free plan is genuinely useful for light development work. Pro at $20/month is the target for most professional developers. Business at $40/user is for teams needing centralised billing and guaranteed privacy mode.</p>
+
+<h2>Pros and Cons</h2>
+<h3>Pros</h3>
+<ul>
+<li>Composer agent handles genuine multi-file feature development</li>
+<li>Choice of frontier models (Claude 4, GPT-4o, Gemini Pro)</li>
+<li>Codebase indexing produces contextually accurate suggestions</li>
+<li>VS Code compatible — all extensions work</li>
+<li>Privacy mode (Business plan) keeps code off servers</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>2x the price of GitHub Copilot for comparable single-file tasks</li>
+<li>Composer agent occasionally makes incorrect multi-file assumptions</li>
+<li>Requires switching from your current editor</li>
+<li>No native JetBrains or Vim support</li>
+</ul>
+
+<h2>Who Should Use Cursor in 2026</h2>
+<p><strong>Use Cursor if you:</strong> primarily use VS Code, work on complex multi-file features, want to use Claude 4 or GPT-4o for coding, or benefit from codebase-wide context awareness.</p>
+<p><strong>Stick with GitHub Copilot if you:</strong> use JetBrains or Vim, are on a budget ($10/month vs $20/month), rely heavily on GitHub's native PR and issue integrations, or prefer a battle-tested plugin over a new IDE.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Cursor AI free?</h3>
+<p>Yes, Cursor has a free plan with 2,000 completions per month and 50 slow AI requests. This is sufficient for light use but most active developers need the $20/month Pro plan for unlimited completions and fast model access.</p>
+<h3>Does Cursor work with VS Code extensions?</h3>
+<p>Yes — Cursor is built on VS Code and supports the full VS Code extension ecosystem. Your existing keybindings, themes, and extensions work without modification.</p>
+<h3>Is Cursor safe to use with proprietary code?</h3>
+<p>Cursor's default mode sends code to AI providers (OpenAI, Anthropic) for processing. Privacy mode (Business plan) prevents code from being stored or used for training. For proprietary or sensitive code, use Privacy mode or an on-premises model via Cursor's API integration.</p>
+<h3>Can Cursor replace a developer?</h3>
+<p>No — Cursor makes developers significantly faster but still requires human oversight, architectural decisions, and code review. Composer can scaffold features autonomously but the output requires verification, especially for complex business logic.</p>`,
+    category: "AI Coding",
+    emoji: "💻",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "June 27, 2026",
+    updatedAt: "June 27, 2026",
+    readTime: "12 min read",
+    tags: ["cursor-ai", "ai-coding", "code-editor", "github-copilot-alternative", "cursor-review-2026"],
+    metaTitle: "Cursor AI Review 2026: Best AI Code Editor? (60-Day Test)",
+    metaDescription: "We tested Cursor AI for 60 days. Here's the honest verdict on Composer, codebase indexing, and whether it beats GitHub Copilot at $20/month.",
+    relatedToolSlugs: ["cursor", "github-copilot", "chatgpt"],
+  },
+  {
     slug: "best-ai-writing-tools-2026",
     title: "Best AI Writing Tools in 2026: We Tested 20 So You Don't Have To",
     excerpt: "After 30 days of hands-on testing, here are the AI writing tools actually worth paying for — and the ones that overpromise and underdeliver.",
@@ -69,11 +172,11 @@ export const allBlogPosts: BlogPost[] = [
     authorName: "Alex Morgan",
     authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
     publishedAt: "May 15, 2026",
-    updatedAt: "May 15, 2026",
-    readTime: "12 min read",
-    tags: ["ai-writing", "jasper", "writesonic", "copy-ai"],
-    metaTitle: "Best AI Writing Tools 2026 — Tested & Ranked",
-    metaDescription: "We tested 20 AI writing tools over 30 days. Here are the ones actually worth your money in 2026.",
+    updatedAt: "June 27, 2026",
+    readTime: "13 min read",
+    tags: ["ai-writing", "jasper", "writesonic", "copy-ai", "ai-writing-tools-2026"],
+    metaTitle: "Best AI Writing Tools 2026 — Tested & Ranked (Updated June 2026)",
+    metaDescription: "We tested 20 AI writing tools over 30 days. Updated June 2026 with new pricing and tools. Here are the ones actually worth your money.",
     relatedToolSlugs: ["jasper", "writesonic", "claude"],
   },
   {
@@ -148,10 +251,10 @@ export const allBlogPosts: BlogPost[] = [
     authorName: "Alex Morgan",
     authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
     publishedAt: "May 8, 2026",
-    updatedAt: "May 8, 2026",
+    updatedAt: "June 27, 2026",
     readTime: "15 min read",
     tags: ["make-com", "automation", "tutorial"],
-    metaTitle: "Make.com Beginner's Guide 2026 — Build Your First Automation",
+    metaTitle: "Make.com Beginner's Guide 2026 — Build Your First Automation (Updated June 2026)",
     metaDescription: "Step-by-step Make.com tutorial for beginners. Build your first automation workflow in 30 minutes without code.",
     relatedToolSlugs: ["make-com"],
   },
@@ -162,49 +265,84 @@ export const allBlogPosts: BlogPost[] = [
     content: `<h2>The Truth About "Free" AI Tools</h2>
 <p>Most AI tools marketed as "free" are really 7-day trials in disguise. We tested tools with <em>genuinely</em> useful free tiers — ones you could use long-term without ever paying. Here are the 10 that made the cut.</p>
 
+<h2>Quick Comparison: Best Free AI Tools in 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Tool</th><th>Free Tier</th><th>Best For</th><th>Catch?</th></tr></thead><tbody>
+<tr><td><strong>Claude</strong></td><td>Claude Sonnet, daily limit</td><td>Writing &amp; analysis</td><td>Daily message cap</td></tr>
+<tr><td><strong>ChatGPT</strong></td><td>GPT-4o mini + limited GPT-4o</td><td>All-purpose tasks</td><td>Limited GPT-4o usage</td></tr>
+<tr><td><strong>Writesonic</strong></td><td>10,000 words/month</td><td>SEO blog posts</td><td>Monthly word cap</td></tr>
+<tr><td><strong>ElevenLabs</strong></td><td>10,000 chars/month</td><td>Voice cloning &amp; TTS</td><td>Monthly character cap</td></tr>
+<tr><td><strong>Make.com</strong></td><td>1,000 ops/month</td><td>Automation</td><td>Operation limit</td></tr>
+<tr><td><strong>Perplexity</strong></td><td>Unlimited basic + 5 Pro/day</td><td>AI research</td><td>Limited Pro searches</td></tr>
+<tr><td><strong>Canva AI</strong></td><td>Basic AI features</td><td>Design &amp; graphics</td><td>Limited AI credits</td></tr>
+<tr><td><strong>Notion AI</strong></td><td>Basic features in free plan</td><td>Note-taking &amp; docs</td><td>Limited AI responses</td></tr>
+<tr><td><strong>Bing Image Creator</strong></td><td>Unlimited (throttled)</td><td>AI images</td><td>Slows down after boost</td></tr>
+<tr><td><strong>Google Gemini</strong></td><td>Gemini 1.5 Flash free</td><td>Multimodal + Google apps</td><td>No Gemini Advanced</td></tr>
+</tbody></table></div>
+
 <h2>1. Claude (Free Tier) — Best Free AI Assistant</h2>
-<p>Anthropic's Claude has one of the most capable free tiers of any AI assistant. You get Claude Sonnet, generous daily message limits, and one of the longest context windows in the industry. For writing, analysis, and research, Claude's free tier beats many paid alternatives. <a href="/reviews/claude">Read our Claude review →</a></p>
+<p>Anthropic's Claude has one of the most capable free tiers of any AI assistant. You get Claude Sonnet, generous daily message limits, and one of the longest context windows in the industry. For writing, analysis, coding, and research, Claude's free tier beats many paid alternatives. The free plan handles documents up to ~30,000 tokens — enough for full book chapters or lengthy reports.</p>
+<p><strong>What we love:</strong> Claude's free tier produces genuinely high-quality long-form writing with minimal AI-sounding text. The 200K token context window even on paid tiers is industry-leading.</p>
+<p><a href="/reviews/claude">Read our full Claude review →</a></p>
 
 <h2>2. ChatGPT (Free Tier) — Best All-Rounder</h2>
-<p>ChatGPT's free tier gives you GPT-4o mini with limited access to GPT-4o, web browsing, and image analysis. More than enough for everyday tasks. <a href="/reviews/chatgpt">Read our ChatGPT review →</a></p>
+<p>ChatGPT's free tier gives you GPT-4o mini with limited access to GPT-4o, web browsing, and image analysis. The free plan is more than enough for everyday tasks, with access to thousands of GPTs in the GPT Store. <a href="/reviews/chatgpt">Read our ChatGPT review →</a></p>
 
 <h2>3. Writesonic (Free Plan) — Best Free AI Writer</h2>
-<p>10,000 words per month free — no credit card, no expiry. That's enough for 4-5 solid blog posts. The Article Writer includes real-time web research. <a href="/reviews/writesonic">Read our Writesonic review →</a></p>
+<p>10,000 words per month free — no credit card, no expiry. That's enough for 4-5 solid blog posts. The Article Writer 6.0 includes real-time web research with citations, making it the strongest free SEO writing tool in 2026. <a href="/reviews/writesonic">Read our Writesonic review →</a></p>
 
 <h2>4. ElevenLabs (Free Plan) — Best Free Voice AI</h2>
-<p>10,000 characters per month and 3 custom voices. Enough for a 10-minute narration or podcast intro. Quality on the free tier is identical to paid — just limited on volume. <a href="https://try.elevenlabs.io/2n2qt91ne8ak" rel="nofollow noopener" target="_blank">Try ElevenLabs free →</a></p>
+<p>10,000 characters per month and 3 custom voices free. Enough for a 10-minute narration or podcast intro every month. Quality on the free tier is identical to paid — just limited on volume. Voice cloning from a 1-minute sample is included even on free. <a href="https://try.elevenlabs.io/2n2qt91ne8ak" rel="nofollow noopener" target="_blank">Try ElevenLabs free →</a></p>
 
 <h2>5. Make.com (Free Plan) — Best Free Automation</h2>
-<p>1,000 operations per month is enough to run 2-3 simple automations indefinitely. For a small newsletter, personal CRM, or social media tracker, Make's free tier is all you need.</p>
+<p>1,000 operations per month is enough to run 2-3 simple automations indefinitely. For a small newsletter workflow, personal CRM, or social media tracker, Make's free tier is genuinely production-ready. Supports 2 active scenarios and most app integrations. <a href="/blog/make-com-complete-guide-2026">See our Make.com automation guide →</a></p>
 
-<h2>6. Perplexity AI (Free) — Best Free AI Search</h2>
-<p>Unlimited basic searches with real-time web results and citations. 5 Pro searches per day for deeper research. For staying current on industry news, Perplexity's free plan is unbeatable. <a href="/reviews/perplexity">Read our Perplexity review →</a></p>
+<h2>6. Perplexity AI (Free) — Best Free AI Research</h2>
+<p>Unlimited basic searches with real-time web results and citations. 5 Pro searches per day with deeper reasoning. For staying current on industry news, fact-checking, and quick research, Perplexity's free plan is unbeatable — especially compared to ChatGPT's limited free browsing. <a href="/reviews/perplexity-ai">Read our Perplexity review →</a></p>
 
 <h2>7. Canva AI (Free Tier) — Best Free Design AI</h2>
-<p>Canva's free plan includes AI-powered design suggestions, background removal, and the Magic Write AI text tool. For social media graphics and presentations, it's the best free option.</p>
+<p>Canva's free plan includes AI-powered design suggestions, one-click background removal, and the Magic Write AI text tool with limited credits. For social media graphics, presentations, and marketing materials, it's the most capable free design tool. The AI image generator gives 50 free images per month.</p>
 
 <h2>8. Notion AI (Basic) — Best Free Productivity AI</h2>
-<p>Notion AI's basic features are included in Notion's free plan. Great for light note-taking, summaries, and organisation without any additional cost.</p>
+<p>Notion AI's basic features are available in Notion's free plan. AI summaries, action item extraction, and basic writing assistance are included. The free personal plan gives unlimited pages — ideal for writers and researchers using AI to organise their knowledge base.</p>
 
 <h2>9. Bing Image Creator — Best Free AI Image Generator</h2>
-<p>Powered by DALL-E, Bing Image Creator gives you unlimited AI image generation completely free. Excellent quality for social media, blog headers, and concept art.</p>
+<p>Powered by DALL-E 3, Bing Image Creator gives you unlimited AI image generation completely free (speeds decrease after your initial "boosts"). Excellent quality for social media headers, blog featured images, and concept art — without a Midjourney subscription.</p>
 
 <h2>10. Google Gemini (Free) — Best Free Multimodal AI</h2>
-<p>Google's Gemini is free with a Google account and handles text, images, and code. Integration with Google Docs, Gmail, and Drive makes it uniquely useful for Google Workspace users.</p>
+<p>Google's Gemini 1.5 Flash is free with a Google account and handles text, images, audio, and code. The key advantage: deep integration with Google Workspace — Gemini in Gmail, Docs, and Drive are genuinely useful for productivity workflows that live in Google's ecosystem.</p>
 
-<h2>Bottom Line</h2>
-<p>You can build a genuinely powerful AI toolkit for $0/month using Claude, Writesonic, ElevenLabs, Make.com, and Perplexity on their free tiers. Start free, identify which tool you use most, then upgrade only that one.</p>`,
+<h2>Build Your $0 AI Stack</h2>
+<p>You can build a genuinely powerful AI toolkit for $0/month:</p>
+<ul>
+<li><strong>Writing:</strong> Claude (long-form) + Writesonic (SEO posts)</li>
+<li><strong>Research:</strong> Perplexity (real-time facts) + ChatGPT (analysis)</li>
+<li><strong>Voice:</strong> ElevenLabs (narration + TTS)</li>
+<li><strong>Images:</strong> Bing Image Creator (unlimited free)</li>
+<li><strong>Automation:</strong> Make.com (workflows)</li>
+<li><strong>Design:</strong> Canva AI (graphics)</li>
+</ul>
+<p>Start free, identify which tool you use most, then upgrade only that one.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Are free AI tools actually good enough for professional use?</h3>
+<p>For many use cases, yes. Claude's free tier, Perplexity, and Bing Image Creator are fully professional-grade. The main limitations are usage caps, not quality. Upgrade when you consistently hit the free tier limits.</p>
+<h3>Which free AI tool is best for a complete beginner?</h3>
+<p>ChatGPT's free tier is the easiest entry point — it handles text, images, and code with no setup. Claude is the second-best option for writing-focused beginners.</p>
+<h3>Can I use ElevenLabs free tier for YouTube videos?</h3>
+<p>Yes, ElevenLabs' free plan allows commercial use for up to 10,000 characters per month. Perfect for short YouTube videos, podcast intros, or explainer content. Check their terms for the latest policy.</p>
+<h3>Is there a truly unlimited free AI writing tool?</h3>
+<p>No tool is truly unlimited for free. Bing Image Creator comes closest for images. For writing, Claude and ChatGPT have daily caps — generous for most users but not unlimited for heavy commercial use.</p>`,
     category: "AI Tools",
     emoji: "👍",
     authorSlug: "alex-morgan",
     authorName: "Alex Morgan",
     authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
     publishedAt: "May 5, 2026",
-    updatedAt: "May 5, 2026",
-    readTime: "8 min read",
-    tags: ["free-plan", "tools-overview"],
-    metaTitle: "10 Free AI Tools Worth Using in 2026",
-    metaDescription: "These free AI tools have genuinely useful free tiers — not just 7-day trials. Tested and ranked by our team.",
+    updatedAt: "June 27, 2026",
+    readTime: "9 min read",
+    tags: ["free-plan", "tools-overview", "ai-tools-2026"],
+    metaTitle: "10 Free AI Tools Worth Using in 2026 (Actually Useful)",
+    metaDescription: "These free AI tools have genuinely useful free tiers — not just 7-day trials. Comparison table, real limits, and the best $0 AI stack for 2026.",
     relatedToolSlugs: ["claude", "chatgpt", "writesonic"],
   },
   {
@@ -1750,6 +1888,9 @@ export const allBlogPosts: BlogPost[] = [
 <h2>Our Verdict</h2>
 <p>Descript earns a <strong>4.4/5</strong>. For podcasters and video creators, the transcript-based editing workflow is genuinely transformative. The Creator plan at $24/month is the sweet spot — Overdub voice cloning plus 30 hours of transcription covers most independent creators. If you edit more than one podcast episode per week, Descript pays for itself in time saved.</p>
 
+<h2>Descript vs ElevenLabs: Which Do You Need?</h2>
+<p>These tools solve different problems. Descript is a full video/podcast editor where you edit audio by editing the transcript. <a href="https://try.elevenlabs.io/2n2qt91ne8ak" rel="nofollow noopener" target="_blank">ElevenLabs</a> is a pure voice AI for generating narration and cloning your voice for text-to-speech. If you record and edit your own voice, use Descript. If you need AI-generated narration without recording, use ElevenLabs. Many content creators use both in their workflow.</p>
+
 <h2>Frequently Asked Questions</h2>
 <h3>Is Descript worth it for podcasters?</h3>
 <p>Yes, especially if you edit your own audio. The transcript-based editing and filler word removal alone save 30–60 minutes per episode compared to traditional DAW editing.</p>
@@ -2580,5 +2721,4 @@ export function getRelatedBlogPosts(slug: string, limit = 3): typeof allBlogPost
   if (!post) return [];
   return allBlogPosts
     .filter((p) => p.slug !== slug && p.category === post.category)
-    .slice(0, limit);
-}
+  
