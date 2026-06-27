@@ -2721,4 +2721,5 @@ export function getRelatedBlogPosts(slug: string, limit = 3): typeof allBlogPost
   if (!post) return [];
   return allBlogPosts
     .filter((p) => p.slug !== slug && p.category === post.category)
-  
+    .slice(0, limit);
+}
