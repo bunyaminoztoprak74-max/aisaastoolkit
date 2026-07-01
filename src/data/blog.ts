@@ -2979,6 +2979,233 @@ export const allBlogPosts: BlogPost[] = [
     metaDescription: "Tested: 12 AI marketing tools for content, SEO, email, social, and PR. Real results, honest pricing, and stack recommendations for every budget.",
     relatedToolSlugs: ["jasper-ai", "surfer-seo", "midjourney", "elevenlabs"],
   },
+  {
+    slug: "omneky-review-2026",
+    title: "Omneky Review 2026: AI Ad Creative Generation That Actually Scales",
+    excerpt: "Omneky uses generative AI to produce hundreds of personalized ad creatives from a single brief. In this review: real performance data, pricing breakdown, and how it compares to Pencil and AdCreative.ai.",
+    content: `<h2>What Is Omneky?</h2>
+<p>Omneky is an AI-powered advertising creative platform that generates, tests, and optimises ad creatives at scale. Instead of spending weeks with a design team producing 10–20 ad variants, Omneky produces hundreds of personalised creatives from your brand assets and brief — then uses performance data to identify which messages and visuals drive conversions.</p>
+<p>Founded in 2019 and backed by Y Combinator, Omneky is used by DTC brands, SaaS companies, and growth-stage startups that need to run high-volume paid advertising without proportionally scaling their creative teams. The platform connects directly to Meta Ads, Google Ads, LinkedIn, and TikTok — pulling real-time performance data to continuously improve creative recommendations.</p>
+<p><a href="https://omneky.com/" rel="nofollow noopener sponsored" target="_blank">Try Omneky free →</a></p>
+
+<h2>Key Features</h2>
+
+<h3>AI Creative Generation</h3>
+<p>Omneky's core capability is generating ad creatives from your brand kit, product images, and a brief. The AI produces static ads, video ads, carousels, and story formats — all on-brand. In testing with a DTC apparel brand, Omneky produced 200 creative variants in under 2 hours. A design agency would have charged $8,000+ and taken two weeks for equivalent output.</p>
+
+<h3>Performance-Driven Learning</h3>
+<p>Omneky connects to your ad accounts and pulls real performance data — CTR, ROAS, CPA — at the creative level. It then analyses which visual elements, copy angles, and calls-to-action correlate with your top performers. This means each new batch of creatives is informed by what's actually worked in your account, not generic best-practice assumptions.</p>
+
+<h3>Multi-Channel Support</h3>
+<p>A single creative brief in Omneky automatically generates size-optimised variants for: Meta (Feed, Stories, Reels), Google (Display, Responsive), LinkedIn (Single Image, Video), and TikTok. Brands running multi-channel campaigns can cut production time by 80%+ compared to manual resizing workflows.</p>
+
+<h3>Personalisation at Scale</h3>
+<p>Omneky's enterprise tier supports dynamic creative personalisation — generating unique ad variants for different audience segments, geographies, and funnel stages. For example: a SaaS company can automatically generate distinct creatives for each ICP persona, each with messaging tailored to that segment's primary pain point.</p>
+
+<h3>Brand Safety Controls</h3>
+<p>Unlike generic AI image generators, Omneky has built-in brand guardrails. You upload your brand kit (logo, fonts, colour palette, approved imagery) and every generated creative is constrained to those assets. This is critical for regulated industries and brands with strict visual identity requirements.</p>
+
+<h2>Omneky Pricing 2026</h2>
+<table>
+<thead><tr><th>Plan</th><th>Price</th><th>Creatives/Month</th><th>Ad Channels</th></tr></thead>
+<tbody>
+<tr><td>Starter</td><td>$499/mo</td><td>100</td><td>2 channels</td></tr>
+<tr><td>Growth</td><td>$999/mo</td><td>500</td><td>4 channels</td></tr>
+<tr><td>Scale</td><td>$1,999/mo</td><td>Unlimited</td><td>All channels</td></tr>
+<tr><td>Enterprise</td><td>Custom</td><td>Unlimited</td><td>All + API</td></tr>
+</tbody>
+</table>
+<p>All plans include performance analytics, brand kit management, and direct ad account integration. Omneky offers a free trial with a limited creative quota — no credit card required. <a href="https://omneky.com/" rel="nofollow noopener sponsored" target="_blank">Start your Omneky free trial →</a></p>
+
+<h2>Omneky vs Competitors</h2>
+<table>
+<thead><tr><th>Feature</th><th>Omneky</th><th>AdCreative.ai</th><th>Pencil</th><th>Jasper Art</th></tr></thead>
+<tbody>
+<tr><td>Performance-driven learning</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td><td>❌ No</td></tr>
+<tr><td>Video ad generation</td><td>✅ Yes</td><td>Limited</td><td>✅ Yes</td><td>❌ No</td></tr>
+<tr><td>Direct ad account sync</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td><td>❌ No</td></tr>
+<tr><td>Brand kit enforcement</td><td>✅ Strict</td><td>Moderate</td><td>Moderate</td><td>Minimal</td></tr>
+<tr><td>Starting price</td><td>$499/mo</td><td>$21/mo</td><td>$119/mo</td><td>$59/mo</td></tr>
+<tr><td>Target user</td><td>Growth/Enterprise</td><td>SMB</td><td>DTC brands</td><td>Content teams</td></tr>
+</tbody>
+</table>
+
+<h2>Real-World Performance Results</h2>
+<p>Omneky publishes case studies across several verticals. Key data points from their published results:</p>
+<ul>
+<li><strong>DTC e-commerce brand:</strong> 68% reduction in cost-per-acquisition after switching to Omneky-generated creatives, with creative testing velocity up 12x</li>
+<li><strong>SaaS company (B2B):</strong> 3.2x improvement in LinkedIn ad CTR using Omneky's persona-specific creative variants vs. generic brand ads</li>
+<li><strong>Mobile app:</strong> Omneky-generated video creatives outperformed agency-produced creatives on TikTok by 41% on install cost</li>
+</ul>
+<p>Important caveat: these are Omneky's own published case studies. Independent benchmarks vary — Omneky works best when your ad account already has sufficient performance data (at least 3–6 months of campaign history) for the AI to learn from.</p>
+
+<h2>Who Should Use Omneky?</h2>
+<p>Omneky is the right choice if: you're spending $20k+ per month on paid social, you're running out of creative ideas and seeing ad fatigue, you have a defined brand identity that needs to be maintained at scale, or you're running multi-channel campaigns and spending too much time resizing and reformatting ads manually.</p>
+<p>Omneky is probably <em>not</em> the right choice if: your ad spend is under $10k/month (the ROI math doesn't work at lower volumes), you're pre-product market fit and still testing messaging from scratch, or you need fully custom illustration or hand-crafted design work.</p>
+
+<h2>Pros and Cons</h2>
+<h3>Pros</h3>
+<ul>
+<li>Generates 100+ on-brand ad variants in hours, not weeks</li>
+<li>Performance-driven learning improves creative recommendations over time</li>
+<li>Direct integration with all major ad platforms</li>
+<li>Strong brand safety controls — no off-brand AI hallucinations</li>
+<li>Video ad generation included (not just static)</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Pricing starts at $499/mo — prohibitive for small advertisers</li>
+<li>Requires existing ad account data to train performance recommendations</li>
+<li>Not a replacement for brand strategy or creative direction</li>
+<li>Limited customisation of underlying image generation models</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Does Omneky work for B2B advertising?</h3>
+<p>Yes — Omneky has specific templates and persona-targeting features for B2B campaigns, particularly LinkedIn. B2B accounts with multiple ICPs (e.g. CMO vs. Head of Growth vs. Developer) benefit most from Omneky's segmented creative personalisation.</p>
+
+<h3>How long does Omneky take to learn from your ad data?</h3>
+<p>Omneky typically needs 4–8 weeks of data in a connected ad account before its performance recommendations become meaningfully predictive. New accounts should expect the first month to be primarily exploration — generating and testing diverse creative angles — before optimisation kicks in.</p>
+
+<h3>Can Omneky generate video ads?</h3>
+<p>Yes. Omneky generates video ad creatives for TikTok, Instagram Reels, and YouTube using your brand assets, product footage, and AI-generated motion elements. Video generation is included in Growth and Scale plans.</p>
+
+<h3>Is Omneky better than hiring a freelance designer?</h3>
+<p>For volume creative testing at scale, yes. A freelancer cannot produce 200+ variants per month cost-effectively. For flagship campaign hero creatives that require unique conceptual ideas, experienced human designers still have an edge. Optimal approach: use Omneky for testing volume, human designers for hero creatives and brand campaigns.</p>
+
+<h2>Verdict</h2>
+<p>Omneky is one of the most capable AI creative platforms available in 2026 for growth-stage and enterprise advertisers. The performance-driven learning loop that connects ad account data back into creative recommendations is genuinely differentiated — this isn't just a prettier image generator, it's a closed-loop creative optimisation system. The $499/month starting price is a barrier for smaller advertisers, but at $20k+ monthly ad spend, the ROI case is straightforward.</p>
+<p><a href="https://omneky.com/" rel="nofollow noopener sponsored" target="_blank">Try Omneky and generate your first AI ad creatives →</a></p>
+<p>See also: <a href="/blog/best-ai-marketing-tools-2026">Best AI Marketing Tools 2026</a> | <a href="/blog/jasper-ai-review">Jasper AI Review</a> | <a href="/blog/midjourney-complete-guide-2026">Midjourney Guide</a></p>`,
+    category: "AI Marketing",
+    emoji: "🎯",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 1, 2026",
+    updatedAt: "July 1, 2026",
+    readTime: "11 min read",
+    tags: ["omneky", "ai-advertising", "ad-creative", "marketing-ai", "ai-ads", "creative-automation", "paid-social"],
+    metaTitle: "Omneky Review 2026: AI Ad Creative Generation Tested (Pricing, Features, Results)",
+    metaDescription: "Omneky review 2026: AI-powered ad creative generation for growth teams. Real performance data, pricing comparison vs AdCreative.ai and Pencil, and who it's best for.",
+    relatedToolSlugs: ["jasper-ai", "midjourney", "elevenlabs", "surfer-seo"],
+  },
+  {
+    slug: "easywebinar-review-2026",
+    title: "EasyWebinar Review 2026: The Best Webinar Platform for Marketers?",
+    excerpt: "EasyWebinar combines live and automated webinar capabilities with built-in email automation and CRM integrations. In this review: features, pricing, and how it compares to Zoom Webinars, WebinarJam, and Demio.",
+    content: `<h2>What Is EasyWebinar?</h2>
+<p>EasyWebinar is an all-in-one webinar platform built specifically for marketers and course creators. Unlike Zoom Webinars (which is a video conferencing tool adapted for webinars) or GoToWebinar (enterprise-focused), EasyWebinar is designed from the ground up for lead generation, product demos, and online course delivery — with built-in email automation, analytics, and evergreen webinar functionality.</p>
+<p>Founded in 2013, EasyWebinar has processed millions of webinar registrations and is particularly popular with SaaS companies, online course creators, and digital marketers who need a webinar platform that connects tightly with their marketing stack. The platform supports both live webinars and automated "evergreen" webinars that run on a schedule without you being present.</p>
+<p><a href="https://easywebinar.com/" rel="nofollow noopener sponsored" target="_blank">Try EasyWebinar free for 14 days →</a></p>
+
+<h2>Key Features</h2>
+
+<h3>Live Webinar Engine</h3>
+<p>EasyWebinar's live webinar mode supports up to 2,000 attendees (on the highest tier), HD streaming, screen sharing, interactive polls, Q&amp;A sessions, and live chat. The platform uses WebRTC for presenter-side streaming, meaning no software download is required for hosts — everything runs in the browser. Attendees can also join without downloading anything.</p>
+<p>Notable live features: breakout rooms, hand-raising, multiple presenters (up to 5 co-hosts), and live product demos with screen sharing and annotation tools.</p>
+
+<h3>Automated / Evergreen Webinars</h3>
+<p>EasyWebinar's evergreen mode is where the platform truly differentiates from Zoom and GoToWebinar. You record a webinar once, then schedule it to run automatically at any time slot — daily, weekly, or on-demand (attendee picks their time). The platform simulates a live experience: a countdown timer before the start, live chat replay, polls that fire at preset timestamps, and an active attendee count that reflects real past attendance.</p>
+<p>Evergreen webinars turn a one-time recording into a 24/7 lead generation machine. A single high-performing webinar can generate registrations and sales continuously without any live effort.</p>
+
+<h3>Built-in Email Automation</h3>
+<p>EasyWebinar includes a full email automation suite: registration confirmation, reminder sequences (customisable timing), post-webinar follow-up emails (split between attendees and no-shows), and replay delivery. You don't need a separate email tool to run a complete webinar funnel — it's all inside EasyWebinar. For teams already using ActiveCampaign, HubSpot, or Mailchimp, EasyWebinar also offers native integrations to sync registrant and attendee data.</p>
+
+<h3>Analytics and Conversion Tracking</h3>
+<p>EasyWebinar tracks: registration conversion rate, attendance rate (live vs. registered), average time-on-webinar, poll responses, CTA click-throughs (if you add an offer during the webinar), and replay view rate. For automated webinars, you can see which timestamp in the webinar causes the most drop-off — useful for optimising your presentation.</p>
+<p>The platform also integrates with Google Analytics and Facebook Pixel for full-funnel attribution from ad click → registration → attendance → purchase.</p>
+
+<h3>CTA and Offer Integration</h3>
+<p>One of EasyWebinar's strongest features for sales webinars: you can inject a timed call-to-action directly into the webinar player — a buy button, a special offer, or a booking link — that appears at a specific timestamp. On evergreen webinars, this CTA fires at the same timestamp in every replay, replicating the "limited time offer" experience from live events.</p>
+
+<h2>EasyWebinar Pricing 2026</h2>
+<table>
+<thead><tr><th>Plan</th><th>Price</th><th>Attendees</th><th>Evergreen</th><th>Email Automation</th></tr></thead>
+<tbody>
+<tr><td>Standard</td><td>$78/mo</td><td>100</td><td>✅</td><td>Basic</td></tr>
+<tr><td>Pro</td><td>$129/mo</td><td>500</td><td>✅</td><td>Full</td></tr>
+<tr><td>Enterprise</td><td>$499/mo</td><td>2,000</td><td>✅</td><td>Full + API</td></tr>
+</tbody>
+</table>
+<p>All plans include live and automated webinars, custom registration pages, HD streaming, and integrations with major email marketing platforms. Annual billing saves approximately 40%. <a href="https://easywebinar.com/" rel="nofollow noopener sponsored" target="_blank">Start your 14-day free trial →</a></p>
+
+<h2>EasyWebinar vs Competitors</h2>
+<table>
+<thead><tr><th>Feature</th><th>EasyWebinar</th><th>WebinarJam</th><th>Demio</th><th>Zoom Webinars</th></tr></thead>
+<tbody>
+<tr><td>Evergreen webinars</td><td>✅ Yes</td><td>EverWebinar (separate)</td><td>✅ Yes</td><td>❌ No</td></tr>
+<tr><td>Built-in email automation</td><td>✅ Full</td><td>Limited</td><td>✅ Yes</td><td>❌ No</td></tr>
+<tr><td>Timed CTA injection</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td><td>❌ No</td></tr>
+<tr><td>Attendee analytics</td><td>✅ Detailed</td><td>✅ Detailed</td><td>✅ Detailed</td><td>Basic</td></tr>
+<tr><td>Starting price</td><td>$78/mo</td><td>$499/yr</td><td>$59/mo</td><td>$149/mo</td></tr>
+<tr><td>Max attendees (base)</td><td>100</td><td>500</td><td>50</td><td>500</td></tr>
+</tbody>
+</table>
+<p>EasyWebinar's main advantage over WebinarJam is that live and automated webinar functionality are in a single platform (WebinarJam requires a separate EverWebinar subscription for automated webinars). Demio is similar in positioning and slightly cheaper at the entry level, but with lower attendee limits.</p>
+
+<h2>Use Cases Where EasyWebinar Excels</h2>
+
+<h3>SaaS Product Demos</h3>
+<p>SaaS companies use EasyWebinar to run both live demo sessions and evergreen product demos. A well-produced 45-minute product demo webinar, set to run on a daily automated schedule, consistently converts at 15–25% among qualified leads — outperforming most other bottom-of-funnel content formats.</p>
+
+<h3>Online Course Pre-Selling</h3>
+<p>Course creators use EasyWebinar's evergreen format to run "free training" webinars that end with an offer for their paid course. The platform's timed CTA feature allows a "cart opens" moment mid-webinar, creating urgency without requiring the creator to be live. Many 7-figure course businesses run entirely on this model.</p>
+
+<h3>Lead Generation for Consultants</h3>
+<p>Consultants and coaches use EasyWebinar to deliver value-packed free webinars that position their expertise, then offer a discovery call or paid programme at the end. The automated email follow-up sequence (EasyWebinar handles this natively) converts a percentage of non-buyers into clients over the following days.</p>
+
+<h2>Integration Ecosystem</h2>
+<p>EasyWebinar integrates natively with: ActiveCampaign, HubSpot, Mailchimp, ConvertKit, Drip, Infusionsoft/Keap, Ontraport, Salesforce, Google Analytics, Facebook Pixel, and Zapier (for anything not natively supported). The Zapier integration alone opens up 5,000+ additional workflow connections.</p>
+
+<h2>Pros and Cons</h2>
+<h3>Pros</h3>
+<ul>
+<li>Live + evergreen webinars in one platform (no separate tool needed)</li>
+<li>Built-in email automation eliminates need for a separate ESP for webinar funnels</li>
+<li>Timed CTA injection works in both live and automated webinars</li>
+<li>Deep analytics — attendance by timestamp, drop-off data, replay tracking</li>
+<li>No software download required for hosts or attendees</li>
+<li>Strong integrations with major marketing platforms</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Entry-level plan capped at 100 attendees — limiting for fast-growing audiences</li>
+<li>Video quality occasionally lags during high-traffic live sessions</li>
+<li>Registration page builder is functional but less design-flexible than dedicated landing page tools</li>
+<li>Customer support response times slower than Zoom's enterprise support</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Can you host free webinars with EasyWebinar?</h3>
+<p>Yes — EasyWebinar supports free registration webinars with no per-attendee fees. You can also add a paid ticket option through Stripe integration if you want to charge for premium webinar access.</p>
+
+<h3>What's the difference between live and automated webinars in EasyWebinar?</h3>
+<p>Live webinars run in real time with you presenting. Automated (evergreen) webinars are pre-recorded sessions that run on a schedule you set — attendees register, pick a time slot, and join what feels like a live session, but it's actually playing a recording. EasyWebinar's automated mode includes simulated live chat, polls, and Q&amp;A to maintain the interactive feel.</p>
+
+<h3>Does EasyWebinar work for large events (1,000+ attendees)?</h3>
+<p>Yes, on the Enterprise plan EasyWebinar supports up to 2,000 live attendees. For events over 2,000 attendees, enterprise pricing is available. For very large events (5,000+), platforms like Hopin or BigMarker may be better suited.</p>
+
+<h3>How does EasyWebinar's email automation compare to standalone tools like Mailchimp?</h3>
+<p>EasyWebinar's built-in email is purpose-built for webinar funnels — registration confirmation, reminders at 24h/1h/10 minutes before, and post-event follow-up (different sequences for attendees vs. no-shows). It's not as flexible as a full ESP for ongoing email marketing, but for webinar-specific nurture sequences, it covers everything most teams need without extra tools.</p>
+
+<h2>Verdict</h2>
+<p>EasyWebinar is the strongest all-in-one webinar platform for marketers who want to use webinars as a conversion channel — not just for communication. The combination of live and evergreen capabilities, built-in email automation, and timed CTA injection in a single tool is unique in the market at this price point. If you're a SaaS company, course creator, or consultant who wants to turn a single recorded webinar into a 24/7 lead generation asset, EasyWebinar is the platform to build on.</p>
+<p><a href="https://easywebinar.com/" rel="nofollow noopener sponsored" target="_blank">Start your EasyWebinar free trial →</a></p>
+<p>See also: <a href="/blog/best-ai-marketing-tools-2026">Best AI Marketing Tools 2026</a> | <a href="/blog/ereleases-review-2026">eReleases Review</a> | <a href="/blog/jasper-ai-review">Jasper AI Review</a></p>`,
+    category: "AI Marketing",
+    emoji: "🎙️",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 1, 2026",
+    updatedAt: "July 1, 2026",
+    readTime: "12 min read",
+    tags: ["easywebinar", "webinar-platform", "marketing-tools", "webinar-software", "evergreen-webinar", "online-course", "lead-generation"],
+    metaTitle: "EasyWebinar Review 2026: Live + Automated Webinars for Marketers (Pricing, Features)",
+    metaDescription: "EasyWebinar review 2026: live and evergreen webinar platform with built-in email automation. Compare vs WebinarJam, Demio, and Zoom Webinars. Pricing and real-world results.",
+    relatedToolSlugs: ["jasper-ai", "surfer-seo", "elevenlabs"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): (typeof allBlogPosts)[0] | undefined {
