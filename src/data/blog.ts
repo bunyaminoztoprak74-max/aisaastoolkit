@@ -2607,7 +2607,7 @@ export const allBlogPosts: BlogPost[] = [
 <ol>
 <li><strong>Technology journalist database</strong> — their tech-specific journalist targeting is particularly strong. Releases reach reporters at TechCrunch, VentureBeat, Wired, and hundreds of industry publications who actually cover AI.</li>
 <li><strong>Editorial review</strong> — AI press releases are often over-filled with technical jargon. eReleases' editorial team helps translate technical achievements into journalist-friendly language.</li>
-<li><strong>PR <li><strong>PR Newswire wire access</strong> — eReleases is one of the few affordable services that genuinely distributes through PRNewswire, which reaches financial terminals (Bloomberg, Reuters) that cover AI funding rounds.</li>
+<li><strong>PR Newswire wire access</strong> — eReleases is one of the few affordable services that genuinely distributes through PRNewswire, which reaches financial terminals (Bloomberg, Reuters) that cover AI funding rounds.</li>
 </ol>
 <p>For AI startups specifically, we recommend starting with the Starter package ($299 after current discount) and evaluating pickup rates before scaling cadence. See our full <a href="/blog/ereleases-review-2026">eReleases review</a> and <a href="/blog/best-press-release-distribution-services">best press release services comparison</a>.</p>`,
     category: "AI Marketing",
