@@ -576,7 +576,7 @@ export const allBlogPosts: BlogPost[] = [
 <tr><td><strong>Teams</strong></td><td>$34.12/mo</td><td>800,000</td><td>Unlimited</td><td>Teams and agencies</td></tr>
 <tr><td><strong>Enterprise</strong></td><td>Custom</td><td>Custom</td><td>Unlimited</td><td>Large organisations</td></tr>
 </tbody></table></div>
-<p><em>All prices billed annually. Monthly billing adds ~20%.</em></p>
+<p><em>All prices billed annually. Monthly billing adds ~20%. Prices re-verified July 2026.</em></p>
 
 <h2>What Are Make.com Operations?</h2>
 <p>An operation is consumed each time a module in your scenario processes a task. If your scenario has 5 steps and runs for 100 tasks, that's 500 operations. Operations are the key metric for deciding which plan you need.</p>
@@ -609,7 +609,7 @@ export const allBlogPosts: BlogPost[] = [
     authorName: "Alex Morgan",
     authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
     publishedAt: "June 1, 2026",
-    updatedAt: "June 27, 2026",
+    updatedAt: "July 2, 2026",
     readTime: "8 min read",
     tags: ["make-com", "pricing", "automation"],
     metaTitle: "Make.com Pricing 2026: All Plans, Costs & Is Free Enough?",
@@ -1668,6 +1668,7 @@ export const allBlogPosts: BlogPost[] = [
 </div>
 
 <h2>Is Midjourney Worth It? The Short Answer</h2>
+<p><em>Updated July 2026: Midjourney pricing tiers and plan limits below re-verified against current rates.</em></p>
 <p><strong>Yes — if you regularly need high-quality custom images.</strong> Midjourney produces the best AI-generated images available in 2026, and at $10-30/month it's drastically cheaper than stock photography, photographers, or graphic designers. The question isn't really "is it worth it?" but "do you use enough images to justify it?"</p>
 
 <h2>Who Midjourney Is Clearly Worth It For</h2>
@@ -1697,7 +1698,7 @@ export const allBlogPosts: BlogPost[] = [
     authorName: "Alex Morgan",
     authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
     publishedAt: "June 1, 2026",
-    updatedAt: "June 1, 2026",
+    updatedAt: "July 2, 2026",
     readTime: "8 min read",
     tags: ["midjourney", "worth-it", "ai-image", "review"],
     metaTitle: "Is Midjourney Worth It in 2026? Honest Cost-Benefit Analysis",
@@ -3322,6 +3323,75 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "eReleases Review 2026: AP Newswire Distribution for Small Business (Pricing & Results)",
     metaDescription: "eReleases review 2026: real AP newswire distribution for SMBs at $299/release. Compare vs PR Newswire, PRWeb, and Cision. Is it worth it? Honest breakdown.",
     relatedToolSlugs: ["jasper-ai", "surfer-seo", "omneky-review-2026"],
+  },
+  {
+    slug: "descript-alternatives-2026",
+    title: "7 Best Descript Alternatives in 2026 (Cheaper, Faster, or More Powerful)",
+    excerpt: "Descript is great until it isn't — laggy timelines, subscription creep, or missing pro features. Here are the 7 best Descript alternatives in 2026, tested and compared by use case.",
+    content: `<p><em>Affiliate disclosure: this post contains affiliate links. If you buy through them we may earn a commission at no extra cost to you.</em></p>
+
+<h2>Why Look for a Descript Alternative?</h2>
+<p>Descript pioneered text-based video and podcast editing, and our <a href="/blog/descript-review-2026">full Descript review</a> still rates it highly. But three complaints come up constantly in 2026: performance lag on long-form projects, the Underlord AI credit system pushing users to higher tiers, and pro editors hitting ceiling features (no proper color grading, limited multicam). Depending on which of those bites you, a different alternative wins.</p>
+
+<h2>Best Descript Alternatives at a Glance</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Tool</th><th>Best For</th><th>Starting Price</th><th>Text-Based Editing</th></tr></thead><tbody>
+<tr><td><strong>Riverside</strong></td><td>Remote recording + editing</td><td>$15/mo</td><td>Yes</td></tr>
+<tr><td><strong>CapCut</strong></td><td>Free all-round editing</td><td>Free ($7.99 Pro)</td><td>Partial (captions)</td></tr>
+<tr><td><strong>Adobe Premiere Pro</strong></td><td>Professional video</td><td>$22.99/mo</td><td>Yes (transcript editing)</td></tr>
+<tr><td><strong>Veed.io</strong></td><td>Browser-based social video</td><td>Free ($12/mo Pro)</td><td>Yes</td></tr>
+<tr><td><strong>Captions</strong></td><td>Talking-head + AI captions</td><td>$9.99/mo</td><td>Yes</td></tr>
+<tr><td><strong>Podcastle</strong></td><td>Podcast-first workflow</td><td>Free ($11.99/mo)</td><td>Yes</td></tr>
+<tr><td><strong>DaVinci Resolve</strong></td><td>Free professional editing</td><td>Free ($295 one-time Studio)</td><td>Yes (transcription in 19+)</td></tr>
+</tbody></table></div>
+<p><em>Prices verified July 2026.</em></p>
+
+<h2>1. Riverside — Best Overall Descript Alternative</h2>
+<p>Riverside started as a remote recording studio and grew into a full text-based editor. You get 4K local recording (no glitchy Zoom footage), AI transcription in 100+ languages, and the same delete-the-words-delete-the-clip editing flow Descript made famous. Magic Clips auto-generates vertical shorts from long recordings — genuinely better than Descript's equivalent in our testing.</p>
+<p><strong>Choose Riverside over Descript if:</strong> you record interviews or podcasts remotely. The recording quality advantage alone justifies the switch.</p>
+
+<h2>2. CapCut — Best Free Alternative</h2>
+<p>CapCut covers 90% of what casual Descript users actually do — cut talking-head video, auto-caption it, resize for social — for free. The Pro tier ($7.99/month) adds better export options and premium effects. It lacks true document-style editing of long podcasts, so podcast-first users should look at Podcastle instead.</p>
+
+<h2>3. Adobe Premiere Pro — Best for Professionals</h2>
+<p>Premiere's text-based editing now does what Descript does — edit video by editing the transcript — inside a professional NLE with proper color, audio mixing, and multicam. At $22.99/month it costs more than Descript Creator, but you're buying an industry-standard tool rather than a creator app.</p>
+
+<h2>4. Veed.io — Best Browser-Based Alternative</h2>
+<p>Veed runs entirely in the browser, making it the easiest option for teams on mixed hardware. Auto-subtitles are excellent (98%+ accuracy in our English tests), translation is built in, and the brand-kit features suit marketing teams producing social clips at volume.</p>
+
+<h2>5. Captions — Best for Talking-Head Content</h2>
+<p>Captions is laser-focused on one job: making talking-head videos look professional. AI eye-contact correction, studio-quality relighting, and the best automatic caption styling in the category. Creators making TikTok/Reels/Shorts content full-time should start here.</p>
+
+<h2>6. Podcastle — Best for Podcasters</h2>
+<p>Podcastle mirrors Descript's podcast workflow — record, transcribe, edit as text, enhance audio — at a lower price and with lighter system requirements. Magic Dust audio enhancement rivals Descript's Studio Sound. The free tier allows 3 hours of transcription monthly.</p>
+
+<h2>7. DaVinci Resolve — Most Powerful Free Option</h2>
+<p>Resolve is the only genuinely professional editor with a free tier that isn't crippled. Version 19+ added transcription and text-based editing. The learning curve is real, but if you're outgrowing Descript creatively rather than just cutting podcasts, Resolve gives you Hollywood-grade color and Fairlight audio for $0.</p>
+
+<h2>Which Alternative Should You Pick?</h2>
+<p><strong>Podcasts:</strong> Riverside (remote) or Podcastle (budget). <strong>Social clips:</strong> Captions or CapCut. <strong>Marketing teams:</strong> Veed.io. <strong>Pro video:</strong> Premiere Pro or DaVinci Resolve.</p>
+<p>Still torn? Our <a href="/blog/descript-review-2026">Descript review</a> covers where the original still wins — its all-in-one workflow remains unmatched if performance isn't biting you. For adjacent tooling, see our guides to the <a href="/blog/best-ai-writing-tools-2026">best AI writing tools</a>, <a href="/blog/elevenlabs-vs-murf-ai-voice">ElevenLabs vs Murf for AI voiceover</a>, and <a href="/blog/best-ai-marketing-tools-2026">best AI marketing tools 2026</a>.</p>
+
+<h2>FAQ</h2>
+<h3>What is the best free Descript alternative?</h3>
+<p>CapCut for general video editing, DaVinci Resolve for professional work, and Podcastle's free tier for podcast editing (3 hours of transcription per month). All three offer meaningful free functionality rather than trial-limited demos.</p>
+<h3>Is Riverside better than Descript?</h3>
+<p>For remote recording, yes — Riverside records locally in up to 4K so your footage doesn't depend on call quality. For solo screen-recording workflows and its all-in-one editor ecosystem, Descript still leads.</p>
+<h3>Does Premiere Pro have text-based editing like Descript?</h3>
+<p>Yes. Premiere Pro's text-based editing transcribes your footage and lets you cut video by deleting transcript text, plus filler-word removal — the core Descript workflow inside a professional editor.</p>
+<h3>Why is Descript lagging on long projects?</h3>
+<p>Descript renders project media through its own engine and keeps large compositions in memory; long-form multitrack projects (2+ hours) commonly stutter on mid-range machines. Alternatives like Resolve and Premiere handle long timelines better through optimized media and proxy workflows.</p>`,
+    category: "AI Video",
+    emoji: "🎬",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 2, 2026",
+    updatedAt: "July 2, 2026",
+    readTime: "10 min read",
+    tags: ["descript-alternatives", "video-editing", "podcast-editing", "riverside", "capcut", "ai-video-tools"],
+    metaTitle: "7 Best Descript Alternatives 2026 (Free & Paid, Tested)",
+    metaDescription: "Looking for a Descript alternative? We tested Riverside, CapCut, Premiere Pro, Veed, Captions, Podcastle & DaVinci Resolve. Here's which to pick by use case.",
+    relatedToolSlugs: ["descript", "capcut", "elevenlabs"],
   },
 ];
 
