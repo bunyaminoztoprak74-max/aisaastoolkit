@@ -54,6 +54,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        {/* Pinterest Domain Verification */}
+        <meta name="p:domain_verify" content="d81dd21cca48c3f16117fdf2d454d8d2" />
         {/* Google Analytics 4 */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9VX88TN0M" />
         <script
