@@ -988,7 +988,7 @@ export const tools: Tool[] = [
       "Users who want a simple browser interface without Discord",
       "Those who need deep image editing and masking (use Adobe Firefly instead)",
     ],
-    lastTestedDate: "2026-06-18",
+    lastTestedDate: "2026-07-09",
     pricing: {
       starting: "$10/month",
       hasFree: false,
@@ -1104,7 +1104,6 @@ export const tools: Tool[] = [
       },
     ],
     lastUpdated: "2026-07-09",
-    lastTestedDate: "2026-07-09",
   },
   {
     name: "Notion AI",
