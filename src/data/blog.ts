@@ -18,6 +18,7 @@ export interface BlogPost {
   clusterSlug?: string;
   clusterTitle?: string;
   isPillar?: boolean;
+  heroImage?: string;
 }
 
 export const allBlogPosts: BlogPost[] = [
