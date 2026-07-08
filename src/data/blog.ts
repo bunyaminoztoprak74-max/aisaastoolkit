@@ -635,7 +635,39 @@ export const allBlogPosts: BlogPost[] = [
 <p><strong>Free plan:</strong> Start here. Always. Test your ideas, build your first scenarios, see if Make.com fits your workflow before spending a penny.</p>
 <p><strong>Core ($10.59/mo):</strong> The sweet spot for most individuals and small businesses. Unlimited scenarios and 10,000 ops covers typical use cases with room to grow.</p>
 <p><strong>Pro ($18.82/mo):</strong> Choose this if you're running multiple complex automations or have a growing operation that processes thousands of tasks daily.</p>
-<p><a href="/reviews/make-com">See our full Make.com review →</a> | <a href="/blog/make-com-complete-guide-2026">Back to the Complete Guide →</a></p>`,
+<p><a href="/reviews/make-com">See our full Make.com review →</a> | <a href="/blog/make-com-complete-guide-2026">Back to the Complete Guide →</a></p>
+
+<h2>How Many Operations Do You Actually Need?</h2>
+<p>The most common question: "Will 1,000 operations be enough?" Here's a real-world reference guide:</p>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Use Case</th><th>Steps</th><th>Daily Runs</th><th>Monthly Ops</th><th>Plan Needed</th></tr></thead><tbody>
+<tr><td>Post new blog to Twitter + LinkedIn</td><td>3</td><td>1</td><td>~90</td><td>Free</td></tr>
+<tr><td>New email lead → CRM + Slack alert</td><td>4</td><td>10</td><td>~1,200</td><td>Core</td></tr>
+<tr><td>E-commerce order → fulfilment + invoice + CRM</td><td>6</td><td>30</td><td>~5,400</td><td>Core</td></tr>
+<tr><td>Agency client reporting (10 clients)</td><td>8</td><td>10</td><td>~2,400</td><td>Core</td></tr>
+<tr><td>SaaS trial → onboarding email sequence</td><td>5</td><td>50</td><td>~7,500</td><td>Core/Pro</td></tr>
+<tr><td>High-volume Shopify (500 orders/day)</td><td>5</td><td>500</td><td>~75,000</td><td>Pro</td></tr>
+</tbody></table></div>
+<p><strong>Rule of thumb:</strong> Most solo creators and small businesses stay on Core indefinitely. Only high-volume e-commerce or agency workflows typically need Pro.</p>
+
+<h2>Annual vs Monthly Billing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Annual (per month)</th><th>Monthly billing</th><th>Annual savings</th></tr></thead><tbody>
+<tr><td>Core</td><td>$10.59/mo</td><td>$16/mo</td><td>~34%</td></tr>
+<tr><td>Pro</td><td>$18.82/mo</td><td>$29/mo</td><td>~35%</td></tr>
+<tr><td>Teams</td><td>$34.12/mo</td><td>$57/mo</td><td>~40%</td></tr>
+</tbody></table></div>
+<p>If you're using Make.com for more than 2 months, pay annually. The savings are substantial.</p>
+
+<h2>Make.com Pricing FAQ</h2>
+<h3>Does Make.com have a free plan?</h3>
+<p>Yes. The free plan includes 1,000 operations/month, 2 active scenarios, access to all 1,500+ integrations. It's genuinely free forever — not a trial.</p>
+<h3>How much does Make.com Core cost?</h3>
+<p>Core costs $10.59/month billed annually ($16/month on monthly billing). It includes 10,000 operations/month and unlimited active scenarios — the recommended plan for most individual users.</p>
+<h3>What happens if I exceed my operation limit?</h3>
+<p>Make.com pauses your scenarios when you hit your operation limit. You can purchase additional operations in blocks, or upgrade to the next plan. They don't charge you automatically.</p>
+<h3>Is Make.com cheaper than Zapier?</h3>
+<p>Yes, significantly. Make.com Core at $10.59/month offers 10,000 operations. Zapier's equivalent starter plan costs $29.99/month for only 750 tasks. Make.com wins on price at every tier.</p>
+<h3>Can I downgrade or cancel?</h3>
+<p>Yes — Make.com allows downgrade or cancellation at any time. If you downgrade mid-cycle, you keep paid features until the end of the billing period. No lock-in beyond the annual commitment.</p>`,
     category: "Automation",
     emoji: "💰",
     authorSlug: "alex-morgan",
@@ -645,8 +677,8 @@ export const allBlogPosts: BlogPost[] = [
     updatedAt: "July 2, 2026",
     readTime: "8 min read",
     tags: ["make-com", "pricing", "automation"],
-    metaTitle: "Make.com Pricing 2026: Every Plan Compared (Free to $34/mo)",
-    metaDescription: "Make.com pricing in 2026: Free (1,000 ops), Core $10.59, Pro $18.82, Teams $34.12. Operation limits, hidden costs, and which plan you actually need.",
+    metaTitle: "Make.com Pricing 2026: Is the $10 Core Plan Worth It? (Full Breakdown)",
+    metaDescription: "Make.com Free gives 1,000 ops/month — enough for most beginners. Core is $10.59/mo (10K ops). We show exactly which plan fits your workflow and why it's 72% cheaper than Zapier.",
     relatedToolSlugs: ["make-com", "zapier"],
     clusterSlug: "make-com",
     clusterTitle: "Complete Make.com Guide 2026",
