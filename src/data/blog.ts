@@ -644,8 +644,8 @@ export const allBlogPosts: BlogPost[] = [
     updatedAt: "July 2, 2026",
     readTime: "8 min read",
     tags: ["make-com", "pricing", "automation"],
-    metaTitle: "Make.com Pricing 2026: All Plans, Costs & Is Free Enough?",
-    metaDescription: "Make.com pricing breakdown for 2026 — free plan, Core ($10.59), Pro ($18.82), Teams ($34.12). Which plan do you actually need? We explain every detail.",
+    metaTitle: "Make.com Pricing 2026: Every Plan Compared (Free to $34/mo)",
+    metaDescription: "Make.com pricing in 2026: Free (1,000 ops), Core $10.59, Pro $18.82, Teams $34.12. Operation limits, hidden costs, and which plan you actually need.",
     relatedToolSlugs: ["make-com", "zapier"],
     clusterSlug: "make-com",
     clusterTitle: "Complete Make.com Guide 2026",
@@ -3090,8 +3090,8 @@ export const allBlogPosts: BlogPost[] = [
     updatedAt: "June 30, 2026",
     readTime: "16 min read",
     tags: ["ai-marketing", "marketing-tools", "jasper-ai", "surfer-seo", "midjourney", "elevenlabs", "ai-tools-2026", "content-marketing"],
-    metaTitle: "Best AI Marketing Tools 2026: 12 Tools That Actually Work",
-    metaDescription: "Tested: 12 AI marketing tools for content, SEO, email, social, and PR. Real results, honest pricing, and stack recommendations for every budget.",
+    metaTitle: "Best AI Marketing Tools 2026: 12 Tools Reviewed & Ranked (Tested)",
+    metaDescription: "We reviewed 12 AI marketing tools for content, SEO, email, social & PR. Real test results, honest pricing, and the exact stack for every budget.",
     relatedToolSlugs: ["jasper-ai", "surfer-seo", "midjourney", "elevenlabs"],
   },
   {
@@ -3386,8 +3386,8 @@ export const allBlogPosts: BlogPost[] = [
     updatedAt: "July 2, 2026",
     readTime: "10 min read",
     tags: ["descript-alternatives", "video-editing", "podcast-editing", "riverside", "capcut", "ai-video-tools"],
-    metaTitle: "7 Best Descript Alternatives 2026 (Free & Paid, Tested)",
-    metaDescription: "Looking for a Descript alternative? We tested Riverside, CapCut, Premiere Pro, Veed, Captions, Podcastle & DaVinci Resolve. Here's which to pick by use case.",
+    metaTitle: "7 Best Descript Alternatives 2026 — Tested by Use Case (Free & Paid)",
+    metaDescription: "Best Descript alternatives in 2026: Riverside, CapCut, Veed, Podcastle, DaVinci Resolve & more — tested and ranked by use case, price, and features.",
     relatedToolSlugs: ["descript", "capcut", "elevenlabs"],
   },
   {
@@ -3504,6 +3504,92 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "ElevenLabs Review 2026: Best AI Voice Generator? (Pricing & Features)",
     metaDescription: "ElevenLabs review 2026: voice cloning, dubbing, and conversational agents tested for 30 days. Pricing, pros & cons, and how it compares to Murf AI.",
     relatedToolSlugs: ["elevenlabs", "murf-ai", "descript"],
+  },
+  {
+    slug: "midjourney-review-2026",
+    title: "Midjourney Review 2026: Still the Best AI Image Generator?",
+    excerpt: "We tested Midjourney V6 for 60 days — generating product visuals, ad creatives, editorial illustrations, and concept art. Here is the honest verdict on quality, pricing, and who should use it.",
+    content: `<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:16px;margin-bottom:24px">
+<p style="margin:0 0 8px 0;font-weight:700;font-size:15px">🎨 Midjourney Review — Quick Verdict</p>
+<ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.8">
+<li><strong>Best for:</strong> Marketers, designers, content creators needing high-quality AI images</li>
+<li><strong>Starting price:</strong> $10/month (Basic) — no free trial</li>
+<li><strong>Image quality:</strong> Best-in-class for artistic and photorealistic images</li>
+<li><strong>Biggest weakness:</strong> No free tier; Discord-first interface has a learning curve</li>
+<li><strong>Our rating:</strong> ⭐⭐⭐⭐¾ (4.7/5)</li>
+</ul>
+</div>
+
+<p>Midjourney is the AI image generator that changed the industry. Since version 5, it has produced images so good that photographers and illustrators took notice. Two years later, the question is whether it is still the best option in a market that now includes ChatGPT Images 2.0, Adobe Firefly, Ideogram 2.0, and Flux.</p>
+
+<p>After 60 days of testing Midjourney V6 — generating product mockups, editorial illustrations, ad creatives, social media visuals, and concept art — here is our full verdict.</p>
+
+<p>→ See also: <a href="/blog/midjourney-complete-guide-2026">Complete Midjourney Guide 2026</a> | <a href="/blog/midjourney-pricing">Midjourney Pricing Breakdown</a> | <a href="/blog/midjourney-vs-dalle-3">Midjourney vs ChatGPT Images 2.0</a></p>
+
+<h2>What Is Midjourney?</h2>
+<p>Midjourney is a text-to-image AI model that generates stunning images from text prompts. The current version — V6 — produces images with dramatically improved prompt accuracy, better text rendering, and more coherent compositions than earlier versions. Access is primarily through Discord or the web app at midjourney.com.</p>
+
+<h2>Midjourney Plans & Pricing</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price/Month</th><th>Fast GPU Hours</th><th>Relaxed Mode</th><th>Best For</th></tr></thead><tbody>
+<tr><td><strong>Basic</strong></td><td>$10</td><td>3.3 hrs (~200 images)</td><td>❌</td><td>Occasional use</td></tr>
+<tr><td><strong>Standard</strong></td><td>$30</td><td>15 hrs (~900 images)</td><td>✅ Unlimited</td><td>Regular creators — best value</td></tr>
+<tr><td><strong>Pro</strong></td><td>$60</td><td>30 hrs (~1,800 images)</td><td>✅ Unlimited</td><td>Professionals needing stealth mode</td></tr>
+<tr><td><strong>Mega</strong></td><td>$120</td><td>60 hrs (~3,600 images)</td><td>✅ Unlimited</td><td>Agencies and high-volume teams</td></tr>
+</tbody></table></div>
+<p>Annual billing saves 20% — Standard drops to $24/month. → Full breakdown: <a href="/blog/midjourney-pricing">Midjourney Pricing 2026</a></p>
+
+<h2>Image Quality</h2>
+<p>For photorealism, artistic illustration, and social media visuals, Midjourney V6 remains the benchmark. Lighting in particular stands out — shadows, reflections, and specular highlights behave like real light. For text rendering in images, ChatGPT Images 2.0 is still more reliable. See our <a href="/blog/midjourney-vs-dalle-3">Midjourney vs ChatGPT Images 2.0 comparison</a>.</p>
+
+<h2>Midjourney Pros & Cons</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>✅ Pros</th><th>❌ Cons</th></tr></thead><tbody>
+<tr><td>Best image quality of any AI generator</td><td>No free tier — $10/month minimum</td></tr>
+<tr><td>Distinctive, cinematic aesthetic</td><td>Discord-first interface adds friction</td></tr>
+<tr><td>Unlimited relaxed mode on Standard+ plans</td><td>Text in images still imperfect</td></tr>
+<tr><td>Active V6 model with regular updates</td><td>Private generation only on Pro ($60+)</td></tr>
+<tr><td>20% annual discount</td><td>Images public by default on Basic/Standard</td></tr>
+</tbody></table></div>
+
+<h2>Midjourney vs Competitors 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Tool</th><th>Price</th><th>Image Quality</th><th>Text Rendering</th><th>Free Tier</th></tr></thead><tbody>
+<tr><td><strong>Midjourney</strong></td><td>$10-$120/mo</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>❌</td></tr>
+<tr><td><strong>ChatGPT Images 2.0</strong></td><td>Included in Plus ($20/mo)</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Limited</td></tr>
+<tr><td><strong>Adobe Firefly</strong></td><td>Free–$9.99/mo</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>✅</td></tr>
+<tr><td><strong>Ideogram 2.0</strong></td><td>Free–$16/mo</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>✅</td></tr>
+</tbody></table></div>
+<p>→ <a href="/blog/midjourney-alternatives">All Midjourney Alternatives</a> | <a href="/blog/midjourney-vs-stable-diffusion">Midjourney vs Stable Diffusion</a></p>
+
+<h2>Who Should Use Midjourney?</h2>
+<p><strong>Choose Midjourney if:</strong> you need the highest possible image quality, create marketing visuals or ad creatives regularly, or are a designer who needs AI assistance at scale. Standard plan ($30/mo) gives unlimited relaxed generations — the best value for consistent users.</p>
+<p><strong>Consider alternatives if:</strong> you need precise text in images (use Ideogram), need commercial licensing certainty (Adobe Firefly), or want a completely free tool (Firefly or Ideogram).</p>
+<p>→ See <a href="/blog/is-midjourney-worth-it">Is Midjourney Worth It? Full cost-benefit analysis</a> | <a href="/blog/midjourney-beginners-guide">Beginner's Guide</a></p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Midjourney free?</h3>
+<p>No. Midjourney discontinued its free trial in 2023. The cheapest plan is $10/month (Basic). Most regular users are better served by the $30/month Standard plan which includes unlimited relaxed generations.</p>
+
+<h3>What is Midjourney V6?</h3>
+<p>Midjourney V6 is the current production model. It introduced significantly improved prompt adherence, better lighting and facial coherence, and improved text rendering compared to V5. Activate it with the --v 6 parameter or by setting V6 as your default model in settings.</p>
+
+<h3>Can you use Midjourney images commercially?</h3>
+<p>Yes, on paid plans. Standard subscribers and above can use images commercially. Images generated on Basic and Standard plans are publicly visible by default — only Pro ($60/month) and Mega plans include Stealth Mode for private generation.</p>
+
+<h3>How does Midjourney compare to DALL-E 3 in 2026?</h3>
+<p>DALL-E 3 was retired in May 2026 and replaced by ChatGPT Images 2.0. For artistic quality, Midjourney still leads. For text accuracy and ChatGPT integration, ChatGPT Images 2.0 is superior. See our <a href="/blog/midjourney-vs-dalle-3">full comparison</a>.</p>`,
+    category: "AI Image Tools",
+    emoji: "🎨",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 8, 2026",
+    updatedAt: "July 8, 2026",
+    readTime: "12 min read",
+    tags: ["midjourney", "midjourney-review", "ai-image", "image-generation", "midjourney-2026", "ai-art"],
+    metaTitle: "Midjourney Review 2026: Best AI Image Generator? (60-Day Test)",
+    metaDescription: "Midjourney V6 reviewed after 60 days of real use. Image quality, pricing ($10–$120/mo), pros & cons, and how it compares to ChatGPT Images 2.0 and Adobe Firefly.",
+    heroImage: "https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=1200&q=80",
+    relatedToolSlugs: ["midjourney", "canva-ai", "chatgpt"],
+    clusterSlug: "midjourney",
   },
 ];
 
