@@ -9,3 +9,13 @@ out/
 dist/
 
 .vercel
+
+# Temp deploy scripts (safe to delete manually)
+deploy.bat
+push-only.bat
+pull-push.bat
+finish-rebase.bat
+fix-and-push.bat
+deploy-cursor.tcl
+resolve-conflicts.py
+deploy-perplexity.bat
