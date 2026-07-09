@@ -1104,7 +1104,6 @@ export const tools: Tool[] = [
       },
     ],
     lastUpdated: "2026-07-09",
-    lastTestedDate: "2026-07-09",
   },
   {
     name: "Notion AI",
