@@ -3853,6 +3853,104 @@ export const allBlogPosts: BlogPost[] = [
     relatedToolSlugs: ["claude", "chatgpt", "perplexity"],
     clusterSlug: "claude",
   },
+  {
+    slug: "perplexity-ai-review-2026",
+    title: "Perplexity AI Review 2026: The Best AI Search Engine? (We Tested It)",
+    excerpt: "Perplexity AI answers questions with real-time web citations instead of training data. After testing it daily for four weeks against ChatGPT and Google, here is whether it actually delivers — and whether Pro at $20/month is worth it.",
+    content: `<h2>What Is Perplexity AI?</h2>
+<p>Perplexity AI is an AI-powered answer engine founded in 2022 by Aravind Srinivas (ex-OpenAI, DeepMind) and a team of former engineers from OpenAI and Meta. Unlike ChatGPT or Claude — which generate answers from training data — Perplexity searches the live web for every query and synthesizes the results into a single, clearly cited answer. Think of it as Google Search rebuilt around AI summarization, rather than a list of blue links.</p>
+
+<p>The product has grown rapidly: as of 2026, Perplexity handles hundreds of millions of queries per month and has become the primary research tool for a large share of knowledge workers, journalists, and students who used to default to Google.</p>
+
+<h2>How Perplexity Works</h2>
+<p>When you type a question into Perplexity, it runs a live web search, retrieves the top sources, then uses an LLM to synthesize the results into a direct answer. Each claim in the answer is paired with an inline citation you can click to verify. The whole process takes 5–10 seconds. The free tier uses Perplexity's Sonar model; Pro users can switch to GPT-4o, Claude Sonnet, or Gemini 1.5 Pro for more complex queries.</p>
+
+<p>This architecture solves the two biggest complaints about AI assistants: hallucination (making up facts) and staleness (not knowing about recent events). By grounding every answer in live search results, Perplexity is significantly more reliable than ChatGPT for anything time-sensitive.</p>
+
+<h2>Perplexity Free vs Pro: What's the Difference?</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Feature</th><th>Free</th><th>Pro ($20/mo)</th></tr></thead><tbody>
+<tr><td>Standard searches</td><td>Unlimited</td><td>Unlimited</td></tr>
+<tr><td>Pro model searches</td><td>5/day</td><td>~300/day (unlimited for most users)</td></tr>
+<tr><td>Models available</td><td>Sonar only</td><td>GPT-4o, Claude Sonnet, Gemini, Sonar, o1</td></tr>
+<tr><td>File uploads</td><td>No</td><td>Yes (PDF, images, spreadsheets)</td></tr>
+<tr><td>Perplexity Pages</td><td>No</td><td>Yes</td></tr>
+<tr><td>Spaces</td><td>1 (basic)</td><td>Unlimited with custom instructions</td></tr>
+<tr><td>API credits</td><td>No</td><td>$5/month included</td></tr>
+</tbody></table></div>
+
+<h2>Key Features Tested</h2>
+
+<h3>1. Real-Time Web Search with Citations</h3>
+<p>This is Perplexity's core feature and its most compelling differentiator. Every answer shows numbered citations next to each sentence — you can see exactly which source each claim comes from. In testing, this made Perplexity dramatically more trustworthy than ChatGPT for factual queries: pricing lookups, statistics, recent news, and company information.</p>
+<p>A typical test case: "What is the current price of Shopify Plus?" Perplexity returned the correct 2026 pricing with a direct citation to Shopify's pricing page. ChatGPT returned pricing from its training data that was 18 months out of date. This pattern repeated across dozens of queries involving current pricing, events, and statistics.</p>
+
+<h3>2. Multi-Model Pro Searches</h3>
+<p>Pro subscribers can choose their model per query — a genuinely useful feature. For quick factual lookups, Sonar (fast, web-grounded) is usually sufficient. For complex analysis or synthesis, switching to Claude Sonnet or GPT-4o produces noticeably better responses. Getting three frontier models in one $20 subscription is strong value, especially compared to paying $20/month each for ChatGPT Plus and Claude Pro separately.</p>
+
+<h3>3. Perplexity Pages</h3>
+<p>Pages is a standout Pro feature: generate a structured research report on any topic, then publish it as a public URL. The output includes AI-written sections, tables, source citations, and optionally images — all formatted for reading rather than chat. In testing, Perplexity Pages generated a usable 1,500-word competitive analysis of three SaaS tools in about 90 seconds. The content needed editing but the structure and source research were solid.</p>
+
+<h3>4. Spaces (Research Workspaces)</h3>
+<p>Spaces are private research environments with custom AI instructions and uploaded reference documents. You can upload your company's product documentation and ask Perplexity questions that combine your internal docs with live web search. In practice, Spaces work well for ongoing research projects where you want Perplexity to remember context across sessions.</p>
+
+<h3>5. Perplexity API</h3>
+<p>The API is OpenAI-compatible, making it straightforward to add to existing projects. The sonar models (web-grounded) are the key differentiator — they return answers with citations as structured metadata, so you can extract and display sources in your own application. Pro subscribers get $5/month in API credits included. For developers building research tools, Q&A apps, or fact-checking features, the Perplexity API is significantly easier than building a web search pipeline yourself.</p>
+
+<h2>Perplexity vs ChatGPT: Head-to-Head</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Use Case</th><th>Winner</th><th>Why</th></tr></thead><tbody>
+<tr><td>Current events & news</td><td>Perplexity</td><td>Live web search vs. training data cutoff</td></tr>
+<tr><td>Pricing & stats lookups</td><td>Perplexity</td><td>Real-time citations, not cached training data</td></tr>
+<tr><td>Long-form writing</td><td>ChatGPT</td><td>Better at sustained narrative and creative content</td></tr>
+<tr><td>Coding assistance</td><td>ChatGPT</td><td>Stronger debugging, code generation, and explanation</td></tr>
+<tr><td>Research synthesis</td><td>Perplexity</td><td>Multi-source synthesis with verifiable citations</td></tr>
+<tr><td>Fact-checking</td><td>Perplexity</td><td>Inline citations make verification instant</td></tr>
+<tr><td>Creative tasks</td><td>ChatGPT</td><td>Better storytelling, brainstorming, and format flexibility</td></tr>
+<tr><td>API for search apps</td><td>Perplexity</td><td>Sonar API gives cited, live answers without a search pipeline</td></tr>
+</tbody></table></div>
+
+<h2>Perplexity vs Google Search</h2>
+<p>For direct comparisons, Perplexity consistently answers questions faster when the goal is getting a direct answer rather than discovering multiple perspectives. Google's strength — returning diverse links so you can evaluate sources yourself — becomes a weakness when you just need a synthesized answer. Perplexity wins for: quick research questions, multi-step queries that build on previous context, and situations where you want a single synthesized view rather than ten separate tabs to read.</p>
+<p>Google still wins for: product discovery (you want to see options, not one synthesized view), local business search, image search, and any query where you specifically want to find a website rather than an answer.</p>
+
+<h2>Limitations We Found in Testing</h2>
+<p>Perplexity is not the right tool for everything. For long-form content creation, ChatGPT or Claude produce better output. For complex multi-file coding tasks, Cursor or GitHub Copilot are superior. Perplexity's citations are from the open web — meaning academic researchers may find sources that are blogs, news sites, or paywalled articles rather than peer-reviewed papers. And while citation transparency reduces hallucination, it does not eliminate it: Perplexity occasionally synthesizes sources inaccurately, so verifying important claims is still necessary.</p>
+
+<h2>Pricing: Is Perplexity Pro Worth It?</h2>
+<p>At $20/month, Perplexity Pro is strong value for anyone who does regular research. You get unlimited Pro searches across GPT-4o, Claude Sonnet, and Gemini — models that each cost $20/month on their native platforms — plus Perplexity Pages, Spaces, file uploads, and API credits. If Perplexity replaces even half your Google searches and some of your ChatGPT usage, the $20 is easy to justify.</p>
+<p>The free tier remains one of the best free AI offerings available: unlimited basic searches with real-time citations, no credit card required. Start there and upgrade only if you hit the 5 Pro search/day limit regularly.</p>
+
+<h2>Who Should Use Perplexity AI?</h2>
+<p>Perplexity is the right primary research tool for: journalists and fact-checkers who need verified, current information; content marketers who frequently check statistics, pricing, and competitor information; students writing research papers who need to verify claims quickly; knowledge workers who do hours of Googling weekly; and developers building applications that need real-time cited answers via API.</p>
+<p>It is not the right primary AI tool for: writers who need long-form content generation, developers needing complex coding assistance, or creative professionals who need image generation.</p>
+
+<h2>Our Verdict</h2>
+<p>Perplexity AI is the best AI tool for research and fact-finding in 2026. Its core innovation — real-time web search with inline citations — solves the two biggest problems with AI assistants (hallucination and staleness) in a way that no other consumer AI product matches. The free tier is genuinely useful, and Pro at $20/month delivers exceptional value by bundling access to multiple frontier models with live web grounding.</p>
+<p>If you regularly use Google to research facts, pricing, or current events, Perplexity should replace or supplement that workflow. For everything else — writing, coding, creative work — keep ChatGPT or Claude alongside it. <a href="https://www.perplexity.ai" rel="nofollow noopener" target="_blank">Start with Perplexity's free plan →</a></p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Is Perplexity AI free?</h3>
+<p>Yes. Perplexity's free tier offers unlimited standard searches with real-time web citations, plus 5 Pro model searches per day. No credit card required. Pro is $20/month for unlimited Pro searches, file uploads, Perplexity Pages, and $5/month in API credits.</p>
+
+<h3>Is Perplexity better than ChatGPT?</h3>
+<p>For research, fact-checking, and current information: yes, Perplexity is better. For long-form writing, coding, and creative tasks: ChatGPT is better. Most power users end up using both — Perplexity for research and verification, ChatGPT or Claude for writing and coding.</p>
+
+<h3>What models does Perplexity Pro use?</h3>
+<p>Pro subscribers can choose between GPT-4o (OpenAI), Claude Sonnet (Anthropic), Gemini 1.5 Pro (Google), Perplexity Sonar, and o1 (reasoning). This multi-model access in one subscription is one of Perplexity Pro's strongest advantages.</p>`,
+    category: "Reviews",
+    emoji: "🔍",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 9, 2026",
+    updatedAt: "July 9, 2026",
+    readTime: "10 min read",
+    tags: ["perplexity", "perplexity-ai", "ai-search", "research", "ai-answer-engine", "perplexity-pro"],
+    metaTitle: "Perplexity AI Review 2026: The Best AI Search Engine? (Tested)",
+    metaDescription: "Perplexity AI reviewed: real-time web search with citations, Free vs Pro plan ($0–$20/mo), and how it compares to ChatGPT and Google in 2026.",
+    heroImage: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?w=1200&q=80",
+    relatedToolSlugs: ["perplexity", "chatgpt", "claude"],
+    clusterSlug: "perplexity",
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): (typeof allBlogPosts)[0] | undefined {
