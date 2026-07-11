@@ -3992,7 +3992,7 @@ export const allBlogPosts: BlogPost[] = [
 
 <p>At $1.99/month, NordPass Premium is among the most competitive in the market. 1Password is $2.99/month, Dashlane $3.33/month, Bitwarden $0.83/month.</p>
 
-<p><a href="https://www.jdoqocy.com/click-101761541-5324242" rel="nofollow sponsored"><strong>Try NordPass Free — Upgrade to Premium →</strong></a></p>
+<p><a href="https://www.jdoqocy.com/click-101761541-17262576" rel="nofollow sponsored"><strong>Try NordPass Free — Upgrade to Premium →</strong></a></p>
 
 <h2>NordPass vs. Competitors</h2>
 
@@ -4028,7 +4028,7 @@ export const allBlogPosts: BlogPost[] = [
 
 <p>Bitwarden wins on price and open-source trust; 1Password wins on team features. But for individual users who want reliable, feature-rich password management with a trusted security pedigree, NordPass is a strong choice.</p>
 
-<p><a href="https://www.jdoqocy.com/click-101761541-5324242" rel="nofollow sponsored"><strong>Try NordPass Free — Get Premium from $1.99/month →</strong></a></p>`,
+<p><a href="https://www.jdoqocy.com/click-101761541-17262576" rel="nofollow sponsored"><strong>Try NordPass Free — Get Premium from $1.99/month →</strong></a></p>`,
     category: "Productivity",
     emoji: "🔐",
     authorSlug: "alex-morgan",
