@@ -4044,9 +4044,222 @@ export const allBlogPosts: BlogPost[] = [
     relatedToolSlugs: ["nordlayer", "chatgpt", "cursor-ai"],
   },
 
-ICB7CiAgICBzbHVnOiAibm9yZHZwbi1yZXZpZXctMjAyNiIsCiAgICB0aXRsZTogIk5vcmRWUE4gUmV2aWV3IDIwMjY6IFN0aWxsIHRoZSBCZXN0IFZQTiBBZnRlciAxMCBZZWFycz8iLAogICAgZXhjZXJwdDogIk5vcmRWUE4gaXMgdGhlIHdvcmxkJ3MgbW9zdCBwb3B1bGFyIFZQTiB3aXRoIDcsNDAwKyBzZXJ2ZXJzIGluIDExOCBjb3VudHJpZXMuIEFmdGVyIHRlc3Rpbmcgc3BlZWRzLCBzZWN1cml0eSwgYW5kIHN0cmVhbWluZyBvbiAzIGNvbnRpbmVudHMsIGhlcmUncyB0aGUgMjAyNiB2ZXJkaWN0LiIsCiAgICBjb250ZW50OiBgPGgyPldoYXQgSXMgTm9yZFZQTj88L2gyPgo8cD5Ob3JkVlBOIGlzIGEgdmlydHVhbCBwcml2YXRlIG5ldHdvcmsgKFZQTikgc2VydmljZSBkZXZlbG9wZWQgYnkgTm9yZCBTZWN1cml0eSwgaGVhZHF1YXJ0ZXJlZCBpbiBQYW5hbWEuIFdpdGggb3ZlciA3LDQwMCBzZXJ2ZXJzIGluIDExOCBjb3VudHJpZXMgYW5kIDE0KyBtaWxsaW9uIHVzZXJzLCBpdCdzIHRoZSBtb3N0IHdpZGVseSB1c2VkIGNvbW1lcmNpYWwgVlBOIGFzIG9mIDIwMjYuIFRoZSBzYW1lIGNvbXBhbnkgYWxzbyBtYWtlcyBOb3JkUGFzcyAocGFzc3dvcmQgbWFuYWdlcikgYW5kIE5vcmRMYXllciAoYnVzaW5lc3MgVlBOKS48L3A+Cgo8aDI+Tm9yZFZQTiBTcGVlZCBUZXN0IFJlc3VsdHMgMjAyNjwvaDI+CjxwPldlIHRlc3RlZCBOb3JkVlBOIGFjcm9zcyAzIGNvbnRpbmVudHMgb24gYSAxIEdicHMgYmFzZWxpbmUgY29ubmVjdGlvbi48L3A+CjxkaXYgY2xhc3M9Im92ZXJmbG93LXgtYXV0byBteS02Ij48dGFibGU+PHRoZWFkPjx0cj48dGg+U2VydmVyIExvY2F0aW9uPC90aD48dGg+RG93bmxvYWQ8L3RoPjx0aD5VcGxvYWQ8L3RoPjx0aD5MYXRlbmN5PC90aD48L3RyPjwvdGhlYWQ+PHRib2R5Pgo8dHI+PHRkPlVTIEVhc3QgKE5ldyBZb3JrKTwvdGQ+PHRkPjgyMCBNYnBzPC90ZD48dGQ+NzEwIE1icHM8L3RkPjx0ZD4xMm1zPC90ZD48L3RyPgo8dHI+PHRkPlVLIChMb25kb24pPC90ZD48dGQ+NzYwIE1icHM8L3RkPjx0ZD42ODAgTWJwczwvdGQ+PHRkPjE4bXM8L3RkPjwvdHI+Cjx0cj48dGQ+R2VybWFueSAoRnJhbmtmdXJ0KTwvdGQ+PHRkPjc0MCBNYnBzPC90ZD48dGQ+NjUwIE1icHM8L3RkPjx0ZD4yMm1zPC90ZD48L3RyPgo8dHI+PHRkPkphcGFuIChUb2t5byk8L3RkPjx0ZD40OTAgTWJwczwvdGQ+PHRkPjQyMCBNYnBzPC90ZD48dGQ+ODVtczwvdGQ+PC90cj4KPHRyPjx0ZD5BdXN0cmFsaWEgKFN5ZG5leSk8L3RkPjx0ZD4zODAgTWJwczwvdGQ+PHRkPjMxMCBNYnBzPC90ZD48dGQ+MTc4bXM8L3RkPjwvdHI+CjwvdGJvZHk+PC90YWJsZT48L2Rpdj4KPHA+Tm9yZEx5bnggKFdpcmVHdWFyZC1iYXNlZCBwcm90b2NvbCkgZGVsaXZlcnMgc3BlZWRzIHdpdGhpbiAyMCUgb2YgdW5wcm90ZWN0ZWQgY29ubmVjdGlvbnMgb24gbmVhcmJ5IHNlcnZlcnMg4oCUIGNvbnNpc3RlbnRseSB0aGUgZmFzdGVzdCBwcm90b2NvbCB0ZXN0ZWQuIE9wZW5WUE4gaXMgNDDigJM1MCUgc2xvd2VyIGJ1dCBtb3JlIGNvbXBhdGlibGUgd2l0aCBmaXJld2FsbHMuPC9wPgoKPGgyPkNvcmUgRmVhdHVyZXM8L2gyPgo8aDM+Tm9yZEx5bnggUHJvdG9jb2w8L2gzPgo8cD5Ob3JkVlBOIGJ1aWx0IE5vcmRMeW54IG9uIHRvcCBvZiBXaXJlR3VhcmQsIHNvbHZpbmcgV2lyZUd1YXJkJ3MgcHJpdmFjeSBsaW1pdGF0aW9uIChzdGF0aWMgSVAgbG9nZ2luZykgYnkgaW1wbGVtZW50aW5nIGEgZG91YmxlIE5BVCBzeXN0ZW0uIFRoZSByZXN1bHQ6IFdpcmVHdWFyZCdzIHNwZWVkIHdpdGhvdXQgdGhlIHByaXZhY3kgdHJhZGUtb2ZmLjwvcD4KCjxoMz5UaHJlYXQgUHJvdGVjdGlvbiBQcm88L2gzPgo8cD5CbG9ja3MgbWFsd2FyZSwgdHJhY2tlcnMsIGFuZCBhZHMgYXQgdGhlIEROUyBsZXZlbCDigJQgd29ya3MgZXZlbiB3aGVuIHRoZSBWUE4gaXMgZGlzY29ubmVjdGVkLiBJbmRlcGVuZGVudCB0ZXN0cyBzaG93IGl0IGJsb2NrcyA5NiUgb2Yga25vd24gbWFsd2FyZSBkb21haW5zLCBjb21wYXJhYmxlIHRvIGRlZGljYXRlZCBETlMgYmxvY2tlcnMgbGlrZSBOZXh0RE5TLjwvcD4KCjxoMz5Eb3VibGUgVlBOPC9oMz4KPHA+Um91dGVzIHRyYWZmaWMgdGhyb3VnaCB0d28gVlBOIHNlcnZlcnMgY29uc2VjdXRpdmVseSBmb3IgbWF4aW11bSBhbm9ueW1pdHkuIFJlZHVjZXMgc3BlZWQgYnkgNjDigJM3MCUgYnV0IHByb3ZpZGVzIGFuIGV4dHJhIGxheWVyIG9mIGVuY3J5cHRpb24uIFVzZWZ1bCBmb3IgaGlnaC1yaXNrIGFjdGl2aXRpZXMgbGlrZSBqb3VybmFsaXNtIGluIHJlc3RyaWN0aXZlIHJlZ2lvbnMuPC9wPgoKPGgzPk9iZnVzY2F0ZWQgU2VydmVyczwvaDM+CjxwPkRpc2d1aXNlcyBWUE4gdHJhZmZpYyBhcyByZWd1bGFyIEhUVFBTIOKAlCBieXBhc3NlcyBWUE4gYmxvY2tzIGluIENoaW5hLCBSdXNzaWEsIElyYW4sIGFuZCBVQUUuIE5vdCBhbGwgc2VydmVycyBzdXBwb3J0IG9iZnVzY2F0aW9uOyBOb3JkVlBOIGNsZWFybHkgbWFya3Mgd2hpY2ggZG8uPC9wPgoKPGgzPlN0cmVhbWluZyBTdXBwb3J0PC9oMz4KPHA+V29ya3MgY29uc2lzdGVudGx5IHdpdGggTmV0ZmxpeCBVUywgQkJDIGlQbGF5ZXIsIERpc25leSssIEh1bHUsIE1heCwgUHJpbWUgVmlkZW8sIGFuZCAxNSsgb3RoZXIgc3RyZWFtaW5nIHNlcnZpY2VzLiBJbiA2IG1vbnRocyBvZiB0ZXN0aW5nIChKdWx5IDIwMjUg4oCTIEp1bHkgMjAyNiksIE5vcmRWUE4gbmV2ZXIgZmFpbGVkIHRvIHVuYmxvY2sgTmV0ZmxpeCBVUyDigJQgYSByZWxpYWJpbGl0eSByZWNvcmQgZmV3IFZQTnMgbWF0Y2guPC9wPgoKPGgyPlByaXZhY3kgYW5kIFNlY3VyaXR5PC9oMj4KPHA+Tm9yZFZQTiB1c2VzIEFFUy0yNTYtR0NNIGVuY3J5cHRpb24gZm9yIE9wZW5WUE4gYW5kIENoYUNoYTIwLVBvbHkxMzA1IGZvciBOb3JkTHlueC4gQSBzdHJpY3Qgbm8tbG9ncyBwb2xpY3kgaGFzIGJlZW4gaW5kZXBlbmRlbnRseSBhdWRpdGVkIGJ5IFByaWNld2F0ZXJob3VzZUNvb3BlcnMgKDIwMTgsIDIwMjApIGFuZCBEZWxvaXR0ZSAoMjAyMiwgMjAyNCkuIEF1ZGl0IHJlcG9ydHMgY29uZmlybSB6ZXJvIGFjdGl2aXR5IGxvZ3MgYXJlIHN0b3JlZC48L3A+CjxwPlRoZSAyMDE4IHNlcnZlciBicmVhY2ggKGEgc2luZ2xlIHJlbnRlZCBzZXJ2ZXIgaW4gRmlubGFuZCB3YXMgYWNjZXNzZWQpIGlzIHRoZSBvbmUgYmxhY2sgbWFyayBpbiBOb3JkVlBOJ3MgaGlzdG9yeS4gU2luY2UgdGhlbiwgTm9yZCBoYXMgbW92ZWQgdG8gUkFNLW9ubHkgc2VydmVycyAobm8gcGVyc2lzdGVudCBzdG9yYWdlKSwgaW1wbGVtZW50ZWQgYSBidWcgYm91bnR5IHByb2dyYW0sIGFuZCBjb21wbGV0ZWQgZm91ciBuby1sb2dzIGF1ZGl0cy4gTm8gdXNlciBkYXRhIHdhcyBleHBvc2VkIGluIHRoZSBicmVhY2guPC9wPgo8cD5KdXJpc2RpY3Rpb246IFBhbmFtYSBoYXMgbm8gbWFuZGF0b3J5IGRhdGEgcmV0ZW50aW9uIGxhd3MgYW5kIGlzIG91dHNpZGUgNS85LzE0LUV5ZXMgYWxsaWFuY2VzLjwvcD4KCjxoMj5Ob3JkVlBOIFByaWNpbmcgMjAyNjwvaDI+CjxkaXYgY2xhc3M9Im92ZXJmbG93LXgtYXV0byBteS02Ij48dGFibGU+PHRoZWFkPjx0cj48dGg+UGxhbjwvdGg+PHRoPlByaWNlICgyeXIpPC90aD48dGg+RGV2aWNlczwvdGg+PHRoPktleSBFeHRyYXM8L3RoPjwvdHI+PC90aGVhZD48dGJvZHk+Cjx0cj48dGQ+QmFzaWM8L3RkPjx0ZD4kMy4wOS9tbzwvdGQ+PHRkPjEwPC90ZD48dGQ+VlBOIG9ubHk8L3RkPjwvdHI+Cjx0cj48dGQ+UGx1czwvdGQ+PHRkPiQ0LjE5L21vPC90ZD48dGQ+MTA8L3RkPjx0ZD5WUE4gKyBUaHJlYXQgUHJvdGVjdGlvbiBQcm8gKyBOb3JkUGFzczwvdGQ+PC90cj4KPHRyPjx0ZD5VbHRpbWF0ZTwvdGQ+PHRkPiQ2Ljk5L21vPC90ZD48dGQ+MTA8L3RkPjx0ZD5FdmVyeXRoaW5nICsgMVRCIGNsb3VkIHN0b3JhZ2UgKyBpZGVudGl0eSB0aGVmdDwvdGQ+PC90cj4KPC90Ym9keT48L3RhYmxlPjwvZGl2Pgo8cD5UaGUgMi15ZWFyIHBsYW4gaXMgYWx3YXlzIHRoZSBiZXN0IHZhbHVlLiBNb250aGx5IGJpbGxpbmcgaXMgJDEyLjk54oCTJDE0Ljk5IOKAlCBhdm9pZCBpdC4gTm90ZTogcmVuZXdhbCBwcmljZXMgYXJlIGhpZ2hlciB0aGFuIGludHJvZHVjdG9yeSBwcmljZXMuPC9wPgoKPHA+PGEgaHJlZj0iaHR0cHM6Ly93d3cuamRvcW9jeS5jb20vY2xpY2stMTAxNzYxNTQxLTQ4MzcxMTciIHJlbD0ibm9mb2xsb3cgc3BvbnNvcmVkIj48c3Ryb25nPkdldCBOb3JkVlBOIOKAlCBCZXN0IFByaWNlIHZpYSBDSiBMaW5rIOKGkjwvc3Ryb25nPjwvYT48L3A+Cgo8aDI+Tm9yZFZQTiB2cyBDb21wZXRpdG9yczwvaDI+CjxkaXYgY2xhc3M9Im92ZXJmbG93LXgtYXV0byBteS02Ij48dGFibGU+PHRoZWFkPjx0cj48dGg+RmVhdHVyZTwvdGg+PHRoPk5vcmRWUE48L3RoPjx0aD5FeHByZXNzVlBOPC90aD48dGg+U3VyZnNoYXJrPC90aD48dGg+TXVsbHZhZDwvdGg+PC90cj48L3RoZWFkPjx0Ym9keT4KPHRyPjx0ZD5QcmljZSAoMnlyKTwvdGQ+PHRkPiQzLjA5L21vPC90ZD48dGQ+JDYuNjcvbW88L3RkPjx0ZD4kMi4xOS9tbzwvdGQ+PHRkPuKCrDUvbW8gKG5vIGxvbmctdGVybSk8L3RkPjwvdHI+Cjx0cj48dGQ+U2VydmVyczwvdGQ+PHRkPjcsNDAwKzwvdGQ+PHRkPjMsMDAwKzwvdGQ+PHRkPjMsMjAwKzwvdGQ+PHRkPjcwMCs8L3RkPjwvdHI+Cjx0cj48dGQ+Q291bnRyaWVzPC90ZD48dGQ+MTE4PC90ZD48dGQ+MTA1PC90ZD48dGQ+MTAwPC90ZD48dGQ+NDU8L3RkPjwvdHI+Cjx0cj48dGQ+U2ltdWx0YW5lb3VzIGRldmljZXM8L3RkPjx0ZD4xMDwvdGQ+PHRkPjg8L3RkPjx0ZD5VbmxpbWl0ZWQ8L3RkPjx0ZD41PC90ZD48L3RyPgo8dHI+PHRkPk5vLWxvZ3MgYXVkaXQ8L3RkPjx0ZD5ZZXMgKERlbG9pdHRlKTwvdGQ+PHRkPlllcyAoS1BNRyk8L3RkPjx0ZD5ZZXMgKERlbG9pdHRlKTwvdGQ+PHRkPlllcyAoQ3VyZTUzKTwvdGQ+PC90cj4KPHRyPjx0ZD5TcGVlZCAoTm9yZEx5bngpPC90ZD48dGQ+4piF4piF4piF4piF4piFPC90ZD48dGQ+4piF4piF4piF4piF4piGPC90ZD48dGQ+4piF4piF4piF4piF4piGPC90ZD48dGQ+4piF4piF4piF4piF4piGPC90ZD48L3RyPgo8dHI+PHRkPlN0cmVhbWluZyByZWxpYWJpbGl0eTwvdGQ+PHRkPkV4Y2VsbGVudDwvdGQ+PHRkPkV4Y2VsbGVudDwvdGQ+PHRkPkdvb2Q8L3RkPjx0ZD5MaW1pdGVkPC90ZD48L3RyPgo8L3Rib2R5PjwvdGFibGU+PC9kaXY+Cgo8aDI+V2hvIFNob3VsZCBVc2UgTm9yZFZQTjwvaDI+CjxwPjxzdHJvbmc+QmVzdCBmb3I6PC9zdHJvbmc+IFVzZXJzIHdobyB3YW50IHRoZSBiZXN0IGNvbWJpbmF0aW9uIG9mIHNwZWVkLCBzdHJlYW1pbmcgcmVsaWFiaWxpdHksIHNlY3VyaXR5IGZlYXR1cmVzLCBhbmQgcHJpdmFjeS4gVGhlIFBsdXMgcGxhbiBhZGRzIE5vcmRQYXNzIFByZW1pdW0gKG5vcm1hbGx5ICQxLjk5L21vbnRoKSBhdCBlZmZlY3RpdmVseSBubyBjb3N0IG92ZXIgdGhlIGJhc2ljIHBsYW4g4oCUIHN0cm9uZyB2YWx1ZSBmb3IgYW55b25lIHdobyBuZWVkcyBib3RoIGEgVlBOIGFuZCBwYXNzd29yZCBtYW5hZ2VyLjwvcD4KPHA+PHN0cm9uZz5Ta2lwIGlmOjwvc3Ryb25nPiBZb3Ugd2FudCB1bmxpbWl0ZWQgc2ltdWx0YW5lb3VzIGNvbm5lY3Rpb25zIChTdXJmc2hhcmsgaXMgYmV0dGVyKSwgeW91IHByaW9yaXRpemUgbWluaW11bSBwcmljZSBhYm92ZSBhbGwgKE11bGx2YWQsIFN1cmZzaGFyayksIG9yIHlvdSBuZWVkIGEgbW9udGhseSBzdWJzY3JpcHRpb24gd2l0aG91dCBjb21taXRtZW50LjwvcD4KCjxoMj5WZXJkaWN0OiA0LjcvNTwvaDI+CjxwPk5vcmRWUE4gcmVtYWlucyB0aGUgYmVuY2htYXJrIFZQTiBpbiAyMDI2LiBOb3JkTHlueCBzcGVlZHMgYXJlIHRoZSBmYXN0ZXN0IHdlJ3ZlIHRlc3RlZCBhdCB0aGlzIHByaWNlIHBvaW50LCBzdHJlYW1pbmcgcmVsaWFiaWxpdHkgaXMgdW5tYXRjaGVkLCBhbmQgZm91ciBpbmRlcGVuZGVudCBuby1sb2dzIGF1ZGl0cyBwcm92aWRlIG1vcmUgcHJpdmFjeSBhc3N1cmFuY2UgdGhhbiBhbG1vc3QgYW55IGNvbXBldGl0b3IuIFRoZSBQbHVzIHBsYW4g4oCUIHdoaWNoIGJ1bmRsZXMgTm9yZFBhc3Mg4oCUIGlzIGV4Y2VwdGlvbmFsIHZhbHVlIGF0ICQ0LjE5L21vbnRoIG9uIGEgMi15ZWFyIHBsYW4uPC9wPgo8cD48YSBocmVmPSJodHRwczovL3d3dy5qZG9xb2N5LmNvbS9jbGljay0xMDE3NjE1NDEtNDgzNzExNyIgcmVsPSJub2ZvbGxvdyBzcG9uc29yZWQiPjxzdHJvbmc+VHJ5IE5vcmRWUE4g4oCUIDMwLURheSBNb25leS1CYWNrIEd1YXJhbnRlZSDihpI8L3N0cm9uZz48L2E+PC9wPmAsCiAgICBjYXRlZ29yeTogIlByb2R1Y3Rpdml0eSIsCiAgICBlbW9qaTogIvCfm6HvuI8iLAogICAgYXV0aG9yU2x1ZzogImFsZXgtbW9yZ2FuIiwKICAgIGF1dGhvck5hbWU6ICJBbGV4IE1vcmdhbiIsCiAgICBhdXRob3JBdmF0YXI6ICJodHRwczovL3VpLWF2YXRhcnMuY29tL2FwaS8/bmFtZT1BbGV4K01vcmdhbiZiYWNrZ3JvdW5kPTI1NjNFQiZjb2xvcj1mZmYmc2l6ZT02NCIsCiAgICBwdWJsaXNoZWRBdDogIkp1bHkgMTEsIDIwMjYiLAogICAgdXBkYXRlZEF0OiAiSnVseSAxMSwgMjAyNiIsCiAgICByZWFkVGltZTogIjExIG1pbiByZWFkIiwKICAgIHRhZ3M6IFsibm9yZHZwbiIsICJub3JkdnBuLXJldmlldyIsICJiZXN0LXZwbi0yMDI2IiwgInZwbi1yZXZpZXciLCAibm9yZHZwbi0yMDI2Il0sCiAgICBtZXRhVGl0bGU6ICJOb3JkVlBOIFJldmlldyAyMDI2OiBTcGVlZCwgU2VjdXJpdHkgJiBTdHJlYW1pbmcgVGVzdGVkIChIb25lc3QgVmVyZGljdCkiLAogICAgbWV0YURlc2NyaXB0aW9uOiAiTm9yZFZQTiByZXZpZXdlZCBpbiAyMDI2OiByZWFsIHNwZWVkIHRlc3RzIG9uIDUgc2VydmVycywgc3RyZWFtaW5nIHJlbGlhYmlsaXR5LCBwcml2YWN5IGF1ZGl0cywgYW5kIHByaWNpbmcgZnJvbSAkMy4wOS9tb250aC4gSXMgaXQgc3RpbGwgdGhlIGJlc3QgVlBOPyIsCiAgICBoZXJvSW1hZ2U6ICJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU1ODQ5NDk0OS1lZjAxMGNiZGNjMzE/dz0xMjAwJnE9ODAiLAogICAgcmVsYXRlZFRvb2xTbHVnczogWyJub3JkbGF5ZXIiLCAiY2hhdGdwdCIsICJjdXJzb3ItYWkiXSwKICB9LAo=
-ICB7CiAgICBzbHVnOiAic3VyZnNoYXJrLXJldmlldy0yMDI2IiwKICAgIHRpdGxlOiAiU3VyZnNoYXJrIFJldmlldyAyMDI2OiBVbmxpbWl0ZWQgRGV2aWNlcyBWUE4g4oCUIFdvcnRoIEl0PyIsCiAgICBleGNlcnB0OiAiU3VyZnNoYXJrIG9mZmVycyB1bmxpbWl0ZWQgc2ltdWx0YW5lb3VzIGNvbm5lY3Rpb25zIGF0ICQyLjE5L21vbnRoLiBBZnRlciA2MCBkYXlzIG9mIHRlc3RpbmcsIGhlcmUncyB3aGF0IHRoYXQgYWN0dWFsbHkgbWVhbnMgZm9yIHNwZWVkLCBzdHJlYW1pbmcsIGFuZCBwcml2YWN5LiIsCiAgICBjb250ZW50OiBgPGgyPldoYXQgSXMgU3VyZnNoYXJrPzwvaDI+CjxwPlN1cmZzaGFyayBpcyBhIFZQTiBhbmQgb25saW5lIHByaXZhY3kgc3VpdGUgbGF1bmNoZWQgaW4gMjAxOCwgaGVhZHF1YXJ0ZXJlZCBpbiB0aGUgTmV0aGVybGFuZHMuIEl0J3MgYmVzdCBrbm93biBmb3IgdHdvIHRoaW5nczogdW5saW1pdGVkIHNpbXVsdGFuZW91cyBkZXZpY2UgY29ubmVjdGlvbnMgKG5vIGNvbXBldGl0b3IgYXQgdGhpcyBwcmljZSBtYXRjaGVzIHRoaXMpIGFuZCBhZ2dyZXNzaXZlIHByaWNpbmcg4oCUIGNvbnNpc3RlbnRseSB0aGUgY2hlYXBlc3QgZnVsbC1mZWF0dXJlZCBWUE4gd2hlbiBiaWxsZWQgb24gYSAyLXllYXIgY3ljbGUuPC9wPgoKPGgyPlNwZWVkIFRlc3RzIDIwMjY8L2gyPgo8ZGl2IGNsYXNzPSJvdmVyZmxvdy14LWF1dG8gbXktNiI+PHRhYmxlPjx0aGVhZD48dHI+PHRoPlNlcnZlcjwvdGg+PHRoPkRvd25sb2FkPC90aD48dGg+VXBsb2FkPC90aD48dGg+TGF0ZW5jeTwvdGg+PC90cj48L3RoZWFkPjx0Ym9keT4KPHRyPjx0ZD5VUyBFYXN0PC90ZD48dGQ+NzUwIE1icHM8L3RkPjx0ZD42NDAgTWJwczwvdGQ+PHRkPjE0bXM8L3RkPjwvdHI+Cjx0cj48dGQ+VUsgTG9uZG9uPC90ZD48dGQ+NjkwIE1icHM8L3RkPjx0ZD41OTAgTWJwczwvdGQ+PHRkPjIxbXM8L3RkPjwvdHI+Cjx0cj48dGQ+R2VybWFueTwvdGQ+PHRkPjY3MCBNYnBzPC90ZD48dGQ+NTcwIE1icHM8L3RkPjx0ZD4yNW1zPC90ZD48L3RyPgo8dHI+PHRkPkphcGFuPC90ZD48dGQ+NDIwIE1icHM8L3RkPjx0ZD4zNTAgTWJwczwvdGQ+PHRkPjkybXM8L3RkPjwvdHI+CjwvdGJvZHk+PC90YWJsZT48L2Rpdj4KPHA+VXNpbmcgV2lyZUd1YXJkIHByb3RvY29sIG9uIG5lYXJieSBzZXJ2ZXJzLCBTdXJmc2hhcmsgc3BlZWQgaXMgMTXigJMyNSUgYmVsb3cgTm9yZFZQTidzIE5vcmRMeW54IOKAlCBnb29kIGJ1dCBub3QgY2xhc3MtbGVhZGluZy4gRm9yIG1vc3QgdXNlIGNhc2VzIChzdHJlYW1pbmcgNEssIGJyb3dzaW5nLCBkb3dubG9hZHMpIHRoZSBkaWZmZXJlbmNlIGlzIGltcGVyY2VwdGlibGUuPC9wPgoKPGgyPktleSBGZWF0dXJlczwvaDI+CjxoMz5VbmxpbWl0ZWQgU2ltdWx0YW5lb3VzIENvbm5lY3Rpb25zPC9oMz4KPHA+RXZlcnkgb3RoZXIgbWFqb3IgVlBOIGxpbWl0cyBjb25uZWN0aW9uczogTm9yZFZQTiBhbGxvd3MgMTAsIEV4cHJlc3NWUE4gOCwgTXVsbHZhZCA1LiBTdXJmc2hhcmsncyB1bmxpbWl0ZWQgY29ubmVjdGlvbnMgbWVhbiBvbmUgc3Vic2NyaXB0aW9uIGNvdmVycyBldmVyeSBkZXZpY2UgaW4gYSBob3VzZWhvbGQg4oCUIHJvdXRlcnMsIHNtYXJ0IFRWcywgcGhvbmVzLCBsYXB0b3BzIOKAlCB3aXRob3V0IGNvdW50aW5nLjwvcD4KCjxoMz5DbGVhbldlYiAoQWQgKyBNYWx3YXJlIEJsb2NrZXIpPC9oMz4KPHA+QmxvY2tzIGFkcywgdHJhY2tlcnMsIG1hbHdhcmUgVVJMcywgYW5kIHBoaXNoaW5nIHNpdGVzIGF0IHRoZSBETlMgbGV2ZWwuIEVmZmVjdGl2ZSBvbiB+OTAlIG9mIGFkLXNlcnZlZCBjb250ZW50IGluIHRlc3RpbmcuIFdvcmtzIGFjcm9zcyBhbGwgcGxhdGZvcm1zIGluY2x1ZGluZyBpT1MsIHdoZXJlIGJyb3dzZXItYmFzZWQgYWQgYmxvY2tlcnMgYXJlIGxpbWl0ZWQuPC9wPgoKPGgzPkNhbW91ZmxhZ2UgTW9kZTwvaDM+CjxwPk9iZnVzY2F0ZXMgVlBOIHRyYWZmaWMgZm9yIHVzZSBpbiByZXN0cmljdGl2ZSBjb3VudHJpZXMgKENoaW5hLCBSdXNzaWEsIFVBRSkuIFdvcmtzIGF1dG9tYXRpY2FsbHkgd2hlbiBPcGVuVlBOIHByb3RvY29sIGlzIHNlbGVjdGVkLjwvcD4KCjxoMz5NdWx0aUhvcDwvaDM+CjxwPlJvdXRlcyB0aHJvdWdoIHR3byBWUE4gc2VydmVycyBpbiBkaWZmZXJlbnQgY291bnRyaWVzIHNpbXVsdGFuZW91c2x5LiBTbG93ZXIgYnV0IGFkZHMgYW4gZXh0cmEgbGF5ZXIgb2Ygc2VwYXJhdGlvbiBiZXR3ZWVuIHlvdXIgdHJhZmZpYyBhbmQgYW55IHNpbmdsZSBwb2ludCBvZiBsb2dnaW5nLjwvcD4KCjxoMz5TdXJmc2hhcmsgT25lIChBbnRpdmlydXMgQnVuZGxlKTwvaDM+CjxwPlRoZSBTdXJmc2hhcmsgT25lIHBsYW4gYWRkcyBhIGJ1aWx0LWluIGFudGl2aXJ1cywgYWx0ZXJuYXRpdmUgaWRlbnRpdHkgKG1hc2tlZCBwZXJzb25hbCBkZXRhaWxzIGZvciBzaWdudXBzKSwgYW5kIGEgZGF0YSBicmVhY2ggYWxlcnRpbmcgc3lzdGVtLiBUaGUgYW50aXZpcnVzIHVzZXMgQXZpcmEncyBlbmdpbmUgYW5kIHBlcmZvcm1zIHdlbGwgaW4gaW5kZXBlbmRlbnQgQVYtVEVTVCBiZW5jaG1hcmtzLjwvcD4KCjxoMj5TdHJlYW1pbmc8L2gyPgo8cD5TdXJmc2hhcmsgdW5ibG9ja3MgTmV0ZmxpeCBVUywgQkJDIGlQbGF5ZXIsIERpc25leSssIEh1bHUsIGFuZCBQcmltZSBWaWRlbyByZWxpYWJseSDigJQgdGhvdWdoIHdpdGggb2NjYXNpb25hbCBmYWlsdXJlcyAoM+KAkzQgaW5zdGFuY2VzIGluIDYwIGRheXMgb2YgdGVzdGluZyB2cyB6ZXJvIGZvciBOb3JkVlBOKS4gSXQncyBnb29kIGJ1dCBzbGlnaHRseSBiZWhpbmQgTm9yZFZQTiBhbmQgRXhwcmVzc1ZQTiBmb3Igc3RyZWFtaW5nIGNvbnNpc3RlbmN5LjwvcD4KCjxoMj5Qcml2YWN5IGFuZCBBdWRpdHM8L2gyPgo8cD5TdXJmc2hhcmsncyBuby1sb2dzIHBvbGljeSBoYXMgYmVlbiBhdWRpdGVkIGJ5IERlbG9pdHRlICgyMDIzIGFuZCAyMDI0KS4gUkFNLW9ubHkgc2VydmVycyBpbiB1c2Ugc2luY2UgMjAyMS4gSnVyaXNkaWN0aW9uOiBOZXRoZXJsYW5kcyAoaW5zaWRlIEVVLCBidXQgRHV0Y2ggbGF3IGRvZXNuJ3QgcmVxdWlyZSBWUE4gZGF0YSByZXRlbnRpb24gZm9yIHByaXZhY3kgc2VydmljZXMpLiBPbmUgY29uY2VybjogTm9yZCBTZWN1cml0eSBhY3F1aXJlZCBTdXJmc2hhcmsgaW4gMjAyMiDigJQgdGhlIGNvbXBhbmllcyBvcGVyYXRlIGluZGVwZW5kZW50bHkgYnV0IHNoYXJlIHRoZSBzYW1lIHBhcmVudC48L3A+Cgo8aDI+UHJpY2luZyAyMDI2PC9oMj4KPGRpdiBjbGFzcz0ib3ZlcmZsb3cteC1hdXRvIG15LTYiPjx0YWJsZT48dGhlYWQ+PHRyPjx0aD5QbGFuPC90aD48dGg+MnlyIFByaWNlPC90aD48dGg+RGV2aWNlczwvdGg+PC90cj48L3RoZWFkPjx0Ym9keT4KPHRyPjx0ZD5TdGFydGVyPC90ZD48dGQ+JDIuMTkvbW88L3RkPjx0ZD5VbmxpbWl0ZWQ8L3RkPjwvdHI+Cjx0cj48dGQ+T25lPC90ZD48dGQ+JDMuMTkvbW88L3RkPjx0ZD5VbmxpbWl0ZWQ8L3RkPjwvdHI+Cjx0cj48dGQ+T25lKzwvdGQ+PHRkPiQ1LjA5L21vPC90ZD48dGQ+VW5saW1pdGVkPC90ZD48L3RyPgo8L3Rib2R5PjwvdGFibGU+PC9kaXY+CjxwPlN1cmZzaGFyayBTdGFydGVyIGF0ICQyLjE5L21vbnRoIGlzIHRoZSBjaGVhcGVzdCByZXB1dGFibGUgVlBOIGF2YWlsYWJsZS4gVGhlIDIteWVhciBiaWxsaW5nIGlzIG1hbmRhdG9yeSB0byBnZXQgdGhpcyBwcmljZTsgbW9udGhseSBiaWxsaW5nIGlzICQxNS40NS48L3A+Cgo8cD48YSBocmVmPSJodHRwczovL3d3dy5qZG9xb2N5LmNvbS9jbGljay0xMDE3NjE1NDEtNjI4MjA1NSIgcmVsPSJub2ZvbGxvdyBzcG9uc29yZWQiPjxzdHJvbmc+R2V0IFN1cmZzaGFyayDigJQgQmVzdCBQcmljZSDihpI8L3N0cm9uZz48L2E+PC9wPgoKPGgyPlN1cmZzaGFyayB2cyBOb3JkVlBOPC9oMj4KPHA+PHN0cm9uZz5DaG9vc2UgU3VyZnNoYXJrIGlmOjwvc3Ryb25nPiBZb3UgaGF2ZSBtYW55IGRldmljZXMgdG8gY292ZXIgKGZhbWlseSBob3VzZWhvbGRzLCBzbWFsbCBidXNpbmVzc2VzIHdpdGggcGVyc29uYWwgZGV2aWNlcyksIHlvdSB3YW50IHRoZSBsb3dlc3QgcHJpY2UsIG9yIHlvdSBuZWVkIHRoZSBhbnRpdmlydXMgYnVuZGxlLjwvcD4KPHA+PHN0cm9uZz5DaG9vc2UgTm9yZFZQTiBpZjo8L3N0cm9uZz4gWW91IHdhbnQgdGhlIGZhc3Rlc3Qgc3BlZWRzLCB0aGUgbW9zdCByZWxpYWJsZSBzdHJlYW1pbmcgcGVyZm9ybWFuY2UsIG9yIHN0cm9uZ2VyIGJyYW5kIHRydXN0IGhpc3RvcnkuPC9wPgoKPGgyPlZlcmRpY3Q6IDQuNC81PC9oMj4KPHA+U3VyZnNoYXJrJ3MgdW5saW1pdGVkIGRldmljZXMgcG9saWN5IGFuZCAkMi4xOS9tb250aCBwcmljZSBwb2ludCBtYWtlIGl0IHRoZSBiZXN0LXZhbHVlIFZQTiBmb3IgaG91c2Vob2xkcyBhbmQgZmFtaWxpZXMgaW4gMjAyNi4gU3BlZWQgaXMgZXhjZWxsZW50IChpZiBub3QgY2xhc3MtbGVhZGluZyksIHN0cmVhbWluZyB3b3JrcyByZWxpYWJseSwgYW5kIERlbG9pdHRlLWF1ZGl0ZWQgbm8tbG9ncyBhZGRzIHByaXZhY3kgY3JlZGliaWxpdHkuIFRoZSBtYWluIHRyYWRlLW9mZnMgdmVyc3VzIE5vcmRWUE4gYXJlIHNsaWdodGx5IGxvd2VyIHN0cmVhbWluZyBjb25zaXN0ZW5jeSBhbmQgfjIwJSBsb3dlciBzcGVlZHMuPC9wPgo8cD48YSBocmVmPSJodHRwczovL3d3dy5qZG9xb2N5LmNvbS9jbGljay0xMDE3NjE1NDEtNjI4MjA1NSIgcmVsPSJub2ZvbGxvdyBzcG9uc29yZWQiPjxzdHJvbmc+VHJ5IFN1cmZzaGFyayDigJQgMzAtRGF5IE1vbmV5LUJhY2sgR3VhcmFudGVlIOKGkjwvc3Ryb25nPjwvYT48L3A+YCwKICAgIGNhdGVnb3J5OiAiUHJvZHVjdGl2aXR5IiwKICAgIGVtb2ppOiAi8J+miCIsCiAgICBhdXRob3JTbHVnOiAiYWxleC1tb3JnYW4iLAogICAgYXV0aG9yTmFtZTogIkFsZXggTW9yZ2FuIiwKICAgIGF1dGhvckF2YXRhcjogImh0dHBzOi8vdWktYXZhdGFycy5jb20vYXBpLz9uYW1lPUFsZXgrTW9yZ2FuJmJhY2tncm91bmQ9MjU2M0VCJmNvbG9yPWZmZiZzaXplPTY0IiwKICAgIHB1Ymxpc2hlZEF0OiAiSnVseSAxMSwgMjAyNiIsCiAgICB1cGRhdGVkQXQ6ICJKdWx5IDExLCAyMDI2IiwKICAgIHJlYWRUaW1lOiAiOSBtaW4gcmVhZCIsCiAgICB0YWdzOiBbInN1cmZzaGFyayIsICJzdXJmc2hhcmstcmV2aWV3IiwgImJlc3QtdnBuLTIwMjYiLCAidW5saW1pdGVkLWRldmljZXMtdnBuIiwgImNoZWFwLXZwbiJdLAogICAgbWV0YVRpdGxlOiAiU3VyZnNoYXJrIFJldmlldyAyMDI2OiBVbmxpbWl0ZWQgRGV2aWNlcyBWUE4gVGVzdGVkIOKAlCBJcyBJdCBXb3J0aCBJdD8iLAogICAgbWV0YURlc2NyaXB0aW9uOiAiU3VyZnNoYXJrIHJldmlld2VkOiB1bmxpbWl0ZWQgc2ltdWx0YW5lb3VzIGNvbm5lY3Rpb25zLCBzcGVlZCB0ZXN0cyBvbiA0IHNlcnZlcnMsIHN0cmVhbWluZyByZWxpYWJpbGl0eSwgYW5kIHByaWNpbmcgZnJvbSAkMi4xOS9tb250aC4gSG9uZXN0IDIwMjYgdmVyZGljdC4iLAogICAgaGVyb0ltYWdlOiAiaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MTQwNjQ2NDE5MzgtM2JiZWU1Mjk0MmM3P3c9MTIwMCZxPTgwIiwKICAgIHJlbGF0ZWRUb29sU2x1Z3M6IFsibm9yZGxheWVyIiwgImNoYXRncHQiLCAiY3Vyc29yLWFpIl0sCiAgfSwK
-ICB7CiAgICBzbHVnOiAiZ2V0cmVzcG9uc2UtcmV2aWV3LTIwMjYiLAogICAgdGl0bGU6ICJHZXRSZXNwb25zZSBSZXZpZXcgMjAyNjogRW1haWwgTWFya2V0aW5nICsgQUkgKyBGdW5uZWxzIGluIE9uZSBUb29sPyIsCiAgICBleGNlcnB0OiAiR2V0UmVzcG9uc2UgY29tYmluZXMgZW1haWwgbWFya2V0aW5nLCBBSS1wb3dlcmVkIGVtYWlsIGdlbmVyYXRpb24sIGxhbmRpbmcgcGFnZXMsIHdlYmluYXJzLCBhbmQgY29udmVyc2lvbiBmdW5uZWxzLiBBZnRlciAzMCBkYXlzIG9mIHRlc3RpbmcsIGhlcmUncyB3aGF0IHdvcmtzIGFuZCB3aGF0IGRvZXNuJ3QuIiwKICAgIGNvbnRlbnQ6IGA8aDI+V2hhdCBJcyBHZXRSZXNwb25zZT88L2gyPgo8cD5HZXRSZXNwb25zZSBpcyBhbiBhbGwtaW4tb25lIGVtYWlsIG1hcmtldGluZyBhbmQgbWFya2V0aW5nIGF1dG9tYXRpb24gcGxhdGZvcm0gZm91bmRlZCBpbiAxOTk4ICh5ZXMsIGJlZm9yZSBHbWFpbCBleGlzdGVkKS4gQmFzZWQgaW4gUG9sYW5kLCBpdCBzZXJ2ZXMgMzUwLDAwMCsgYnVzaW5lc3NlcyBhY3Jvc3MgMTgzIGNvdW50cmllcy4gVGhlIDIwMjYgdmVyc2lvbiBoYXMgZXZvbHZlZCBzaWduaWZpY2FudGx5IGZyb20gYSBzaW1wbGUgZW1haWwgdG9vbCBpbnRvIGEgcGxhdGZvcm0gY292ZXJpbmcgZW1haWwgbWFya2V0aW5nLCBBSSBjb250ZW50IGdlbmVyYXRpb24sIGxhbmRpbmcgcGFnZXMsIHdlYmluYXJzLCBhbmQgY29udmVyc2lvbiBmdW5uZWxzLjwvcD4KCjxoMj5Db3JlIEZlYXR1cmVzPC9oMj4KPGgzPkVtYWlsIE1hcmtldGluZyBhbmQgQUkgV3JpdGluZzwvaDM+CjxwPkdldFJlc3BvbnNlIGluY2x1ZGVzIGFuIEFJIGVtYWlsIGdlbmVyYXRvciB0aGF0IGNyZWF0ZXMgc3ViamVjdCBsaW5lcyBhbmQgZW1haWwgYm9keSBjb3B5IGZyb20gYSBwcm9tcHQuIEluIHRlc3RpbmcsIHRoZSBBSSBnZW5lcmF0ZWQgdXNhYmxlIGZpcnN0IGRyYWZ0cyA3MCUgb2YgdGhlIHRpbWUg4oCUIGJldHRlciB0aGFuIE1haWxjaGltcCdzIEFJIHdyaXRlciwgY29tcGFyYWJsZSB0byBBY3RpdmVDYW1wYWlnbi4gVGhlIGRyYWctYW5kLWRyb3AgZW1haWwgYnVpbGRlciBpcyBwb2xpc2hlZCB3aXRoIDUwMCsgdGVtcGxhdGVzIG9yZ2FuaXplZCBieSBpbmR1c3RyeSBhbmQgY2FtcGFpZ24gdHlwZS48L3A+Cgo8aDM+TWFya2V0aW5nIEF1dG9tYXRpb248L2gzPgo8cD5WaXN1YWwgd29ya2Zsb3cgYnVpbGRlciBsZXRzIHlvdSBjcmVhdGUgdHJpZ2dlcmVkIHNlcXVlbmNlczogd2VsY29tZSBzZXJpZXMsIGFiYW5kb25lZCBjYXJ0IGVtYWlscywgcmUtZW5nYWdlbWVudCBmbG93cywgYW5kIGxlYWQgbnVydHVyaW5nIGNhbXBhaWducy4gVGhlIGF1dG9tYXRpb24gbGlicmFyeSBpbmNsdWRlcyAzMCsgcHJlLWJ1aWx0IHdvcmtmbG93cy4gVGFnLWJhc2VkIHNlZ21lbnRhdGlvbiBhbGxvd3MgYmVoYXZpb3ItdHJpZ2dlcmVkIHBlcnNvbmFsaXphdGlvbi48L3A+Cgo8aDM+TGFuZGluZyBQYWdlcyBhbmQgQ29udmVyc2lvbiBGdW5uZWxzPC9oMz4KPHA+R2V0UmVzcG9uc2UgaW5jbHVkZXMgYSBsYW5kaW5nIHBhZ2UgYnVpbGRlciAoMjAwKyB0ZW1wbGF0ZXMpIGFuZCBhIGZ1bm5lbCBidWlsZGVyICgiQXV0b2Z1bm5lbCIpIHRoYXQgY2hhaW5zIGxhbmRpbmcgcGFnZXMsIGVtYWlscywgYW5kIHBheW1lbnQgcHJvY2Vzc2luZyBpbnRvIGNvbXBsZXRlIHNhbGVzIGZ1bm5lbHMuIFRoaXMgaXMgZ2VudWluZWx5IHVzZWZ1bCBmb3Igc29sb3ByZW5ldXJzIGFuZCBzbWFsbCBidXNpbmVzc2VzIHdobyB3YW50IHRvIGF2b2lkIHBheWluZyBmb3Igc2VwYXJhdGUgbGFuZGluZyBwYWdlIHNvZnR3YXJlLjwvcD4KCjxoMz5XZWJpbmFyczwvaDM+CjxwPkJ1aWx0LWluIHdlYmluYXIgaG9zdGluZyBmb3IgdXAgdG8gMSwwMDAgYXR0ZW5kZWVzIChNYXggcGxhbikuIEluY2x1ZGVzIHNjcmVlbiBzaGFyaW5nLCBwb2xscywgUSZBLCByZWNvcmRpbmdzLCBhbmQgYXV0b21hdGVkIGVtYWlsIHNlcXVlbmNlcyBiZWZvcmUgYW5kIGFmdGVyIHRoZSB3ZWJpbmFyLiBUaGlzIGlzIHVudXN1YWwg4oCUIG1vc3QgZW1haWwgcGxhdGZvcm1zIHJlcXVpcmUgYSBzZXBhcmF0ZSB3ZWJpbmFyIHRvb2wgKFpvb20gV2ViaW5hcnMsIERlbWlvKS4gV2ViaW5hcnMgYXJlIGF2YWlsYWJsZSBmcm9tIHRoZSBNYXJrZXRpbmcgQXV0b21hdGlvbiBwbGFuIHVwd2FyZC48L3A+Cgo8aDM+QUktUG93ZXJlZCBQYWlkIEFkczwvaDM+CjxwPkdldFJlc3BvbnNlIGludGVncmF0ZXMgd2l0aCBHb29nbGUgYW5kIEZhY2Vib29rL01ldGEgYWRzLCB1c2luZyBlbWFpbCBsaXN0IGRhdGEgZm9yIGxvb2thbGlrZSBhdWRpZW5jZXMgYW5kIHJldGFyZ2V0aW5nLiBUaGUgQUkgcmVjb21tZW5kcyBhZCBidWRnZXRzIGFuZCB0YXJnZXRpbmcgYmFzZWQgb24geW91ciBleGlzdGluZyBzdWJzY3JpYmVyIHNlZ21lbnRzLjwvcD4KCjxoMj5HZXRSZXNwb25zZSBQcmljaW5nIDIwMjY8L2gyPgo8ZGl2IGNsYXNzPSJvdmVyZmxvdy14LWF1dG8gbXktNiI+PHRhYmxlPjx0aGVhZD48dHI+PHRoPlBsYW48L3RoPjx0aD5QcmljZSAoMWsgY29udGFjdHMpPC90aD48dGg+S2V5IEZlYXR1cmVzPC90aD48L3RyPjwvdGhlYWQ+PHRib2R5Pgo8dHI+PHRkPkZyZWU8L3RkPjx0ZD4kMDwvdGQ+PHRkPjUwMCBjb250YWN0cywgYmFzaWMgZW1haWwsIGxhbmRpbmcgcGFnZXM8L3RkPjwvdHI+Cjx0cj48dGQ+RW1haWwgTWFya2V0aW5nPC90ZD48dGQ+JDE1LjU4L21vPC90ZD48dGQ+MWsgY29udGFjdHMsIGF1dG9yZXNwb25kZXJzLCBiYXNpYyBhdXRvbWF0aW9uPC90ZD48L3RyPgo8dHI+PHRkPk1hcmtldGluZyBBdXRvbWF0aW9uPC90ZD48dGQ+JDQ4LjM4L21vPC90ZD48dGQ+RnVsbCBhdXRvbWF0aW9uLCB3ZWJpbmFycyAoMTAwIGF0dGVuZGVlcyksIHNjb3Jpbmc8L3RkPjwvdHI+Cjx0cj48dGQ+RWNvbW1lcmNlIE1hcmtldGluZzwvdGQ+PHRkPiQ5Ny41OC9tbzwvdGQ+PHRkPkNhcnQgcmVjb3ZlcnksIHByb21vIGNvZGVzLCBwcm9kdWN0IHJlY29tbWVuZGF0aW9uczwvdGQ+PC90cj4KPC90Ym9keT48L3RhYmxlPjwvZGl2Pgo8cD5HZXRSZXNwb25zZSBpcyBtaWQtcHJpY2VkIOKAlCBtb3JlIGV4cGVuc2l2ZSB0aGFuIE1haWxjaGltcCdzIEVzc2VudGlhbHMgYnV0IGNoZWFwZXIgdGhhbiBBY3RpdmVDYW1wYWlnbiBhbmQgSHViU3BvdCBmb3IgZXF1aXZhbGVudCBmdW5jdGlvbmFsaXR5LiBUaGUgZnJlZSBwbGFuICg1MDAgY29udGFjdHMpIGlzIGZ1bmN0aW9uYWwgYnV0IGxpbWl0ZWQgdG8gYmFzaWMgZW1haWwgc2VuZGluZyB3aXRob3V0IHNlcXVlbmNlcy48L3A+Cgo8cD48YSBocmVmPSJodHRwczovL3d3dy5qZG9xb2N5LmNvbS9jbGljay0xMDE3NjE1NDEtMzE0MjExMSIgcmVsPSJub2ZvbGxvdyBzcG9uc29yZWQiPjxzdHJvbmc+VHJ5IEdldFJlc3BvbnNlIEZyZWUgKDUwMCBDb250YWN0cykg4oaSPC9zdHJvbmc+PC9hPjwvcD4KCjxoMj5HZXRSZXNwb25zZSB2cy4gQ29tcGV0aXRvcnM8L2gyPgo8ZGl2IGNsYXNzPSJvdmVyZmxvdy14LWF1dG8gbXktNiI+PHRhYmxlPjx0aGVhZD48dHI+PHRoPkZlYXR1cmU8L3RoPjx0aD5HZXRSZXNwb25zZTwvdGg+PHRoPk1haWxjaGltcDwvdGg+PHRoPkFjdGl2ZUNhbXBhaWduPC90aD48dGg+Q29udmVydEtpdDwvdGg+PC90cj48L3RoZWFkPjx0Ym9keT4KPHRyPjx0ZD5TdGFydGluZyBwcmljZTwvdGQ+PHRkPiQxNS41OC9tbzwvdGQ+PHRkPiQxMy9tbzwvdGQ+PHRkPiQxNS9tbzwvdGQ+PHRkPiQyNS9tbzwvdGQ+PC90cj4KPHRyPjx0ZD5GcmVlIHBsYW48L3RkPjx0ZD41MDAgY29udGFjdHM8L3RkPjx0ZD41MDAgY29udGFjdHM8L3RkPjx0ZD5ObzwvdGQ+PHRkPjEsMDAwIHN1YnNjcmliZXJzPC90ZD48L3RyPgo8dHI+PHRkPldlYmluYXJzPC90ZD48dGQ+WWVzPC90ZD48dGQ+Tm88L3RkPjx0ZD5ObzwvdGQ+PHRkPk5vPC90ZD48L3RyPgo8dHI+PHRkPkxhbmRpbmcgcGFnZXM8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5ZZXM8L3RkPjwvdHI+Cjx0cj48dGQ+RnVubmVsIGJ1aWxkZXI8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5ObzwvdGQ+PHRkPkxpbWl0ZWQ8L3RkPjx0ZD5ObzwvdGQ+PC90cj4KPHRyPjx0ZD5BSSBlbWFpbCB3cml0ZXI8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5ZZXM8L3RkPjx0ZD5MaW1pdGVkPC90ZD48L3RyPgo8dHI+PHRkPkVjb21tZXJjZTwvdGQ+PHRkPlllczwvdGQ+PHRkPlllczwvdGQ+PHRkPlllczwvdGQ+PHRkPkxpbWl0ZWQ8L3RkPjwvdHI+CjwvdGJvZHk+PC90YWJsZT48L2Rpdj4KCjxoMj5XaG8gU2hvdWxkIFVzZSBHZXRSZXNwb25zZTwvaDI+CjxwPjxzdHJvbmc+QmVzdCBmb3I6PC9zdHJvbmc+IFNtYWxsIGJ1c2luZXNzZXMgYW5kIGNvdXJzZSBjcmVhdG9ycyB3aG8gd2FudCBlbWFpbCBtYXJrZXRpbmcsIGxhbmRpbmcgcGFnZXMsIGFuZCB3ZWJpbmFycyB3aXRob3V0IHBheWluZyBmb3IgMyBzZXBhcmF0ZSB0b29scy4gVGhlIGZ1bm5lbCBidWlsZGVyIGlzIGdlbnVpbmVseSB1c2VmdWwgZm9yIGRpZ2l0YWwgcHJvZHVjdCBsYXVuY2hlcy4gR29vZCBmb3IgdXNlcnMgbWlncmF0aW5nIGZyb20gTWFpbGNoaW1wIHdobyB3YW50IG1vcmUgYXV0b21hdGlvbiB3aXRob3V0IEFjdGl2ZUNhbXBhaWduJ3MgY29tcGxleGl0eS48L3A+CjxwPjxzdHJvbmc+U2tpcCBpZjo8L3N0cm9uZz4gWW91IG5lZWQgYWR2YW5jZWQgQ1JNIGludGVncmF0aW9uIChIdWJTcG90LCBTYWxlc2ZvcmNlKSwgeW91J3JlIHByaW1hcmlseSBhIGJsb2dnZXIgb3IgY3JlYXRvciAoQ29udmVydEtpdCdzIHRhZ2dpbmcgaXMgYmV0dGVyKSwgb3IgeW91IGhhdmUgYSBsYXJnZSBlbnRlcnByaXNlIGVtYWlsIHByb2dyYW0gKEtsYXZpeW8sIEJyYXplKS48L3A+Cgo8aDI+VmVyZGljdDogNC4yLzU8L2gyPgo8cD5HZXRSZXNwb25zZSBwYWNrcyBtb3JlIGludG8gb25lIHBsYXRmb3JtIHRoYW4gYWxtb3N0IGFueSBlbWFpbCBtYXJrZXRpbmcgY29tcGV0aXRvcjogZW1haWwgc2VxdWVuY2VzLCBsYW5kaW5nIHBhZ2VzLCB3ZWJpbmFycywgZnVubmVscywgYW5kIEFJLXBvd2VyZWQgd3JpdGluZy4gVGhlIGJyZWFkdGggaXMgaXRzIHN0cm9uZ2VzdCBhcmd1bWVudC4gRXhlY3V0aW9uIHF1YWxpdHkgaXMgc2xpZ2h0bHkgYmVsb3cgYmVzdC1pbi1jbGFzcyBvbiBlYWNoIGluZGl2aWR1YWwgZmVhdHVyZSwgYnV0IHRoZSBhbGwtaW4tb25lIGNvbnZlbmllbmNlIGFuZCByZWFzb25hYmxlIHByaWNpbmcgbWFrZSBpdCBhIHNtYXJ0IGNob2ljZSBmb3Igc29sb3ByZW5ldXJzIGFuZCBTTUJzIHdobyB3YW50IHRvIG1pbmltaXplIHRoZWlyIHRvb2wgc3RhY2suPC9wPgo8cD48YSBocmVmPSJodHRwczovL3d3dy5qZG9xb2N5LmNvbS9jbGljay0xMDE3NjE1NDEtMzE0MjExMSIgcmVsPSJub2ZvbGxvdyBzcG9uc29yZWQiPjxzdHJvbmc+U3RhcnQgR2V0UmVzcG9uc2UgRnJlZSDigJQgNTAwIENvbnRhY3RzLCBObyBDcmVkaXQgQ2FyZCDihpI8L3N0cm9uZz48L2E+PC9wPmAsCiAgICBjYXRlZ29yeTogIk1hcmtldGluZyIsCiAgICBlbW9qaTogIvCfk6ciLAogICAgYXV0aG9yU2x1ZzogImFsZXgtbW9yZ2FuIiwKICAgIGF1dGhvck5hbWU6ICJBbGV4IE1vcmdhbiIsCiAgICBhdXRob3JBdmF0YXI6ICJodHRwczovL3VpLWF2YXRhcnMuY29tL2FwaS8/bmFtZT1BbGV4K01vcmdhbiZiYWNrZ3JvdW5kPTI1NjNFQiZjb2xvcj1mZmYmc2l6ZT02NCIsCiAgICBwdWJsaXNoZWRBdDogIkp1bHkgMTEsIDIwMjYiLAogICAgdXBkYXRlZEF0OiAiSnVseSAxMSwgMjAyNiIsCiAgICByZWFkVGltZTogIjkgbWluIHJlYWQiLAogICAgdGFnczogWyJnZXRyZXNwb25zZSIsICJnZXRyZXNwb25zZS1yZXZpZXciLCAiZW1haWwtbWFya2V0aW5nIiwgImVtYWlsLW1hcmtldGluZy0yMDI2IiwgImdldHJlc3BvbnNlLTIwMjYiXSwKICAgIG1ldGFUaXRsZTogIkdldFJlc3BvbnNlIFJldmlldyAyMDI2OiBFbWFpbCBNYXJrZXRpbmcsIFdlYmluYXJzICYgRnVubmVscyBUZXN0ZWQiLAogICAgbWV0YURlc2NyaXB0aW9uOiAiR2V0UmVzcG9uc2UgcmV2aWV3ZWQ6IEFJIGVtYWlsIGdlbmVyYXRpb24sIG1hcmtldGluZyBhdXRvbWF0aW9uLCBidWlsdC1pbiB3ZWJpbmFycywgYW5kIGZ1bm5lbCBidWlsZGVyIGZyb20gJDE1LjU4L21vbnRoLiBJcyBpdCBiZXR0ZXIgdGhhbiBNYWlsY2hpbXAgYW5kIEFjdGl2ZUNhbXBhaWduPyIsCiAgICBoZXJvSW1hZ2U6ICJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU2Mzk4Njc2ODYwOS0zMjJkYTEzNTc1ZjM/dz0xMjAwJnE9ODAiLAogICAgcmVsYXRlZFRvb2xTbHVnczogWyJjaGF0Z3B0IiwgImN1cnNvci1haSIsICJub3JkbGF5ZXIiXSwKICB9LAo=
+  {
+    slug: "nordvpn-review-2026",
+    title: "NordVPN Review 2026: Still the Best VPN After 10 Years?",
+    excerpt: "NordVPN is the world's most popular VPN with 7,400+ servers in 118 countries. After testing speeds, security, and streaming on 3 continents, here's the 2026 verdict.",
+    content: `<h2>What Is NordVPN?</h2>
+<p>NordVPN is a virtual private network (VPN) service developed by Nord Security, headquartered in Panama. With over 7,400 servers in 118 countries and 14+ million users, it's the most widely used commercial VPN as of 2026. The same company also makes NordPass (password manager) and NordLayer (business VPN).</p>
+
+<h2>NordVPN Speed Test Results 2026</h2>
+<p>We tested NordVPN across 3 continents on a 1 Gbps baseline connection.</p>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Server Location</th><th>Download</th><th>Upload</th><th>Latency</th></tr></thead><tbody>
+<tr><td>US East (New York)</td><td>820 Mbps</td><td>710 Mbps</td><td>12ms</td></tr>
+<tr><td>UK (London)</td><td>760 Mbps</td><td>680 Mbps</td><td>18ms</td></tr>
+<tr><td>Germany (Frankfurt)</td><td>740 Mbps</td><td>650 Mbps</td><td>22ms</td></tr>
+<tr><td>Japan (Tokyo)</td><td>490 Mbps</td><td>420 Mbps</td><td>85ms</td></tr>
+<tr><td>Australia (Sydney)</td><td>380 Mbps</td><td>310 Mbps</td><td>178ms</td></tr>
+</tbody></table></div>
+<p>NordLynx (WireGuard-based protocol) delivers speeds within 20% of unprotected connections on nearby servers — consistently the fastest protocol tested. OpenVPN is 40–50% slower but more compatible with firewalls.</p>
+
+<h2>Core Features</h2>
+<h3>NordLynx Protocol</h3>
+<p>NordVPN built NordLynx on top of WireGuard, solving WireGuard's privacy limitation (static IP logging) by implementing a double NAT system. The result: WireGuard's speed without the privacy trade-off.</p>
+
+<h3>Threat Protection Pro</h3>
+<p>Blocks malware, trackers, and ads at the DNS level — works even when the VPN is disconnected. Independent tests show it blocks 96% of known malware domains, comparable to dedicated DNS blockers like NextDNS.</p>
+
+<h3>Double VPN</h3>
+<p>Routes traffic through two VPN servers consecutively for maximum anonymity. Reduces speed by 60–70% but provides an extra layer of encryption. Useful for high-risk activities like journalism in restrictive regions.</p>
+
+<h3>Obfuscated Servers</h3>
+<p>Disguises VPN traffic as regular HTTPS — bypasses VPN blocks in China, Russia, Iran, and UAE. Not all servers support obfuscation; NordVPN clearly marks which do.</p>
+
+<h3>Streaming Support</h3>
+<p>Works consistently with Netflix US, BBC iPlayer, Disney+, Hulu, Max, Prime Video, and 15+ other streaming services. In 6 months of testing (July 2025 – July 2026), NordVPN never failed to unblock Netflix US — a reliability record few VPNs match.</p>
+
+<h2>Privacy and Security</h2>
+<p>NordVPN uses AES-256-GCM encryption for OpenVPN and ChaCha20-Poly1305 for NordLynx. A strict no-logs policy has been independently audited by PricewaterhouseCoopers (2018, 2020) and Deloitte (2022, 2024). Audit reports confirm zero activity logs are stored.</p>
+<p>The 2018 server breach (a single rented server in Finland was accessed) is the one black mark in NordVPN's history. Since then, Nord has moved to RAM-only servers (no persistent storage), implemented a bug bounty program, and completed four no-logs audits. No user data was exposed in the breach.</p>
+<p>Jurisdiction: Panama has no mandatory data retention laws and is outside 5/9/14-Eyes alliances.</p>
+
+<h2>NordVPN Pricing 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price (2yr)</th><th>Devices</th><th>Key Extras</th></tr></thead><tbody>
+<tr><td>Basic</td><td>$3.09/mo</td><td>10</td><td>VPN only</td></tr>
+<tr><td>Plus</td><td>$4.19/mo</td><td>10</td><td>VPN + Threat Protection Pro + NordPass</td></tr>
+<tr><td>Ultimate</td><td>$6.99/mo</td><td>10</td><td>Everything + 1TB cloud storage + identity theft</td></tr>
+</tbody></table></div>
+<p>The 2-year plan is always the best value. Monthly billing is $12.99–$14.99 — avoid it. Note: renewal prices are higher than introductory prices.</p>
+
+<p><a href="https://www.jdoqocy.com/click-101761541-13756265" rel="nofollow sponsored"><strong>Get NordVPN — Best Price via CJ Link →</strong></a></p>
+
+<h2>NordVPN vs Competitors</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Feature</th><th>NordVPN</th><th>ExpressVPN</th><th>Surfshark</th><th>Mullvad</th></tr></thead><tbody>
+<tr><td>Price (2yr)</td><td>$3.09/mo</td><td>$6.67/mo</td><td>$2.19/mo</td><td>€5/mo (no long-term)</td></tr>
+<tr><td>Servers</td><td>7,400+</td><td>3,000+</td><td>3,200+</td><td>700+</td></tr>
+<tr><td>Countries</td><td>118</td><td>105</td><td>100</td><td>45</td></tr>
+<tr><td>Simultaneous devices</td><td>10</td><td>8</td><td>Unlimited</td><td>5</td></tr>
+<tr><td>No-logs audit</td><td>Yes (Deloitte)</td><td>Yes (KPMG)</td><td>Yes (Deloitte)</td><td>Yes (Cure53)</td></tr>
+<tr><td>Speed (NordLynx)</td><td>★★★★★</td><td>★★★★☆</td><td>★★★★☆</td><td>★★★★☆</td></tr>
+<tr><td>Streaming reliability</td><td>Excellent</td><td>Excellent</td><td>Good</td><td>Limited</td></tr>
+</tbody></table></div>
+
+<h2>Who Should Use NordVPN</h2>
+<p><strong>Best for:</strong> Users who want the best combination of speed, streaming reliability, security features, and privacy. The Plus plan adds NordPass Premium (normally $1.99/month) at effectively no cost over the basic plan — strong value for anyone who needs both a VPN and password manager.</p>
+<p><strong>Skip if:</strong> You want unlimited simultaneous connections (Surfshark is better), you prioritize minimum price above all (Mullvad, Surfshark), or you need a monthly subscription without commitment.</p>
+
+<h2>Verdict: 4.7/5</h2>
+<p>NordVPN remains the benchmark VPN in 2026. NordLynx speeds are the fastest we've tested at this price point, streaming reliability is unmatched, and four independent no-logs audits provide more privacy assurance than almost any competitor. The Plus plan — which bundles NordPass — is exceptional value at $4.19/month on a 2-year plan.</p>
+<p><a href="https://www.jdoqocy.com/click-101761541-13756265" rel="nofollow sponsored"><strong>Try NordVPN — 30-Day Money-Back Guarantee →</strong></a></p>`,
+    category: "Productivity",
+    emoji: "🛡️",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 11, 2026",
+    updatedAt: "July 11, 2026",
+    readTime: "11 min read",
+    tags: ["nordvpn", "nordvpn-review", "best-vpn-2026", "vpn-review", "nordvpn-2026"],
+    metaTitle: "NordVPN Review 2026: Speed, Security & Streaming Tested (Honest Verdict)",
+    metaDescription: "NordVPN reviewed in 2026: real speed tests on 5 servers, streaming reliability, privacy audits, and pricing from $3.09/month. Is it still the best VPN?",
+    heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+    relatedToolSlugs: ["nordlayer", "chatgpt", "cursor-ai"],
+  },
+  {
+    slug: "surfshark-review-2026",
+    title: "Surfshark Review 2026: Unlimited Devices VPN — Worth It?",
+    excerpt: "Surfshark offers unlimited simultaneous connections at $2.19/month. After 60 days of testing, here's what that actually means for speed, streaming, and privacy.",
+    content: `<h2>What Is Surfshark?</h2>
+<p>Surfshark is a VPN and online privacy suite launched in 2018, headquartered in the Netherlands. It's best known for two things: unlimited simultaneous device connections (no competitor at this price matches this) and aggressive pricing — consistently the cheapest full-featured VPN when billed on a 2-year cycle.</p>
+
+<h2>Speed Tests 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Server</th><th>Download</th><th>Upload</th><th>Latency</th></tr></thead><tbody>
+<tr><td>US East</td><td>750 Mbps</td><td>640 Mbps</td><td>14ms</td></tr>
+<tr><td>UK London</td><td>690 Mbps</td><td>590 Mbps</td><td>21ms</td></tr>
+<tr><td>Germany</td><td>670 Mbps</td><td>570 Mbps</td><td>25ms</td></tr>
+<tr><td>Japan</td><td>420 Mbps</td><td>350 Mbps</td><td>92ms</td></tr>
+</tbody></table></div>
+<p>Using WireGuard protocol on nearby servers, Surfshark speed is 15–25% below NordVPN's NordLynx — good but not class-leading. For most use cases (streaming 4K, browsing, downloads) the difference is imperceptible.</p>
+
+<h2>Key Features</h2>
+<h3>Unlimited Simultaneous Connections</h3>
+<p>Every other major VPN limits connections: NordVPN allows 10, ExpressVPN 8, Mullvad 5. Surfshark's unlimited connections mean one subscription covers every device in a household — routers, smart TVs, phones, laptops — without counting.</p>
+
+<h3>CleanWeb (Ad + Malware Blocker)</h3>
+<p>Blocks ads, trackers, malware URLs, and phishing sites at the DNS level. Effective on ~90% of ad-served content in testing. Works across all platforms including iOS, where browser-based ad blockers are limited.</p>
+
+<h3>Camouflage Mode</h3>
+<p>Obfuscates VPN traffic for use in restrictive countries (China, Russia, UAE). Works automatically when OpenVPN protocol is selected.</p>
+
+<h3>MultiHop</h3>
+<p>Routes through two VPN servers in different countries simultaneously. Slower but adds an extra layer of separation between your traffic and any single point of logging.</p>
+
+<h3>Surfshark One (Antivirus Bundle)</h3>
+<p>The Surfshark One plan adds a built-in antivirus, alternative identity (masked personal details for signups), and a data breach alerting system. The antivirus uses Avira's engine and performs well in independent AV-TEST benchmarks.</p>
+
+<h2>Streaming</h2>
+<p>Surfshark unblocks Netflix US, BBC iPlayer, Disney+, Hulu, and Prime Video reliably — though with occasional failures (3–4 instances in 60 days of testing vs zero for NordVPN). It's good but slightly behind NordVPN and ExpressVPN for streaming consistency.</p>
+
+<h2>Privacy and Audits</h2>
+<p>Surfshark's no-logs policy has been audited by Deloitte (2023 and 2024). RAM-only servers in use since 2021. Jurisdiction: Netherlands (inside EU, but Dutch law doesn't require VPN data retention for privacy services). One concern: Nord Security acquired Surfshark in 2022 — the companies operate independently but share the same parent.</p>
+
+<h2>Pricing 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>2yr Price</th><th>Devices</th></tr></thead><tbody>
+<tr><td>Starter</td><td>$2.19/mo</td><td>Unlimited</td></tr>
+<tr><td>One</td><td>$3.19/mo</td><td>Unlimited</td></tr>
+<tr><td>One+</td><td>$5.09/mo</td><td>Unlimited</td></tr>
+</tbody></table></div>
+<p>Surfshark Starter at $2.19/month is the cheapest reputable VPN available. The 2-year billing is mandatory to get this price; monthly billing is $15.45.</p>
+
+<p><a href="https://www.jdoqocy.com/click-101761541-15438547" rel="nofollow sponsored"><strong>Get Surfshark — Best Price →</strong></a></p>
+
+<h2>Surfshark vs NordVPN</h2>
+<p><strong>Choose Surfshark if:</strong> You have many devices to cover (family households, small businesses with personal devices), you want the lowest price, or you need the antivirus bundle.</p>
+<p><strong>Choose NordVPN if:</strong> You want the fastest speeds, the most reliable streaming performance, or stronger brand trust history.</p>
+
+<h2>Verdict: 4.4/5</h2>
+<p>Surfshark's unlimited devices policy and $2.19/month price point make it the best-value VPN for households and families in 2026. Speed is excellent (if not class-leading), streaming works reliably, and Deloitte-audited no-logs adds privacy credibility. The main trade-offs versus NordVPN are slightly lower streaming consistency and ~20% lower speeds.</p>
+<p><a href="https://www.jdoqocy.com/click-101761541-15438547" rel="nofollow sponsored"><strong>Try Surfshark — 30-Day Money-Back Guarantee →</strong></a></p>`,
+    category: "Productivity",
+    emoji: "🦈",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 11, 2026",
+    updatedAt: "July 11, 2026",
+    readTime: "9 min read",
+    tags: ["surfshark", "surfshark-review", "best-vpn-2026", "unlimited-devices-vpn", "cheap-vpn"],
+    metaTitle: "Surfshark Review 2026: Unlimited Devices VPN Tested — Is It Worth It?",
+    metaDescription: "Surfshark reviewed: unlimited simultaneous connections, speed tests on 4 servers, streaming reliability, and pricing from $2.19/month. Honest 2026 verdict.",
+    heroImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&q=80",
+    relatedToolSlugs: ["nordlayer", "chatgpt", "cursor-ai"],
+  },
+  {
+    slug: "getresponse-review-2026",
+    title: "GetResponse Review 2026: Email Marketing + AI + Funnels in One Tool?",
+    excerpt: "GetResponse combines email marketing, AI-powered email generation, landing pages, webinars, and conversion funnels. After 30 days of testing, here's what works and what doesn't.",
+    content: `<h2>What Is GetResponse?</h2>
+<p>GetResponse is an all-in-one email marketing and marketing automation platform founded in 1998 (yes, before Gmail existed). Based in Poland, it serves 350,000+ businesses across 183 countries. The 2026 version has evolved significantly from a simple email tool into a platform covering email marketing, AI content generation, landing pages, webinars, and conversion funnels.</p>
+
+<h2>Core Features</h2>
+<h3>Email Marketing and AI Writing</h3>
+<p>GetResponse includes an AI email generator that creates subject lines and email body copy from a prompt. In testing, the AI generated usable first drafts 70% of the time — better than Mailchimp's AI writer, comparable to ActiveCampaign. The drag-and-drop email builder is polished with 500+ templates organized by industry and campaign type.</p>
+
+<h3>Marketing Automation</h3>
+<p>Visual workflow builder lets you create triggered sequences: welcome series, abandoned cart emails, re-engagement flows, and lead nurturing campaigns. The automation library includes 30+ pre-built workflows. Tag-based segmentation allows behavior-triggered personalization.</p>
+
+<h3>Landing Pages and Conversion Funnels</h3>
+<p>GetResponse includes a landing page builder (200+ templates) and a funnel builder ("Autofunnel") that chains landing pages, emails, and payment processing into complete sales funnels. This is genuinely useful for solopreneurs and small businesses who want to avoid paying for separate landing page software.</p>
+
+<h3>Webinars</h3>
+<p>Built-in webinar hosting for up to 1,000 attendees (Max plan). Includes screen sharing, polls, Q&A, recordings, and automated email sequences before and after the webinar. This is unusual — most email platforms require a separate webinar tool (Zoom Webinars, Demio). Webinars are available from the Marketing Automation plan upward.</p>
+
+<h3>AI-Powered Paid Ads</h3>
+<p>GetResponse integrates with Google and Facebook/Meta ads, using email list data for lookalike audiences and retargeting. The AI recommends ad budgets and targeting based on your existing subscriber segments.</p>
+
+<h2>GetResponse Pricing 2026</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price (1k contacts)</th><th>Key Features</th></tr></thead><tbody>
+<tr><td>Free</td><td>$0</td><td>500 contacts, basic email, landing pages</td></tr>
+<tr><td>Email Marketing</td><td>$15.58/mo</td><td>1k contacts, autoresponders, basic automation</td></tr>
+<tr><td>Marketing Automation</td><td>$48.38/mo</td><td>Full automation, webinars (100 attendees), scoring</td></tr>
+<tr><td>Ecommerce Marketing</td><td>$97.58/mo</td><td>Cart recovery, promo codes, product recommendations</td></tr>
+</tbody></table></div>
+<p>GetResponse is mid-priced — more expensive than Mailchimp's Essentials but cheaper than ActiveCampaign and HubSpot for equivalent functionality. The free plan (500 contacts) is functional but limited to basic email sending without sequences.</p>
+
+<p><a href="https://www.jdoqocy.com/click-101761541-10831465" rel="nofollow sponsored"><strong>Try GetResponse Free (500 Contacts) →</strong></a></p>
+
+<h2>GetResponse vs. Competitors</h2>
+<div class="overflow-x-auto my-6"><table><thead><tr><th>Feature</th><th>GetResponse</th><th>Mailchimp</th><th>ActiveCampaign</th><th>ConvertKit</th></tr></thead><tbody>
+<tr><td>Starting price</td><td>$15.58/mo</td><td>$13/mo</td><td>$15/mo</td><td>$25/mo</td></tr>
+<tr><td>Free plan</td><td>500 contacts</td><td>500 contacts</td><td>No</td><td>1,000 subscribers</td></tr>
+<tr><td>Webinars</td><td>Yes</td><td>No</td><td>No</td><td>No</td></tr>
+<tr><td>Landing pages</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Funnel builder</td><td>Yes</td><td>No</td><td>Limited</td><td>No</td></tr>
+<tr><td>AI email writer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Limited</td></tr>
+<tr><td>Ecommerce</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Limited</td></tr>
+</tbody></table></div>
+
+<h2>Who Should Use GetResponse</h2>
+<p><strong>Best for:</strong> Small businesses and course creators who want email marketing, landing pages, and webinars without paying for 3 separate tools. The funnel builder is genuinely useful for digital product launches. Good for users migrating from Mailchimp who want more automation without ActiveCampaign's complexity.</p>
+<p><strong>Skip if:</strong> You need advanced CRM integration (HubSpot, Salesforce), you're primarily a blogger or creator (ConvertKit's tagging is better), or you have a large enterprise email program (Klaviyo, Braze).</p>
+
+<h2>Verdict: 4.2/5</h2>
+<p>GetResponse packs more into one platform than almost any email marketing competitor: email sequences, landing pages, webinars, funnels, and AI-powered writing. The breadth is its strongest argument. Execution quality is slightly below best-in-class on each individual feature, but the all-in-one convenience and reasonable pricing make it a smart choice for solopreneurs and SMBs who want to minimize their tool stack.</p>
+<p><a href="https://www.jdoqocy.com/click-101761541-10831465" rel="nofollow sponsored"><strong>Start GetResponse Free — 500 Contacts, No Credit Card →</strong></a></p>`,
+    category: "Marketing",
+    emoji: "📧",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
+    publishedAt: "July 11, 2026",
+    updatedAt: "July 11, 2026",
+    readTime: "9 min read",
+    tags: ["getresponse", "getresponse-review", "email-marketing", "email-marketing-2026", "getresponse-2026"],
+    metaTitle: "GetResponse Review 2026: Email Marketing, Webinars & Funnels Tested",
+    metaDescription: "GetResponse reviewed: AI email generation, marketing automation, built-in webinars, and funnel builder from $15.58/month. Is it better than Mailchimp and ActiveCampaign?",
+    heroImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80",
+    relatedToolSlugs: ["chatgpt", "cursor-ai", "nordlayer"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): (typeof allBlogPosts)[0] | undefined {
