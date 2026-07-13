@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: false },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
+    // Keep Vercel Image Optimization transformations and cache writes at zero.
+    // Existing assets are served directly from their source/CDN URLs.
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "**" },
     ],

@@ -76,3 +76,13 @@ Google ve Bing mülk erişimleri mevcut Chrome oturumunda doğrulandı. Google C
 ## Deployment durumu
 
 Bu rapor deployment öncesi doğrulama durumunu kaydeder. Nihai push ve production smoke testi tamamlandığında commit/deployment bilgileri ayrıca doğrulanacaktır.
+
+## Final yerel kontrol
+
+- Vercel Image Optimization kullanımı `images.unoptimized` ile devre dışı bırakıldı.
+- Depodaki tüm BAT yardımcı dosyaları silindi.
+- Kanıtlanmamış test ve puan ifadeleri review, pricing ve alternatives şablonlarından kaldırıldı.
+- Dış affiliate bağlantılarına `nofollow sponsored` nitelikleri eklendi.
+- Sitemapte bulunan ancak üretilmeyen 11 alternatives URL'si kaldırıldı.
+- Final sitemap taraması: 249 URL, 0 hata.
+- Final production build: 255 rota, başarılı.

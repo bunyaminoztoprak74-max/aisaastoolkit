@@ -4,38 +4,9 @@ import { Metadata } from "next";
 import { allTools, getToolBySlug } from "@/data/tools";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { buildBreadcrumbSchema, buildFAQSchema } from "@/lib/schema";
+import { ALTERNATIVES_MAP } from "@/data/alternatives";
 
 interface Props { params: Promise<{ slug: string }> }
-
-const ALTERNATIVES_MAP: Record<string, string[]> = {
-  "claude": ["chatgpt", "perplexity", "writesonic", "jasper", "gemini"],
-  "chatgpt": ["claude", "perplexity", "writesonic", "notion-ai", "gemini"],
-  "perplexity": ["chatgpt", "claude", "notion-ai", "ubersuggest"],
-  "gemini": ["claude", "chatgpt", "notion-ai"],
-  "jasper": ["writesonic", "claude", "chatgpt", "grammarly"],
-  "writesonic": ["jasper", "claude", "chatgpt", "grammarly"],
-  "grammarly": ["writesonic", "chatgpt", "jasper"],
-  "make-com": ["zapier", "n8n"],
-  "zapier": ["make-com", "n8n"],
-  "n8n": ["make-com", "zapier"],
-  "midjourney": ["canva-ai", "adcreative-ai"],
-  "canva-ai": ["midjourney", "adcreative-ai"],
-  "adcreative-ai": ["canva-ai", "midjourney", "jasper", "omneky"],
-  "elevenlabs": ["murf-ai", "descript"],
-  "murf-ai": ["elevenlabs", "descript"],
-  "pictory": ["descript", "castmagic", "elevenlabs"],
-  "descript": ["castmagic", "elevenlabs", "pictory"],
-  "castmagic": ["descript", "writesonic", "pictory"],
-  "notion-ai": ["chatgpt", "claude", "gamma"],
-  "gamma": ["notion-ai", "chatgpt"],
-  "ubersuggest": ["perplexity", "jasper"],
-  "mailchimp": ["jasper", "adcreative-ai"],
-  "omneky": ["adcreative-ai", "canva-ai"],
-  "1password": ["nordlayer"],
-  "nordlayer": ["1password"],
-  "hostinger": ["canva-ai"],
-  "teamviewer": ["notion-ai"],
-};
 
 export async function generateStaticParams() {
   return Object.keys(ALTERNATIVES_MAP).map(slug => ({ slug }));
@@ -76,7 +47,7 @@ export default async function AlternativesPage({ params }: Props) {
     {
       question: `What is the best alternative to ${tool.name}?`,
       answer: alternatives[0]
-        ? `${alternatives[0].name} is the top-rated alternative to ${tool.name} in 2026, scoring ${alternatives[0].rating}/5 in our testing. Read our full ${alternatives[0].name} review for a detailed comparison.`
+        ? `${alternatives[0].name} is our first editorial alternative to consider for ${tool.name} in 2026. Read the full ${alternatives[0].name} review and verify current features and pricing for your use case.`
         : `We recommend checking our full tool directory at aisaastoolkit.com/tools for the most up-to-date alternatives.`,
     },
     {
@@ -87,7 +58,7 @@ export default async function AlternativesPage({ params }: Props) {
     },
     {
       question: `How does ${tool.name} compare to its alternatives?`,
-      answer: `${tool.name} scores ${tool.rating}/5 in our testing. ${tool.pros[0]}. The main reasons users look for alternatives: ${tool.cons[0] ?? "pricing or specific feature needs"}. See our full comparison above.`,
+      answer: `${tool.name} may suit users who value ${tool.pros[0]?.toLowerCase() ?? "its core features"}. A common reason to compare alternatives is ${tool.cons[0]?.toLowerCase() ?? "pricing or a specific feature requirement"}. See the comparison above and confirm current provider terms.`,
     },
   ]);
 
@@ -106,7 +77,7 @@ export default async function AlternativesPage({ params }: Props) {
               Best {tool.name} Alternatives in 2026
             </h1>
             <p className="text-xl text-muted-foreground">
-              Whether {tool.name} is too expensive, missing features you need, or you just want to explore options — here are the top alternatives we&apos;ve tested.
+              Whether {tool.name} is too expensive, missing features you need, or you simply want to compare options, here are our editorial alternatives to consider.
             </p>
           </header>
           <div className="bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800 rounded-xl p-5 mb-8">
@@ -145,7 +116,7 @@ export default async function AlternativesPage({ params }: Props) {
                   </div>
                   <div className="flex flex-col gap-2 flex-shrink-0">
                     <Link href={`/reviews/${alt.slug}`} className="text-sm font-medium text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded-lg transition-colors text-center">Read Review</Link>
-                    <Link href={alt.affiliateUrl} className="text-sm font-medium text-primary border border-primary hover:bg-primary/5 px-4 py-2 rounded-lg transition-colors text-center">Visit Site</Link>
+                    <a href={alt.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored" className="text-sm font-medium text-primary border border-primary hover:bg-primary/5 px-4 py-2 rounded-lg transition-colors text-center">Visit Site</a>
                   </div>
                 </div>
               </div>

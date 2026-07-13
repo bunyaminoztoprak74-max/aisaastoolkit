@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!tool) return {};
   return buildMetadata({
     title: tool.metaTitle ?? `${tool.name} Review (2026): Pricing, Features & Verdict`,
-    description: tool.metaDescription ?? `Honest ${tool.name} review covering pricing, features, pros & cons. Is it worth it in 2026? We tested it so you don't have to.`,
+    description: tool.metaDescription ?? `Independent ${tool.name} review covering current pricing, features, pros, cons, and suitable use cases for 2026.`,
     path: `/reviews/${slug}`,
     type: "article",
     publishedTime: tool.lastUpdated,

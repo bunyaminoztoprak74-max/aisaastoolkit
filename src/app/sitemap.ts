@@ -6,6 +6,7 @@ import { categories } from "@/data/categories";
 import { comparisons } from "@/data/comparisons";
 import { bestLists } from "@/data/bestLists";
 import { tags } from "@/data/tags";
+import { ALTERNATIVES_MAP } from "@/data/alternatives";
 
 const BASE_URL = "https://aisaastoolkit.com";
 const now      = new Date();
@@ -63,7 +64,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...allAuthors.map((a) => entry(`/author/${a.slug}`, 0.6, "monthly")),
 
     // Alternatives pages
-    ...tools.map((t) => entry(`/alternatives/${t.slug}`, 0.7, "monthly", t.lastUpdated)),
+    ...tools
+      .filter((t) => Object.hasOwn(ALTERNATIVES_MAP, t.slug))
+      .map((t) => entry(`/alternatives/${t.slug}`, 0.7, "monthly", t.lastUpdated)),
 
     // Pricing pages
     ...tools.map((t) => entry(`/pricing/${t.slug}`, 0.75, "monthly", t.lastUpdated)),
