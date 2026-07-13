@@ -33,6 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/privacy",             0.3,  "yearly"),
     entry("/terms",               0.3,  "yearly"),
     entry("/affiliate-disclosure",0.3,  "yearly"),
+    entry("/editorial-policy",   0.5,  "monthly"),
+    entry("/reviews",            0.9,  "weekly"),
 
     // Tool reviews
     ...tools.map((t) => entry(`/reviews/${t.slug}`, 0.9, "monthly", t.lastUpdated)),

@@ -8,7 +8,7 @@ import { getAuthorBySlug } from "@/data/authors";
 const SITE_URL = "https://aisaastoolkit.com";
 const SITE_NAME = "AISaaSToolkit";
 
-/** Software application with AggregateRating + Offer */
+/** Software application with current offer data */
 export function buildSoftwareSchema(tool: Tool) {
   const tiers = tool.pricing?.tiers ?? tool.pricingTiers ?? [];
   return {
@@ -28,13 +28,6 @@ export function buildSoftwareSchema(tool: Tool) {
         billingDuration: "P1M",
       },
     })),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: tool.rating.toFixed(1),
-      reviewCount: tool.reviewCount,
-      bestRating: "5",
-      worstRating: "1",
-    },
     description: tool.description,
     featureList: (tool.features ?? []).map((f) => f.title).join(", "),
   };
