@@ -3128,6 +3128,58 @@ export const allBlogPosts: BlogPost[] = [
     relatedToolSlugs: ["jasper-ai", "surfer-seo", "midjourney", "elevenlabs"],
   },
   {
+    slug: "capcut-review-2026",
+    title: "CapCut Review 2026: Is the Free AI Video Editor Worth It?",
+    excerpt: "CapCut went from a TikTok-editing app to a full AI-powered video suite used by solo creators and marketing teams alike. Here's what the free plan actually includes, where Pro is worth paying for, and how it compares to Descript.",
+    content: `<h2>What Is CapCut?</h2>
+<p>CapCut is ByteDance's video editing app, originally built for short-form TikTok content but now a full desktop, web, and mobile editing suite with AI-powered tools: auto-captions, background removal, text-to-speech, AI avatars, and template-based editing. Its biggest draw is that most core editing features are free, with CapCut Pro adding higher-resolution exports, more AI credits, and premium templates.</p>
+<p><a href="https://www.jdoqocy.com/click-101761541-17272811?sid=capcut-review-2026" rel="nofollow noopener sponsored" target="_blank">Try CapCut free →</a></p>
+
+<h2>Key Features</h2>
+
+<h3>AI Auto-Captions</h3>
+<p>CapCut generates accurate subtitles automatically in dozens of languages, with style presets built for short-form platforms like TikTok, Reels, and Shorts. For creators publishing daily, this alone removes one of the most tedious parts of editing.</p>
+
+<h3>Background Removal and Green Screen</h3>
+<p>No physical green screen required — CapCut's AI can isolate a subject from any background in a few seconds, which used to require Premiere Pro or After Effects skill.</p>
+
+<h3>Templates and Auto-Edit</h3>
+<p>Drop in raw footage and CapCut's template engine can auto-cut, add transitions, and sync to trending audio — useful for high-volume social content where speed matters more than frame-perfect control.</p>
+
+<h3>Text-to-Speech and AI Avatars</h3>
+<p>Built-in TTS voices and AI avatar generation let solo creators produce narrated or presenter-style videos without recording themselves, which pairs well with the auto-caption workflow for pure text-to-video content.</p>
+
+<h2>CapCut vs Descript</h2>
+<p>The two tools solve different problems. Descript is built around transcript-based editing — you cut video by editing a text transcript, which is powerful for podcast-to-video and long-form talking-head content. CapCut is built for speed and short-form output, with a much deeper library of trend-aware templates and effects. Creators doing daily short-form content generally prefer CapCut; podcasters and long-form YouTubers doing heavier narrative editing tend to prefer Descript.</p>
+
+<h2>Pricing</h2>
+<p>CapCut's free plan covers most editing needs: unlimited exports at standard resolution, core AI tools with a monthly credit allowance, and access to most templates. CapCut Pro unlocks 4K exports, a much larger AI credit pool (needed for heavier use of background removal, TTS, and AI avatars), and premium-only templates and effects.</p>
+
+<h2>Who Should Use CapCut</h2>
+<ul>
+<li>Short-form creators publishing to TikTok, Reels, or Shorts multiple times a week</li>
+<li>Solo marketers producing social ad creative without a design team</li>
+<li>Anyone who wants AI captioning and background removal without a steep learning curve</li>
+</ul>
+
+<h2>Verdict</h2>
+<p>CapCut's free tier alone beats most paid mobile editors, and the AI toolset (captions, background removal, TTS) covers the tasks that eat the most time in short-form editing. It's not a replacement for Premiere Pro on complex projects, but for the volume-and-speed content most SaaS marketing teams and creators actually need, it's hard to beat at the price.</p>
+
+<p><a href="https://www.jdoqocy.com/click-101761541-17272811?sid=capcut-review-2026-bottom" rel="nofollow noopener sponsored" target="_blank">Get CapCut free →</a></p>`,
+    category: "AI Marketing",
+    emoji: "🎬",
+    authorSlug: "alex-morgan",
+    authorName: "Alex Morgan",
+    authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=0D8ABC&color=fff",
+    publishedAt: "July 19, 2026",
+    updatedAt: "July 19, 2026",
+    readTime: "8 min read",
+    tags: ["capcut", "ai-video-editor", "video-editing", "content-creation", "capcut-review", "short-form-video"],
+    metaTitle: "CapCut Review 2026: Free AI Video Editor Tested",
+    metaDescription: "CapCut review 2026: AI captions, background removal, and templates tested. Free vs Pro pricing, and how it compares to Descript for creators and marketers.",
+    relatedToolSlugs: ["descript", "omneky", "jasper-ai"],
+  },
+  {
     slug: "omneky-review-2026",
     title: "Omneky Review 2026: AI Ad Creative Generation That Actually Scales",
     excerpt: "Omneky uses generative AI to produce hundreds of personalized ad creatives from a single brief. In this review: real performance data, pricing breakdown, and how it compares to Pencil and AdCreative.ai.",
