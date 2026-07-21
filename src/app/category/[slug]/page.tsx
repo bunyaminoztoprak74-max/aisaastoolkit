@@ -102,14 +102,17 @@ export default async function CategoryPage({
 
   const { items: pagedTools, meta } = paginate(tools, page, PER_PAGE);
 
-  const breadcrumbSchema = buildBreadcrumbSchema([{ label: "Categories" }, { label: category.name }]);
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { label: "Categories", href: "/tools" },
+    { label: category.name, href: `/category/${category.slug}` },
+  ]);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="container mx-auto px-4 py-8 max-w-7xl">
-        <Breadcrumb items={[{ label: "Categories" }, { label: category.name }]} className="mb-6" />
+        <Breadcrumb items={[{ label: "Categories", href: "/tools" }, { label: category.name, href: `/category/${category.slug}` }]} className="mb-6" />
 
         <div className="grid lg:grid-cols-[220px_1fr] gap-8">
           {/* Sidebar */}

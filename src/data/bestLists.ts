@@ -1,5 +1,3 @@
-import type { Tool } from "./tools";
-
 export interface BestList {
   slug: string;
   title: string;

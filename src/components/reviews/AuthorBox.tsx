@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Author } from "@/data/authors";
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 export function AuthorBox({ author, toolName, lastTestedDate }: Props) {
   return (
     <div className="flex flex-col sm:flex-row gap-4 items-start py-4 border-y border-border my-6">
-      <img src={author.avatar} alt={author.name} className="w-14 h-14 rounded-full border-2 border-border flex-shrink-0" />
+      <Image src={author.avatar} alt={author.name} width={56} height={56} className="w-14 h-14 rounded-full border-2 border-border flex-shrink-0" />
       <div className="flex-1">
         <div className="flex flex-wrap items-center gap-2 mb-1">
           <Link href={`/author/${author.slug}`} className="font-semibold text-foreground hover:text-primary transition-colors">{author.name}</Link>

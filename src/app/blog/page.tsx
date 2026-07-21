@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { allBlogPosts } from "@/data/blog";
 
@@ -48,7 +49,7 @@ export default function BlogPage() {
                   <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">{featured.title}</h3>
                   <p className="text-muted-foreground mb-6">{featured.excerpt}</p>
                   <div className="flex items-center gap-3">
-                    <img src={featured.authorAvatar} alt={featured.authorName} className="w-8 h-8 rounded-full" />
+                    <Image src={featured.authorAvatar} alt={featured.authorName} width={32} height={32} className="w-8 h-8 rounded-full" />
                     <div>
                       <p className="text-sm font-medium text-foreground">{featured.authorName}</p>
                       <p className="text-xs text-muted-foreground">{featured.publishedAt}</p>
@@ -76,7 +77,7 @@ export default function BlogPage() {
                   <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">{post.title}</h3>
                   <p className="text-sm text-muted-foreground line-clamp-2 mb-4">{post.excerpt}</p>
                   <div className="flex items-center gap-2">
-                    <img src={post.authorAvatar} alt={post.authorName} className="w-6 h-6 rounded-full" />
+                    <Image src={post.authorAvatar} alt={post.authorName} width={24} height={24} className="w-6 h-6 rounded-full" />
                     <span className="text-xs text-muted-foreground">{post.authorName} · {post.publishedAt}</span>
                   </div>
                 </div>

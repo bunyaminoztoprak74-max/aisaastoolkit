@@ -3,8 +3,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import { Filter, X } from "lucide-react";
 import { categories } from "@/data/categories";
-import { tags, getTagsByGroup } from "@/data/tags";
-import { Badge } from "@/components/ui/badge";
+import { getTagsByGroup } from "@/data/tags";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
