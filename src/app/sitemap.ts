@@ -27,7 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Core pages
     entry("/",                    1.0,  "weekly"),
     entry("/tools",               0.95, "weekly"),
-    entry("/search",              0.8,  "daily"),
     entry("/tags",                0.8,  "monthly"),
     entry("/about",               0.5,  "monthly"),
     entry("/contact",             0.5,  "monthly"),

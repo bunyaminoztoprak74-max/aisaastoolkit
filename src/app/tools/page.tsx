@@ -63,7 +63,7 @@ export default async function AllToolsPage({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(wsSchema) }} />
       <div className="container mx-auto px-4 py-8 max-w-7xl">
-        <Breadcrumb items={[{ label: "All AI Tools" }]} className="mb-6" />
+        <Breadcrumb items={[{ label: "All AI Tools", href: "/tools" }]} className="mb-6" />
 
         <div className="grid lg:grid-cols-[220px_1fr] gap-8">
           <Suspense>

@@ -2,7 +2,7 @@ import { allTools as tools } from "./tools";
 import { categories } from "./categories";
 import { comparisons } from "./comparisons";
 import { bestLists } from "./bestLists";
-import { getTagsForTool, tags } from "./tags";
+import { getTagsForTool } from "./tags";
 
 export interface SearchEntry {
   id: string;

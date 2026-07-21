@@ -3,15 +3,17 @@ import { useEffect, useState } from "react";
 import { ExternalLink, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { AffiliateLink } from "@/components/common/AffiliateLink";
 
 interface StickyAffiliateCTAProps {
   toolName: string;
   affiliateUrl: string;
   pricing: string;
+  hasFree?: boolean;
   badge?: string;
 }
 
-export function StickyAffiliateCTA({ toolName, affiliateUrl, pricing, badge }: StickyAffiliateCTAProps) {
+export function StickyAffiliateCTA({ toolName, affiliateUrl, pricing, hasFree, badge }: StickyAffiliateCTAProps) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
 
@@ -46,9 +48,9 @@ export function StickyAffiliateCTA({ toolName, affiliateUrl, pricing, badge }: S
         </div>
         <div className="flex items-center gap-2">
           <Button variant="gradient" size="sm" asChild className="text-xs sm:text-sm">
-            <a href={affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
-              Try {toolName} Free <ExternalLink className="ml-1.5 w-3.5 h-3.5" />
-            </a>
+            <AffiliateLink href={affiliateUrl} toolName={toolName} placement="sticky_bar">
+              {hasFree ? `Try ${toolName} Free` : `Visit ${toolName}`} <ExternalLink className="ml-1.5 w-3.5 h-3.5" />
+            </AffiliateLink>
           </Button>
           <Button variant="ghost" size="icon" className="h-8 w-8 flex-shrink-0" onClick={() => setDismissed(true)} aria-label="Dismiss">
             <X className="w-4 h-4" />

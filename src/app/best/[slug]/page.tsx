@@ -60,7 +60,7 @@ export default async function BestToolsPage({ params }: { params: Promise<{ slug
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }} />
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <Breadcrumb items={[{ label: "Best Tools" }, { label: list.title }]} className="mb-6" />
+        <Breadcrumb items={[{ label: "Best Tools", href: "/tools" }, { label: list.title, href: `/best/${list.slug}` }]} className="mb-6" />
 
         {/* Hero */}
         <div className="mb-8">

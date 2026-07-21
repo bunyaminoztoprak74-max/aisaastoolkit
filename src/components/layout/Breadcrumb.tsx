@@ -10,23 +10,13 @@ interface BreadcrumbProps {
 }
 
 export function Breadcrumb({ items, pathname, className }: BreadcrumbProps) {
-  const resolved = items ?? (pathname ? generateBreadcrumbs(pathname) : []);
-  const allItems = [{ label: "Home", href: "/" }, ...resolved];
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: allItems.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.label,
-      item: item.href ? `https://aisaastoolkit.com${item.href}` : undefined,
-    })),
-  };
+  const allItems = items
+    ? [{ label: "Home", href: "/" }, ...items]
+    : pathname
+      ? generateBreadcrumbs(pathname)
+      : [{ label: "Home", href: "/" }];
 
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <nav aria-label="Breadcrumb" className={cn("flex items-center gap-1 text-sm text-muted-foreground", className)}>
         {allItems.map((item, index) => (
           <span key={index} className="flex items-center gap-1">
@@ -42,6 +32,5 @@ export function Breadcrumb({ items, pathname, className }: BreadcrumbProps) {
           </span>
         ))}
       </nav>
-    </>
   );
 }

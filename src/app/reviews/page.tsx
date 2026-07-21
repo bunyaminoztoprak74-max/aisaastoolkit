@@ -30,7 +30,7 @@ const badgeVariantMap: Record<string, "recommended" | "best-value" | "trending" 
 };
 
 export default function ReviewsIndexPage() {
-  const breadcrumbSchema = buildBreadcrumbSchema([{ label: "Reviews" }]);
+  const breadcrumbSchema = buildBreadcrumbSchema([{ label: "Reviews", href: "/reviews" }]);
 
   // Group tools by category
   const categoryMap = new Map<string, typeof allTools>();
