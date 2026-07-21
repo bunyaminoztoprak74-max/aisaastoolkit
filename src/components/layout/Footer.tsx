@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Zap, Twitter, Youtube, Linkedin, Mail } from "lucide-react";
+import { Zap, Twitter, Youtube, Linkedin, Mail, Rss } from "lucide-react";
 import { SearchBar } from "@/components/search/SearchBar";
 import { Suspense } from "react";
 
@@ -66,6 +66,8 @@ export function Footer() {
                 { href: "https://youtube.com", icon: Youtube,  label: "YouTube" },
                 { href: "https://linkedin.com",icon: Linkedin, label: "LinkedIn" },
                 { href: "mailto:hello@aisaastoolkit.com", icon: Mail, label: "Email" },
+                { href: "/rss.xml", icon: Rss, label: "Content RSS" },
+                { href: "/affiliate-rss.xml", icon: Rss, label: "Deals RSS" },
               ].map(({ href, icon: Icon, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors" aria-label={label}>
