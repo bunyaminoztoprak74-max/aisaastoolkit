@@ -24,6 +24,7 @@ import { Badge } from "@/components/ui/badge";
 import { buildMetadata, buildToolKeywords } from "@/lib/seo";
 import { buildReviewSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/lib/schema";
 import { getRelatedToolsScored, getContentSuggestions } from "@/lib/related";
+import { ALTERNATIVES_MAP } from "@/data/alternatives";
 
 const badgeVariantMap: Record<string, "recommended" | "best-value" | "trending" | "new" | "editor-choice"> = {
   recommended: "recommended", "best-value": "best-value", trending: "trending", new: "new", "editor-choice": "editor-choice",
@@ -237,6 +238,16 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </Link>
                 ))}
               </div>
+              {ALTERNATIVES_MAP[tool.slug] && (
+                <p className="mt-4 text-sm">
+                  <Link
+                    href={`/alternatives/${tool.slug}`}
+                    className="font-medium text-primary hover:underline"
+                  >
+                    See the full {tool.name} alternatives comparison →
+                  </Link>
+                </p>
+              )}
             </section>
 
             {tool.faqs && tool.faqs.length > 0 && (

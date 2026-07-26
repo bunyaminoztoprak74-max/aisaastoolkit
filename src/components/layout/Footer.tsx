@@ -31,6 +31,7 @@ const footerLinks = {
     { label: "Best Image Generators",   href: "/best/ai-image-generators" },
     { label: "Best Productivity Tools", href: "/best/ai-productivity-tools" },
     { label: "Best Marketing Tools",    href: "/best/ai-marketing-tools" },
+    { label: "View All Best Lists →",   href: "/best" },
   ],
   "Company": [
     { label: "About",                href: "/about" },
