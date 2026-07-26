@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     canonical: "https://aisaastoolkit.com",
     types: { "application/rss+xml": "https://aisaastoolkit.com/rss.xml" },
   },
-  verification: { google: "5ohBL0LIn4yreUDqDR2pyyQFTNzWnETvfoL28IMuB2s", other: { "impact-site-verification": "9a632d0c-9256-4ce7-a867-85b4082fd0b7" } },
+  verification: { google: "5ohBL0LIn4yreUDqDR2pyyQFTNzWnETvfoL28IMuB2s", yandex: "2916b432ce3cbd4a", other: { "impact-site-verification": "9a632d0c-9256-4ce7-a867-85b4082fd0b7" } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
