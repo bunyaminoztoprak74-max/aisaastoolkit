@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { allAuthors, getAuthorBySlug } from "@/data/authors";
 import { allTools } from "@/data/tools";
@@ -47,7 +48,7 @@ export default async function AuthorPage({ params }: Props) {
       <section className="bg-gradient-to-b from-primary/5 to-background py-16 border-b border-border">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex flex-col md:flex-row gap-8 items-start">
-            <img src={author.avatar} alt={author.name} className="w-32 h-32 rounded-full border-4 border-border" />
+            <Image src={author.avatar} alt={author.name} width={128} height={128} className="w-32 h-32 rounded-full border-4 border-border" />
             <div>
               <h1 className="text-3xl font-bold text-foreground">{author.name}</h1>
               <p className="text-lg text-muted-foreground mt-1">{author.title}</p>

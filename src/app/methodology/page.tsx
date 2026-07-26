@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { allAuthors } from "@/data/authors";
 
 export const metadata: Metadata = {
@@ -76,7 +77,7 @@ export default function MethodologyPage() {
         <div className="grid md:grid-cols-2 gap-4 mt-4">
           {allAuthors.map(author => (
             <Link key={author.slug} href={`/author/${author.slug}`} className="flex gap-3 items-center bg-card border border-border rounded-xl p-4 hover:shadow-md transition-shadow">
-              <img src={author.avatar} alt={author.name} className="w-12 h-12 rounded-full" />
+              <Image src={author.avatar} alt={author.name} width={48} height={48} className="w-12 h-12 rounded-full" />
               <div>
                 <p className="font-semibold text-foreground">{author.name}</p>
                 <p className="text-sm text-muted-foreground">{author.title}</p>

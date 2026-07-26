@@ -64,8 +64,8 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
   const compSchema       = buildComparisonSchema(comp, tool1.name, tool2.name);
   const faqSchema        = buildFAQSchema(comp.faqs);
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { label: "Comparisons" },
-    { label: `${tool1.name} vs ${tool2.name}` },
+    { label: "Comparisons", href: "/tools" },
+    { label: `${tool1.name} vs ${tool2.name}`, href: `/compare/${comp.slug}` },
   ]);
 
   return (
@@ -76,7 +76,7 @@ export default async function ComparisonPage({ params }: { params: Promise<{ slu
 
       <div className="container mx-auto px-4 py-8 max-w-5xl">
         <Breadcrumb
-          items={[{ label: "Comparisons" }, { label: `${tool1.name} vs ${tool2.name}` }]}
+          items={[{ label: "Comparisons", href: "/tools" }, { label: `${tool1.name} vs ${tool2.name}`, href: `/compare/${comp.slug}` }]}
           className="mb-6"
         />
 

@@ -2,7 +2,6 @@ import type { Tool } from "@/data/tools";
 import type { Comparison } from "@/data/comparisons";
 import type { BestList } from "@/data/bestLists";
 import type { BlogPost } from "@/data/blog";
-import type { Author } from "@/data/authors";
 import { getAuthorBySlug } from "@/data/authors";
 
 const SITE_URL = "https://aisaastoolkit.com";
@@ -84,7 +83,7 @@ export function buildFAQSchema(faqs: { question: string; answer: string }[]) {
 }
 
 /** BreadcrumbList schema */
-export function buildBreadcrumbSchema(items: { label: string; href?: string }[]) {
+export function buildBreadcrumbSchema(items: { label: string; href: string }[]) {
   const allItems = [{ label: "Home", href: "/" }, ...items];
   return {
     "@context": "https://schema.org",
@@ -93,7 +92,7 @@ export function buildBreadcrumbSchema(items: { label: string; href?: string }[])
       "@type": "ListItem",
       position: index + 1,
       name: crumb.label,
-      item: `${SITE_URL}${crumb.href ?? ""}`,
+      item: `${SITE_URL}${crumb.href}`,
     })),
   };
 }
@@ -190,7 +189,7 @@ export function buildOrganizationSchema() {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+    logo: { "@type": "ImageObject", url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 },
     sameAs: [
       "https://twitter.com/aisaastoolkit",
     ],

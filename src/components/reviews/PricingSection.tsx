@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import type { PricingTier } from "@/data/tools";
 import { cn } from "@/lib/utils";
+import { AffiliateLink } from "@/components/common/AffiliateLink";
 
 export function PricingSection({ tiers, toolName, affiliateUrl }: { tiers: PricingTier[]; toolName: string; affiliateUrl: string }) {
   return (
@@ -44,9 +45,9 @@ export function PricingSection({ tiers, toolName, affiliateUrl }: { tiers: Prici
               className="w-full"
               asChild
             >
-              <a href={affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
+              <AffiliateLink href={affiliateUrl} toolName={toolName} placement={`pricing_${tier.name.toLowerCase().replace(/\s+/g, "_")}`}>
                 Get {tier.name} <ExternalLink className="ml-2 w-3.5 h-3.5" />
-              </a>
+              </AffiliateLink>
             </Button>
           </div>
         ))}

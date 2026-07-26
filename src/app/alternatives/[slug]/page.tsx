@@ -40,7 +40,7 @@ export default async function AlternativesPage({ params }: Props) {
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { label: "Tools", href: "/tools" },
-    { label: `${tool.name} Alternatives` },
+    { label: `${tool.name} Alternatives`, href: `/alternatives/${tool.slug}` },
   ]);
 
   const faqSchema = buildFAQSchema([
@@ -68,7 +68,7 @@ export default async function AlternativesPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 max-w-5xl py-8">
-          <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: `${tool.name} Alternatives` }]} />
+          <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: `${tool.name} Alternatives`, href: `/alternatives/${tool.slug}` }]} />
           <header className="mt-8 mb-12">
             <div className="inline-flex items-center gap-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 text-sm font-medium px-3 py-1 rounded-full mb-4">
               Alternatives

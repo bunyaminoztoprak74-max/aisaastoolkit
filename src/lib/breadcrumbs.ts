@@ -13,7 +13,7 @@ import { getTagBySlug }        from "@/data/tags";
 
 export interface BreadcrumbItem {
   label: string;
-  href?: string;   // undefined = current page (no link)
+  href?: string;
 }
 
 /** Segment display overrides for static segments */

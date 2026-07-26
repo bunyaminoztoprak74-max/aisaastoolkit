@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { getPageRange, buildPageUrl, type PaginationMeta } from "@/lib/pagination";
+import { getPageRange, type PaginationMeta } from "@/lib/pagination";
 import { cn } from "@/lib/utils";
 
 interface PaginationProps {

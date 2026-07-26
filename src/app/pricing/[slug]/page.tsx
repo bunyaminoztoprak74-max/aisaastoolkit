@@ -5,6 +5,7 @@ import { CheckCircle, ExternalLink, Tag } from "lucide-react";
 import { allTools, getToolBySlug } from "@/data/tools";
 import { getDealByToolSlug } from "@/data/deals";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { AffiliateLink } from "@/components/common/AffiliateLink";
 import { Button } from "@/components/ui/button";
 import { buildBreadcrumbSchema, buildFAQSchema } from "@/lib/schema";
 
@@ -21,8 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = getToolBySlug(slug);
   if (!tool) return {};
   return {
-    title: `${tool.name} Pricing 2026: All Plans Compared (Is It Worth It?)`,
-    description: `Full ${tool.name} pricing breakdown for 2026. Compare all plans, understand what is included, and find the best deal. Updated ${tool.lastUpdated ?? "June 2026"}.`,
+    title: `${tool.name} Pricing 2026: Plans, Cost & Free Option`,
+    description: `${tool.name} pricing starts at ${tool.pricing?.starting ?? tiersStartingPrice(tool)}. Compare every 2026 plan, free option, limits and best-value tier before you subscribe.`,
     alternates: { canonical: `https://aisaastoolkit.com/pricing/${slug}` },
     openGraph: {
       title: `${tool.name} Pricing 2026: All Plans Compared`,
@@ -30,6 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://aisaastoolkit.com/pricing/${slug}`,
     },
   };
+}
+
+function tiersStartingPrice(tool: NonNullable<ReturnType<typeof getToolBySlug>>): string {
+  return (tool.pricingTiers ?? tool.pricing?.tiers ?? [])[0]?.price ?? "the provider's current rate";
 }
 
 export default async function PricingPage({ params }: Props) {
@@ -40,9 +45,9 @@ export default async function PricingPage({ params }: Props) {
   const tiers = tool.pricingTiers ?? tool.pricing?.tiers ?? [];
 
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { label: "Reviews", href: "/tools" },
+    { label: "Reviews", href: "/reviews" },
     { label: tool.name, href: `/reviews/${tool.slug}` },
-    { label: "Pricing" },
+    { label: "Pricing", href: `/pricing/${tool.slug}` },
   ]);
 
   const firstFaqs = tool.faqs?.slice(0, 3) ?? [
@@ -72,7 +77,7 @@ export default async function PricingPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 max-w-5xl py-8">
-          <Breadcrumb items={[{ label: "Reviews", href: "/tools" }, { label: tool.name, href: `/reviews/${tool.slug}` }, { label: "Pricing" }]} />
+          <Breadcrumb items={[{ label: "Reviews", href: "/reviews" }, { label: tool.name, href: `/reviews/${tool.slug}` }, { label: "Pricing", href: `/pricing/${tool.slug}` }]} />
           <header className="mt-8 mb-12">
             <div className="flex items-center gap-4 mb-4">
               <div className={`w-16 h-16 rounded-2xl ${tool.logoColor ?? "bg-primary"} flex items-center justify-center text-white font-bold text-2xl flex-shrink-0`}>
@@ -85,6 +90,17 @@ export default async function PricingPage({ params }: Props) {
             </div>
             <p className="text-lg text-muted-foreground">{tool.tagline}</p>
           </header>
+
+          <section className="rounded-xl border border-primary/20 bg-primary/5 p-6 mb-8" aria-labelledby="pricing-summary">
+            <h2 id="pricing-summary" className="text-xl font-bold mb-2">{tool.name} pricing at a glance</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              {tool.name} starts at <strong className="text-foreground">{tool.pricing?.starting ?? tiers[0]?.price ?? "a custom price"}</strong>.
+              {tool.pricing?.hasFree
+                ? " A permanent free plan is available, so you can evaluate the core workflow before paying."
+                : " There is no permanent free plan, so compare the limits below before choosing a paid tier."}
+              {tiers.length > 1 && ` There are ${tiers.length} listed plans; ${tiers.find((tier) => tier.highlighted)?.name ?? tiers[1]?.name} is the highlighted option for most users.`}
+            </p>
+          </section>
 
           {deal && (
             <div className="bg-amber-50 dark:bg-amber-900/10 border border-amber-300 dark:border-amber-700 rounded-xl p-5 mb-8 flex items-center justify-between gap-4">
@@ -136,10 +152,10 @@ export default async function PricingPage({ params }: Props) {
                     className="w-full"
                     asChild
                   >
-                    <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
+                    <AffiliateLink href={tool.affiliateUrl} toolName={tool.name} placement={`pricing_${tier.name.toLowerCase().replace(/\s+/g, "_")}`}>
                       {tier.price === "$0" || tier.price === "Free" ? "Get Started Free" : tier.price === "Custom" ? "Contact Sales" : `Start ${tier.name}`}
                       <ExternalLink className="ml-2 w-3.5 h-3.5" />
-                    </a>
+                    </AffiliateLink>
                   </Button>
                 </div>
               ))}
@@ -211,10 +227,10 @@ export default async function PricingPage({ params }: Props) {
             </p>
             <div className="flex gap-3 justify-center flex-wrap">
               <Button variant="gradient" size="lg" asChild>
-                <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
+                <AffiliateLink href={tool.affiliateUrl} toolName={tool.name} placement="pricing_bottom">
                   {tool.pricing?.hasFree ? `Try ${tool.name} Free` : `Visit ${tool.name}`}
                   <ExternalLink className="ml-2 w-4 h-4" />
-                </a>
+                </AffiliateLink>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link href={`/reviews/${tool.slug}`}>Read Full Review</Link>

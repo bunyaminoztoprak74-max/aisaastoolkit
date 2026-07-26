@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Tag as TagIcon, ExternalLink, ArrowLeft } from "lucide-react";
+import { ExternalLink, ArrowLeft } from "lucide-react";
 import { getTagBySlug, getToolsForTag, tags } from "@/data/tags";
 import { getToolBySlug } from "@/data/tools";
 import { StarRating } from "@/components/common/StarRating";
@@ -57,7 +57,7 @@ export default async function TagPage({ params }: { params: Promise<{ slug: stri
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { label: "Tags", href: "/tags" },
-    { label: tag.label },
+    { label: tag.label, href: `/tag/${tag.slug}` },
   ]);
 
   const listSchema = buildItemListSchema(
@@ -71,7 +71,7 @@ export default async function TagPage({ params }: { params: Promise<{ slug: stri
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }} />
 
       <div className="container mx-auto px-4 py-8 max-w-5xl">
-        <Breadcrumb items={[{ label: "Tags", href: "/tags" }, { label: tag.label }]} className="mb-6" />
+        <Breadcrumb items={[{ label: "Tags", href: "/tags" }, { label: tag.label, href: `/tag/${tag.slug}` }]} className="mb-6" />
 
         {/* Header */}
         <div className="mb-8">

@@ -124,5 +124,5 @@ export function getContentSuggestions(toolSlug: string, limit = 6): ContentSugge
     });
   });
 
-  return suggestions;
+  return suggestions.slice(0, limit);
 }

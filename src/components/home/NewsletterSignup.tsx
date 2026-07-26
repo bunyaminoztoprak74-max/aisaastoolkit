@@ -1,6 +1,5 @@
 "use client";
-import { useState } from "react";
-import { Sparkles, CheckCircle } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { NewsletterForm } from "@/components/common/NewsletterForm";
 
 export function NewsletterSignup() {

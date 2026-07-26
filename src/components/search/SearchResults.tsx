@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { ExternalLink, Star, ArrowRight, Layers, BarChart3, List } from "lucide-react";
+import { Star, ArrowRight, Layers, BarChart3, List } from "lucide-react";
 import type { SearchEntry } from "@/data/searchIndex";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

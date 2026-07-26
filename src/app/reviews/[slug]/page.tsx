@@ -7,6 +7,7 @@ import { getAuthorBySlug } from "@/data/authors";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { StarRating } from "@/components/common/StarRating";
 import { AffiliateDisclosure } from "@/components/common/AffiliateDisclosure";
+import { AffiliateLink } from "@/components/common/AffiliateLink";
 import { TableOfContents } from "@/components/common/TableOfContents";
 import { TagList } from "@/components/common/TagList";
 import { InternalLinksWidget } from "@/components/common/InternalLinksWidget";
@@ -23,6 +24,7 @@ import { Badge } from "@/components/ui/badge";
 import { buildMetadata, buildToolKeywords } from "@/lib/seo";
 import { buildReviewSchema, buildFAQSchema, buildBreadcrumbSchema } from "@/lib/schema";
 import { getRelatedToolsScored, getContentSuggestions } from "@/lib/related";
+import { ALTERNATIVES_MAP } from "@/data/alternatives";
 
 const badgeVariantMap: Record<string, "recommended" | "best-value" | "trending" | "new" | "editor-choice"> = {
   recommended: "recommended", "best-value": "best-value", trending: "trending", new: "new", "editor-choice": "editor-choice",
@@ -71,8 +73,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   const reviewSchema     = buildReviewSchema(tool);
   const faqSchema        = buildFAQSchema(tool.faqs ?? []);
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { label: "All Reviews", href: "/tools" },
-    { label: `${tool.name} Review` },
+    { label: "All Reviews", href: "/reviews" },
+    { label: `${tool.name} Review`, href: `/reviews/${tool.slug}` },
   ]);
 
   return (
@@ -85,12 +87,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         toolName={tool.name}
         affiliateUrl={tool.affiliateUrl}
         pricing={tool.pricing?.starting ?? tool.startingPrice ?? "Free"}
+        hasFree={tool.pricing?.hasFree ?? false}
         badge={tool.badge?.replace("-", " ")}
       />
 
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         <Breadcrumb
-          items={[{ label: "All Reviews", href: "/tools" }, { label: `${tool.name} Review` }]}
+          items={[{ label: "All Reviews", href: "/reviews" }, { label: `${tool.name} Review`, href: `/reviews/${tool.slug}` }]}
           className="mb-6"
         />
 
@@ -123,9 +126,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             </div>
             <div className="flex flex-col gap-2 flex-shrink-0 min-w-[160px]">
               <Button variant="gradient" size="lg" className="w-full" asChild>
-                <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
+                <AffiliateLink href={tool.affiliateUrl} toolName={tool.name} placement="review_hero">
                   {tool.pricing?.hasFree ? `Try ${tool.name} Free` : `Visit ${tool.name}`} <ExternalLink className="ml-2 w-4 h-4" />
-                </a>
+                </AffiliateLink>
               </Button>
               <Button variant="outline" size="sm" className="w-full text-xs" asChild>
                 <a href={tool.website} target="_blank" rel="noopener noreferrer">Official Site</a>
@@ -144,6 +147,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             toolName={tool.name}
             affiliateUrl={tool.affiliateUrl}
             trialUrl={tool.trialUrl}
+            hasFree={tool.pricing?.hasFree ?? false}
             pros={tool.pros}
             cons={tool.cons}
           />
@@ -234,6 +238,16 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   </Link>
                 ))}
               </div>
+              {ALTERNATIVES_MAP[tool.slug] && (
+                <p className="mt-4 text-sm">
+                  <Link
+                    href={`/alternatives/${tool.slug}`}
+                    className="font-medium text-primary hover:underline"
+                  >
+                    See the full {tool.name} alternatives comparison →
+                  </Link>
+                </p>
+              )}
             </section>
 
             {tool.faqs && tool.faqs.length > 0 && (
@@ -290,9 +304,9 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
                   {tool.pricing?.hasFree ? "Start free — no card needed." : `Plans from ${tool.pricing?.starting ?? tool.startingPrice ?? "varies"}.`}
                 </p>
                 <Button variant="gradient" size="sm" className="w-full" asChild>
-                  <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
+                  <AffiliateLink href={tool.affiliateUrl} toolName={tool.name} placement="review_sidebar">
                     Get Started <ExternalLink className="ml-2 w-3.5 h-3.5" />
-                  </a>
+                  </AffiliateLink>
                 </Button>
               </div>
 

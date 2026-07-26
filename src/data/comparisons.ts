@@ -1,5 +1,3 @@
-import type { Tool } from "./tools";
-
 export interface ComparisonFeature {
   feature: string;
   tool1: string | boolean;

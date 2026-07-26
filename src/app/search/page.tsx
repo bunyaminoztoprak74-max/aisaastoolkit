@@ -6,16 +6,13 @@ import { SearchResults } from "@/components/search/SearchResults";
 import { Pagination } from "@/components/common/Pagination";
 import { searchEntries, type SearchFilters } from "@/data/searchIndex";
 import { paginate } from "@/lib/pagination";
-import { buildMetadata } from "@/lib/seo";
-import { buildWebsiteSchema } from "@/lib/schema";
 
-export function generateMetadata({ searchParams }: { searchParams: Promise<Record<string, string>> }): Metadata {
-  return buildMetadata({
+export const metadata: Metadata = {
     title: "Search AI Tools, Reviews & Comparisons",
     description: "Search 50+ AI tool reviews, comparisons, and best-of lists on AISaaSToolkit.",
-    path: "/search",
-  });
-}
+    alternates: { canonical: "https://aisaastoolkit.com/tools" },
+    robots: { index: false, follow: true },
+};
 
 const PER_PAGE = 10;
 
@@ -57,11 +54,8 @@ async function SearchContent({ searchParams }: { searchParams: Promise<Record<st
 }
 
 export default async function SearchPage({ searchParams }: { searchParams: Promise<Record<string, string>> }) {
-  const schema = buildWebsiteSchema();
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <div className="mb-8">
           <h1 className="text-3xl font-black mb-3">Search AI Tools</h1>

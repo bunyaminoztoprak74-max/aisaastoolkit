@@ -2053,6 +2053,8 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "Descript Review 2026: Best Podcast & Video Editor?",
     metaDescription: "Descript review 2026 — transcript-based audio and video editing, Overdub voice cloning, and filler word removal. Is it worth $24/month? Our honest verdict.",
     relatedToolSlugs: ["descript", "castmagic", "elevenlabs"],
+    clusterSlug: "descript",
+    clusterTitle: "Descript Video & Podcast Editing Guide",
   },
   {
     slug: "castmagic-review-2026",
@@ -2479,6 +2481,8 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "eReleases Review 2026: Is It Worth It for Startups? (Honest Review)",
     metaDescription: "Honest eReleases review 2026. We tested it for 90 days — pricing, distribution reach, real results, pros & cons. Plus: how to get $130 off.",
     relatedToolSlugs: ["omneky", "jasper"],
+    clusterSlug: "press-release-distribution",
+    clusterTitle: "Press Release Distribution Services",
   },
 
   {
@@ -2585,6 +2589,9 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "7 Best Press Release Distribution Services 2026 — Tested & Ranked ($49–$805)",
     metaDescription: "We sent the same release through 7 PR services and tracked real media pickups. eReleases got 3.2× more coverage than PRWeb at similar cost. Full comparison + prices inside.",
     relatedToolSlugs: ["omneky", "jasper"],
+    clusterSlug: "press-release-distribution",
+    clusterTitle: "Press Release Distribution Services",
+    isPillar: true,
   },
 
   {
@@ -2692,6 +2699,8 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "eReleases vs PR Newswire 2026: Which Is Better? (Honest Comparison)",
     metaDescription: "eReleases vs PR Newswire: pricing, reach, journalist outreach, and editorial review compared. eReleases starts at $169 and includes wire distribution.",
     relatedToolSlugs: ["omneky", "jasper"],
+    clusterSlug: "press-release-distribution",
+    clusterTitle: "Press Release Distribution Services",
   },
 
   {
@@ -2770,6 +2779,8 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "How Press Releases Help AI Startups Get Media Coverage in 2026",
     metaDescription: "Press releases remain one of the most underused growth tools for AI startups. Learn the strategy and the best distribution service for AI companies in 2026.",
     relatedToolSlugs: ["omneky", "chatgpt"],
+    clusterSlug: "press-release-distribution",
+    clusterTitle: "Press Release Distribution Services",
   },
   {
     slug: "claude-4-sonnet-review-2026",
@@ -3474,6 +3485,9 @@ export const allBlogPosts: BlogPost[] = [
     metaTitle: "7 Best Descript Alternatives 2026 — Tested by Use Case (Free & Paid)",
     metaDescription: "Best Descript alternatives in 2026: Riverside, CapCut, Veed, Podcastle, DaVinci Resolve & more — tested and ranked by use case, price, and features.",
     relatedToolSlugs: ["descript", "capcut", "elevenlabs"],
+    clusterSlug: "descript",
+    clusterTitle: "Descript Video & Podcast Editing Guide",
+    isPillar: true,
   },
   {
     slug: "elevenlabs-review-2026",
