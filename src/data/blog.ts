@@ -330,7 +330,7 @@ export const allBlogPosts: BlogPost[] = [
 <p>1,000 operations per month is enough to run 2-3 simple automations indefinitely. For a small newsletter workflow, personal CRM, or social media tracker, Make's free tier is genuinely production-ready. Supports 2 active scenarios and most app integrations. <a href="/blog/make-com-complete-guide-2026">See our Make.com automation guide →</a></p>
 
 <h2>6. Perplexity AI (Free) — Best Free AI Research</h2>
-<p>Unlimited basic searches with real-time web results and citations. 5 Pro searches per day with deeper reasoning. For staying current on industry news, fact-checking, and quick research, Perplexity's free plan is unbeatable — especially compared to ChatGPT's limited free browsing. <a href="/reviews/perplexity-ai">Read our Perplexity review →</a></p>
+<p>Unlimited basic searches with real-time web results and citations. 5 Pro searches per day with deeper reasoning. For staying current on industry news, fact-checking, and quick research, Perplexity's free plan is unbeatable — especially compared to ChatGPT's limited free browsing. <a href="/reviews/perplexity">Read our Perplexity review →</a></p>
 
 <h2>7. Canva AI (Free Tier) — Best Free Design AI</h2>
 <p>Canva's free plan includes AI-powered design suggestions, one-click background removal, and the Magic Write AI text tool with limited credits. For social media graphics, presentations, and marketing materials, it's the most capable free design tool. The AI image generator gives 50 free images per month.</p>
@@ -395,7 +395,7 @@ export const allBlogPosts: BlogPost[] = [
 <p>ChatGPT's Advanced Data Analysis (code interpreter) is genuinely transformative. Upload a CSV, ask Python questions, get executable code with live output. Claude can write excellent code and now has Claude Code for terminal-based development, but for in-browser execution and data analysis, ChatGPT wins. <strong>Winner: ChatGPT</strong></p>
 
 <h2>Research: Tie (Perplexity Still Wins for Deep Research)</h2>
-<p>Both tools have web browsing, but ChatGPT's browsing integrates better with its responses and cites sources inline. For deep research I still prefer <a href="/reviews/perplexity-ai">Perplexity AI</a>, but for quick fact-checks within a writing workflow, ChatGPT edges it. <strong>Winner: Tie</strong></p>
+<p>Both tools have web browsing, but ChatGPT's browsing integrates better with its responses and cites sources inline. For deep research I still prefer <a href="/reviews/perplexity">Perplexity AI</a>, but for quick fact-checks within a writing workflow, ChatGPT edges it. <strong>Winner: Tie</strong></p>
 
 <h2>Handling Long Documents: Claude Wins</h2>
 <p>This is Claude's superpower. Feed it a 300-page PDF, a full codebase, or a year's worth of meeting notes — it handles it effortlessly. Claude's 200K context window vs ChatGPT's 128K sounds like a small difference until you're working with real enterprise-scale documents. <strong>Winner: Claude</strong></p>
@@ -3287,7 +3287,7 @@ export const allBlogPosts: BlogPost[] = [
 <h2>Verdict</h2>
 <p>Omneky is one of the most capable AI creative platforms available in 2026 for growth-stage and enterprise advertisers. The performance-driven learning loop that connects ad account data back into creative recommendations is genuinely differentiated — this isn't just a prettier image generator, it's a closed-loop creative optimisation system. The $499/month starting price is a barrier for smaller advertisers, but at $20k+ monthly ad spend, the ROI case is straightforward.</p>
 <p><a href="https://www.jdoqocy.com/click-101761541-17290970" rel="nofollow noopener sponsored" target="_blank">Try Omneky and generate your first AI ad creatives →</a></p>
-<p>See also: <a href="/blog/best-ai-marketing-tools-2026">Best AI Marketing Tools 2026</a> | <a href="/blog/jasper-ai-review">Jasper AI Review</a> | <a href="/blog/midjourney-complete-guide-2026">Midjourney Guide</a></p>`,
+<p>See also: <a href="/blog/best-ai-marketing-tools-2026">Best AI Marketing Tools 2026</a> | <a href="/reviews/jasper">Jasper AI Review</a> | <a href="/blog/midjourney-complete-guide-2026">Midjourney Guide</a></p>`,
     category: "AI Marketing",
     emoji: "🎯",
     authorSlug: "alex-morgan",
@@ -3403,7 +3403,7 @@ export const allBlogPosts: BlogPost[] = [
 <h2>Verdict</h2>
 <p>EasyWebinar is the strongest all-in-one webinar platform for marketers who want to use webinars as a conversion channel — not just for communication. The combination of live and evergreen capabilities, built-in email automation, and timed CTA injection in a single tool is unique in the market at this price point. If you're a SaaS company, course creator, or consultant who wants to turn a single recorded webinar into a 24/7 lead generation asset, EasyWebinar is the platform to build on.</p>
 <p><a href="https://www.kqzyfj.com/click-101761541-17217347" rel="nofollow noopener sponsored" target="_blank">Start your EasyWebinar free trial →</a></p>
-<p>See also: <a href="/blog/best-ai-marketing-tools-2026">Best AI Marketing Tools 2026</a> | <a href="/blog/ereleases-review-2026">eReleases Review</a> | <a href="/blog/jasper-ai-review">Jasper AI Review</a></p>`,
+<p>See also: <a href="/blog/best-ai-marketing-tools-2026">Best AI Marketing Tools 2026</a> | <a href="/blog/ereleases-review-2026">eReleases Review</a> | <a href="/reviews/jasper">Jasper AI Review</a></p>`,
     category: "AI Marketing",
     emoji: "🎙️",
     authorSlug: "alex-morgan",
