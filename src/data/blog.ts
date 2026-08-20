@@ -3639,6 +3639,7 @@ export const allBlogPosts: BlogPost[] = [
 <p>Midjourney is a text-to-image AI model that generates stunning images from text prompts. The current version — V6 — produces images with dramatically improved prompt accuracy, better text rendering, and more coherent compositions than earlier versions. Access is primarily through Discord or the web app at midjourney.com.</p>
 
 <h2>Midjourney Plans & Pricing</h2>
+<p><em>Pricing verified August 20, 2026 — no changes since launch of V6; all four tiers remain accurate.</em></p>
 <div class="overflow-x-auto my-6"><table><thead><tr><th>Plan</th><th>Price/Month</th><th>Fast GPU Hours</th><th>Relaxed Mode</th><th>Best For</th></tr></thead><tbody>
 <tr><td><strong>Basic</strong></td><td>$10</td><td>3.3 hrs (~200 images)</td><td>❌</td><td>Occasional use</td></tr>
 <tr><td><strong>Standard</strong></td><td>$30</td><td>15 hrs (~900 images)</td><td>✅ Unlimited</td><td>Regular creators — best value</td></tr>
@@ -3691,7 +3692,7 @@ export const allBlogPosts: BlogPost[] = [
     authorName: "Alex Morgan",
     authorAvatar: "https://ui-avatars.com/api/?name=Alex+Morgan&background=2563EB&color=fff&size=64",
     publishedAt: "July 8, 2026",
-    updatedAt: "July 8, 2026",
+    updatedAt: "August 20, 2026",
     readTime: "12 min read",
     tags: ["midjourney", "midjourney-review", "ai-image", "image-generation", "midjourney-2026", "ai-art"],
     metaTitle: "Midjourney Review 2026: Best AI Image Generator? (60-Day Test)",
