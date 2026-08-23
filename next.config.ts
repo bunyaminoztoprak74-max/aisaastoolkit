@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
       { source: "/compare/make-com-vs-n8n", destination: "/compare/n8n-vs-make", permanent: true },
       { source: "/compare/make-com-vs-zapier", destination: "/compare/make-vs-zapier", permanent: true },
       { source: "/compare/zapier-vs-make-com", destination: "/compare/make-vs-zapier", permanent: true },
+      { source: "/blog/best-press-release-distribution-services-2026", destination: "/blog/best-press-release-distribution-services", permanent: true },
     ];
   },
   async headers() {
