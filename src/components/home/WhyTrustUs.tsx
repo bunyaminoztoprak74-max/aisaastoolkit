@@ -3,26 +3,26 @@ import Link from "next/link";
 const trustItems = [
   {
     icon: "📊",
-    title: "Independent Reviews",
-    description: "No sponsored rankings. We never accept payment to boost a tool's score. Our ratings reflect real testing results only.",
+    title: "Clear Recommendations",
+    description: "We explain who each tool is best for, where it falls short, and how affiliate relationships work.",
     href: "/methodology",
   },
   {
     icon: "🧪",
-    title: "30-Day Testing",
-    description: "Every tool review involves at minimum 30 days of hands-on use on paid accounts — not vendor demos or free trials.",
+    title: "Evidence Levels",
+    description: "Reviews distinguish hands-on experience from product research instead of claiming the same test depth for every tool.",
     href: "/methodology",
   },
   {
     icon: "📝",
-    title: "Named Experts",
-    description: "Every review is written by a named analyst with verifiable credentials. No anonymous content here.",
+    title: "Practical Workflows",
+    description: "Our strongest recommendations focus on real automation, content, and business workflows readers can reproduce.",
     href: "/methodology",
   },
   {
     icon: "🔄",
-    title: "Updated Weekly",
-    description: "Scores are recalibrated when tools ship major updates. We track the AI landscape so you don't have to.",
+    title: "Visible Update Dates",
+    description: "Pricing and features change quickly, so each review shows when its information was last checked.",
     href: "/methodology",
   },
 ];
@@ -34,7 +34,7 @@ export function WhyTrustUs() {
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Why Trust Our Reviews?</h2>
           <p className="text-muted-foreground">
-            We set the standard for independent AI tool journalism.{" "}
+            See how we research, compare, and disclose AI tools.{" "}
             <Link href="/methodology" className="text-primary hover:underline font-medium">Read our methodology →</Link>
           </p>
         </div>

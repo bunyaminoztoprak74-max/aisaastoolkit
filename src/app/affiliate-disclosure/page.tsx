@@ -8,40 +8,20 @@ export const metadata: Metadata = {
 };
 
 const affiliatePrograms = [
-  { company: "Claude / Anthropic", program: "Direct / Referral", platform: "Direct", category: "AI Assistant" },
-  { company: "ChatGPT / OpenAI", program: "OpenAI Affiliates", platform: "PartnerStack", category: "AI Assistant" },
   { company: "Make.com", program: "Make Partner Program", platform: "Impact", category: "AI Automation" },
-  { company: "Zapier", program: "Zapier Partner Program", platform: "PartnerStack", category: "AI Automation" },
   { company: "n8n", program: "n8n Partner Program", platform: "Direct", category: "AI Automation" },
-  { company: "Jasper", program: "Jasper Affiliates", platform: "Impact", category: "AI Writing" },
-  { company: "Writesonic", program: "Writesonic Affiliates", platform: "PartnerStack", category: "AI Writing" },
-  { company: "Grammarly", program: "Grammarly Affiliates", platform: "CJ Affiliate", category: "AI Writing" },
   { company: "ElevenLabs", program: "ElevenLabs Affiliates", platform: "PartnerStack", category: "AI Voice" },
-  { company: "Pictory", program: "Pictory Affiliates", platform: "PartnerStack", category: "AI Video" },
-  { company: "Descript", program: "Descript Affiliates", platform: "PartnerStack", category: "AI Video" },
-  { company: "AdCreative.ai", program: "AdCreative Affiliates", platform: "Impact", category: "AI Marketing" },
-  { company: "Canva", program: "Canva Affiliates", platform: "Impact", category: "AI Design" },
-  { company: "Midjourney", program: "N/A (reviewed independently)", platform: "—", category: "AI Image" },
-  { company: "Notion", program: "Notion Affiliates", platform: "PartnerStack", category: "AI Productivity" },
-  { company: "Gamma", program: "Gamma Affiliates", platform: "PartnerStack", category: "AI Productivity" },
-  { company: "Perplexity", program: "Perplexity Affiliates", platform: "PartnerStack", category: "AI Research" },
-  { company: "Mailchimp", program: "Mailchimp Affiliate Program", platform: "CJ Affiliate", category: "AI Marketing" },
   { company: "Omneky", program: "Omneky Affiliate Program", platform: "Direct", category: "AI Marketing" },
-  { company: "1Password", program: "1Password Affiliates", platform: "Impact", category: "SaaS Security" },
-  { company: "NordLayer", program: "NordLayer Partner Program", platform: "Impact", category: "SaaS Security" },
   { company: "Hostinger", program: "Hostinger Affiliates", platform: "Impact", category: "Web Hosting" },
-  { company: "TeamViewer", program: "TeamViewer Partner Program", platform: "CJ Affiliate", category: "AI Productivity" },
-  { company: "Ubersuggest / NP Digital", program: "NP Digital Affiliates", platform: "Direct", category: "AI SEO" },
-  { company: "Gemini / Google", program: "Google Workspace Affiliates", platform: "CJ Affiliate", category: "AI Productivity" },
 ];
 
 const testingSteps = [
-  { step: "1. Free trial or paid plan sign-up", detail: "We sign up with our own accounts. No compensation for signing up." },
-  { step: "2. 30-day active use period", detail: "We use the tool for real work tasks across at least 30 days before scoring." },
-  { step: "3. Feature matrix testing", detail: "We systematically test every advertised feature against our standard rubric." },
+  { step: "1. Evidence collection", detail: "We review current product documentation, pricing, plan limits, and release notes." },
+  { step: "2. Practical evaluation", detail: "When we have access, we use the tool in representative workflows and identify hands-on observations." },
+  { step: "3. Feature comparison", detail: "We compare the features that matter for the intended use case against relevant alternatives." },
   { step: "4. Pricing verification", detail: "We verify all pricing tiers, limits, and billing terms at the time of publication." },
   { step: "5. Comparison with competitors", detail: "We compare outputs and value against 3-5 direct competitors in the same category." },
-  { step: "6. Final editorial review", detail: "A second reviewer reads every published review before it goes live." },
+  { step: "6. Final editorial check", detail: "Claims, links, pricing, disclosures, and update dates are checked before publication." },
 ];
 
 export default function AffiliateDisclosurePage() {
@@ -99,7 +79,7 @@ export default function AffiliateDisclosurePage() {
             <FlaskConical className="w-5 h-5 text-primary" />
             <h2 className="text-xl font-bold">Tool Testing Methodology</h2>
           </div>
-          <p className="text-muted-foreground mb-5">Every review on AISaaSToolkit follows our standard testing process before publication:</p>
+          <p className="text-muted-foreground mb-5">Every review on AISaaSToolkit follows our research and editorial process before publication:</p>
           <div className="space-y-3">
             {testingSteps.map(({ step, detail }) => (
               <div key={step} className="flex gap-4 rounded-lg border border-border bg-card p-4">
@@ -116,7 +96,7 @@ export default function AffiliateDisclosurePage() {
             <Info className="w-5 h-5 text-primary" />
             <h2 className="text-xl font-bold">Our Affiliate Relationships</h2>
           </div>
-          <p className="text-muted-foreground mb-5">Below is a full list of the affiliate programs we participate in. This table is updated when new relationships are established.</p>
+          <p className="text-muted-foreground mb-5">Below are programs for which the site currently contains configured tracking links. Normal product links are not represented as affiliate partnerships.</p>
           <div className="rounded-xl border border-border overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
