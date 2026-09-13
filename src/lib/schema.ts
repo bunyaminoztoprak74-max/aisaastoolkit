@@ -48,10 +48,9 @@ export function buildReviewSchema(tool: Tool, authorSlugOverride?: string) {
       worstRating: "1",
     },
     author: author ? {
-      "@type": "Person",
+      "@type": "Organization",
       name: author.name,
       url: `${SITE_URL}/author/${author.slug}`,
-      sameAs: [author.twitter, author.linkedin].filter(Boolean),
     } : {
       "@type": "Organization",
       name: SITE_NAME,
@@ -151,7 +150,7 @@ export function buildWebsiteSchema() {
     "@type": "WebSite",
     name: SITE_NAME,
     url: SITE_URL,
-    description: "Independent reviews and comparisons of the best AI SaaS tools in 2026",
+    description: "Practical research and comparisons of AI SaaS tools for business workflows",
     potentialAction: {
       "@type": "SearchAction",
       target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/search?q={search_term_string}` },

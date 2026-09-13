@@ -15,7 +15,7 @@ export default function MethodologyPage() {
       <section className="bg-gradient-to-b from-primary/5 to-background py-16 border-b border-border">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl font-bold text-foreground mb-4">How We Review AI Tools</h1>
-          <p className="text-xl text-muted-foreground">Independent testing. No sponsored rankings. No BS.</p>
+          <p className="text-xl text-muted-foreground">Transparent research, practical comparisons, and clearly disclosed commercial links.</p>
         </div>
       </section>
 
@@ -24,8 +24,8 @@ export default function MethodologyPage() {
           <h2 className="text-lg font-bold text-blue-800 dark:text-blue-200 mb-2">Our Core Promise</h2>
           <ul className="text-blue-700 dark:text-blue-300 space-y-1 text-sm">
             <li>✓ We never accept payment to rank a tool higher than it deserves</li>
-            <li>✓ All tools are tested for a minimum of 30 days on paid accounts</li>
-            <li>✓ We test on real use cases, not theoretical benchmarks</li>
+            <li>✓ We distinguish hands-on experience from documentation-based research</li>
+            <li>✓ We evaluate tools against practical business use cases</li>
             <li>✓ We disclose all affiliate relationships transparently</li>
             <li>✓ Scores are updated when tools significantly change</li>
           </ul>
@@ -33,11 +33,11 @@ export default function MethodologyPage() {
 
         <div className="prose prose-lg dark:prose-invert max-w-none">
           <h2>Our Testing Process</h2>
-          <h3>1. Purchase or Trial</h3>
-          <p>We pay for the tool ourselves or use a legitimate free trial account. We never test tools using demo access provided by vendors, as this can be artificially optimized.</p>
+          <h3>1. Evidence Collection</h3>
+          <p>We begin with current product documentation, pricing pages, plan limits, release notes, and credible independent sources. Affiliate status is recorded separately from editorial assessment.</p>
 
-          <h3>2. Real-World Testing (30+ Days)</h3>
-          <p>Every review involves at least 30 days of hands-on use in real business scenarios. We do not just poke around — we use the tool for actual work.</p>
+          <h3>2. Practical Evaluation</h3>
+          <p>When we have hands-on access, we evaluate the tool in representative workflows and identify those observations in the review. When hands-on access is unavailable, the review is presented as researched comparison rather than a claimed long-term test.</p>
 
           <h3>3. Six-Dimension Scoring Rubric</h3>
         </div>
@@ -66,7 +66,7 @@ export default function MethodologyPage() {
           <p>Scores are relative to the competitive landscape. A 7/10 today may become 6.5/10 if competitors significantly improve — we recalibrate quarterly.</p>
 
           <h3>5. Publication &amp; Updates</h3>
-          <p>Reviews are published with a &quot;Last Tested&quot; date. We re-test tools when major updates are released or annually at minimum.</p>
+          <p>Reviews display a last-checked date. High-intent pages are prioritized for review when pricing, plan limits, or major features change.</p>
 
           <h2>Affiliate Disclosure</h2>
           <p>Some links on AISaaSToolkit are affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you. This never influences our scores or rankings — a tool with no affiliate program receives the same rigorous evaluation as one with a generous commission. Read our full <Link href="/affiliate-disclosure">Affiliate Disclosure</Link>.</p>

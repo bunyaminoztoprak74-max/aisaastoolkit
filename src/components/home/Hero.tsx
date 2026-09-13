@@ -19,7 +19,7 @@ export function Hero() {
       <div className="relative container mx-auto px-4 py-20 md:py-28 text-center">
         <Badge variant="outline" className="mb-6 gap-1.5 py-1.5 px-4 text-sm font-medium">
           <TrendingUp className="w-3.5 h-3.5 text-primary" />
-          Updated May 2026 — {toolCount} AI Tools Reviewed & Ranked
+          Updated September 2026 — {toolCount} AI Tools Researched & Compared
         </Badge>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
@@ -29,7 +29,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-          Independent reviews, side-by-side comparisons, and expert rankings of the top AI SaaS tools in 2026. We test every tool so you don't have to.
+          Practical reviews and side-by-side comparisons for choosing AI software. We combine hands-on experience where available with current product research and clearly disclosed affiliate relationships.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
@@ -47,15 +47,15 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <Shield className="w-4 h-4 text-green-500" />
-            <span>100% Independent Reviews</span>
+            <span>Reader-First Comparisons</span>
           </div>
           <div className="flex items-center gap-2">
             <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span>{toolCount} AI Tools Tested & Rated</span>
+            <span>{toolCount} AI Tools Researched</span>
           </div>
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-primary" />
-            <span>Updated Monthly</span>
+            <span>Dates Shown on Reviews</span>
           </div>
         </div>
       </div>

@@ -20,9 +20,9 @@ export function AuthorBox({ author, toolName, lastTestedDate }: Props) {
         </div>
         <p className="text-sm text-muted-foreground">{author.shortBio}</p>
         <div className="flex flex-wrap gap-3 mt-2 text-xs text-muted-foreground">
-          <span>Tested: 30 days hands-on with {toolName}</span>
+          <span>Research scope: features, pricing, use cases, and alternatives for {toolName}</span>
           {lastTestedDate && <span>Last updated: {new Date(lastTestedDate).toLocaleDateString("en-US", {year:"numeric",month:"long"})}</span>}
-          <span>Independent review — no sponsored content</span>
+          <span>Affiliate links are disclosed and do not change the listed price</span>
         </div>
       </div>
     </div>
