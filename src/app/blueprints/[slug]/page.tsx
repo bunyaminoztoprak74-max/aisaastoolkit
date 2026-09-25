@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BLUEPRINTS, getBlueprintBySlug } from "@/data/blueprints";
+import { BlueprintDownloadModal } from "@/components/blueprints/BlueprintDownloadModal";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -75,19 +76,18 @@ export default async function BlueprintDetailPage({ params }: Props) {
           <div className="space-y-2">
             <h3 className="text-xl font-bold">Download Ready-to-Import JSON</h3>
             <p className="text-sm text-muted-foreground">
-              File: <code className="font-mono text-xs bg-muted px-2 py-0.5 rounded">{blueprint.downloadFileName}</code> • Direct download (no signup required)
+              File: <code className="font-mono text-xs bg-muted px-2 py-0.5 rounded">{blueprint.downloadFileName}</code> • Instant download &amp; 1-click import walkthrough
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-shrink-0">
-            <a
-              href={blueprint.downloadUrl}
-              download={blueprint.downloadFileName}
-              className="inline-flex items-center justify-center font-bold text-white py-3.5 px-6 rounded-xl shadow-lg hover:opacity-90 transition-all text-center"
-              style={{ background: "linear-gradient(135deg, #10b981 0%, #059669 100%)" }}
-            >
-              📥 Download Blueprint JSON
-            </a>
+            <BlueprintDownloadModal
+              blueprintTitle={blueprint.title}
+              blueprintSlug={blueprint.slug}
+              downloadUrl={blueprint.downloadUrl}
+              downloadFileName={blueprint.downloadFileName}
+              affiliateUrl={blueprint.featuredTool.affiliateUrl}
+            />
           </div>
         </div>
 
