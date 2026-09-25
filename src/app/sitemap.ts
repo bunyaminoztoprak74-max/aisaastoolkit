@@ -7,6 +7,7 @@ import { comparisons } from "@/data/comparisons";
 import { bestLists } from "@/data/bestLists";
 import { tags } from "@/data/tags";
 import { ALTERNATIVES_MAP } from "@/data/alternatives";
+import { BLUEPRINTS } from "@/data/blueprints";
 
 const BASE_URL = "https://aisaastoolkit.com";
 const now      = new Date();
@@ -35,6 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/affiliate-disclosure",0.3,  "yearly"),
     entry("/editorial-policy",   0.5,  "monthly"),
     entry("/reviews",            0.9,  "weekly"),
+    entry("/blueprints",         0.92, "weekly"),
+
+    // Blueprints
+    ...BLUEPRINTS.map((b) => entry(`/blueprints/${b.slug}`, 0.9, "weekly")),
 
     // Tool reviews
     ...tools.map((t) => entry(`/reviews/${t.slug}`, 0.9, "monthly", t.lastUpdated)),
