@@ -10,6 +10,16 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   {
+    label: "⚡ Blueprints",
+    href: "/blueprints",
+    children: [
+      { label: "All Free Blueprints", href: "/blueprints" },
+      { label: "Shopify to Sheets & WhatsApp", href: "/blueprints/shopify-order-sync-sheets-whatsapp" },
+      { label: "Instagram DM AI Auto-Reply", href: "/blueprints/instagram-dm-ai-smart-responder" },
+      { label: "Lead Scraper & CRM Enricher", href: "/blueprints/b2b-lead-scraper-crm-enricher" },
+    ],
+  },
+  {
     label: "Tools",
     href:  "/tools",
     children: [

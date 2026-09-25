@@ -1,0 +1,79 @@
+{
+  "name": "Shopify Orders to Google Sheets & WhatsApp VIP Alerts",
+  "version": 1,
+  "description": "AISaaSToolkit - Official Make.com Blueprint. Automatically saves new Shopify orders into Google Sheets and sends instant WhatsApp/Slack alerts for VIP orders.",
+  "author": "AISaaSToolkit",
+  "website": "https://aisaastoolkit.com",
+  "flow": [
+    {
+      "id": 1,
+      "module": "shopify:watchOrders",
+      "version": 1,
+      "parameters": {
+        "status": "any",
+        "limit": 50
+      },
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0,
+          "name": "1. Watch New Shopify Orders"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "module": "google-sheets:addRow",
+      "version": 1,
+      "parameters": {
+        "spreadsheetId": "YOUR_SPREADSHEET_ID",
+        "sheet": "Orders",
+        "values": [
+          "{{1.order_number}}",
+          "{{1.created_at}}",
+          "{{1.customer.first_name}} {{1.customer.last_name}}",
+          "{{1.customer.email}}",
+          "{{1.total_price}}",
+          "{{1.financial_status}}"
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0,
+          "name": "2. Save to Google Sheets"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "module": "builtin:filter",
+      "parameters": {
+        "condition": "{{1.total_price}} > 100"
+      },
+      "metadata": {
+        "designer": {
+          "x": 450,
+          "y": 0,
+          "name": "VIP Filter (> $100)"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "module": "whatsapp:sendTemplateMessage",
+      "version": 1,
+      "parameters": {
+        "to": "YOUR_PHONE_NUMBER",
+        "message": "🔥 NEW VIP ORDER ALERT!\nOrder #{{1.order_number}}\nAmount: ${{1.total_price}}\nCustomer: {{1.customer.first_name}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0,
+          "name": "3. Send WhatsApp Alert"
+        }
+      }
+    }
+  ]
+}

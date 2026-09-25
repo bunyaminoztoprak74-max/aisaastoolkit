@@ -1,0 +1,63 @@
+{
+  "name": "Instagram DM AI Smart Auto-Responder",
+  "version": 1,
+  "description": "AISaaSToolkit - Official Make.com Blueprint. Automatically responds to incoming Instagram Direct Messages using OpenAI GPT-4o mini.",
+  "author": "AISaaSToolkit",
+  "website": "https://aisaastoolkit.com",
+  "flow": [
+    {
+      "id": 1,
+      "module": "instagram:watchDirectMessages",
+      "version": 1,
+      "parameters": {},
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0,
+          "name": "1. Watch New DMs"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "module": "openai:createChatCompletion",
+      "version": 1,
+      "parameters": {
+        "model": "gpt-4o-mini",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helpful, professional assistant for our brand. Answer user questions concisely. If they ask for pricing, mention starting at $29/mo. Keep answers under 2 sentences."
+          },
+          {
+            "role": "user",
+            "content": "{{1.message_text}}"
+          }
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0,
+          "name": "2. Generate AI Answer (ChatGPT)"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "module": "instagram:sendDirectMessage",
+      "version": 1,
+      "parameters": {
+        "recipient_id": "{{1.sender_id}}",
+        "text": "{{2.choices[].message.content}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0,
+          "name": "3. Send Instagram DM Reply"
+        }
+      }
+    }
+  ]
+}

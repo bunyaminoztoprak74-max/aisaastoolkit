@@ -1,0 +1,59 @@
+{
+  "name": "Automated Lead Scraper & CRM Data Enricher",
+  "version": 1,
+  "description": "AISaaSToolkit - Official Make.com Blueprint. Enriches inbound website form leads with company details and pushes directly into CRM or Airtable.",
+  "author": "AISaaSToolkit",
+  "website": "https://aisaastoolkit.com",
+  "flow": [
+    {
+      "id": 1,
+      "module": "gateway:customWebhook",
+      "version": 1,
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0,
+          "name": "1. Inbound Form Webhook"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "module": "http:makeRequest",
+      "version": 1,
+      "parameters": {
+        "url": "https://company.clearbit.com/v2/companies/find?domain={{1.domain}}",
+        "method": "GET"
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0,
+          "name": "2. Clearbit Company Enrichment"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "module": "airtable:createRecord",
+      "version": 1,
+      "parameters": {
+        "table": "Leads",
+        "fields": {
+          "Name": "{{1.name}}",
+          "Email": "{{1.email}}",
+          "Company": "{{2.name}}",
+          "Employees": "{{2.metrics.employees}}",
+          "Estimated Revenue": "{{2.metrics.estimatedAnnualRevenue}}"
+        }
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0,
+          "name": "3. Save Enriched Lead to Airtable"
+        }
+      }
+    }
+  ]
+}
