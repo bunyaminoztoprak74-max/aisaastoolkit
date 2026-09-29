@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const author = getAuthorBySlug(slug);
   if (!author) return {};
   return {
-    title: `${author.name} — AI Tools Analyst | AISaaSToolkit`,
+    title: `${author.name} — AI Tool Research | AISaaSToolkit`,
     description: author.shortBio,
     alternates: { canonical: `https://aisaastoolkit.com/author/${author.slug}` },
   };
@@ -33,12 +33,10 @@ export default async function AuthorPage({ params }: Props) {
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "Organization",
     name: author.name,
-    jobTitle: author.title,
     description: author.bio,
     url: `https://aisaastoolkit.com/author/${author.slug}`,
-    sameAs: [author.twitter, author.linkedin].filter(Boolean),
   };
 
   return (
@@ -63,9 +61,9 @@ export default async function AuthorPage({ params }: Props) {
                 {author.linkedin && <Link href={author.linkedin} className="text-sm text-blue-600 hover:underline font-medium">LinkedIn</Link>}
               </div>
               <div className="flex gap-6 mt-6 text-sm text-muted-foreground">
-                <span><strong className="text-foreground">{author.reviewCount}</strong> reviews</span>
+                <span><strong className="text-foreground">{authorTools.length}</strong> tool guides</span>
                 <span><strong className="text-foreground">{authorPosts.length}</strong> articles</span>
-                <span>Member since <strong className="text-foreground">{new Date(author.joinedDate).getFullYear()}</strong></span>
+                <span>Coverage updated as products change</span>
               </div>
             </div>
           </div>
@@ -74,8 +72,8 @@ export default async function AuthorPage({ params }: Props) {
 
       <div className="container mx-auto px-4 max-w-4xl py-12">
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-5 mb-10">
-          <h3 className="font-semibold text-green-800 dark:text-green-200 mb-1">Testing Methodology</h3>
-          <p className="text-sm text-green-700 dark:text-green-300">All reviews by {author.name} involve a minimum 30-day hands-on testing period using paid accounts. No sponsored placements. All opinions are independent.</p>
+          <h3 className="font-semibold text-green-800 dark:text-green-200 mb-1">Research Methodology</h3>
+          <p className="text-sm text-green-700 dark:text-green-300">Coverage by {author.name} combines current product research with practical evaluation where access is available. Affiliate relationships are disclosed and are not part of the scoring formula.</p>
         </div>
 
         {authorTools.length > 0 && (

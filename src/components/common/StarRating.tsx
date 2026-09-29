@@ -35,8 +35,8 @@ export function StarRating({ rating, maxRating = 5, size = "md", showNumber = tr
       {showNumber && (
         <span className={cn("font-semibold text-foreground", textSizes[size])}>{rating.toFixed(1)}</span>
       )}
-      {reviewCount && (
-        <span className={cn("text-muted-foreground", textSizes[size])}>({reviewCount.toLocaleString()} reviews)</span>
+      {reviewCount !== undefined && (
+        <span className={cn("text-muted-foreground", textSizes[size])}>editorial score</span>
       )}
     </div>
   );

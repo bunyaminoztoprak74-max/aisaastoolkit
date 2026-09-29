@@ -172,7 +172,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
 
             {/* Rating */}
             <section id="rating">
-              <RatingDisplay overall={tool.rating} reviewCount={tool.reviewCount} />
+              <RatingDisplay overall={tool.rating} />
             </section>
 
             <ProsConsSection pros={tool.pros} cons={tool.cons} />

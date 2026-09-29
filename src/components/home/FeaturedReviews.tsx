@@ -5,6 +5,7 @@ import { StarRating } from "@/components/common/StarRating";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { AffiliateLink } from "@/components/common/AffiliateLink";
 
 const badgeVariantMap: Record<string, "recommended" | "best-value" | "trending" | "new" | "editor-choice"> = {
   recommended: "recommended", "best-value": "best-value", trending: "trending", new: "new", "editor-choice": "editor-choice",
@@ -18,7 +19,7 @@ export function FeaturedReviews() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Best AI Tools of 2026</h2>
-            <p className="text-muted-foreground">Our top picks across every category, thoroughly tested</p>
+            <p className="text-muted-foreground">Editorial picks based on features, value, usability, and practical fit</p>
           </div>
           <Button variant="outline" asChild className="hidden sm:flex">
             <Link href="/best/ai-automation-tools">See All <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -66,9 +67,9 @@ export function FeaturedReviews() {
                     <Link href={`/reviews/${tool.slug}`}>Full Review</Link>
                   </Button>
                   <Button variant="gradient" size="sm" className="flex-1 text-xs" asChild>
-                    <a href={tool.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow">
+                    <AffiliateLink href={tool.affiliateUrl} toolName={tool.name} placement="home_featured">
                       Visit Site <ExternalLink className="ml-1 w-3 h-3" />
-                    </a>
+                    </AffiliateLink>
                   </Button>
                 </div>
               </CardContent>

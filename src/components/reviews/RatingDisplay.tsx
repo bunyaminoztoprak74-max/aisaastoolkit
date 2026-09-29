@@ -7,11 +7,10 @@ interface RatingCategory {
 
 interface RatingDisplayProps {
   overall: number;
-  reviewCount: number;
   categories?: RatingCategory[];
 }
 
-export function RatingDisplay({ overall, reviewCount, categories }: RatingDisplayProps) {
+export function RatingDisplay({ overall, categories }: RatingDisplayProps) {
   const defaultCategories = [
     { label: "Ease of Use", score: overall - 0.1 },
     { label: "Features", score: overall + 0.1 },
@@ -28,7 +27,7 @@ export function RatingDisplay({ overall, reviewCount, categories }: RatingDispla
         <div className="text-center">
           <div className="text-5xl font-black gradient-text">{overall.toFixed(1)}</div>
           <StarRating rating={overall} showNumber={false} size="lg" className="justify-center mt-1" />
-          <p className="text-xs text-muted-foreground mt-1">{reviewCount.toLocaleString()} reviews</p>
+          <p className="text-xs text-muted-foreground mt-1">AISaaSToolkit editorial score</p>
         </div>
         <div className="flex-1 space-y-2">
           {cats.map((cat) => (

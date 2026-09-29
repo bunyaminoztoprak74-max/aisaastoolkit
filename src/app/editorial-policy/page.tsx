@@ -32,7 +32,7 @@ export default function EditorialPolicyPage() {
             <li>✓ We never accept payment to change a review score or recommendation</li>
             <li>✓ Affiliate commissions are disclosed on every page that contains them</li>
             <li>✓ Tools are selected for review based on reader demand and category importance — not affiliate rates</li>
-            <li>✓ Every review reflects at least 30 days of hands-on testing on a paid or free-trial account</li>
+            <li>✓ Reviews distinguish hands-on observations from documentation-based research</li>
             <li>✓ Reviews are updated when a tool significantly changes its pricing, features, or quality</li>
             <li>✓ We correct factual errors promptly when they are reported</li>
           </ul>
@@ -60,9 +60,8 @@ export default function EditorialPolicyPage() {
             extra cost to you. This is how we fund the site.
           </p>
           <p>
-            However, our ratings and recommendations are determined entirely by our testing results. We
-            routinely give low scores to tools we earn commissions from. A 3/5 review earns us the same
-            commission as a 5/5 review — there is no financial incentive to inflate scores.
+            Ratings and recommendations are editorial assessments of product fit, features, usability,
+            value, reliability, and support. Affiliate availability is not part of the scoring formula.
           </p>
           <p>
             <strong>We do not accept sponsored reviews, paid placements, or advertorial content.</strong>
@@ -73,18 +72,17 @@ export default function EditorialPolicyPage() {
 
           <h2>3. The Review Process</h2>
 
-          <h3>Step 1 — Account Setup</h3>
+          <h3>Step 1 — Evidence Collection</h3>
           <p>
-            We sign up using a standard free trial or paid plan — the same way any user would. We do not
-            use vendor-provided demo accounts, as these may be artificially optimized. When a vendor
-            provides review access, we disclose this in the review.
+            We collect current product documentation, pricing, plan limits, release notes, and credible
+            independent sources. When vendor-provided information is used, it is treated as a product claim rather than independent evidence.
           </p>
 
-          <h3>Step 2 — 30-Day Hands-On Testing</h3>
+          <h3>Step 2 — Practical Evaluation</h3>
           <p>
-            Every tool is tested for a minimum of 30 days across real use cases relevant to our readers:
-            content creation, SEO, automation, marketing, and developer workflows. We do not publish
-            first-impression reviews or reviews based on marketing materials.
+            When access is available, we evaluate the product in workflows relevant to our readers:
+            content creation, SEO, automation, marketing, and development. We identify hands-on observations
+            and do not imply long-term paid testing where it did not occur.
           </p>
 
           <h3>Step 3 — Six-Dimension Scoring</h3>
@@ -102,10 +100,10 @@ export default function EditorialPolicyPage() {
             with criteria for each score level (1–5).
           </p>
 
-          <h3>Step 4 — Peer Review</h3>
+          <h3>Step 4 — Editorial Check</h3>
           <p>
-            Before publication, reviews are read by at least one other team member who checks for factual
-            accuracy, completeness, and consistency with our scoring rubric.
+            Before publication, claims, links, prices, disclosures, and update dates are checked for
+            accuracy and consistency with our scoring rubric.
           </p>
 
           <h2>4. Content Update Policy</h2>
