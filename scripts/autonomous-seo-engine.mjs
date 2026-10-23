@@ -532,7 +532,6 @@ const HIGH_INTENT_TEMPLATES = {
           answer: "Yes, AdCreative.ai is one of the easiest tools to start with. You upload your logo and brand colors, connect your product catalog, and it generates hundreds of banners in seconds."
         }
       ],
-      ],
       lastUpdated: "2026-10-23"
     }
   },
