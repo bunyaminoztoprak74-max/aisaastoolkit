@@ -471,6 +471,68 @@ const HIGH_INTENT_TEMPLATES = {
   <li>Make sends a personalized confirmation email via Gmail (1 operation).</li>
 </ol>
 <p>Total consumed: <strong>4 operations</strong> for a complete end-to-end e-commerce fulfillment flow. On the $9/month Core plan (10,000 ops), you can execute this entire flow <strong>2,500 times per month</strong>.</p>`
+    },
+  },
+
+  // 5. Omneky vs AdCreative.ai
+  "omneky-vs-adcreative-ai": {
+    type: "comparison",
+    data: {
+      slug: "omneky-vs-adcreative-ai",
+      tool1Slug: "omneky",
+      tool2Slug: "adcreative-ai",
+      title: "Omneky vs AdCreative.ai (2026): Which AI Ad Platform Drives More Conversions?",
+      metaDescription: "Omneky vs AdCreative.ai: In-depth 2026 comparison of AI ad generation, creative scoring, multi-platform ad spend optimization, and enterprise ROI.",
+      headline: "Omneky vs AdCreative.ai: The 2026 Performance Ad Showdown",
+      intro: "Generating high-converting ad creatives at scale is the single biggest growth bottleneck for performance marketers and e-commerce brands in 2026. AdCreative.ai and Omneky represent two leading AI-driven approaches to creative automation. AdCreative.ai specializes in rapid template generation with predictive conversion scoring, while Omneky offers an enterprise-grade multimodal platform combining computer vision insights, personalized iteration, and automated ad account management across Meta, Google, and TikTok. We compare features, ROAS impact, and pricing.",
+      verdict: "Omneky wins for brands and agencies spending $10k+/month on ads who require deep visual analytics, brand guardrails, and personalized omnichannel creative iteration. AdCreative.ai is the better, lower-barrier choice for small e-commerce shops and solo marketers needing dozens of fast banner variations on a strict budget.",
+      tool1Winner: true,
+      winnerReason: "Deeper computer vision analytics, omnichannel campaign orchestration, and superior creative personalization",
+      features: [
+        { feature: "AI Generation Quality", tool1: "Bespoke brand-aligned creatives", tool2: "Template-based banner generation", winner: 1 },
+        { feature: "Creative Insights & Vision", tool1: "Computer vision analysis on video & image", tool2: "Predictive AI conversion score (0-100)", winner: 1 },
+        { feature: "Multi-Platform Export", tool1: "Meta, Google, TikTok, LinkedIn, CTV", tool2: "Meta, Google, LinkedIn, Pinterest", winner: 1 },
+        { feature: "Video Ad Generation", tool1: "Full generative video & audio iteration", tool2: "Short video scripts & renders", winner: 1 },
+        { feature: "Agency / Enterprise Fit", tool1: "Dedicated creative strategy team & API", tool2: "Self-serve team workspaces", winner: 1 },
+        { feature: "Starting Price", tool1: "Custom / Scale tiers", tool2: "$29/month", winner: 2 },
+        { feature: "Free Trial Available", tool1: "Bookable live demo", tool2: "7-day free trial (10 credits)", winner: 2 }
+      ],
+      pricingComparison: {
+        tool1Free: false,
+        tool2Free: true,
+        tool1Starting: "Custom consultation (Enterprise tier)",
+        tool2Starting: "$29/month (Starter plan)",
+        tool1BestPlan: "Growth / Enterprise — Full omnichannel creative automation",
+        tool2BestPlan: "Professional ($59/mo) — 100 download credits",
+        winner: 2
+      },
+      bestFor: {
+        tool1: [
+          "D2C brands spending $10k+ monthly on paid social",
+          "Performance marketing agencies managing multiple high-spend client accounts",
+          "Enterprise brands requiring strict brand compliance and custom model tuning"
+        ],
+        tool2: [
+          "Shopify and WooCommerce store owners testing creative variants",
+          "Solo media buyers wanting fast banners without Photoshop",
+          "Startups looking for a budget-friendly self-serve tool"
+        ]
+      },
+      faqs: [
+        {
+          question: "What is the main difference between Omneky and AdCreative.ai?",
+          answer: "AdCreative.ai is a self-serve platform that fills pre-designed banner templates with your product imagery and copy. Omneky is a full-funnel creative automation platform that uses computer vision to analyze what visual elements (colors, faces, angles) drive conversions and auto-generates iterative creatives."
+        },
+        {
+          question: "Can Omneky manage my ad accounts automatically?",
+          answer: "Yes, Omneky integrates directly with Meta Ads Manager, Google Ads, and TikTok Ads to launch, pause, and optimize creative variants based on live performance data."
+        },
+        {
+          question: "Is AdCreative.ai good for beginners?",
+          answer: "Yes, AdCreative.ai is one of the easiest tools to start with. You upload your logo and brand colors, connect your product catalog, and it generates hundreds of banners in seconds."
+        }
+      ],
+      lastUpdated: "2026-10-23"
     }
   }
 };
