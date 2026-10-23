@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "lastUpdated": "2026-10-23",
+  "partners": [
+    {
+      "slug": "make-com",
+      "name": "Make.com",
+      "network": "PartnerStack",
+      "affiliateUrl": "https://www.make.com/en/register?pc=aisaastoolkit",
+      "commissionRate": "20% - 35% recurring",
+      "category": "ai-automation",
+      "priority": "P0",
+      "cookieDays": 90,
+      "bestIntentKeywords": [
+        "make.com pricing 2026",
+        "make vs zapier",
+        "make vs n8n",
+        "best make.com templates",
+        "make.com alternatives"
+      ]
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "network": "PartnerStack / Direct",
+      "affiliateUrl": "https://try.elevenlabs.io/2n2qt91ne8ak",
+      "commissionRate": "22% recurring (12 months)",
+      "category": "ai-voice",
+      "priority": "P0",
+      "cookieDays": 60,
+      "bestIntentKeywords": [
+        "elevenlabs pricing 2026",
+        "elevenlabs vs playht",
+        "elevenlabs vs speechify",
+        "best ai voice generator",
+        "elevenlabs coupon discount"
+      ]
+    },
+    {
+      "slug": "hostinger",
+      "name": "Hostinger",
+      "network": "CJ Affiliate (Advertiser ID: 5173193, Link: 17112430)",
+      "affiliateUrl": "https://www.anrdoezrs.net/click-101761541-17112430",
+      "commissionRate": "Up to $150 / sale (or 20-60%)",
+      "category": "developer-tools",
+      "priority": "P0",
+      "cookieDays": 30,
+      "bestIntentKeywords": [
+        "hostinger vs bluehost 2026",
+        "hostinger vs siteground",
+        "hostinger coupon code 2026",
+        "best ai website builder hosting"
+      ]
+    },
+    {
+      "slug": "omneky",
+      "name": "Omneky",
+      "network": "CJ Affiliate",
+      "affiliateUrl": "https://www.anrdoezrs.net/click-101761541-17290970",
+      "commissionRate": "15-25% per conversion",
+      "category": "ai-marketing",
+      "priority": "P1",
+      "cookieDays": 45,
+      "bestIntentKeywords": [
+        "omneky vs adcreative ai",
+        "omneky review 2026",
+        "ai ad generation tools"
+      ]
+    },
+    {
+      "slug": "n8n",
+      "name": "n8n",
+      "network": "Direct / Partner",
+      "affiliateUrl": "https://n8n.io?via=aisaastoolkit",
+      "commissionRate": "15-20% recurring",
+      "category": "ai-automation",
+      "priority": "P1",
+      "cookieDays": 60,
+      "bestIntentKeywords": [
+        "n8n vs zapier",
+        "n8n vs make",
+        "self hosted n8n vs cloud"
+      ]
+    },
+    {
+      "slug": "1password",
+      "name": "1Password",
+      "network": "CJ Affiliate (ID: 5140517)",
+      "affiliateUrl": "https://www.anrdoezrs.net/click-101761541-17036393",
+      "commissionRate": "25% per sale",
+      "category": "saas-security",
+      "priority": "P1",
+      "cookieDays": 45,
+      "bestIntentKeywords": [
+        "1password review 2026",
+        "1password vs bitwarden",
+        "1password for teams pricing"
+      ]
+    },
+    {
+      "slug": "nordlayer",
+      "name": "NordLayer",
+      "network": "CJ Affiliate (ID: 5600250)",
+      "affiliateUrl": "https://www.anrdoezrs.net/click-101761541-15041895",
+      "commissionRate": "20% per sale",
+      "category": "saas-security",
+      "priority": "P1",
+      "cookieDays": 30,
+      "bestIntentKeywords": [
+        "nordlayer review 2026",
+        "nordlayer vs nordvpn teams",
+        "best business vpn ztna"
+      ]
+    },
+    {
+      "slug": "namecheap",
+      "name": "Namecheap",
+      "network": "CJ Affiliate (ID: 4055157)",
+      "affiliateUrl": "https://www.anrdoezrs.net/click-101761541-11426545",
+      "commissionRate": "20% - 100% per sale",
+      "category": "developer-tools",
+      "priority": "P1",
+      "cookieDays": 30,
+      "bestIntentKeywords": [
+        "namecheap coupon code 2026",
+        "namecheap vs godaddy",
+        "cheap domain registration"
+      ]
+    }
+  ],
+  "contentQueue": [
+    {
+      "slug": "elevenlabs-vs-playht",
+      "type": "comparison",
+      "tool1Slug": "elevenlabs",
+      "tool2Slug": "playht",
+      "title": "ElevenLabs vs Play.ht (2026): Which AI Voice Generator Is Better?",
+      "targetKeyword": "elevenlabs vs playht",
+      "priority": "P0",
+      "status": "published",
+      "publishedAt": "2026-10-23T08:26:47.522Z"
+    },
+    {
+      "slug": "hostinger-vs-bluehost",
+      "type": "comparison",
+      "tool1Slug": "hostinger",
+      "tool2Slug": "bluehost",
+      "title": "Hostinger vs Bluehost (2026): Which Host Gives Better Value & Speed?",
+      "targetKeyword": "hostinger vs bluehost",
+      "priority": "P0",
+      "status": "published",
+      "publishedAt": "2026-10-23T08:26:59.878Z"
+    },
+    {
+      "slug": "elevenlabs-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "elevenlabs",
+      "title": "ElevenLabs Pricing Guide 2026: Plans, Hidden Costs & How to Save 50%",
+      "targetKeyword": "elevenlabs pricing 2026",
+      "priority": "P0",
+      "status": "published",
+      "publishedAt": "2026-10-23T08:27:10.035Z"
+    },
+    {
+      "slug": "make-com-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "make-com",
+      "title": "Make.com Pricing 2026: Cost Per Operation, Plan Comparison & ROI",
+      "targetKeyword": "make.com pricing 2026",
+      "priority": "P0",
+      "status": "published",
+      "publishedAt": "2026-10-23T08:27:23.394Z"
+    },
+    {
+      "slug": "omneky-vs-adcreative-ai",
+      "type": "comparison",
+      "tool1Slug": "omneky",
+      "tool2Slug": "adcreative-ai",
+      "title": "Omneky vs AdCreative.ai (2026): Which AI Ad Platform Drives More Conversions?",
+      "targetKeyword": "omneky vs adcreative ai",
+      "priority": "P1",
+      "status": "queued"
+    }
+  ]
+}

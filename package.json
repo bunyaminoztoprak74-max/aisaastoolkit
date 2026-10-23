@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "indexnow:submit": "node scripts/submit-indexnow.mjs"
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
+    "seo:status": "node scripts/autonomous-seo-engine.mjs --status",
+    "seo:auto": "node scripts/autonomous-seo-engine.mjs --auto",
+    "seo:engine": "node scripts/autonomous-seo-engine.mjs",
+    "seo:revenue": "node scripts/track-revenue.mjs",
+    "cj:search": "node scripts/cj-link-fetcher.mjs"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
