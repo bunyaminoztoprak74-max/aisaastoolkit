@@ -212,6 +212,254 @@
       "targetKeyword": "nordlayer review 2026",
       "priority": "P1",
       "status": "queued"
+    },
+    {
+      "slug": "hostinger-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "hostinger",
+      "title": "Hostinger Pricing Guide 2026: Shared, Cloud, VPS & True Renewal Costs",
+      "targetKeyword": "hostinger pricing 2026",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "make-vs-zapier",
+      "type": "comparison",
+      "tool1Slug": "make-com",
+      "tool2Slug": "zapier",
+      "title": "Make.com vs Zapier (2026): Which Automation Tool Is 5x Cheaper?",
+      "targetKeyword": "make vs zapier",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-vs-siteground",
+      "type": "comparison",
+      "tool1Slug": "hostinger",
+      "tool2Slug": "siteground",
+      "title": "Hostinger vs SiteGround (2026): Speed, Uptime & Value Compared",
+      "targetKeyword": "hostinger vs siteground",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-vs-speechify",
+      "type": "comparison",
+      "tool1Slug": "elevenlabs",
+      "tool2Slug": "speechify",
+      "title": "ElevenLabs vs Speechify (2026): Best AI Voice Reader & Cloner",
+      "targetKeyword": "elevenlabs vs speechify",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "best-make-com-alternatives-2026",
+      "type": "blog",
+      "targetTool": "make-com",
+      "title": "7 Best Make.com Alternatives in 2026 for AI & Workflow Automation",
+      "targetKeyword": "make.com alternatives",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-ai-website-builder-review-2026",
+      "type": "blog",
+      "targetTool": "hostinger",
+      "title": "Hostinger AI Website Builder Review 2026: Create a Site in 5 Minutes?",
+      "targetKeyword": "best ai website builder hosting",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-vs-murf-ai",
+      "type": "comparison",
+      "tool1Slug": "elevenlabs",
+      "tool2Slug": "murf-ai",
+      "title": "ElevenLabs vs Murf AI (2026): Realistic Voice Clone vs Studio Narration",
+      "targetKeyword": "elevenlabs vs murf ai",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "make-vs-n8n",
+      "type": "comparison",
+      "tool1Slug": "make-com",
+      "tool2Slug": "n8n",
+      "title": "Make.com vs n8n (2026): Visual Cloud Automation vs Self-Hosted Power",
+      "targetKeyword": "make vs n8n",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "1password",
+      "title": "1Password Pricing Guide 2026: Individual, Family vs Teams Cost Breakdown",
+      "targetKeyword": "1password pricing 2026",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-vs-godaddy",
+      "type": "comparison",
+      "tool1Slug": "hostinger",
+      "tool2Slug": "godaddy",
+      "title": "Hostinger vs GoDaddy (2026): Which Host & Website Builder Wins?",
+      "targetKeyword": "hostinger vs godaddy",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "namecheap-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "namecheap",
+      "title": "Namecheap Pricing & Renewal Costs 2026: Domains, SSL & EasyWP Breakdown",
+      "targetKeyword": "namecheap pricing 2026",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-vs-dashlane",
+      "type": "comparison",
+      "tool1Slug": "1password",
+      "tool2Slug": "dashlane",
+      "title": "1Password vs Dashlane (2026): Which Password Manager Is More Secure?",
+      "targetKeyword": "1password vs dashlane",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-vs-nordvpn-teams",
+      "type": "comparison",
+      "tool1Slug": "nordlayer",
+      "tool2Slug": "nordvpn-teams",
+      "title": "NordLayer vs NordVPN Teams (2026): Which Business VPN Fits Your Team?",
+      "targetKeyword": "nordlayer vs nordvpn teams",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "omneky-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "omneky",
+      "title": "Omneky Pricing Guide 2026: Enterprise AI Creative Automation ROI",
+      "targetKeyword": "omneky pricing 2026",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "n8n-vs-zapier",
+      "type": "comparison",
+      "tool1Slug": "n8n",
+      "tool2Slug": "zapier",
+      "title": "n8n vs Zapier (2026): Open-Source Automation vs No-Code Giant",
+      "targetKeyword": "n8n vs zapier",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-vs-wix",
+      "type": "comparison",
+      "tool1Slug": "hostinger",
+      "tool2Slug": "wix",
+      "title": "Hostinger vs Wix (2026): Best AI Website Builder for Beginners",
+      "targetKeyword": "hostinger vs wix",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-reader-app-review-2026",
+      "type": "blog",
+      "targetTool": "elevenlabs",
+      "title": "ElevenLabs Reader App Review 2026: Free High-Fidelity Text-to-Speech",
+      "targetKeyword": "elevenlabs reader app review",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "nordlayer",
+      "title": "NordLayer Pricing 2026: Core vs Premium Zero Trust Network Access Plans",
+      "targetKeyword": "nordlayer pricing 2026",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "namecheap-vs-cloudflare-registrar",
+      "type": "comparison",
+      "tool1Slug": "namecheap",
+      "tool2Slug": "cloudflare",
+      "title": "Namecheap vs Cloudflare Registrar (2026): Domain Pricing & Security Compared",
+      "targetKeyword": "namecheap vs cloudflare",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "best-elevenlabs-alternatives-2026",
+      "type": "blog",
+      "targetTool": "elevenlabs",
+      "title": "Top 7 ElevenLabs Alternatives for AI Voices & Audio in 2026",
+      "targetKeyword": "elevenlabs alternatives",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-vs-keeper",
+      "type": "comparison",
+      "tool1Slug": "1password",
+      "tool2Slug": "keeper",
+      "title": "1Password vs Keeper (2026): Enterprise Vault Security & Passkey Support",
+      "targetKeyword": "1password vs keeper",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "n8n-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "n8n",
+      "title": "n8n Pricing 2026: Free Community Edition vs Cloud Workflows Compared",
+      "targetKeyword": "n8n pricing 2026",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "omneky-vs-pencil-ai",
+      "type": "comparison",
+      "tool1Slug": "omneky",
+      "tool2Slug": "pencil-ai",
+      "title": "Omneky vs Pencil AI (2026): Best AI Ad Creative & Video Platform",
+      "targetKeyword": "omneky vs pencil",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-vs-perimeter-81",
+      "type": "comparison",
+      "tool1Slug": "nordlayer",
+      "tool2Slug": "perimeter-81",
+      "title": "NordLayer vs Perimeter 81 (2026): Enterprise Zero Trust & SASE Showdown",
+      "targetKeyword": "nordlayer vs perimeter 81",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "namecheap-easywp-review-2026",
+      "type": "blog",
+      "targetTool": "namecheap",
+      "title": "Namecheap EasyWP Review 2026: Fastest Managed WordPress Hosting Under $5?",
+      "targetKeyword": "namecheap easywp review",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "best-ai-automation-tools-2026",
+      "type": "blog",
+      "targetTool": "make-com",
+      "title": "Top 10 AI Automation Tools in 2026: Make, n8n, Zapier & Beyond",
+      "targetKeyword": "best ai automation tools 2026",
+      "priority": "P0",
+      "status": "queued"
     }
   ]
 }
