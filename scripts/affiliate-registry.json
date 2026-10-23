@@ -182,6 +182,35 @@
       "priority": "P1",
       "status": "published",
       "publishedAt": "2026-10-23T09:28:23.977Z"
+    },
+    {
+      "slug": "namecheap-vs-godaddy",
+      "type": "comparison",
+      "tool1Slug": "namecheap",
+      "tool2Slug": "godaddy",
+      "title": "Namecheap vs GoDaddy (2026): Which Domain Registrar & Host Is Better?",
+      "targetKeyword": "namecheap vs godaddy",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-vs-bitwarden",
+      "type": "comparison",
+      "tool1Slug": "1password",
+      "tool2Slug": "bitwarden",
+      "title": "1Password vs Bitwarden (2026): Best Password Manager Compared",
+      "targetKeyword": "1password vs bitwarden",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-review-2026",
+      "type": "blog",
+      "targetTool": "nordlayer",
+      "title": "NordLayer Review 2026: Business VPN, Zero Trust & Team Security Tested",
+      "targetKeyword": "nordlayer review 2026",
+      "priority": "P1",
+      "status": "queued"
     }
   ]
 }
