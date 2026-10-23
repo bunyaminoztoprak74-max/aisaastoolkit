@@ -3543,6 +3543,131 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "hostinger"
     ]
   },
+
+  {
+    name: "GoDaddy",
+    slug: "godaddy",
+    tagline: "Massive domain registrar and web hosting platform",
+    description: "GoDaddy is one of the world's largest domain name registrars and website building platforms, providing domains, hosting, and marketing tools.",
+    longDescription: "GoDaddy is a global domain registration and hosting giant powering tens of millions of domains. While it provides comprehensive phone support and widespread brand recognition, its high renewal fees and frequent upsells make it less popular among seasoned developers.",
+    logo: "GD",
+    website: "https://godaddy.com",
+    affiliateUrl: "https://godaddy.com",
+    category: "developer-tools",
+    categories: [
+      "developer-tools"
+    ],
+    rating: 3.8,
+    reviewCount: 4200,
+    pricing: {
+      starting: "$11.99/year",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Domain Registration",
+          price: "$11.99",
+          period: "/year",
+          features: [
+            "1 domain",
+            "Basic DNS",
+            "Standard security"
+          ]
+        },
+        {
+          name: "Web Hosting Economy",
+          price: "$5.99",
+          period: "/month",
+          features: [
+            "1 website",
+            "25 GB storage",
+            "Standard performance"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "24/7 phone customer support in multiple languages",
+      "Enormous domain aftermarket and auctions platform",
+      "Extensive brand recognition"
+    ],
+    cons: [
+      "Significantly higher renewal fees than competitors",
+      "Aggressive checkout upsell popups",
+      "WHOIS privacy costs extra on basic setups"
+    ],
+    bestFor: [
+      "Users needing phone support",
+      "Domain auction flippers"
+    ],
+    alternatives: [
+      "namecheap",
+      "hostinger"
+    ]
+  },
+
+  {
+    name: "Namecheap",
+    slug: "namecheap",
+    tagline: "Affordable domain registration with free lifetime WHOIS privacy",
+    description: "Namecheap offers budget-friendly domain registration, shared hosting, and security certificates with free lifetime privacy protection.",
+    longDescription: "Namecheap is an ICANN-accredited domain registrar and technology company founded in 2000. It manages over 17 million domains worldwide and is renowned for free lifetime domain privacy and transparent renewal rates.",
+    logo: "NC",
+    logoColor: "bg-orange-600",
+    website: "https://namecheap.com",
+    affiliateUrl: "https://www.anrdoezrs.net/click-101761541-11426545",
+    category: "developer-tools",
+    categories: [
+      "developer-tools"
+    ],
+    rating: 4.6,
+    reviewCount: 2850,
+    pricing: {
+      starting: "$6.48/year",
+      hasFree: false,
+      tiers: [
+        {
+          name: ".COM Domain",
+          price: "$6.48",
+          period: "/first year",
+          features: [
+            "Free lifetime WHOIS privacy",
+            "DNSSEC security",
+            "24/7 chat support"
+          ]
+        },
+        {
+          name: "Stellar Hosting",
+          price: "$1.98",
+          period: "/month",
+          features: [
+            "3 websites",
+            "20 GB SSD",
+            "Free domain name",
+            "Free SSL certificates"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Free lifetime WHOIS privacy on all eligible domains",
+      "Transparent renewal pricing without hidden spikes",
+      "Clean, ad-free checkout experience",
+      "Generous hosting bundle packages"
+    ],
+    cons: [
+      "No phone support (live chat and tickets only)",
+      "Shared hosting performance lags behind dedicated LiteSpeed hosts"
+    ],
+    bestFor: [
+      "Affiliate bloggers and domain investors",
+      "Developers wanting hassle-free domains",
+      "Small businesses on a budget"
+    ],
+    alternatives: [
+      "godaddy",
+      "hostinger"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
