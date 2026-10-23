@@ -3668,6 +3668,80 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "hostinger"
     ]
   },
+
+  {
+    name: "Bitwarden",
+    slug: "bitwarden",
+    tagline: "Open-source password manager with generous free tier and self-hosting",
+    description: "Bitwarden provides audited zero-knowledge encryption, cross-platform password syncing, and complete self-hosting options.",
+    longDescription: "Bitwarden is the leading open-source password manager trusted by millions worldwide. With third-party security audits, transparent open-source codebases, and a fully featured free tier covering unlimited devices, Bitwarden is the premier choice for budget-conscious users and privacy advocates.",
+    logo: "BW",
+    logoColor: "bg-blue-800",
+    website: "https://bitwarden.com",
+    affiliateUrl: "https://bitwarden.com",
+    category: "saas-security",
+    categories: [
+      "saas-security",
+      "developer-tools"
+    ],
+    rating: 4.7,
+    reviewCount: 4500,
+    pricing: {
+      starting: "$0 (Free tier)",
+      hasFree: true,
+      tiers: [
+        {
+          name: "Free",
+          price: "$0",
+          period: "/forever",
+          features: [
+            "Unlimited passwords",
+            "Unlimited devices",
+            "Secure password generator"
+          ]
+        },
+        {
+          name: "Premium",
+          price: "$10.00",
+          period: "/year",
+          features: [
+            "1 GB encrypted storage",
+            "Bitwarden Authenticator (TOTP)",
+            "Emergency access"
+          ]
+        },
+        {
+          name: "Families",
+          price: "$40.00",
+          period: "/year",
+          features: [
+            "Up to 6 users",
+            "Unlimited collections",
+            "Priority customer support"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Completely free tier includes unlimited passwords on unlimited devices",
+      "100% open-source with regular independent third-party security audits",
+      "Self-hosting capabilities on your own home server or private cloud",
+      "Premium tier is extremely affordable ($10/year)"
+    ],
+    cons: [
+      "Interface and autofill feel slightly less polished than 1Password",
+      "No Secret Key mechanism (relies solely on master password + 2FA)"
+    ],
+    bestFor: [
+      "Privacy enthusiasts and developers who value open-source code",
+      "Budget-conscious individuals wanting a robust free manager",
+      "Users who want to self-host their password vault"
+    ],
+    alternatives: [
+      "1password",
+      "dashlane"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
