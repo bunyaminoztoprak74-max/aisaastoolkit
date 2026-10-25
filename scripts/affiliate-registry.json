@@ -233,7 +233,8 @@
       "title": "Make.com vs Zapier (2026): Which Automation Tool Is 5x Cheaper?",
       "targetKeyword": "make vs zapier",
       "priority": "P0",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-10-25T11:17:00.875Z"
     },
     {
       "slug": "hostinger-vs-siteground",
@@ -243,7 +244,8 @@
       "title": "Hostinger vs SiteGround (2026): Speed, Uptime & Value Compared",
       "targetKeyword": "hostinger vs siteground",
       "priority": "P0",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-10-25T11:17:06.331Z"
     },
     {
       "slug": "elevenlabs-vs-speechify",

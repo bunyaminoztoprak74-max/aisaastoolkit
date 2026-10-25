@@ -1333,77 +1333,91 @@ async function main() {
     return;
   }
 
-  console.log(`\n==================================================`);
-  console.log(`🎯 Processing Target: [${candidate.type.toUpperCase()}] ${candidate.title}`);
-  console.log(`   Slug: ${candidate.slug}`);
-  console.log(`==================================================\n`);
+  while (candidate) {
+    console.log(`\n==================================================`);
+    console.log(`🎯 Processing Target: [${candidate.type.toUpperCase()}] ${candidate.title}`);
+    console.log(`   Slug: ${candidate.slug}`);
+    console.log(`==================================================\n`);
 
-  let template = HIGH_INTENT_TEMPLATES[candidate.slug];
-  if (!template) {
-    console.log(`  ⚡ Synthesizing dynamic high-intent content for "${candidate.slug}"...`);
-    template = synthesizeContent(candidate, reg);
-  }
-
-  if (flags.dryRun) {
-    console.log("DRY RUN MODE: Changes not saved to disk.");
-    console.log(JSON.stringify(template.data, null, 2).slice(0, 500) + "...\n[Truncated]");
-    return;
-  }
-
-  // Backup files in memory
-  const backupTools = fs.readFileSync(TOOLS_PATH, "utf8");
-  const backupComp = fs.readFileSync(COMPARISONS_PATH, "utf8");
-  const backupBlog = fs.readFileSync(BLOG_PATH, "utf8");
-
-  try {
-    // 1. Ensure any missing rival tools exist in tools.ts
-    if (template.missingTools) {
-      for (const missing of template.missingTools) {
-        ensureToolExists(missing);
-      }
+    let template = HIGH_INTENT_TEMPLATES[candidate.slug];
+    if (!template) {
+      console.log(`  ⚡ Synthesizing dynamic high-intent content for "${candidate.slug}"...`);
+      template = synthesizeContent(candidate, reg);
     }
 
-    // 2. Inject target content
-    let injected = false;
-    if (template.type === "comparison") {
-      injected = injectComparison(template.data);
-    } else if (template.type === "blog") {
-      injected = injectBlogPost(template.data);
-    }
-
-    if (!injected) {
-      console.log("No new content needed to be injected.");
+    if (flags.dryRun) {
+      console.log("DRY RUN MODE: Changes not saved to disk.");
+      console.log(JSON.stringify(template.data, null, 2).slice(0, 500) + "...\n[Truncated]");
       return;
     }
 
-    // 3. Verify TypeScript
-    const valid = runTypeCheck();
-    if (!valid) {
-      console.log("⚠️ Rolling back files to clean state...");
+    // Backup files in memory
+    const backupTools = fs.readFileSync(TOOLS_PATH, "utf8");
+    const backupComp = fs.readFileSync(COMPARISONS_PATH, "utf8");
+    const backupBlog = fs.readFileSync(BLOG_PATH, "utf8");
+
+    try {
+      // 1. Ensure any missing rival tools exist in tools.ts
+      if (template.missingTools) {
+        for (const missing of template.missingTools) {
+          ensureToolExists(missing);
+        }
+      }
+
+      // 2. Inject target content
+      let injected = false;
+      if (template.type === "comparison") {
+        injected = injectComparison(template.data);
+      } else if (template.type === "blog") {
+        injected = injectBlogPost(template.data);
+      }
+
+      if (!injected) {
+        console.log(`  ✓ Content for [${candidate.slug}] already exists in source files. Marking as published in registry.`);
+        candidate.status = "published";
+        candidate.publishedAt = candidate.publishedAt || new Date().toISOString();
+        saveRegistry(reg);
+
+        if (flags.auto) {
+          candidate = reg.contentQueue.find((q) => q.status === "queued");
+          if (candidate) {
+            console.log(`  ⏩ Auto-advancing to next queued target: [${candidate.type.toUpperCase()}] ${candidate.slug}...`);
+            continue;
+          }
+        }
+        return;
+      }
+
+      // 3. Verify TypeScript
+      const valid = runTypeCheck();
+      if (!valid) {
+        console.log("⚠️ Rolling back files to clean state...");
+        fs.writeFileSync(TOOLS_PATH, backupTools, "utf8");
+        fs.writeFileSync(COMPARISONS_PATH, backupComp, "utf8");
+        fs.writeFileSync(BLOG_PATH, backupBlog, "utf8");
+        process.exit(1);
+      }
+
+      // 4. Update queue status
+      candidate.status = "published";
+      candidate.publishedAt = new Date().toISOString();
+      saveRegistry(reg);
+      console.log(`  ✓ Updated affiliate-registry.json status to 'published'.`);
+
+      // 5. Deploy if requested
+      if (flags.deploy) {
+        deployChanges(`feat(seo): autonomously publish ${candidate.slug}`);
+      } else {
+        console.log("\n💡 Content is live locally. To deploy to Vercel & submit to IndexNow, run with --deploy");
+      }
+      break;
+    } catch (error) {
+      console.error("Fatal error during generation:", error);
       fs.writeFileSync(TOOLS_PATH, backupTools, "utf8");
       fs.writeFileSync(COMPARISONS_PATH, backupComp, "utf8");
       fs.writeFileSync(BLOG_PATH, backupBlog, "utf8");
       process.exit(1);
     }
-
-    // 4. Update queue status
-    candidate.status = "published";
-    candidate.publishedAt = new Date().toISOString();
-    saveRegistry(reg);
-    console.log(`  ✓ Updated affiliate-registry.json status to 'published'.`);
-
-    // 5. Deploy if requested
-    if (flags.deploy) {
-      deployChanges(`feat(seo): autonomously publish ${candidate.slug}`);
-    } else {
-      console.log("\n💡 Content is live locally. To deploy to Vercel & submit to IndexNow, run with --deploy");
-    }
-  } catch (error) {
-    console.error("Fatal error during generation:", error);
-    fs.writeFileSync(TOOLS_PATH, backupTools, "utf8");
-    fs.writeFileSync(COMPARISONS_PATH, backupComp, "utf8");
-    fs.writeFileSync(BLOG_PATH, backupBlog, "utf8");
-    process.exit(1);
   }
 }
 
