@@ -286,7 +286,8 @@
       "title": "ElevenLabs vs Murf AI (2026): Realistic Voice Clone vs Studio Narration",
       "targetKeyword": "elevenlabs vs murf ai",
       "priority": "P0",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-10-26T06:00:34.306Z"
     },
     {
       "slug": "make-vs-n8n",
