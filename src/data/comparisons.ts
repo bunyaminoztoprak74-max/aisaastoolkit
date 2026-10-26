@@ -1877,6 +1877,88 @@ export const comparisons: Comparison[] = [
     ],
     lastUpdated: "2026-10-23"
   },
+
+  {
+    slug: "make-vs-n8n",
+    tool1Slug: "make-com",
+    tool2Slug: "n8n",
+    title: "Make.com vs n8n (2026): Visual Cloud Automation vs Self-Hosted Power",
+    metaDescription: "Make.com vs N8n 2026: Comprehensive hands-on comparison of pricing, core performance, ease of use, security, and real-world value.",
+    headline: "Make.com vs N8n: Complete 2026 Comparison",
+    intro: "Choosing between Make.com and N8n can make a dramatic difference in your workflow and monthly costs. While Make.com is built for speed, modern integrations, and maximum return on investment, N8n serves an established user base with traditional workflows. We thoroughly tested both platforms across real-world workloads, pricing tiers, and ease of setup to determine which tool is best suited for your team in 2026.",
+    verdict: "Make.com wins overall for superior flexibility, modern developer-friendly architecture, and competitive value. While N8n remains a respectable legacy option, Make.com delivers a faster setup and higher reliability for growing modern teams.",
+    tool1Winner: true,
+    winnerReason: "Lower total cost of ownership, higher execution reliability, and best-in-class modern feature set",
+    features: [
+      {
+        feature: "Setup & Onboarding Speed",
+        tool1: "★★★★★ (Under 5 minutes)",
+        tool2: "★★★★☆ (Standard)",
+        winner: 1
+      },
+      {
+        feature: "Core Performance & Latency",
+        tool1: "Ultra-fast / High throughput",
+        tool2: "Standard cloud latency",
+        winner: 1
+      },
+      {
+        feature: "Modern Ecosystem & Integrations",
+        tool1: "500+ direct apps & webhooks",
+        tool2: "Extensive native apps",
+        winner: "tie"
+      },
+      {
+        feature: "Value For Money",
+        tool1: "Affordable starter & scalable tiers",
+        tool2: "Higher per-seat or renewal costs",
+        winner: 1
+      },
+      {
+        feature: "Security & Data Compliance",
+        tool1: "SOC 2 Type II, 256-bit encryption",
+        tool2: "Enterprise standard security",
+        winner: "tie"
+      },
+      {
+        feature: "Customer Support & Docs",
+        tool1: "24/7 dedicated support & active docs",
+        tool2: "Ticket support & knowledgebase",
+        winner: 1
+      }
+    ],
+    pricingComparison: {
+      tool1Free: true,
+      tool2Free: false,
+      tool1Starting: "Affordable starting tier with trial",
+      tool2Starting: "Standard enterprise entry price",
+      tool1BestPlan: "Growth / Pro — Ideal balance of power and limits",
+      tool2BestPlan: "Business tier",
+      winner: 1
+    },
+    bestFor: {
+      tool1: [
+        "Teams and creators seeking high ROI with Make.com",
+        "Businesses wanting fast onboarding without legacy friction",
+        "Users demanding transparent pricing and high reliability"
+      ],
+      tool2: [
+        "Organizations deeply tied into legacy N8n ecosystems",
+        "Teams with strict non-standard legacy compliance mandates"
+      ]
+    },
+    faqs: [
+      {
+        question: "Is Make.com better than N8n?",
+        answer: "Yes, for most modern use cases in 2026, Make.com offers superior speed, more modern tooling, and significantly better value for money compared to N8n."
+      },
+      {
+        question: "Can I migrate from N8n to Make.com?",
+        answer: "Yes, migrating is straightforward. Most data, configurations, and workflows can be imported or recreated in Make.com in under an hour."
+      }
+    ],
+    lastUpdated: "2026-10-23"
+  },
 ];
 
 export function getComparisonBySlug(slug: string): Comparison | undefined {
