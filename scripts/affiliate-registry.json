@@ -339,7 +339,8 @@
       "title": "1Password vs Dashlane (2026): Which Password Manager Is More Secure?",
       "targetKeyword": "1password vs dashlane",
       "priority": "P1",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-10-27T12:01:22.259Z"
     },
     {
       "slug": "nordlayer-vs-nordvpn-teams",
