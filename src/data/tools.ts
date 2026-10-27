@@ -3883,6 +3883,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "1password"
     ]
   },
+
+  {
+    name: "Nordvpn Teams",
+    slug: "nordvpn-teams",
+    tagline: "Established legacy platform for saas security",
+    description: "Nordvpn Teams is an established software platform offering standard tools for organizations.",
+    longDescription: "Nordvpn Teams provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "NO",
+    logoColor: "bg-gray-600",
+    website: "https://nordvpn-teams.com",
+    affiliateUrl: "https://nordvpn-teams.com",
+    category: "saas-security",
+    categories: [
+      "saas-security"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "nordlayer"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
