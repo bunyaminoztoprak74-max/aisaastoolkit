@@ -3930,6 +3930,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "nordlayer"
     ]
   },
+
+  {
+    name: "Wix",
+    slug: "wix",
+    tagline: "Established legacy platform for developer tools",
+    description: "Wix is an established software platform offering standard tools for organizations.",
+    longDescription: "Wix provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "WI",
+    logoColor: "bg-gray-600",
+    website: "https://wix.com",
+    affiliateUrl: "https://wix.com",
+    category: "developer-tools",
+    categories: [
+      "developer-tools"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "hostinger"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
