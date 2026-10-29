@@ -483,6 +483,281 @@
       "targetKeyword": "best ai automation tools 2026",
       "priority": "P0",
       "status": "queued"
+    },
+    {
+      "slug": "hostinger-vs-dreamhost",
+      "type": "comparison",
+      "tool1Slug": "hostinger",
+      "tool2Slug": "dreamhost",
+      "title": "Hostinger vs DreamHost (2026): Speed, Pricing & Features Compared",
+      "targetKeyword": "hostinger vs dreamhost",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-vs-a2-hosting",
+      "type": "comparison",
+      "tool1Slug": "hostinger",
+      "tool2Slug": "a2-hosting",
+      "title": "Hostinger vs A2 Hosting (2026): LiteSpeed vs Turbo Server Performance",
+      "targetKeyword": "hostinger vs a2 hosting",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-cloud-hosting-review-2026",
+      "type": "blog",
+      "targetTool": "hostinger",
+      "title": "Hostinger Cloud Hosting Review 2026: Dedicated Power at Shared Hosting Prices?",
+      "targetKeyword": "hostinger cloud hosting review",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-vps-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "hostinger",
+      "title": "Hostinger VPS Pricing Guide 2026: KVM Plans, Speed & Resource Limits",
+      "targetKeyword": "hostinger vps pricing",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "hostinger-coupon-code-guide-2026",
+      "type": "blog",
+      "targetTool": "hostinger",
+      "title": "Hostinger Coupon Code & Promo Guide 2026: Save Up to 78% + Free Domain",
+      "targetKeyword": "hostinger coupon code 2026",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "make-com-vs-power-automate",
+      "type": "comparison",
+      "tool1Slug": "make-com",
+      "tool2Slug": "power-automate",
+      "title": "Make.com vs Microsoft Power Automate (2026): Cloud AI vs Enterprise Automation",
+      "targetKeyword": "make vs power automate",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "make-com-vs-tray-io",
+      "type": "comparison",
+      "tool1Slug": "make-com",
+      "tool2Slug": "tray-io",
+      "title": "Make.com vs Tray.io (2026): Low-Code Visual Integration Compared",
+      "targetKeyword": "make vs tray io",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "make-com-for-ecommerce-guide-2026",
+      "type": "blog",
+      "targetTool": "make-com",
+      "title": "Make.com for E-Commerce: How to Automate Shopify, WooCommerce & Orders in 2026",
+      "targetKeyword": "make.com for ecommerce",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "make-com-webhook-automation-guide-2026",
+      "type": "blog",
+      "targetTool": "make-com",
+      "title": "Make.com Webhook Automation Guide 2026: Connect Any App in Minutes",
+      "targetKeyword": "make.com webhook automation",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-vs-resemble-ai",
+      "type": "comparison",
+      "tool1Slug": "elevenlabs",
+      "tool2Slug": "resemble-ai",
+      "title": "ElevenLabs vs Resemble AI (2026): High-Fidelity Voice Cloning Showdown",
+      "targetKeyword": "elevenlabs vs resemble ai",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-vs-lovo-ai",
+      "type": "comparison",
+      "tool1Slug": "elevenlabs",
+      "tool2Slug": "lovo-ai",
+      "title": "ElevenLabs vs Lovo.ai Genny (2026): Best AI Voice Generator for Video",
+      "targetKeyword": "elevenlabs vs lovo ai",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-dubbing-studio-review-2026",
+      "type": "blog",
+      "targetTool": "elevenlabs",
+      "title": "ElevenLabs Dubbing Studio Review 2026: Translate Video into 29 Languages with Voice Cloned",
+      "targetKeyword": "elevenlabs dubbing studio review",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "elevenlabs-api-pricing-guide-2026",
+      "type": "blog",
+      "targetTool": "elevenlabs",
+      "title": "ElevenLabs API Pricing & Cost Per Character: Developer Guide 2026",
+      "targetKeyword": "elevenlabs api pricing",
+      "priority": "P0",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-vs-nordpass",
+      "type": "comparison",
+      "tool1Slug": "1password",
+      "tool2Slug": "nordpass",
+      "title": "1Password vs NordPass (2026): Secret Key vs XChaCha20 Encryption Compared",
+      "targetKeyword": "1password vs nordpass",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-for-business-review-2026",
+      "type": "blog",
+      "targetTool": "1password",
+      "title": "1Password for Business Review 2026: SOC 2, Vault Audits & Team Controls",
+      "targetKeyword": "1password for business review",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-passkey-guide-2026",
+      "type": "blog",
+      "targetTool": "1password",
+      "title": "1Password Passkey Guide 2026: How to Ditch Passwords Completely",
+      "targetKeyword": "1password passkey guide",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "1password-vs-lastpass",
+      "type": "comparison",
+      "tool1Slug": "1password",
+      "tool2Slug": "lastpass",
+      "title": "1Password vs LastPass (2026): Why Users Are Switching in Droves",
+      "targetKeyword": "1password vs lastpass",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-vs-twingate",
+      "type": "comparison",
+      "tool1Slug": "nordlayer",
+      "tool2Slug": "twingate",
+      "title": "NordLayer vs Twingate (2026): Zero Trust Network Access (ZTNA) Compared",
+      "targetKeyword": "nordlayer vs twingate",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-vs-tailscale",
+      "type": "comparison",
+      "tool1Slug": "nordlayer",
+      "tool2Slug": "tailscale",
+      "title": "NordLayer vs Tailscale (2026): Managed Business VPN vs WireGuard Mesh",
+      "targetKeyword": "nordlayer vs tailscale",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-dedicated-ip-guide-2026",
+      "type": "blog",
+      "targetTool": "nordlayer",
+      "title": "NordLayer Dedicated IP Guide 2026: Why Remote Teams Need Fixed Cloud Gateways",
+      "targetKeyword": "nordlayer dedicated ip guide",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "nordlayer-soc2-compliance-guide-2026",
+      "type": "blog",
+      "targetTool": "nordlayer",
+      "title": "How to Achieve SOC 2 Network Compliance with NordLayer in 2026",
+      "targetKeyword": "nordlayer soc 2 compliance",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "namecheap-vs-porkbun",
+      "type": "comparison",
+      "tool1Slug": "namecheap",
+      "tool2Slug": "porkbun",
+      "title": "Namecheap vs Porkbun (2026): Cheapest Domain Registrar Compared",
+      "targetKeyword": "namecheap vs porkbun",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "namecheap-vs-hostinger",
+      "type": "comparison",
+      "tool1Slug": "namecheap",
+      "tool2Slug": "hostinger",
+      "title": "Namecheap vs Hostinger (2026): Domain Registration vs Hosting Performance",
+      "targetKeyword": "namecheap vs hostinger",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "namecheap-ssl-certificates-guide-2026",
+      "type": "blog",
+      "targetTool": "namecheap",
+      "title": "Namecheap SSL Certificates Guide 2026: PositiveSSL, EV & Wildcard Pricing",
+      "targetKeyword": "namecheap ssl certificates",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "best-domain-registrars-2026",
+      "type": "blog",
+      "targetTool": "namecheap",
+      "title": "Top 5 Domain Registrars in 2026: Cheapest Renewals, Free WHOIS & Security",
+      "targetKeyword": "best domain registrars 2026",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "omneky-vs-creative-os",
+      "type": "comparison",
+      "tool1Slug": "omneky",
+      "tool2Slug": "creative-os",
+      "title": "Omneky vs Creative OS (2026): Enterprise AI Creative Automation",
+      "targetKeyword": "omneky vs creative os",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "omneky-review-for-shopify-brands-2026",
+      "type": "blog",
+      "targetTool": "omneky",
+      "title": "Omneky Review for Shopify Brands 2026: Scale Meta & TikTok ROAS with AI",
+      "targetKeyword": "omneky review for shopify",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "n8n-vs-airflow",
+      "type": "comparison",
+      "tool1Slug": "n8n",
+      "tool2Slug": "airflow",
+      "title": "n8n vs Apache Airflow (2026): Visual Workflows vs Python DAG Pipelines",
+      "targetKeyword": "n8n vs airflow",
+      "priority": "P1",
+      "status": "queued"
+    },
+    {
+      "slug": "n8n-self-hosted-setup-guide-2026",
+      "type": "blog",
+      "targetTool": "n8n",
+      "title": "How to Self-Host n8n on Docker / VPS for $4/mo: Complete 2026 Guide",
+      "targetKeyword": "n8n self hosted setup guide",
+      "priority": "P1",
+      "status": "queued"
     }
   ]
 }
