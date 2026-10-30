@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
       { source: "/compare/make-com-vs-zapier", destination: "/compare/make-vs-zapier", permanent: true },
       { source: "/compare/zapier-vs-make-com", destination: "/compare/make-vs-zapier", permanent: true },
       { source: "/blog/best-press-release-distribution-services-2026", destination: "/blog/best-press-release-distribution-services", permanent: true },
+      { source: "/vpn", destination: "https://www.jdoqocy.com/click-101761541-13756265", permanent: false },
+      { source: "/pass", destination: "https://www.jdoqocy.com/click-101761541-17262576", permanent: false },
+      { source: "/vps", destination: "https://www.dpbolvw.net/click-101761537-17226848", permanent: false },
+      { source: "/surfshark", destination: "https://www.jdoqocy.com/click-101761541-15438547", permanent: false },
+      { source: "/webinar", destination: "https://www.kqzyfj.com/click-101761541-17217347", permanent: false },
     ];
   },
   async headers() {
