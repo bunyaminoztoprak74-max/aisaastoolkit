@@ -4306,6 +4306,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "make-com"
     ]
   },
+
+  {
+    name: "Tray Io",
+    slug: "tray-io",
+    tagline: "Established legacy platform for ai automation",
+    description: "Tray Io is an established software platform offering standard tools for organizations.",
+    longDescription: "Tray Io provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "TR",
+    logoColor: "bg-gray-600",
+    website: "https://tray-io.com",
+    affiliateUrl: "https://tray-io.com",
+    category: "ai-automation",
+    categories: [
+      "ai-automation"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "make-com"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
