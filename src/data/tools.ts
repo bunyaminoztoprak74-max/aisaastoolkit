@@ -4400,6 +4400,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "elevenlabs"
     ]
   },
+
+  {
+    name: "Lovo Ai",
+    slug: "lovo-ai",
+    tagline: "Established legacy platform for ai voice",
+    description: "Lovo Ai is an established software platform offering standard tools for organizations.",
+    longDescription: "Lovo Ai provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "LO",
+    logoColor: "bg-gray-600",
+    website: "https://lovo-ai.com",
+    affiliateUrl: "https://lovo-ai.com",
+    category: "ai-voice",
+    categories: [
+      "ai-voice"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "elevenlabs"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
