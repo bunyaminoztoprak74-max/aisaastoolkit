@@ -4353,6 +4353,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "make-com"
     ]
   },
+
+  {
+    name: "Resemble Ai",
+    slug: "resemble-ai",
+    tagline: "Established legacy platform for ai voice",
+    description: "Resemble Ai is an established software platform offering standard tools for organizations.",
+    longDescription: "Resemble Ai provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "RE",
+    logoColor: "bg-gray-600",
+    website: "https://resemble-ai.com",
+    affiliateUrl: "https://resemble-ai.com",
+    category: "ai-voice",
+    categories: [
+      "ai-voice"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "elevenlabs"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
