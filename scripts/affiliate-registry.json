@@ -653,7 +653,8 @@
       "title": "1Password Passkey Guide 2026: How to Ditch Passwords Completely",
       "targetKeyword": "1password passkey guide",
       "priority": "P1",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-11-03T18:00:11.202Z"
     },
     {
       "slug": "1password-vs-lastpass",
