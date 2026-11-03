@@ -4447,6 +4447,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "elevenlabs"
     ]
   },
+
+  {
+    name: "Nordpass",
+    slug: "nordpass",
+    tagline: "Established legacy platform for saas security",
+    description: "Nordpass is an established software platform offering standard tools for organizations.",
+    longDescription: "Nordpass provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "NO",
+    logoColor: "bg-gray-600",
+    website: "https://nordpass.com",
+    affiliateUrl: "https://nordpass.com",
+    category: "saas-security",
+    categories: [
+      "saas-security"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "1password"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {

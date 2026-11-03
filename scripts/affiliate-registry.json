@@ -633,7 +633,8 @@
       "title": "1Password vs NordPass (2026): Secret Key vs XChaCha20 Encryption Compared",
       "targetKeyword": "1password vs nordpass",
       "priority": "P1",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-11-03T06:13:49.873Z"
     },
     {
       "slug": "1password-for-business-review-2026",
