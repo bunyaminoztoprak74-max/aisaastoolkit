@@ -4588,6 +4588,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "nordlayer"
     ]
   },
+
+  {
+    name: "Tailscale",
+    slug: "tailscale",
+    tagline: "Established legacy platform for saas security",
+    description: "Tailscale is an established software platform offering standard tools for organizations.",
+    longDescription: "Tailscale provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "TA",
+    logoColor: "bg-gray-600",
+    website: "https://tailscale.com",
+    affiliateUrl: "https://tailscale.com",
+    category: "saas-security",
+    categories: [
+      "saas-security"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "nordlayer"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
