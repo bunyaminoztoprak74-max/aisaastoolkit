@@ -664,7 +664,8 @@
       "title": "1Password vs LastPass (2026): Why Users Are Switching in Droves",
       "targetKeyword": "1password vs lastpass",
       "priority": "P1",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-11-04T00:00:13.736Z"
     },
     {
       "slug": "nordlayer-vs-twingate",

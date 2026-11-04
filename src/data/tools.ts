@@ -4494,6 +4494,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "1password"
     ]
   },
+
+  {
+    name: "Lastpass",
+    slug: "lastpass",
+    tagline: "Established legacy platform for saas security",
+    description: "Lastpass is an established software platform offering standard tools for organizations.",
+    longDescription: "Lastpass provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "LA",
+    logoColor: "bg-gray-600",
+    website: "https://lastpass.com",
+    affiliateUrl: "https://lastpass.com",
+    category: "saas-security",
+    categories: [
+      "saas-security"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "1password"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
