@@ -675,7 +675,8 @@
       "title": "NordLayer vs Twingate (2026): Zero Trust Network Access (ZTNA) Compared",
       "targetKeyword": "nordlayer vs twingate",
       "priority": "P1",
-      "status": "queued"
+      "status": "published",
+      "publishedAt": "2026-11-04T06:00:11.481Z"
     },
     {
       "slug": "nordlayer-vs-tailscale",
