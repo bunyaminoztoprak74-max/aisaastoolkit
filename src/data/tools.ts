@@ -4682,6 +4682,53 @@ In 2026, Perplexity has expanded into voice search (iOS), shopping discovery, an
       "namecheap"
     ]
   },
+
+  {
+    name: "Creative Os",
+    slug: "creative-os",
+    tagline: "Established legacy platform for ai marketing",
+    description: "Creative Os is an established software platform offering standard tools for organizations.",
+    longDescription: "Creative Os provides a broad set of features with wide enterprise recognition, though it often comes with higher pricing and steeper learning curves.",
+    logo: "CR",
+    logoColor: "bg-gray-600",
+    website: "https://creative-os.com",
+    affiliateUrl: "https://creative-os.com",
+    category: "ai-marketing",
+    categories: [
+      "ai-marketing"
+    ],
+    rating: 4.2,
+    reviewCount: 1800,
+    pricing: {
+      starting: "Standard tier",
+      hasFree: false,
+      tiers: [
+        {
+          name: "Standard",
+          price: "Entry plan",
+          period: "/mo",
+          features: [
+            "Basic features",
+            "Standard limits"
+          ]
+        }
+      ]
+    },
+    pros: [
+      "Established brand recognition",
+      "Extensive documentation"
+    ],
+    cons: [
+      "Higher ongoing cost",
+      "Dated user interface compared to newer rivals"
+    ],
+    bestFor: [
+      "Legacy enterprise customers"
+    ],
+    alternatives: [
+      "omneky"
+    ]
+  },
 ];
 
 export function getToolBySlug(slug: string) {
