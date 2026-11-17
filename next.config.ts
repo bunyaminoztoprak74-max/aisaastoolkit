@@ -24,6 +24,14 @@ const nextConfig: NextConfig = {
       { source: "/vps", destination: "https://www.dpbolvw.net/click-101761537-17226848", permanent: false },
       { source: "/surfshark", destination: "https://www.jdoqocy.com/click-101761541-15438547", permanent: false },
       { source: "/webinar", destination: "https://www.kqzyfj.com/click-101761541-17217347", permanent: false },
+      // Official CJ YouTube Channel PIDs: CardBook AI (101930714) & Synthetica Code (101930717)
+      { source: "/go/nordvpn", destination: "https://www.jdoqocy.com/click-101930714-13756265?sid=cardbook_yt_nordvpn", permanent: false },
+      { source: "/go/nordpass", destination: "https://www.jdoqocy.com/click-101930714-17262576?sid=cardbook_yt_nordpass", permanent: false },
+      { source: "/go/1password", destination: "https://www.anrdoezrs.net/click-101930714-17036393?sid=cardbook_yt_1password", permanent: false },
+      { source: "/go/surfshark", destination: "https://www.jdoqocy.com/click-101930714-15438547?sid=cardbook_yt_surfshark", permanent: false },
+      { source: "/go/hostinger-vps", destination: "https://www.dpbolvw.net/click-101930717-17226848?sid=synthetica_yt_vps", permanent: false },
+      { source: "/go/1password-dev", destination: "https://www.anrdoezrs.net/click-101930717-17036393?sid=synthetica_yt_1pass", permanent: false },
+      { source: "/go/nordvpn-dev", destination: "https://www.jdoqocy.com/click-101930717-13756265?sid=synthetica_yt_nordvpn", permanent: false },
     ];
   },
   async headers() {
